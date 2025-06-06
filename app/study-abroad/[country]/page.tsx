@@ -6,8 +6,10 @@ interface Props {
   params: { country: string };
 }
 
-export default function StudyAbroadCountryPage({ params }: Props) {
-  const data = countryData[params.country.toLowerCase()];
+export default async function StudyAbroadCountryPage({ params }: Props) {
+  const {country} =  params;
+  const data = countryData[country.toLowerCase()];
   if (!data) return notFound();
+  console.log(data);
   return <CountrySection {...data} />;
 } 
