@@ -40,11 +40,11 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold text-gray-900 text-base sm:text-lg mb-4 sm:mb-6">Home</h4>
             <div className="flex flex-col space-y-3 sm:space-y-4">
-              <Link href="/about" className="text-[#4F5665] text-sm hover:text-blue-600">About Us</Link>
+              <Link href="/about-us" className="text-[#4F5665] text-sm hover:text-blue-600">About Us</Link>
               <Link href="/pricing" className="text-[#4F5665] text-sm hover:text-blue-600">Pricing</Link>
               <Link href="/services" className="text-[#4F5665] text-sm hover:text-blue-600">Services</Link>
-              <Link href="/contact" className="text-[#4F5665] text-sm hover:text-blue-600">Contact Us</Link>
-              <Link href="/blog" className="text-[#4F5665] text-sm hover:text-blue-600">Blog</Link>
+              <Link href="/contact-us" className="text-[#4F5665] text-sm hover:text-blue-600">Contact Us</Link>
+              <Link href="/blogs" className="text-[#4F5665] text-sm hover:text-blue-600">Blog</Link>
             </div>
           </div>
 
@@ -52,11 +52,12 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold text-gray-900 text-base sm:text-lg mb-4 sm:mb-6">Study Abroad</h4>
             <div className="flex flex-col space-y-3 sm:space-y-4">
-              <Link href="/study/australia" className="text-[#4F5665] text-sm hover:text-blue-600">Study in Australia</Link>
-              <Link href="/study/canada" className="text-[#4F5665] text-sm hover:text-blue-600">Study in Canada</Link>
-              <Link href="/study/uk" className="text-[#4F5665] text-sm hover:text-blue-600">Study in UK</Link>
-              <Link href="/study/usa" className="text-[#4F5665] text-sm hover:text-blue-600">Study in USA</Link>
-              <Link href="/study/europe" className="text-[#4F5665] text-sm hover:text-blue-600">Study in Europe</Link>
+              <Link href="/study-abroad/australia" className="text-[#4F5665] text-sm hover:text-blue-600">Study in Australia</Link>
+              <Link href="/study-abroad/canada" className="text-[#4F5665] text-sm hover:text-blue-600">Study in Canada</Link>
+              <Link href="/study-abroad/uk" className="text-[#4F5665] text-sm hover:text-blue-600">Study in UK</Link>
+              <Link href="/study-abroad/usa" className="text-[#4F5665] text-sm hover:text-blue-600">Study in USA</Link>
+              <Link href="/study-abroad/europe" className="text-[#4F5665] text-sm hover:text-blue-600">Study in Europe</Link>
+              <Link href="/study-abroad/newzealand" className="text-[#4F5665] text-sm hover:text-blue-600">Study in New Zealand</Link>
             </div>
           </div>
 
