@@ -2,12 +2,11 @@ import { blogData } from '../../sections/Blogs/blogData';
 import BlogSection from '../../sections/Blogs/BlogSection';
 import { notFound } from 'next/navigation';
 
-type Props = {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-}
-
-export default function BlogPage({ params }: Props) {
+export default async function BlogPage({
+  params,
+}: {
+  params: { slug: string }
+}) {
   const data = blogData[params.slug.toLowerCase()];
   if (!data) return notFound();
   return <BlogSection {...data} />;
