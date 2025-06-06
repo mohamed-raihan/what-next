@@ -1,9 +1,9 @@
 import React from 'react';
 import type { BlogData } from './blogData';
 
-interface Props extends BlogData {}
+// interface Props extends BlogData {}
 
-const BlogSection: React.FC<Props> = ({
+const BlogSection: React.FC<BlogData> = ({
   title,
   author,
   date,

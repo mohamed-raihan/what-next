@@ -3,9 +3,7 @@ import type { CountryData } from './countryData';
 // import Image from 'next/image';
 import GetintouchForm from '@/app/components/getintouch-form';
 
-interface Props extends CountryData { }
-
-const CountrySection: React.FC<Props> = ({
+const CountrySection: React.FC<CountryData> = ({
     name,
     paragraph,
     backgroundImage,
