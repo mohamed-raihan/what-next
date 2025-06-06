@@ -1,23 +1,26 @@
-import Image from "next/image";
+// src/components/Header.tsx
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="bg-white border-t-4 font-roboto ">
+    <header className="bg-white shadow-md border-t-4 border-blue-500">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center space-x-2">
-            <Image src="/logo.png" alt="WhatNext Logo" width={108} height={55} />
+            <Image src="/logo.svg" alt="WhatNext Logo" width={100} height={50} />
           </div>
         </Link>
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <Link href="/" className="text-[#4B4B4B] hover:text-blue-600 font-bold">Home</Link>
-          <Link href="/about" className="text-[#4B4B4B] hover:text-blue-600 font-bold">About Us</Link>
+          <Link href="/" className="text-gray-800 hover:text-blue-600 font-medium">Home</Link>
+          <Link href="/about-us" className="text-gray-800 hover:text-blue-600 font-medium">About Us</Link>
           <div className="relative group">
-            <button className="text-[#4B4B4B] hover:text-blue-600 font-bold flex items-center gap-1">
+            <button className="text-gray-800 hover:text-blue-600 font-medium flex items-center gap-1">
               Study Abroad
               <svg
                 className="w-4 h-4 mt-0.5"
@@ -28,19 +31,22 @@ export default function Header() {
               </svg>
             </button>
             {/* Dropdown (optional) */}
-            {/* <div className="absolute hidden group-hover:block bg-white shadow-md mt-2 p-2 rounded">
+            <div className="absolute hidden group-hover:block bg-white shadow-md mt-2 p-2 w-[130px] rounded">
+              <Link href="/study-abroad/canada" className="block px-4 py-2 hover:bg-gray-100">Canada</Link>
               <Link href="/study-abroad/usa" className="block px-4 py-2 hover:bg-gray-100">USA</Link>
               <Link href="/study-abroad/uk" className="block px-4 py-2 hover:bg-gray-100">UK</Link>
-            </div> */}
+              <Link href="/study-abroad/australia" className="block px-4 py-2 hover:bg-gray-100">Australia</Link>
+              <Link href="/study-abroad/europe" className="block px-4 py-2 hover:bg-gray-100">Europe</Link>
+            </div>
           </div>
-          <Link href="/services" className="text-[#4B4B4B] hover:text-blue-600 font-bold">Services</Link>
-          <Link href="/blog" className="text-[#4B4B4B] hover:text-blue-600 font-bold">Blog</Link>
+          <Link href="/services" className="text-gray-800 hover:text-blue-600 font-medium">Services</Link>
+          <Link href="/blogs" className="text-gray-800 hover:text-blue-600 font-medium">Blog</Link>
         </nav>
 
         {/* CTA Button */}
         <div className="hidden md:block">
           <Link href="/contact">
-            <button className="bg-[#0046AA] text-white px-4 py-2 rounded-md hover:bg-blue-900 w-[164px] h-[39px] transition font-bold text-sm font-inter">
+            <button className="bg-blue-800 text-white px-4 py-2 rounded-md font-inter font-semibold text-[18px] hover:bg-blue-900 transition">
               Free Consultation
             </button>
           </Link>

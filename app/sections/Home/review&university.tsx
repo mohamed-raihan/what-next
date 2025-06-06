@@ -3,30 +3,30 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 const reviews = [
-    {
-        name: 'Agnes Remi',
-        role: 'Back-end Developer at MyDodow',
-        review:
-          'Dico is finally addressing a long time problem we had when building UIs. It’s ease of use and workflow seems really intuitive. Promising!',
-        date: '2021.03.02',
-        avatar: '/reviewimage.svg',
-      },
-      {
-        name: 'John Carter',
-        role: 'Full Stack Developer at CodeX',
-        review:
-          'An excellent UI tool that helped us speed up our development process. The team loves it!',
-        date: '2021.05.12',
-        avatar: '/reviewimage.svg',
-      },
-      {
-        name: 'Lisa Wong',
-        role: 'Frontend Engineer at BrightTech',
-        review:
-          'Very user-friendly and saves a lot of time. The UX is clean and efficient. Highly recommended!',
-        date: '2022.01.18',
-        avatar: '/reviewimage.svg',
-      },
+  {
+    name: 'Agnes Remi',
+    role: 'Back-end Developer at MyDodow',
+    review:
+      'Dico is finally addressing a long time problem we had when building UIs. It’s ease of use and workflow seems really intuitive. Promising!',
+    date: '2021.03.02',
+    avatar: '/reviewimage.svg',
+  },
+  {
+    name: 'John Carter',
+    role: 'Full Stack Developer at CodeX',
+    review:
+      'An excellent UI tool that helped us speed up our development process. The team loves it!',
+    date: '2021.05.12',
+    avatar: '/reviewimage.svg',
+  },
+  {
+    name: 'Lisa Wong',
+    role: 'Frontend Engineer at BrightTech',
+    review:
+      'Very user-friendly and saves a lot of time. The UX is clean and efficient. Highly recommended!',
+    date: '2022.01.18',
+    avatar: '/reviewimage.svg',
+  },
   // Repeat or add more reviewers here
 ];
 
@@ -52,10 +52,10 @@ export default function StudentReviewsAndUniversities() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
-    <section>
+    <section className='-mb-30'>
       {/* Student Reviews Section */}
-      <div className="bg-green-600 text-white py-16 relative">
-        <h2 className="text-3xl font-bold text-center mb-10">Student Reviews</h2>
+      <div className="bg-[url('/reviewbg.svg')] bg-cover bg-center text-white pb-25 pt-15 relative">
+        <h2 className="text-3xl font-bold font-roboto text-center mb-10">Student Reviews</h2>
         <div className="flex justify-center gap-6 flex-wrap px-4">
           {reviews.map((review, index) => (
             <div
@@ -91,9 +91,10 @@ export default function StudentReviewsAndUniversities() {
       </div>
 
       {/* Featured UK Universities */}
-      <div className="bg-white py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Featured UK Universities</h2>
-        {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 px-6">
+      <div className="bg-white py-16 px-8 relative">
+        <div className='rounded-3xl relative -top-30 bottom-0 left-0 w-full h-full bg-white shadow-lg p-8'>
+          <h2 className="text-3xl font-bold text-center mb-12">Featured UK Universities</h2>
+          {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 px-6">
           {universities.map((uni, index) => (
             <div
               key={index}
@@ -109,8 +110,9 @@ export default function StudentReviewsAndUniversities() {
             </div>
           ))}
         </div> */}
-        <div>
-        <Image src="/university.svg" alt="University" width={100} height={50} className="w-full object-cover" />
+          <div>
+            <Image src="/university.svg" alt="University" width={100} height={50} className="w-full object-cover" />
+          </div>
         </div>
       </div>
     </section>
