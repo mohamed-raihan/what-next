@@ -3,6 +3,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 // import blogs from './blogs';
 
+interface Blog {
+    title: string;
+    slug: string;
+    author: string;
+    date: string;
+    image: string;
+    category: string;
+    readTime: string;
+    is_editors: boolean;
+    is_recent: boolean;
+    is_trending: boolean;
+    featured: boolean;
+    excerpt?: string;
+}
 
 const blogs = [
     {
@@ -246,15 +260,15 @@ const blogs = [
 
 export default function BlogList() {
     // Main featured blog
-    const main = blogs.find((b: any) => b.featured) || blogs[0];
+    const main = blogs.find((b: Blog) => b.featured) || blogs[0];
     // Side blogs (not featured, just take next 3 for demo)
-    const side = blogs.filter((b: any) => b.slug !== main.slug).slice(0, 3);
+    const side = blogs.filter((b: Blog) => b.slug !== main.slug).slice(0, 3);
     // Editors Choice
-    const editors = blogs.filter((b: any) => b.is_editors).slice(0, 4);
+    const editors = blogs.filter((b: Blog) => b.is_editors).slice(0, 4);
     // Recent Posts (first is large, rest are small)
-    const recent = blogs.filter((b: any) => b.is_recent).slice(0, 4);
+    const recent = blogs.filter((b: Blog) => b.is_recent).slice(0, 4);
     // Trending News
-    const trending = blogs.filter((b: any) => b.is_trending).slice(0, 4);
+    const trending = blogs.filter((b: Blog) => b.is_trending).slice(0, 4);
     // Popular Posts (hardcoded for demo)
 
     console.log(trending);
@@ -262,21 +276,21 @@ export default function BlogList() {
 
     const popular = [
         {
-            ...blogs.find((b: any) => b.slug === 'influence-the-future-of-css'),
+            ...blogs.find((b: Blog) => b.slug === 'influence-the-future-of-css'),
             category: 'Gadget',
             image: '/blogs/t_popular_post01.jpg.svg',
             title: 'Influence The Future Of CSS',
             date: '27 August, 2024',
         },
         {
-            ...blogs.find((b: any) => b.slug === 'best-tech-accessor-10-work-from-home'),
+            ...blogs.find((b: Blog) => b.slug === 'best-tech-accessor-10-work-from-home'),
             category: 'News',
             image: '/blogs/t_popular_post02.jpg.svg',
             title: 'Best Tech Accessor 10 Work From Home',
             date: '27 August, 2024',
         },
         {
-            ...blogs.find((b: any) => b.slug === 'the-butter-chocolate-cookies-daily'),
+            ...blogs.find((b: Blog) => b.slug === 'the-butter-chocolate-cookies-daily'),
             category: 'Technology',
             image: '/blogs/Container-6.svg',
             title: 'The Butter Chocolate Cookies Daily',
@@ -321,7 +335,7 @@ export default function BlogList() {
                     </Link>
                     {/* Side Blogs */}
                     <div className="w-full lg:w-[400px] flex flex-col gap-4">
-                        {side.map((blog: any, idx: number) => (
+                        {side.map((blog: Blog) => (
                             <Link
                                 key={blog.slug}
                                 href={`/blogs/${blog.slug}`}
@@ -363,7 +377,7 @@ export default function BlogList() {
                         </div>
                     </div>
                     <div className="flex gap-6 overflow-x-auto pb-2">
-                        {editors.map((post: any, idx: number) => (
+                        {editors.map((post: Blog) => (
                             <Link
                                 key={post.slug}
                                 href={`/blogs/${post.slug}`}
@@ -408,7 +422,7 @@ export default function BlogList() {
                             </Link>
                             {/* List of Recent Posts */}
                             <div className="flex flex-col gap-4 w-full md:w-64">
-                                {recent.slice(1).map((post: any) => (
+                                {recent.slice(1).map((post: Blog) => (
                                     <Link
                                         key={post.slug}
                                         href={`/blogs/${post.slug}`}
@@ -506,7 +520,7 @@ export default function BlogList() {
                             )}
                             {/* Small trending posts */}
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                                {trending.slice(1).map((post: any) => (
+                                {trending.slice(1).map((post: Blog) => (
                                     <Link
                                         key={post.slug}
                                         href={`/blogs/${post.slug}`}
@@ -558,7 +572,7 @@ export default function BlogList() {
                         <span className="text-[#288737]">Our Team</span>
                     </h1>
                     <p className="w-full md:w-xl text-base md:text-[18px] text-gray-600 mt-5 font-montserrat">
-                        It's effective, it's beneficial and it's absolutely free. Take your virtual counselling session today!
+                        It&apos;s effective, it&apos;s beneficial and it&apos;s absolutely free. Take your virtual counselling session today!
                     </p>
                 </div>
                 <div className="max-w-full md:max-w-xl flex-1 flex items-center justify-center">

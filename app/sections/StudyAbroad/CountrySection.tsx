@@ -1,6 +1,6 @@
 import React from 'react';
 import type { CountryData } from './countryData';
-import Image from 'next/image';
+// import Image from 'next/image';
 import GetintouchForm from '@/app/components/getintouch-form';
 
 interface Props extends CountryData { }
@@ -96,7 +96,7 @@ const CountrySection: React.FC<Props> = ({
                         <span className="text-[#288737]">Our Team</span>
                     </h1>
                     <p className="w-full md:w-xl text-base md:text-[18px] text-gray-600 mt-5 font-montserrat">
-                        It's effective, it's beneficial and it's absolutely free. Take your virtual counselling session today!
+                        It&apos;s effective, it&apos;s beneficial and it&apos;s absolutely free. Take your virtual counselling session today!
                     </p>
                 </div>
                 <div className="max-w-full md:max-w-xl flex-1 flex items-center justify-center">

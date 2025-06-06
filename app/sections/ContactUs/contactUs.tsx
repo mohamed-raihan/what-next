@@ -1,6 +1,4 @@
 import React from "react";
-import { Mail, Phone } from "lucide-react";
-import { FaX } from "react-icons/fa6";
 import GetintouchForm from "@/app/components/getintouch-form";
 
 const ContactSection = () => {
@@ -16,7 +14,7 @@ const ContactSection = () => {
                             <span className="text-[#288737]">Our Team</span>
                         </h1>
                         <p className="mt-4 text-gray-600 text-sm md:text-base">
-                            It's effective, it's beneficial and it's absolutely free. Take your virtual counselling session today!
+                            It&apos;s effective, it&apos;s beneficial and it&apos;s absolutely free. Take your virtual counselling session today!
                         </p>
                     </div>
                     <div className="px-4 md:px-0">

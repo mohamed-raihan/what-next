@@ -57,7 +57,7 @@ export default function Banner() {
                             </div>
                             <div className="py-4 sm:py-0 sm:px-8 md:px-12 w-full sm:w-auto">
                                 <h3 className="text-[#28A745] text-2xl sm:text-3xl font-bold mb-2">20,000+</h3>
-                                <p className="text-gray-600 text-sm">Student's Career</p>
+                                <p className="text-gray-600 text-sm">Students&apos; Career</p>
                             </div>
                             <div className="pt-4 sm:pt-0 sm:pl-8 md:pl-12 w-full sm:w-auto">
                                 <h3 className="text-[#0046AA] text-2xl sm:text-3xl font-bold mb-2">35+</h3>

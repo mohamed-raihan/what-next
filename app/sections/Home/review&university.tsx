@@ -30,26 +30,26 @@ const reviews = [
   // Repeat or add more reviewers here
 ];
 
-const universities = [
-  { name: 'Buckinghamshire New University', logo: '/universities/buckinghamshire.png' },
-  { name: 'Aberystwyth University', logo: '/universities/aberystwyth.png' },
-  { name: 'Birmingham Newman University', logo: '/universities/newman.png' },
-  { name: 'Durham University', logo: '/universities/durham.png' },
-  { name: 'UWE Bristol', logo: '/universities/uwe.png' },
-  { name: 'Arts University Bournemouth', logo: '/universities/artsbournemouth.png' },
-  { name: 'Birmingham City University', logo: '/universities/birminghamcity.png' },
-  { name: 'Bournemouth University', logo: '/universities/bournemouth.png' },
-  { name: 'Canterbury Christ Church University', logo: '/universities/canterbury.png' },
-  { name: 'Bangor University', logo: '/universities/bangor.png' },
-  { name: 'David Game College', logo: '/universities/davidgame.png' },
-  { name: 'BPP University', logo: '/universities/bpp.png' },
-  { name: 'Bishop Grosseteste University', logo: '/universities/bishopgrosseteste.png' },
-  { name: 'Birkbeck University of London', logo: '/universities/birkbeck.png' },
-  { name: 'Bath Spa University', logo: '/universities/bathspa.png' },
-];
+// const universities = [
+//   { name: 'Buckinghamshire New University', logo: '/universities/buckinghamshire.png' },
+//   { name: 'Aberystwyth University', logo: '/universities/aberystwyth.png' },
+//   { name: 'Birmingham Newman University', logo: '/universities/newman.png' },
+//   { name: 'Durham University', logo: '/universities/durham.png' },
+//   { name: 'UWE Bristol', logo: '/universities/uwe.png' },
+//   { name: 'Arts University Bournemouth', logo: '/universities/artsbournemouth.png' },
+//   { name: 'Birmingham City University', logo: '/universities/birminghamcity.png' },
+//   { name: 'Bournemouth University', logo: '/universities/bournemouth.png' },
+//   { name: 'Canterbury Christ Church University', logo: '/universities/canterbury.png' },
+//   { name: 'Bangor University', logo: '/universities/bangor.png' },
+//   { name: 'David Game College', logo: '/universities/davidgame.png' },
+//   { name: 'BPP University', logo: '/universities/bpp.png' },
+//   { name: 'Bishop Grosseteste University', logo: '/universities/bishopgrosseteste.png' },
+//   { name: 'Birkbeck University of London', logo: '/universities/birkbeck.png' },
+//   { name: 'Bath Spa University', logo: '/universities/bathspa.png' },
+// ];
 
 export default function StudentReviewsAndUniversities() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <section className='-mb-30'>

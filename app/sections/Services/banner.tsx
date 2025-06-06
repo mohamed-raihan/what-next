@@ -56,7 +56,7 @@ const ServiceBanner = () => {
                         Trusted by Students.</h2>
                     <div className="text-base sm:text-lg md:text-2xl text-grey-100 flex flex-col gap-4 md:gap-8 mt-6 md:mt-10">
                         <p className="text-[#686868] font-montserrat">With personalized support and expert advice, WhatNext helps aspiring students choose the right course, secure admission to top universities, and navigate visa and financial processes smoothly.</p>
-                        <p className="text-[#686868] font-montserrat">Whether you're aiming for the UK, USA, Canada, Australia, or Europe, WhatNext simplifies the entire process—turning your global education dreams into reality.</p>
+                        <p className="text-[#686868] font-montserrat">Whether you&apos;re aiming for the UK, USA, Canada, Australia, or Europe, WhatNext simplifies the entire process—turning your global education dreams into reality.</p>
                         <p className="text-[#686868] font-montserrat">WhatNext Overseas is a trusted education consultancy dedicated to guiding students on their journey to study abroad.</p>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ const ServiceBanner = () => {
                             <span className="text-[#288737]">Our Team</span>
                         </h1>
                         <p className="w-xl text-[18px] text-gray-600 mt-5">
-                        It's effective, it's beneficial and it's absolutely free. Take your virtual counselling session today!
+                        It&apos;s effective, it&apos;s beneficial and it&apos;s absolutely free. Take your virtual counselling session today!
                         </p>
                     </div>
                     <div className="max-w-xl">
