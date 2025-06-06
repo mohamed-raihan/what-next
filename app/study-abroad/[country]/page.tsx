@@ -3,11 +3,11 @@ import CountrySection from '../../sections/StudyAbroad/CountrySection';
 import { notFound } from 'next/navigation';
 
 interface Props {
-  params: { country: string };
-}
+    params: Promise<{ country: string }>;
+  }
 
 export default async function StudyAbroadCountryPage({ params }: Props) {
-  const {country} =  params;
+  const {country} =  await params;
   const data = countryData[country.toLowerCase()];
   if (!data) return notFound();
   console.log(data);
