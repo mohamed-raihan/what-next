@@ -1,3 +1,5 @@
+import api from "@/app/api-services/axios";
+
 export interface BlogData {
   title: string;
   slug: string;
@@ -10,7 +12,14 @@ export interface BlogData {
   readTime: string;
 }
 
+export async function getBlogCategories() {
+  const response = await api.get(API_URL.BLOGS.GET_BLOG_CATEGORIES);
+  const data = await response.data;
+  return data;
+}
+
 export const blogData: Record<string, BlogData> = {
+
   'why-canada-top-choice': {
     title: 'Why Canada Remains A Top Choice For Indian Students',
     slug: 'why-canada-top-choice',
