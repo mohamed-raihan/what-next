@@ -53,11 +53,11 @@ export const countryData: Record<string, CountryData> = {
             'You will have a wonderful classroom with interactive professors, debates and discussions and rubbing shoulders with the greats in the field.',
             'The universities provide state-of-the-art facilities such as knowledge resources, computers, the internet, modern classrooms and trending technology.',
         ],
-        animalShadow: '/usa/eagle.svg', // Replace with actual image path used in the image (e.g., eagle)
+        animalShadow: '/usa/eagle-green.svg', // Replace with actual image path used in the image (e.g., eagle)
         universityLogos: [
-            { logo: '/usa/yale.svg', height: '' },
-            { logo: '/usa/upenn.svg', height: '' },
-            { logo: '/usa/princeton.svg', height: '' },
+            { logo: '/usa/massachusetts.svg', height: '' },
+            { logo: '/usa/luxcet.svg', height: '' },
+            { logo: '/usa/vettesen.svg', height: '' },
             { logo: '/usa/stanford.svg', height: '' },
             { logo: '/usa/harvard.svg', height: '' },
         ],
@@ -97,13 +97,13 @@ export const countryData: Record<string, CountryData> = {
             'Canada has affordable tuition fees and living costs.',
             'Canada has a perfect blend of nature, technology, and culture.',
         ],
-        animalShadow: '/canada/beaver.svg', // Placeholder, update with correct asset if available
+        animalShadow: '/canada/animal-green.svg', // Placeholder, update with correct asset if available
         universityLogos: [
-            { logo: '/canada/mcmaster.svg', height: '' },
-            { logo: '/canada/western.svg', height: '' },
-            { logo: '/canada/toronto.svg', height: '' },
-            { logo: '/canada/mcgill.svg', height: '' },
-            { logo: '/canada/uottawa.svg', height: '' },
+            { logo: '/canada/mcMaster.svg', height: '' },
+            { logo: '/canada/grandscunt.svg', height: '' },
+            { logo: '/canada/velute.svg', height: '' },
+            { logo: '/canada/waterloo.svg', height: '' },
+            { logo: '/canada/uOttawa.svg', height: '' },
         ],
         whyChooseCards: [
             {
@@ -132,21 +132,21 @@ export const countryData: Record<string, CountryData> = {
     newzealand: {
         name: 'New Zealand',
         paragraph:
-            'New Zealand, one of the finest locations to live, is home to some of the world’s most prestigious educational institutions. Because New Zealand is tiny and uncrowded, moving around and getting things done is simple.',
-        backgroundImage: '/newzealand/nz-bg.svg', // Update based on your asset path
+            'New Zealand, one of the finest locations to live, is home to some of the world&apos;s most prestigious educational institutions. Because New Zealand is tiny and uncrowded, moving around and getting things done is simple.',
+        backgroundImage: '/new-zealand/newzealand-bg.svg', // Update based on your asset path
         greenSectionContent: [
-            'New Zealand is the world’s second most peaceful country with all the 8 State-Funded Universities in the top 3% world university rankings.',
+            'New Zealand is the world&apos;s second most peaceful country with all the 8 State-Funded Universities in the top 3% world university rankings.',
             'Easy entry requirements.',
             'A great destination.',
             'The healthy outdoor student lifestyle.',
         ],
         animalShadow: '/newzealand/kiwi-bird.svg', // Placeholder path, adjust if needed
         universityLogos: [
-            { logo: '/newzealand/lincoln.svg', height: '' },
-            { logo: '/newzealand/otago.svg', height: '' },
-            { logo: '/newzealand/auckland.svg', height: '' },
-            { logo: '/newzealand/canterbury.svg', height: '' },
-            { logo: '/newzealand/massey.svg', height: '' },
+            { logo: '/new-zealand/lincoln.svg', height: '' },
+            { logo: '/new-zealand/ingenio.svg', height: '' },
+            { logo: '/new-zealand/unvstylogo.svg', height: '' },
+            { logo: '/new-zealand/canterbury.svg', height: '' },
+            { logo: '/new-zealand/massey.svg', height: '' },
         ],
         whyChooseCards: [
             {
@@ -175,15 +175,15 @@ export const countryData: Record<string, CountryData> = {
     uk: {
         name: 'United Kingdom',
         paragraph:
-            'The United Kingdom has been the favored destination for some of history’s most influential thinkers. The United Kingdom’s long-standing reputation for intellectual achievement, as well as its universities, continue to raise the standard in the academic world.',
+            'The United Kingdom has been the favored destination for some of history&apos;s most influential thinkers. The United Kingdom&apos;s long-standing reputation for intellectual achievement, as well as its universities, continue to raise the standard in the academic world.',
         backgroundImage: '/uk/uk-bg.svg', // Update with actual image path
         greenSectionContent: [
             'Colleges in UK are reliably positioning among the best on the planet and capabilities are globally valued and recognized.',
-            'The UK expects 5 percent of the world’s systematic research and creates 14 percent of the world’s most regularly referred to papers.',
+            'The UK expects 5 percent of the world&apos;s systematic research and creates 14 percent of the world&apos;s most regularly referred to papers.',
             'Joined Kingdom colleges give suppleness of decision and grant you to blend scholastic and professional courses of your decision.',
             'The educating and study technique utilized in the UK offer you the opportunity to be unique and improve aptitudes sets and independence.',
         ],
-        animalShadow: '/uk/lion-shadow.svg', // Placeholder, update as needed
+        animalShadow: '/uk/beever.svg', // Placeholder, update as needed
         universityLogos: [
             { logo: '/uk/lse.svg', height: '' },
             { logo: '/uk/cambridge.svg', height: '' },
@@ -199,7 +199,7 @@ export const countryData: Record<string, CountryData> = {
             {
                 title: 'Shorter Duration of Courses',
                 description:
-                    'Courses in the UK are generally shorter than in many other countries. The country offers 3-year undergraduate degrees and 1-year master’s programmers at the universities. It helps reduce tuition and accommodation costs to study in the UK for international students.',
+                    'Courses in the UK are generally shorter than in many other countries. The country offers 3-year undergraduate degrees and 1-year master&apos;s programmers at the universities. It helps reduce tuition and accommodation costs to study in the UK for international students.',
             },
             {
                 title: 'Scholarship and Financial Aid',
@@ -209,29 +209,29 @@ export const countryData: Record<string, CountryData> = {
         ],
     },
 
-    europe: {
+    europe: {   
         name: 'Europe',
         paragraph:
-            'With over 40 countries in Europe, it can be hard to decide where to spend a semester, summer, J-term, or year learning overseas! Each country has something to offer whether it’s the cuisine, culture, stunning landscapes, or captivating languages.',
+            'With over 40 countries in Europe, it can be hard to decide where to spend a semester, summer, J-term, or year learning overseas! Each country has something to offer whether it&apos;s the cuisine, culture, stunning landscapes, or captivating languages.',
         backgroundImage: '/europe/europe-bg.svg', // Update with actual path
         greenSectionContent: [
             'The continent of Europe has always been one of the world centers of learning and technological development. Europe today has over 4000 higher education institutions.',
             'Education in Europe is highly subsidized through taxes.',
-            'Besides the high academic standards in Europe, foreign students also gain a rich cultural experience thanks to Europe’s cultural and linguistic diversity.',
+            'Besides the high academic standards in Europe, foreign students also gain a rich cultural experience thanks to Europe&apos;s cultural and linguistic diversity.',
         ],
         animalShadow: '/europe/eagle-shadow.svg', // Replace with accurate shadow if different
         universityLogos: [
             { logo: '/europe/kth.svg', height: '' },
-            { logo: '/europe/milan.svg', height: '' },
-            { logo: '/europe/tum.svg', height: '' },
-            { logo: '/europe/pisa.svg', height: '' },
-            { logo: '/europe/oslo.svg', height: '' },
+            { logo: '/europe/ludovich.svg', height: '' },
+            { logo: '/europe/munich.svg', height: '' },
+            { logo: '/europe/sigillvm.svg', height: '' },
+            { logo: '/europe/osloensis.svg', height: '' },
         ],
         whyChooseCards: [
             {
                 title: 'Quality of Education',
                 description:
-                    'Europe’s quality of universities is extremely good and includes some of the world’s top-ranked institutions. These universities – as well as many other European universities – are all held in high regard worldwide and demonstrate Europe’s ability to provide an exceptional standard of teaching for postgraduate students.',
+                    'Europe&apos;s quality of universities is extremely good and includes some of the world&apos;s top-ranked institutions. These universities – as well as many other European universities – are all held in high regard worldwide and demonstrate Europe&apos;s ability to provide an exceptional standard of teaching for postgraduate students.',
             },
             {
                 title: 'High Standard of Living',
@@ -240,7 +240,7 @@ export const countryData: Record<string, CountryData> = {
             },
             {
                 title: 'Job Prospects',
-                description:
+                description:    
                     'Studying in a European city is beneficial for your future career as they tend to be large and diverse in their student population. This enables the postgraduate student a wider life experience as well as offering an excellent networking potential.',
             },
         ],

@@ -39,7 +39,7 @@ const CountrySection: React.FC<CountryData> = ({
                         <li key={idx}>{item}</li>
                     ))}
                 </ul>
-                <div className='absolute right-2 md:right-40 top-24 hidden md:block w-24 md:w-32 lg:w-70 '>
+                <div className='absolute right-2 md:right-40  hidden md:block w-24 md:w-32 lg:w-70 '>
                     <img src={animalShadow} alt="animal shadow" className="w-24 md:w-50 lg:w-70" />
                 </div>
             </div>

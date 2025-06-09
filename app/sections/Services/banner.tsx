@@ -91,8 +91,8 @@ const ServiceBanner = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="hidden md:block md:mt-20">
-                                <span className="text-4xl lg:text-6xl font-bold text-[#B2B2B2] leading-none">Our<br />Services</span>
+                            <div className="hidden md:block md:mt-10">
+                                <span className="text-4xl lg:text-5xl font-bold text-[#B2B2B2] leading-none">Our<br />Services</span>
                             </div>
                         </div>
 
