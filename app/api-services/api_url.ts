@@ -1,4 +1,4 @@
-const API_URL = {
+export const API_URL = {
     SERVICES: {
         GET_ALL_SERVICES: '/api/services',
         GET_SERVICE_BY_ID: '/api/services/:id',

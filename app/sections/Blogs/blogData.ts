@@ -1,3 +1,4 @@
+import { API_URL } from "@/app/api-services/api_url";
 import api from "@/app/api-services/axios";
 
 export interface BlogData {
