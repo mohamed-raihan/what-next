@@ -65,7 +65,7 @@ const StudyAbroadSection = () => {
           <h3 className="text-center text-2xl font-bold mb-12 text-[#1e3a8a]">Our Services</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {[
-              { title: 'Career Counselling & Admission Guidance', img: '/ourservice1.svg' },
+              { title: 'Career Counselling And Admission Guidance', img: '/ourservice1.svg' },
               { title: 'Admission Formalities', img: '/ourservice2.svg' },
               { title: 'Choosing Right Courses and University', img: '/ourservice3.svg' },
               { title: 'Travel Assistance', img: '/ourservice4.svg' },
