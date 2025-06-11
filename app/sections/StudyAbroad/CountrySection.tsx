@@ -11,6 +11,7 @@ const CountrySection: React.FC<CountryData> = ({
     animalShadow,
     universityLogos,
     whyChooseCards,
+    blueAnimal,
 }) => {
     return (
         <div className="w-full">
@@ -39,8 +40,8 @@ const CountrySection: React.FC<CountryData> = ({
                         <li key={idx}>{item}</li>
                     ))}
                 </ul>
-                <div className='absolute right-2 md:right-40  hidden md:block w-24 md:w-32 lg:w-70 '>
-                    <img src={animalShadow} alt="animal shadow" className="w-24 md:w-50 lg:w-70" />
+                <div className='absolute right-2 md:right-20  hidden md:block w-24 md:w-32 lg:w-70 '>
+                    <img src={animalShadow} className="w-24 md:w-50 lg:w-70" />
                 </div>
             </div>
 
@@ -64,10 +65,14 @@ const CountrySection: React.FC<CountryData> = ({
             {/* Why Choose Section */}
             <div className='px-7 md:px-8 lg:px-20 py-6 md:py-10 rounded-lg flex justify-center items-center'>
                 <div className="py-8 md:py-18 px-2 md:px-10 bg-[url('/whychoose.svg')] bg-cover bg-center w-full rounded-lg bg-no-repeat">
-                    <h3 className="text-2xl md:text-4xl lg:text-5xl font-roboto mb-8 md:mb-20 font-semibold text-center text-[#0046AA] ">
-                        WHY CHOOSE <span className='text-[#288737] uppercase'>{name}</span> <br /><span className='text-[#000000]'>FOR STUDY?</span>
-                    </h3>
+                    <div className='relative flex justify-center items-center'>
+                        <h3 className="text-2xl md:text-4xl lg:text-5xl font-roboto mb-8 md:mb-20 font-semibold text-center text-[#0046AA] ">
+                            WHY CHOOSE <span className='text-[#288737] uppercase'>{name}</span> <br /><span className='text-[#000000]'>FOR STUDY?</span>
+                        </h3>
+                        <img src={blueAnimal} alt="blue animal" className="absolute right-0 -top-14 xl:top-0 md:w-40 lg:w-50 xl:w-60 hidden md:block" />
+                    </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto ">
+
                         {whyChooseCards.map((card, idx) => (
                             <div key={idx} className="relative bg-white rounded-xl shadow-lg p-6 md:p-8 flex flex-col items-center justify-center min-h-[180px] md:min-h-[230px] max-w-full md:max-w-md mx-auto">
                                 {/* Number in colored circle, alternating */}
@@ -87,7 +92,7 @@ const CountrySection: React.FC<CountryData> = ({
             </div>
 
             {/* Contact Section */}
-            <div className="relative bg-[url(/service-bg.svg)] bg-cover flex flex-col lg:flex-row justify-between bg-no-repeat md:-mt-20 pt-10 md:pt-35 px-2 md:px-10 lg:px-25 h-auto md:h-[80vh]">
+            <div className="relative bg-[url(/service-bg.svg)] bg-cover flex flex-col xl:flex-row justify-between items-center xl:items-start bg-no-repeat md:-mt-20 pt-10 md:pt-35 px-2 md:px-10 py-10 lg:px-25 h-auto md:h-[80vh]">
                 <div className="ms-2 md:ms-10 mb-8 md:mb-0 flex-1 flex flex-col">
                     <h1 className="text-3xl md:text-6xl lg:text-8xl text-[#0046AA] font-medium font-roboto font-semibold">
                         Get in Touch with<br />

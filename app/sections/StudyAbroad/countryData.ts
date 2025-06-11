@@ -11,7 +11,11 @@ export interface CountryData {
     animalShadow: string; // image path or component
     universityLogos: { logo: string, height: string }[]; // image paths
     whyChooseCards: WhyChooseCard[];
+    blueAnimal: string;
 }
+
+
+
 
 export const countryData: Record<string, CountryData> = {
     australia: {
@@ -33,6 +37,7 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/australia/westernAus.svg', height: '' },
             { logo: '/australia/adelaide.svg', height: '' },
         ],
+        blueAnimal: '/australia/kangaroo-blue.svg',
         whyChooseCards: [
             { title: 'Globally Ranking Institutions', description: '36 of Australian Universities make it to the top 1000 list released by QS for World University Ranking 2021. Seven of these are ranked among the top 100 world universities.' },
             { title: 'Extensive Student Support', description: 'The ESOS (Education Services for Overseas Students) Act lays the framework for the enforcement of best law practices to protect the rights of international students studying in Australia.' },
@@ -61,6 +66,7 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/usa/stanford.svg', height: '' },
             { logo: '/usa/harvard.svg', height: '' },
         ],
+        blueAnimal: '/usa/eagle-blue.svg',
         whyChooseCards: [
             {
                 title: 'Outstanding Education',
@@ -105,6 +111,7 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/canada/waterloo.svg', height: '' },
             { logo: '/canada/uOttawa.svg', height: '' },
         ],
+        blueAnimal: '/canada/animal-blue.svg',
         whyChooseCards: [
             {
                 title: 'How much money will it take to study in Canada?',
@@ -132,10 +139,10 @@ export const countryData: Record<string, CountryData> = {
     newzealand: {
         name: 'New Zealand',
         paragraph:
-            'New Zealand, one of the finest locations to live, is home to some of the world&apos;s most prestigious educational institutions. Because New Zealand is tiny and uncrowded, moving around and getting things done is simple.',
+            'New Zealand, one of the finest locations to live, is home to some of the world\'s most prestigious educational institutions. Because New Zealand is tiny and uncrowded, moving around and getting things done is simple.',
         backgroundImage: '/new-zealand/newzealand-bg.svg', // Update based on your asset path
         greenSectionContent: [
-            'New Zealand is the world&apos;s second most peaceful country with all the 8 State-Funded Universities in the top 3% world university rankings.',
+            'New Zealand is the world\'s second most peaceful country with all the 8 State-Funded Universities in the top 3% world university rankings.',
             'Easy entry requirements.',
             'A great destination.',
             'The healthy outdoor student lifestyle.',
@@ -148,6 +155,7 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/new-zealand/canterbury.svg', height: '' },
             { logo: '/new-zealand/massey.svg', height: '' },
         ],
+        blueAnimal: '/newzealand/kiwi-bird-blue.svg',
         whyChooseCards: [
             {
                 title: 'Imparts High Quality Education',
@@ -175,11 +183,11 @@ export const countryData: Record<string, CountryData> = {
     uk: {
         name: 'United Kingdom',
         paragraph:
-            'The United Kingdom has been the favored destination for some of history&apos;s most influential thinkers. The United Kingdom&apos;s long-standing reputation for intellectual achievement, as well as its universities, continue to raise the standard in the academic world.',
+            'The United Kingdom has been the favored destination for some of history\'s most influential thinkers. The United Kingdom\'s long-standing reputation for intellectual achievement, as well as its universities, continue to raise the standard in the academic world.',
         backgroundImage: '/uk/uk-bg.svg', // Update with actual image path
         greenSectionContent: [
             'Colleges in UK are reliably positioning among the best on the planet and capabilities are globally valued and recognized.',
-            'The UK expects 5 percent of the world&apos;s systematic research and creates 14 percent of the world&apos;s most regularly referred to papers.',
+            'The UK expects 5 percent of the world\'s systematic research and creates 14 percent of the world\'s most regularly referred to papers.',
             'Joined Kingdom colleges give suppleness of decision and grant you to blend scholastic and professional courses of your decision.',
             'The educating and study technique utilized in the UK offer you the opportunity to be unique and improve aptitudes sets and independence.',
         ],
@@ -190,6 +198,7 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/uk/oxford.svg', height: '' },
             { logo: '/uk/edinburgh.svg', height: '' },
         ],
+        blueAnimal: '/uk/beever-blue.svg',
         whyChooseCards: [
             {
                 title: 'Great Place to Live and Study',
@@ -199,7 +208,7 @@ export const countryData: Record<string, CountryData> = {
             {
                 title: 'Shorter Duration of Courses',
                 description:
-                    'Courses in the UK are generally shorter than in many other countries. The country offers 3-year undergraduate degrees and 1-year master&apos;s programmers at the universities. It helps reduce tuition and accommodation costs to study in the UK for international students.',
+                    'Courses in the UK are generally shorter than in many other countries. The country offers 3-year undergraduate degrees and 1-year master\'s programmers at the universities. It helps reduce tuition and accommodation costs to study in the UK for international students.',
             },
             {
                 title: 'Scholarship and Financial Aid',
@@ -212,12 +221,12 @@ export const countryData: Record<string, CountryData> = {
     europe: {   
         name: 'Europe',
         paragraph:
-            'With over 40 countries in Europe, it can be hard to decide where to spend a semester, summer, J-term, or year learning overseas! Each country has something to offer whether it&apos;s the cuisine, culture, stunning landscapes, or captivating languages.',
+            'With over 40 countries in Europe, it can be hard to decide where to spend a semester, summer, J-term, or year learning overseas! Each country has something to offer whether it\'s the cuisine, culture, stunning landscapes, or captivating languages.',
         backgroundImage: '/europe/europe-bg.svg', // Update with actual path
         greenSectionContent: [
             'The continent of Europe has always been one of the world centers of learning and technological development. Europe today has over 4000 higher education institutions.',
             'Education in Europe is highly subsidized through taxes.',
-            'Besides the high academic standards in Europe, foreign students also gain a rich cultural experience thanks to Europe&apos;s cultural and linguistic diversity.',
+            'Besides the high academic standards in Europe, foreign students also gain a rich cultural experience thanks to Europe\'s cultural and linguistic diversity.',
         ],
         animalShadow: '/europe/eagle-shadow.svg', // Replace with accurate shadow if different
         universityLogos: [
@@ -227,11 +236,12 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/europe/sigillvm.svg', height: '' },
             { logo: '/europe/osloensis.svg', height: '' },
         ],
+        blueAnimal: '/europe/eagle-blue.svg',        
         whyChooseCards: [
             {
                 title: 'Quality of Education',
                 description:
-                    'Europe&apos;s quality of universities is extremely good and includes some of the world&apos;s top-ranked institutions. These universities – as well as many other European universities – are all held in high regard worldwide and demonstrate Europe&apos;s ability to provide an exceptional standard of teaching for postgraduate students.',
+                    'Europe\'s quality of universities is extremely good and includes some of the world\'s top-ranked institutions. These universities – as well as many other European universities – are all held in high regard worldwide and demonstrate Europe\'s ability to provide an exceptional standard of teaching for postgraduate students.',
             },
             {
                 title: 'High Standard of Living',

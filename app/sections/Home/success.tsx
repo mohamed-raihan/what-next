@@ -1,5 +1,9 @@
+'use client'
+import { API_URL } from "@/app/api-services/api_url";
+import api from "@/app/api-services/axios";
 import Image from "next/image";
 import { FaPlay } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 type VideoItem = {
   id: number;
@@ -8,7 +12,12 @@ type VideoItem = {
   videoUrl: string;
 };
 
-const videos: VideoItem[] = [
+export async function getSuccessVideos() {
+  const response = await api.get(API_URL.HOME.SUCCESS_VIDEOS);
+  return response.data;
+}
+
+const initialVideos: VideoItem[] = [
   {
     id: 1,
     username: "@whatnextoverseas",
@@ -42,6 +51,31 @@ const videos: VideoItem[] = [
 ];
 
 const VoiceOfSuccess = () => {
+  const [videos, setVideos] = useState<VideoItem[]>(initialVideos);
+
+  useEffect(() => {
+    const fetchVideos = async () => {
+      try {
+        const data = await getSuccessVideos();
+        if (data && data.length > 3) {
+          const formattedVideos = data.map((item: any, index: number) => ({
+            id: index + 1,
+            username: item.username || "@whatnextoverseas",
+            thumbnail: item.thumbnail || `/success${(index % 3) + 1}.svg`,
+            videoUrl: item.video || "#"
+          }));
+          setVideos(formattedVideos);
+        }
+      } catch (error) {
+        console.error('Error fetching videos:', error);
+      }
+    };
+
+    fetchVideos();
+  }, []);
+
+  console.log(videos);
+
   return (
     <section className="py-16 px-6 lg:px-20 bg-white text-center">
       <h2 className="text-3xl font-bold text-blue-800 mb-10">Voice of Success</h2>

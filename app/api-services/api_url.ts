@@ -1,10 +1,11 @@
 export const API_URL = {
+    HOME: {
+        SUCCESS_VIDEOS: '/api/video/',
+        REVIEWS: '/api/student-review/',
+    },
     SERVICES: {
-        GET_ALL_SERVICES: '/api/services',
-        GET_SERVICE_BY_ID: '/api/services/:id',
-        CREATE_SERVICE: '/api/services',
-        UPDATE_SERVICE: '/api/services/:id',
-        DELETE_SERVICE: '/api/services/:id',
+        GET_SERVICE_HEADING: '/api/service-header/',
+        GET_SERVICE_DETAILS: '/api/service-body/',
     },
     BLOGS: {
         POST_BLOG_CATEGORIES: '/api/blog-category',

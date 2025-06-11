@@ -38,7 +38,7 @@ export default function Banner() {
                 </div>
 
                 {/* Stats Card */}
-                <div className="bg-white rounded-3xl p-4 sm:p-6 max-w-3xl border border-[#E5E5E5]">
+                <div className="bg-white rounded-lg p-4 sm:p-6 max-w-3xl border border-[#E5E5E5]">
                     <div className="mb-6 sm:mb-8">
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
                             <p className="text-[#464646] text-base sm:text-lg font-medium font-roboto">
@@ -48,7 +48,7 @@ export default function Banner() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                         {/* Stats Section */}
                         <div className="flex flex-col sm:flex-row items-start sm:items-center divide-y sm:divide-y-0 sm:divide-x divide-gray-300 w-full sm:w-auto">
                             <div className="pb-4 sm:pb-0 sm:pr-8 md:pr-12 flex flex-col items-center justify-center w-full sm:w-auto">
@@ -66,7 +66,7 @@ export default function Banner() {
                         </div>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-col gap-4 w-full sm:w-auto sm:ml-8">
+                        <div className="flex flex-col gap-4 w-full sm:w-auto sm:ml-4">
                             <Link href="/enquire" className="w-full">
                                 <button className="bg-[#0046AA] text-white px-3 py-3 rounded-lg hover:bg-blue-700 transition w-full text-sm font-semibold font-inter">
                                     Enquire Now

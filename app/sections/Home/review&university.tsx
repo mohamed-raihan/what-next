@@ -1,34 +1,59 @@
 "use client"
+import api from '@/app/api-services/axios';
+import { API_URL } from '@/app/api-services/api_url';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 // import { useState } from 'react';
 
-const reviews = [
+const initialReviews = [
   {
     name: 'Agnes Remi',
-    role: 'Back-end Developer at MyDodow',
+    designation: 'Back-end Developer at MyDodow',
     review:
-      'Dico is finally addressing a long time problem we had when building UIs. It’s ease of use and workflow seems really intuitive. Promising!',
+      'Dico is finally addressing a long time problem we had when building UIs. It&apos;s ease of use and workflow seems really intuitive. Promising!',
     date: '2021.03.02',
-    avatar: '/reviewimage.svg',
+    profile_image: '/reviewimage.svg',
+    company: 'MyDodow',
+    country: 'Nigeria',
   },
   {
     name: 'John Carter',
-    role: 'Full Stack Developer at CodeX',
+    designation: 'Full Stack Developer at CodeX',
     review:
       'An excellent UI tool that helped us speed up our development process. The team loves it!',
     date: '2021.05.12',
-    avatar: '/reviewimage.svg',
+    profile_image: '/reviewimage.svg',
+    company: 'CodeX',
+    country: 'United States',
   },
   {
     name: 'Lisa Wong',
-    role: 'Frontend Engineer at BrightTech',
+    designation: 'Frontend Engineer at BrightTech',
     review:
       'Very user-friendly and saves a lot of time. The UX is clean and efficient. Highly recommended!',
     date: '2022.01.18',
-    avatar: '/reviewimage.svg',
+    profile_image: '/reviewimage.svg',
+    company: 'BrightTech',
+    country: 'United States',
   },
   // Repeat or add more reviewers here
 ];
+
+type Review = {
+  name: string;
+  designation: string;
+  company: string;
+  review: string;
+  date: string;
+  country: string;
+  profile_image: string;
+};
+
+export async function getReviews() {
+  const response = await api.get(API_URL.HOME.REVIEWS);
+  console.log(response.data);
+  return response.data;
+}
 
 // const universities = [
 //   { name: 'Buckinghamshire New University', logo: '/universities/buckinghamshire.png' },
@@ -49,7 +74,23 @@ const reviews = [
 // ];
 
 export default function StudentReviewsAndUniversities() {
-  // const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);\
+  const [reviews, setReviews] = useState<Review[]>(initialReviews);
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const reviews = await getReviews();
+        if (reviews && reviews.length > 0) {
+          setReviews(reviews);
+        }
+      } catch (error) {
+        console.error('Error fetching reviews:', error);
+      }
+    };
+    fetchReviews();
+  }, []);
+
+  console.log(reviews);
 
   return (
     <section className='-mb-30'>
@@ -64,7 +105,7 @@ export default function StudentReviewsAndUniversities() {
             >
               <div className="flex items-center gap-3 mb-4">
                 <Image
-                  src={review.avatar}
+                  src={review.profile_image}
                   alt={review.name}
                   width={50}
                   height={50}
@@ -72,7 +113,7 @@ export default function StudentReviewsAndUniversities() {
                 />
                 <div>
                   <p className="font-bold text-lg">{review.name}</p>
-                  <p className="text-sm text-gray-600">{review.role}</p>
+                  <p className="text-sm text-gray-600">{review.designation}</p>
                 </div>
               </div>
               <p className="text-sm mb-4">«{review.review}»</p>

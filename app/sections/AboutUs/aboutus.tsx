@@ -17,8 +17,8 @@ export default function AboutSection() {
 
             {/* About Us Text Section */}
             <div className="relative">
-                <div className=" max-w-4xl lg:h-[800px] lg:ms-30 px-4 py-20 lg:py-24 text-left">
-                    <Image src="/bird-right.svg" alt="Top Bird" width={100} height={100} className="absolute w-[200px] lg:w-[800px] right-0 -top-15 md:-top-15 md:right-0" />
+                <div className=" max-w-4xl lg:h-[800px] lg:ms-30 px-4 py-20 lg:py-44 xl:py-24 text-left">
+                    <Image src="/bird-right.svg" alt="Top Bird" width={100} height={100} className="absolute w-[200px] lg:w-[300px] xl:w-[600px] right-0 -top-15 md:-top-15 md:right-0" />
                     <h3 className="text-2xl md:text-4xl font-semibold text-[#686868] mt-10 md:mt-0">About Us</h3>
                     <h1 className="text-3xl md:text-6xl font-bold leading-tight font-roboto mb-20">
                         <span className="text-[#0046AA]">Experience</span> a Different Kind of <span className="text-[#288737]">Study Abroad Journey</span>
@@ -38,16 +38,16 @@ export default function AboutSection() {
             </div>
 
             {/* Destinations */}
-            <div className="relative py-12 px-10 lg:h-[500px] text-center">
-                <Image src="/bird-left.svg" alt="Bottom Bird" width={100} height={100} className="absolute -top-0 lg:-top-60 z-10 left-0 w-[200px] lg:w-[700px]" />
+            <div className="relative py-12 px-10 xl:h-[600px] text-center">
+                <Image src="/bird-left.svg" alt="Bottom Bird" width={100} height={100} className="absolute top-5 lg:-top-50 z-10 left-0 w-[200px] lg:w-[300px] xl:w-[600px]"/>
                 <div className="flex justify-center items-center">
-                    <p className="text-gray-700  max-w-5xl text-base md:text-xl mb-8 font-regular mb-20 font-montserrat">
+                    <p className="text-gray-700   max-w-5xl text-lg md:w-4/5 lg:w-2/3 lg:ms-20 text-base md:text-xl mb-10 font-regular font-montserrat">
                         WhatNext admits to deliver the excellent student advice and counselling. With us,
                         you can study in the top educational hubs across the world, including the United
                         States, Canada, the United Kingdom, Australia, New Zealand, and Europe.
                     </p>
                 </div>
-                <div className="flex flex-wrap justify-center gap-4 lg:pl-30 mt-10 lg:mt-0">
+                <div className="flex flex-wrap justify-center gap-4 lg:pl-30 md:mt-20 lg:mt-10 xl:mt-0">
                     {destinations.map((dest, idx) => (
                         <div key={idx} className="">
                             <Image
@@ -64,8 +64,8 @@ export default function AboutSection() {
             </div>
 
             {/* Vision & Mission */}
-            <div className="relative bg-[url('/blue-rectangle.svg')] bg-cover bg-center pt-10 lg:pt-[160px] lg:pb-16 px-4 lg:h-[70rem]">
-                <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 text-center">
+            <div className="relative bg-[url('/blue-rectangle.svg')] bg-cover bg-center pt-10 xl:pb-16 px-4  xl:h-[70rem]">
+                <div className="max-w-6xl mx-auto grid xl:grid-cols-2 gap-10 lg:gap-16 text-center">
                     {/* <div className="bg-white rounded-xl shadow-md p-6">
                         <h3 className="text-xl font-bold mb-2">Vision</h3>
                         <p>
@@ -84,7 +84,7 @@ export default function AboutSection() {
                             </p>
                         </div>
                     </div>
-                    <div className="bg-gradient-to-br from-[#c5e4ff] to-[#3da8ff] p-4 rounded-[40px] max-w-xl mx-auto lg:-mt-20 lg:absolute lg:right-30">
+                    <div className="bg-gradient-to-br from-[#c5e4ff] to-[#3da8ff] p-4 rounded-[40px] max-w-xl mx-auto xl:-mt-20 xl:absolute xl:right-30">
                         <div className="bg-white rounded-[30px] text-center p-8 md:p-10 shadow-lg">
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-roboto">Mission</h2>
                             <p className="text-lg text-gray-800 leading-relaxed font-montserrat">
@@ -97,9 +97,9 @@ export default function AboutSection() {
                         </div>
                     </div>
                 </div>
-                <div className="lg:absolute lg:bottom-0 pb-15 lg:pb-0 mt-16 lg:mt-0 lg:h-[500px] w-full flex flex-col items-center justify-center lg:bg-[url('/valuecircle.svg')] bg-none">
-                    <h2 className="text-[60px] lg:text-[90px] lg:hidden font-roboto font-bold mb-12 text-center text-[#000000]">Our Core <br /><span className="">Values</span></h2>
-                    <div className="flex flex-wrap justify-center gap-6 lg:gap-6">
+                <div className="xl:absolute lg:bottom-0 pb-15 lg:pb-10 mt-16 xl:mt-0  xl:h-[500px]  w-full flex flex-col items-center justify-center xl:bg-[url('/valuecircle.svg')] bg-no-repeat bg-cover bg-none">
+                    <h2 className="text-[60px] xl:text-[90px] xl:hidden font-roboto font-bold mb-12 text-center text-[#000000]">Our Core <span className="text-[#0046AA]">Values</span></h2>
+                    <div className="grid grid-cols-2 justify-center gap-6 lg:gap-12 xl:gap-6">
                         {/* {coreValues.map((value, idx) => (
                             <div
                                 key={idx}
@@ -111,34 +111,34 @@ export default function AboutSection() {
                         ))} */}
                         <div
                             key=""
-                            className="bg-white shadow-lg lg:absolute lg:left-40 lg:top-40 rounded-xl p-6 text-center w-[248px] h-[220px] lg:-rotate-8"
+                            className="bg-white shadow-lg xl:absolute xl:left-40 xl:top-40 rounded-xl p-6 text-center w-[248px] h-[220px] xl:-rotate-8"
                         >
                             <Image src="/Sparkle.svg" alt="Value" width={80} height={80} className="mx-auto mb-2" />
                             <p className="font-semibold font-roboto text-[22px]">Driving Towards Innovation</p>
                         </div>
                         <div
                             key=""
-                            className="bg-white shadow-lg rounded-xl p-6 w-48 lg:mx-15 lg:-mt-10 text-center w-[248px] h-[220px] lg:-rotate-6"
+                            className="bg-white shadow-lg rounded-xl p-6 w-48 xl:mx-15 xl:-mt-10 text-center w-[248px] h-[220px] xl:-rotate-6"
                         >
                             <Image src="/Sparkle.svg" alt="Value" width={80} height={80} className="mx-auto mb-2" />
                             <p className="font-semibold font-roboto text-[22px]">Striving Towards Excellence</p>
                         </div>
                         <div
                             key=""
-                            className="bg-white shadow-lg rounded-xl p-6 w-48 lg:mx-15 lg:-mt-10 text-center w-[248px] h-[220px] lg:rotate-6"
+                            className="bg-white shadow-lg rounded-xl p-6 w-48 xl:mx-15 xl:-mt-10 text-center w-[248px] h-[220px] xl:rotate-6"
                         >
                             <Image src="/Sparkle.svg" alt="Value" width={80} height={80} className="mx-auto mb-2" />
                             <p className="font-semibold font-roboto text-[22px]">Pursue With Passion</p>
                         </div>
                         <div
                             key=""
-                            className="bg-white shadow-lg lg:absolute lg:right-40 lg:top-40 rounded-xl p-6 w-48 text-center w-[248px] h-[220px] lg:rotate-8"
+                            className="bg-white shadow-lg xl:absolute xl:right-40 xl:top-40 rounded-xl p-6 w-48 text-center w-[248px] h-[220px] xl:rotate-8"
                         >
                             <Image src="/Sparkle.svg" alt="Value" width={80} height={80} className="mx-auto mb-2" />
                             <p className="font-semibold font-roboto text-[22px]">Transparency</p>
                         </div>
                     </div>
-                    <h2 className="text-[40px] md:text-[90px] hidden lg:block font-roboto font-bold mb-12 text-center text-white">Our Core <br /><span className="">Values</span></h2>
+                    <h2 className="text-[40px] md:text-[90px] hidden xl:block font-roboto font-bold mb-12 text-center text-white">Our Core <br /><span className="">Values</span></h2>
                 </div>
 
             </div>

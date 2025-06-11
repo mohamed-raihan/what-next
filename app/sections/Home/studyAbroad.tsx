@@ -4,7 +4,7 @@ import React from 'react';
 const StudyAbroadSection = () => {
   return (
     <div className="">
-      <section className="relative md:h-screen mx-auto py-16 bg-[url('/education-learning1.svg')] bg-no-repeat bg-cover bg-center">
+      <section className="relative xl:h-screen mx-auto py-16 bg-[url('/education-learning1.svg')] bg-no-repeat bg-cover bg-center">
         <div className="text-center h-full flex flex-col justify-center items-center">
           <p className="text-xl md:text-2xl font-semibold text-[#686868]">About Us</p>
           <h2 className="font-bold mt-2 font-roboto text-[#0046AA] font-semibold text-[25px] md:text-[40px]">Experience a Different Kind of</h2>
@@ -18,7 +18,7 @@ const StudyAbroadSection = () => {
             We allure the best flair in terms of counsellors and enablers without regard to
             contention, divinity, or communal as a chosen partner for top worldwide educational
             institutions, and we provide a tremendous working environment. While being equipped to be
-            globally productive citizens, students&apos; lives are enriched.
+            globally productive citizens, student&apos;s lives are enriched.
           </p>
           <button className="mt-6 bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800 transition font-inter font-semibold">
             Discover More
@@ -26,7 +26,7 @@ const StudyAbroadSection = () => {
         </div>
 
         {/* Left torn paper image */}
-        <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2">
+        <div className="hidden xl:block absolute left-0 top-1/2 -translate-y-1/2">
           <Image
             src="/study-abroad3.png"
             alt="Left decoration"
@@ -37,7 +37,7 @@ const StudyAbroadSection = () => {
         </div>
 
         {/* Right top torn paper image */}
-        <div className="hidden md:block absolute top-0 right-0">
+        <div className="hidden xl:block absolute top-0 right-0">
           <Image
             src="/study-abroad1.png"
             alt="Right top decoration"
@@ -48,7 +48,7 @@ const StudyAbroadSection = () => {
         </div>
 
         {/* Right bottom torn paper image */}
-        <div className="hidden md:block absolute bottom-0 right-0">
+        <div className="hidden xl:block absolute bottom-0 right-0">
           <Image
             src="/study-abroad2.png"
             alt="Right bottom decoration"
