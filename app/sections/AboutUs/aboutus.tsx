@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const destinations = [
-    { country: "USA", image: "/usa.svg", flag: "/flags/us.png" },
-    { country: "United Kingdom", image: "/uk.svg", flag: "/flags/uk.png" },
-    { country: "Canada", image: "/canada.svg", flag: "/flags/ca.png" },
-    { country: "Europe", image: "/europe.svg", flag: "/flags/eu.png" },
-    { country: "Australia", image: "/australia.svg", flag: "/flags/au.png" },
+    { country: "USA",url: "/study-abroad/usa", image: "/usa.svg", flag: "/flags/us.png" },
+    { country: "United Kingdom",url: "/study-abroad/uk", image: "/uk.svg", flag: "/flags/uk.png" },
+    { country: "Canada",url: "/study-abroad/canada", image: "/canada.svg", flag: "/flags/ca.png" },
+    { country: "Europe",url: "/study-abroad/europe", image: "/europe.svg", flag: "/flags/eu.png" },
+    { country: "Australia",url: "/study-abroad/australia", image: "/australia.svg", flag: "/flags/au.png" },
 ];
 
 export default function AboutSection() {
@@ -23,12 +24,12 @@ export default function AboutSection() {
                     <h1 className="text-3xl md:text-6xl font-bold leading-tight font-roboto mb-20">
                         <span className="text-[#0046AA]">Experience</span> a Different Kind of <span className="text-[#288737]">Study Abroad Journey</span>
                     </h1>
-                    <p className="my-16 text-[#000000]  font-[100] text-xl md:text-2xl  font-montserrat">
+                    <p className="py-8 text-[#000000]  font-[100] text-xl md:text-2xl  font-montserrat">
                         WhatNext provides professional education services that are equitable, far
                         reaching, extensive, existent, virtuous and of high quality. We assist students
                         in connecting with higher education institutions all across the world.
                     </p>
-                    <p className="mt-4 text-[#000000] text-light text-xl md:text-2xl font-montserrat">
+                    <p className="text-[#000000] text-light text-xl md:text-2xl font-montserrat">
                         We allure the best flair in terms of counsellors and enablers without regard to
                         contention, divinity, or communal as a chosen partner for top worldwide
                         educational institutions, and we provide a tremendous working environment. While
@@ -38,8 +39,8 @@ export default function AboutSection() {
             </div>
 
             {/* Destinations */}
-            <div className="relative py-12 px-10 xl:h-[600px] text-center">
-                <Image src="/bird-left.svg" alt="Bottom Bird" width={100} height={100} className="absolute top-5 lg:-top-50 z-10 left-0 w-[200px] lg:w-[300px] xl:w-[600px]"/>
+            <div className="relative py-8 lg:py-12 px-10 xl:h-[600px] text-center">
+                <Image src="/bird-left.svg" alt="Bottom Bird" width={100} height={100} className="absolute top-5 lg:-top-50 -z-10 left-0 w-[200px] hidden lg:block lg:w-[300px] xl:w-[600px]"/>
                 <div className="flex justify-center items-center">
                     <p className="text-gray-700   max-w-5xl text-lg md:w-4/5 lg:w-2/3 lg:ms-20 text-base md:text-xl mb-10 font-regular font-montserrat">
                         WhatNext admits to deliver the excellent student advice and counselling. With us,
@@ -49,7 +50,8 @@ export default function AboutSection() {
                 </div>
                 <div className="flex flex-wrap justify-center gap-4 lg:pl-30 md:mt-20 lg:mt-10 xl:mt-0">
                     {destinations.map((dest, idx) => (
-                        <div key={idx} className="">
+                        <Link href={dest.url} key={idx}>
+                            <div key={idx} className="">
                             <Image
                                 src={dest.image}
                                 alt={dest.country}
@@ -59,6 +61,7 @@ export default function AboutSection() {
                             />
                             {/* <p className="mt-2 font-medium">Study in {dest.country}</p> */}
                         </div>
+                        </Link>
                     ))}
                 </div>
             </div>
@@ -77,7 +80,7 @@ export default function AboutSection() {
                     <div className="bg-gradient-to-br from-[#c5e4ff] to-[#3da8ff] p-4 rounded-[40px] max-w-xl mx-auto mt-10">
                         <div className="bg-white rounded-[30px] text-center p-8 md:p-10 shadow-lg">
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-roboto">Vision</h2>
-                            <p className="text-lg text-gray-800 leading-relaxed">
+                            <p className="text-lg text-gray-800 leading-relaxed font-montserrat">
                                 To make a revolutionary impact on the Study Abroad Service Sector all over the
                                 world while maintaining a high level of professionalism through continuous
                                 innovation in student services.
@@ -99,7 +102,7 @@ export default function AboutSection() {
                 </div>
                 <div className="xl:absolute lg:bottom-0 pb-15 lg:pb-10 mt-16 xl:mt-0  xl:h-[500px]  w-full flex flex-col items-center justify-center xl:bg-[url('/valuecircle.svg')] bg-no-repeat bg-cover bg-none">
                     <h2 className="text-[60px] xl:text-[90px] xl:hidden font-roboto font-bold mb-12 text-center text-[#000000]">Our Core <span className="text-[#0046AA]">Values</span></h2>
-                    <div className="grid grid-cols-2 justify-center gap-6 lg:gap-12 xl:gap-6">
+                    <div className="grid lg:grid-cols-2 justify-center gap-6 lg:gap-12 xl:gap-6">
                         {/* {coreValues.map((value, idx) => (
                             <div
                                 key={idx}

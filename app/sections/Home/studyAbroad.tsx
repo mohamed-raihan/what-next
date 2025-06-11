@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const StudyAbroadSection = () => {
@@ -57,7 +58,6 @@ const StudyAbroadSection = () => {
             className="w-auto h-[40vh]"
           />
         </div>
-
       </section>
 
       <div className="bg-white px-8 py-10 bg-[url('/vector3.svg')] bg-cover object-fill flex justify-center items-center">
@@ -74,7 +74,8 @@ const StudyAbroadSection = () => {
               { title: 'Scholarship Guidance', img: '/ourservice7.svg' },
               { title: 'Financial Guidance', img: '/ourservice8.svg' }
             ].map((service, index) => (
-              <div
+              <Link href={`/services?service=${service.title}`} key={index}>
+                <div
                 key={index}
                 className="group relative rounded-lg border-2 border-[#1e3a8a] overflow-hidden transition-all duration-300 hover:shadow-xl"
               >
@@ -94,6 +95,7 @@ const StudyAbroadSection = () => {
                   </div>
                 </div>
               </div>
+              </Link>
             ))}
           </div>
         </div>

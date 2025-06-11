@@ -2,6 +2,7 @@ import React from 'react';
 import type { CountryData } from './countryData';
 // import Image from 'next/image';
 import GetintouchForm from '@/app/components/getintouch-form';
+import Link from 'next/link';
 
 const CountrySection: React.FC<CountryData> = ({
     name,
@@ -13,6 +14,7 @@ const CountrySection: React.FC<CountryData> = ({
     whyChooseCards,
     blueAnimal,
 }) => {
+    
     return (
         <div className="w-full">
             {/* Hero Section */}
@@ -21,14 +23,19 @@ const CountrySection: React.FC<CountryData> = ({
                 style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
                 <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
-                <div className="relative z-10 mt-10 md:mt-20 ms-4 md:ms-20 flex flex-col justify-center h-full">
+                <div className="relative z-10 mt-10 md:mt-20 ms-4 md:ms-20 flex flex-col  h-full items-start">
                     <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight md:leading-tight lg:leading-tight">
                         Study in <br />
-                        <span className="block text-5xl md:text-7xl lg:text-[150px] font-bold">{name}</span>
+                        <span className="block text-5xl md:text-7xl lg:text-[120px] font-bold">{name}</span>
                     </h1>
                     <p className="mt-4 max-w-xs md:max-w-xl font-montserrat font-semibold text-base md:text-lg lg:text-[20px]">
                         {paragraph}
                     </p>
+                    <button className="mt-6 bg-[#0046AA] text-white w-fit px-6 py-2 rounded hover:bg-[#0046AB] transition font-inter font-semibold">
+                        <Link href={`/contact-us`}>
+                            Enquire Now
+                        </Link>
+                    </button>
                 </div>
             </div>
 
@@ -37,7 +44,7 @@ const CountrySection: React.FC<CountryData> = ({
                 <img src="/bird.svg" alt="animal shadow" className="absolute right-2 md:right-8 top-0 hidden md:block w-16 md:w-24" />
                 <ul className="list-disc pl-6 space-y-2 relative z-10 text-base md:text-lg lg:text-[18px] w-full md:w-2/3">
                     {greenSectionContent.map((item, idx) => (
-                        <li key={idx}>{item}</li>
+                        <li className='font-roboto' key={idx}>{item}</li>
                     ))}
                 </ul>
                 <div className='absolute right-2 md:right-20  hidden md:block w-24 md:w-32 lg:w-70 '>

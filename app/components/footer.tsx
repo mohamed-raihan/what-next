@@ -7,10 +7,10 @@ export default function Footer() {
     <footer className="bg-white border-t mt-16 relative">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
           {/* Logo + Description */}
           <div className="space-y-4 sm:space-y-6">
-            <div>
+            <div className="flex justify-center md:justify-start items-center md:items-start">
               <Image 
                 src="/Whatnext-logo.png" 
                 alt="WhatNext Logo" 
@@ -22,7 +22,7 @@ export default function Footer() {
             <p className="text-sm text-gray-600 mt-4 font-rubik">
               <span className="font-semibold">WhatNext</span> is a private virtual network that has unique features and has high security.
             </p>
-            <div className="flex space-x-4 sm:space-x-6 mt-4 sm:mt-6">
+            <div className="flex space-x-4 sm:space-x-6 mt-4 sm:mt-6 justify-center md:justify-start md:items-start items-center">
               <a href="#" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
                 <Image src="/faceook.png" alt="Facebook" width={25} height={25} className="w-5 h-5 sm:w-6 sm:h-6" />
               </a>
@@ -41,7 +41,6 @@ export default function Footer() {
             <h4 className="font-semibold text-gray-900 text-base sm:text-lg mb-4 sm:mb-6">Home</h4>
             <div className="flex flex-col space-y-3 sm:space-y-4">
               <Link href="/about-us" className="text-[#4F5665] text-sm hover:text-blue-600">About Us</Link>
-              <Link href="/pricing" className="text-[#4F5665] text-sm hover:text-blue-600">Pricing</Link>
               <Link href="/services" className="text-[#4F5665] text-sm hover:text-blue-600">Services</Link>
               <Link href="/contact-us" className="text-[#4F5665] text-sm hover:text-blue-600">Contact Us</Link>
               <Link href="/blogs" className="text-[#4F5665] text-sm hover:text-blue-600">Blog</Link>
@@ -67,7 +66,7 @@ export default function Footer() {
               Book a free<br />Consultation today
             </h4>
             <Link href="/contact">
-              <button className="bg-blue-800 text-white px-3 py-2.5 sm:py-3 rounded-md hover:bg-blue-900 transition w-full font-bold font-inter text-sm sm:text-base">
+              <button className="bg-blue-800 text-white px-6 py-2.5 sm:py-3 rounded-md hover:bg-blue-900 transition w-fit font-bold font-inter text-sm sm:text-base">
                 Free Consultation
               </button>
             </Link>

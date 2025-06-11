@@ -80,7 +80,7 @@ export default function StudentReviewsAndUniversities() {
     const fetchReviews = async () => {
       try {
         const reviews = await getReviews();
-        if (reviews && reviews.length > 0) {
+        if (reviews && reviews.length > 3) {
           setReviews(reviews);
         }
       } catch (error) {

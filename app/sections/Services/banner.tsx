@@ -4,6 +4,7 @@ import Image from "next/image";
 import GetintouchForm from "@/app/components/getintouch-form";
 import api from "@/app/api-services/axios";
 import { API_URL } from "@/app/api-services/api_url";
+import { useSearchParams } from "next/navigation";
 
 const services = [
     {
@@ -66,9 +67,9 @@ const details = [
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Our comprehensive admission formalities service ensures every step of your enrollment process is handled with precision and care. From initial document verification to final enrollment confirmation, we guide you through each requirement with detailed attention to institutional protocols.</p>
+                <p>Our team manages point-to-point communications, from providing information to ensuring it reaches the appropriate source.</p>
                 <br />
-                <p>We coordinate with university admission offices on your behalf, ensuring all deadlines are met and requirements fulfilled. Our team maintains updated knowledge of changing admission criteria across different institutions and programs, providing you with accurate, timely guidance throughout the formal admission process.</p>
+                <p>It&apos;s time-consuming, often stressful, and complicated; nevertheless, don&apos;t worry; we&apos;ll provide the greatest available support to make it hassle-free for you. We provide one-on-one help with the last steps of the application process. We give an interface as well as a detailed guide to assist you in completing each stage and level of difficulty. We can assist you in gaining confidence and skills in this area by assisting you with preparation.</p>
             </>
         ),
     },
@@ -79,9 +80,9 @@ const details = [
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Making the right choice in courses and universities is crucial for your future success. Our expert counselors provide personalized guidance based on your academic background, career aspirations, and financial considerations. We analyze your profile comprehensively to match you with programs that align with your goals.</p>
+                <p>It is just as vital to identify and select the appropriate institution as it is to select your professional route and educational course. What Next can assist you in taking proactive steps in this direction and guiding you to the ideal venue for your academics. It is difficult to choose the right university when there are so many to choose from. We use discerning parameters that correspond to your preferences, professional goals, and other factors.</p>
                 <br />
-                <p>We maintain detailed databases of universities, course offerings, faculty expertise, campus facilities, and employment outcomes. Our guidance includes program comparisons, ranking analysis, location benefits, and long-term career prospects to help you make informed decisions that shape your academic and professional future.</p>
+                <p>What Next will also walk you through the modules and curriculum you&apos;ll be studying when you&apos;ve been accepted. We keep track of socioeconomic and university-related data to keep you informed on all fronts.</p>
             </>
         ),
     },
@@ -92,9 +93,9 @@ const details = [
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Our career counseling service bridges the gap between academic choices and professional aspirations. We provide comprehensive career assessments, industry trend analysis, and skill gap identification to ensure your educational path leads to meaningful employment opportunities.</p>
+                <p>Choose our expertise and experience in assisting you in determining the best course for your desire and shaping your passion. Our professional counsellors provide you with the most up-to-date information and insights while also recognising your aspirations, aptitudes, and awareness, and preparing you properly both throughout the counselling and admission phases.</p>
                 <br />
-                <p>Through one-on-one counseling sessions, aptitude testing, and career mapping exercises, we help you understand your strengths and interests. Our counselors stay updated with global job market trends, emerging industries, and skill requirements to provide relevant guidance for your career development.</p>
+                <p>We assist you in learning about education, institutions, teachers, admission procedures, and a variety of other topics. Applying to institutions overseas can be a stressful process, but with the help of our knowledgeable counsellors, we make it simple and orderly. Based on the possibility of admissions for your profile and credentials, trust us to be ambitious, safe, and practical.</p>
             </>
         ),
     },
@@ -105,9 +106,9 @@ const details = [
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Understanding the financial aspects of international education is crucial for successful planning. Our financial guidance service covers tuition fee planning, living cost estimation, scholarship opportunities, and education loan assistance. We help you create realistic budgets and explore funding options.</p>
+                <p>Because we recognize that studying abroad entails not only your aspirations and deeds, but also a significant financial component that is difficult to achieve for everyone. Because of a lack of sufficient resources, right sources to approach, and most crucially, proper information about the availability and manner to acquire bank loans, it is frequently a lost game even before it begins for most students and their families.</p>
                 <br />
-                <p>We provide detailed cost breakdowns for different destinations, guidance on currency fluctuations, and strategies for managing expenses while studying abroad. Our team assists with scholarship applications, education loan documentation, and financial planning to ensure your education investment yields maximum returns.</p>
+                <p>What Next Overseas has put in place an experienced team to serve as a single point of contact for information in this direction. We&apos;re also forming strategic partnerships with financial institutions that will provide favorable interest rates, quicker and faster loan processing, and increased loan approval chances.</p>
             </>
         ),
     },
@@ -118,9 +119,9 @@ const details = [
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Our travel assistance service ensures your journey to your destination country is smooth and well-coordinated. We handle flight bookings, travel insurance, airport transfers, and provide pre-departure briefings to prepare you for your international travel experience.</p>
+                <p>What Next assists you in planning your trip and provides helpful advice.</p>
                 <br />
-                <p>We coordinate with airline partners to secure student-friendly fares and flexible booking options. Our travel support includes luggage guidelines, customs regulations, transit procedures, and emergency contact information to ensure you&apos;re fully prepared for your journey abroad.</p>
+                <p>What Next Overseas Education Consultancy provides assistance with everything from finding the best and cheapest airline to travel suggestions, airport information, and local commuting. In addition, we can assist you with forex.</p>
             </>
         ),
     },
@@ -131,9 +132,9 @@ const details = [
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Visa processing can be complex and time-sensitive. Our experienced visa consultants provide end-to-end assistance with visa applications, document preparation, interview coaching, and submission procedures. We stay updated with changing visa regulations and requirements across different countries.</p>
+                <p>Complete visa assistance, including application preparation, simulated visa interviews, and documents. We take care of everything for you, from filling out forms to preparing for interviews.</p>
                 <br />
-                <p>Our visa services include document checklist preparation, application form completion, appointment scheduling, and post-submission tracking. We provide country-specific guidance, interview preparation, and continued support until your visa is approved, ensuring a stress-free visa application experience.</p>
+                <p>Our skilled team has extensive knowledge and experience in dealing with visa requirements for a variety of destinations.</p>
             </>
         ),
     },
@@ -144,9 +145,9 @@ const details = [
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Cultural adaptation is essential for academic and personal success abroad. Our comprehensive orientation program covers cultural norms, social etiquette, climate considerations, transportation systems, and local regulations to help you integrate smoothly into your new environment.</p>
+                <p>Learn more about the country you are entering, the weather, the people, and a brief history of the city you will call home for the next few years.</p>
                 <br />
-                <p>We provide detailed insights into local customs, food habits, accommodation options, banking procedures, and emergency contacts. Our orientation includes practical tips for daily life, cultural sensitivity training, and connection with local student communities to ease your transition.</p>
+                <p>We provide the most critical information to assist you in effectively negotiating with local communities, laws of the land, and weather conditions.</p>
             </>
         ),
     },
@@ -157,9 +158,9 @@ const details = [
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Our value-added services encompass additional support that enhances your international education experience. These include accommodation assistance, health insurance guidance, part-time job counseling, and ongoing academic support throughout your studies.</p>
+                <p>Trust us to find more resources to assist you with your course preparation, travel, and admissions procedures.</p>
                 <br />
-                <p>We offer specialized services such as language preparation courses, cultural mentorship programs, alumni networking opportunities, and career placement assistance. Our extended support system ensures you have comprehensive guidance not just for admission, but for your entire educational journey and beyond.</p>
+                <p>We aid you in preparing for aptitude exams and in learning more about the GRE, TOEFL, and IELTS.</p>
             </>
         ),
     },
@@ -228,7 +229,9 @@ export async function getServiceDetails() {
 }
 
 const ServiceBanner = () => {
-    const [selected, setSelected] = useState(services[0].title);
+    const searchParams = useSearchParams();
+    const service = searchParams.get('service');
+    const [selected, setSelected] = useState(service || services[0].title);
     const [allServiceDetails, setAllServiceDetails] = useState<ServiceDetails[]>(details);
     const [serviceDetails, setServiceDetails] = useState<ServiceDetails | null>(null);
     const [isLoading, setIsLoading] = useState(false);
@@ -329,7 +332,7 @@ const ServiceBanner = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="hidden md:block md:mt-10 xl:absolute xl:-bottom-120">
+                            <div className="hidden md:block md:mt-10">
                                 <span className="text-4xl lg:text-5xl font-bold text-[#B2B2B2] leading-none">Our<br />Services</span>
                             </div>
                         </div>
@@ -355,7 +358,7 @@ const ServiceBanner = () => {
                                                 <p className="mb-6 text-[#686868] text-base md:text-lg font-montserrat">
                                                     {serviceDetails.description}
                                                 </p>
-                                                <button className="bg-[#2563eb] text-white px-4 md:px-6 py-2 rounded font-semibold font-inter float-right relative md:absolute bottom-4 md:bottom-10 right-4 md:right-10 hover:bg-[#1d4ed8] transition-colors duration-200">
+                                                <button className="bg-[#2563eb] text-white px-4 md:px-6 py-2 rounded font-semibold font-inter float-right relative md:absolute bottom-0 md:bottom-0 right-4 md:right-10 hover:bg-[#1d4ed8] transition-colors duration-200">
                                                     Enquire Now
                                                 </button>
                                             </>

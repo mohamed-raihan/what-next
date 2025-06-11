@@ -35,7 +35,7 @@ const BlogSection: React.FC<BlogData> = ({
         {/* Main Content */}
         <div className="flex-1 min-w-0">
           <div className="prose max-w-none text-gray-800">
-            <p>{content}</p>
+            <p className='font-montserrat text-justify'>{content}</p>
             {/* Add more content blocks as needed */}
           </div>
           <div className="mt-8 flex flex-wrap gap-2">

@@ -300,7 +300,7 @@ export default function BlogList() {
 
     return (
         <div className="relative">
-            <Image src="/birdLeftUp.svg" alt="Bottom Bird" width={100} height={100} className="absolute top-0  z-10 left-0 w-[200px] lg:w-[300px]" />
+            <Image src="/birdLeftUp.svg" alt="Bottom Bird" width={100} height={100} className="absolute top-0  z-10 left-0 w-[150px] lg:w-[300px]" />
             <div className="w-full max-w-7xl mx-auto px-2 md:px-6 py-18">
                 <h1 className="text-4xl md:text-4xl lg:text-5xl text-center mb-10 text-[#0046AA] font-medium font-roboto font-semibold">
                     Blogs
