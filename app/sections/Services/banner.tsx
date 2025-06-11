@@ -6,24 +6,200 @@ import api from "@/app/api-services/axios";
 import { API_URL } from "@/app/api-services/api_url";
 
 const services = [
-    "Application Process",
-    "Admission Formalities",
-    "Choosing Right Courses and University",
-    "Career Counselling Admission Guidance",
-    "Financial Guidance",
-    "Scholarship Guidance",
-    "Travel Assistance",
-    "Visa Assistance",
-    "Orientation About Country Place",
-    "Value Added Services",
+    {
+        id: 1,
+        title: "Application Process",
+
+    },
+    {
+        id: 2,
+        title: "Admission Formalities",
+    },
+    {
+        id: 3,
+        title: "Choosing Right Courses and University",
+    },
+    {
+        id: 4,
+        title: "Career Counselling Admission Guidance",
+    },
+    {
+        id: 5,
+        title: "Financial Guidance",
+    },
+    {
+        id: 6,
+        title: "Travel Assistance",
+    },
+    {
+        id: 7,
+        title: "Visa Assistance",
+    },
+    {
+        id: 8,
+        title: "Orientation About Country Place",
+    },
+    {
+        id: 9,
+        title: "Value Added Services",
+    }
 ];
+
+const details = [
+    {
+        id: 1,
+        service_header: 1,
+        title: "Application Process",
+        image: "/applicationImage.svg",
+        description: (
+            <>
+                <p>Our team manages point-to-point communications, from providing information to ensuring it reaches the appropriate source. At WhatNext, we devote our time and attention to assisting you with the time-consuming application filing process.</p>
+                <br />
+                <p>We make sure the documents are free of errors and readable. Our skilled team is here to assist you in adhering to all norms and rules in order to decrease misunderstanding, eliminate unnecessary errors, and build a compelling case through accurate information presentation.</p>
+            </>
+        ),
+    },
+    {
+        id: 2,
+        service_header: 2,
+        title: "Admission Formalities",
+        image: "/applicationImage.svg",
+        description: (
+            <>
+                <p>Our comprehensive admission formalities service ensures every step of your enrollment process is handled with precision and care. From initial document verification to final enrollment confirmation, we guide you through each requirement with detailed attention to institutional protocols.</p>
+                <br />
+                <p>We coordinate with university admission offices on your behalf, ensuring all deadlines are met and requirements fulfilled. Our team maintains updated knowledge of changing admission criteria across different institutions and programs, providing you with accurate, timely guidance throughout the formal admission process.</p>
+            </>
+        ),
+    },
+    {
+        id: 3,
+        service_header: 3,
+        title: "Choosing Right Courses and University",
+        image: "/applicationImage.svg",
+        description: (
+            <>
+                <p>Making the right choice in courses and universities is crucial for your future success. Our expert counselors provide personalized guidance based on your academic background, career aspirations, and financial considerations. We analyze your profile comprehensively to match you with programs that align with your goals.</p>
+                <br />
+                <p>We maintain detailed databases of universities, course offerings, faculty expertise, campus facilities, and employment outcomes. Our guidance includes program comparisons, ranking analysis, location benefits, and long-term career prospects to help you make informed decisions that shape your academic and professional future.</p>
+            </>
+        ),
+    },
+    {
+        id: 4,
+        service_header: 4,
+        title: "Career Counselling Admission Guidance",
+        image: "/applicationImage.svg",
+        description: (
+            <>
+                <p>Our career counseling service bridges the gap between academic choices and professional aspirations. We provide comprehensive career assessments, industry trend analysis, and skill gap identification to ensure your educational path leads to meaningful employment opportunities.</p>
+                <br />
+                <p>Through one-on-one counseling sessions, aptitude testing, and career mapping exercises, we help you understand your strengths and interests. Our counselors stay updated with global job market trends, emerging industries, and skill requirements to provide relevant guidance for your career development.</p>
+            </>
+        ),
+    },
+    {
+        id: 5,
+        service_header: 5,
+        title: "Financial Guidance",
+        image: "/applicationImage.svg",
+        description: (
+            <>
+                <p>Understanding the financial aspects of international education is crucial for successful planning. Our financial guidance service covers tuition fee planning, living cost estimation, scholarship opportunities, and education loan assistance. We help you create realistic budgets and explore funding options.</p>
+                <br />
+                <p>We provide detailed cost breakdowns for different destinations, guidance on currency fluctuations, and strategies for managing expenses while studying abroad. Our team assists with scholarship applications, education loan documentation, and financial planning to ensure your education investment yields maximum returns.</p>
+            </>
+        ),
+    },
+    {
+        id: 6,
+        service_header: 6,
+        title: "Travel Assistance",
+        image: "/applicationImage.svg",
+        description: (
+            <>
+                <p>Our travel assistance service ensures your journey to your destination country is smooth and well-coordinated. We handle flight bookings, travel insurance, airport transfers, and provide pre-departure briefings to prepare you for your international travel experience.</p>
+                <br />
+                <p>We coordinate with airline partners to secure student-friendly fares and flexible booking options. Our travel support includes luggage guidelines, customs regulations, transit procedures, and emergency contact information to ensure you're fully prepared for your journey abroad.</p>
+            </>
+        ),
+    },
+    {
+        id: 7,
+        service_header: 7,
+        title: "Visa Assistance",
+        image: "/applicationImage.svg",
+        description: (
+            <>
+                <p>Visa processing can be complex and time-sensitive. Our experienced visa consultants provide end-to-end assistance with visa applications, document preparation, interview coaching, and submission procedures. We stay updated with changing visa regulations and requirements across different countries.</p>
+                <br />
+                <p>Our visa services include document checklist preparation, application form completion, appointment scheduling, and post-submission tracking. We provide country-specific guidance, interview preparation, and continued support until your visa is approved, ensuring a stress-free visa application experience.</p>
+            </>
+        ),
+    },
+    {
+        id: 8,
+        service_header: 8,
+        title: "Orientation About Country Place",
+        image: "/applicationImage.svg",
+        description: (
+            <>
+                <p>Cultural adaptation is essential for academic and personal success abroad. Our comprehensive orientation program covers cultural norms, social etiquette, climate considerations, transportation systems, and local regulations to help you integrate smoothly into your new environment.</p>
+                <br />
+                <p>We provide detailed insights into local customs, food habits, accommodation options, banking procedures, and emergency contacts. Our orientation includes practical tips for daily life, cultural sensitivity training, and connection with local student communities to ease your transition.</p>
+            </>
+        ),
+    },
+    {
+        id: 9,
+        service_header: 9,
+        title: "Value Added Services",
+        image: "/applicationImage.svg",
+        description: (
+            <>
+                <p>Our value-added services encompass additional support that enhances your international education experience. These include accommodation assistance, health insurance guidance, part-time job counseling, and ongoing academic support throughout your studies.</p>
+                <br />
+                <p>We offer specialized services such as language preparation courses, cultural mentorship programs, alumni networking opportunities, and career placement assistance. Our extended support system ensures you have comprehensive guidance not just for admission, but for your entire educational journey and beyond.</p>
+            </>
+        ),
+    },
+];
+
+// const details = [
+//     {
+//         id: 1,
+//         service_header: 1,
+//         title: "Application Process",
+//         image: "/applicationImage.svg",
+//         description: (
+//             <>
+//                 <p>Our team manages point-to-point communications, from providing information to ensuring it reaches the appropriate source. At WhatNext, we devote our time and attention to assisting you with the time-consuming application filing process.</p>
+//                 <br />
+//                 <p>We make sure the documents are free of errors and readable. Our skilled team is here to assist you in adhering to all norms and rules in order to decrease misunderstanding, eliminate unnecessary errors, and build a compelling case through accurate information presentation.</p>
+//             </>
+//         ),
+//     },
+//     {
+//         id: 2,
+//         service_header: 2,
+//         title: "Admission Formalities",
+//         image: "/applicationImage.svg",
+//         description: (
+//             <>
+//                 <p>Our comprehensive admission formalities service ensures every step of your enrollment process is handled with precision and care. From initial document verification to final enrollment confirmation, we guide you through each requirement with detailed attention to institutional protocols.</p>
+//                 <br />
+//                 <p>We coordinate with university admission offices on your behalf, ensuring all deadlines are met and requirements fulfilled. Our team maintains updated knowledge of changing admission criteria across different institutions and programs, providing you with accurate, timely guidance throughout the formal admission process.</p>
+//             </>
+//         ),
+//     }
+// ];
 
 type ServiceDetails = {
     id: number;
     service_header: number | string;
     title: string;
     image: string;
-    description: string;
+    description: string | React.ReactNode;
     // ...other fields
 };
 
@@ -52,11 +228,11 @@ export async function getServiceDetails() {
 }
 
 const ServiceBanner = () => {
-    const [selected, setSelected] = useState(services[0]);
-    const [allServiceDetails, setAllServiceDetails] = useState<ServiceDetails[]>([]);
+    const [selected, setSelected] = useState(services[0].title);
+    const [allServiceDetails, setAllServiceDetails] = useState<ServiceDetails[]>(details);
     const [serviceDetails, setServiceDetails] = useState<ServiceDetails | null>(null);
     const [isLoading, setIsLoading] = useState(false);
-    const [serviceHeading, setServiceHeading] = useState<ServiceHeading[]>([]);
+    const [serviceHeading, setServiceHeading] = useState<ServiceHeading[]>(services);
 
     // Fetch all services on mount
     useEffect(() => {
@@ -64,7 +240,9 @@ const ServiceBanner = () => {
         const fetchServiceHeading = async () => {
             const response = await api.get(API_URL.SERVICES.GET_SERVICE_HEADING);
             console.log(response.data);
-            setServiceHeading(response.data);
+            if (response.data.length > 3) {
+                setServiceHeading(response.data);
+            }
         }
         fetchServiceHeading();
 
@@ -73,7 +251,9 @@ const ServiceBanner = () => {
             try {
                 const response = await api.get(API_URL.SERVICES.GET_SERVICE_DETAILS);
                 console.log(response.data);
-                setAllServiceDetails(response.data);
+                if (response.data.length > 3) {
+                    setAllServiceDetails(response.data);
+                }
             } catch (error) {
                 console.error("Error fetching all services:", error);
             } finally {
@@ -95,6 +275,7 @@ const ServiceBanner = () => {
         // const found = allServiceDetails.find(s => s.slug === selected);
         // If your menu items are titles:
         const found = allServiceDetails.find(s => s.title.toLowerCase() === selected.toLowerCase());
+        console.log("found", found);
         setServiceDetails(found || null);
     }, [selected, allServiceDetails]);
 
@@ -131,7 +312,7 @@ const ServiceBanner = () => {
                     </div>
                     {/* Main Bordered Div */}
                     <div className="relative flex flex-col md:flex-row border-[5px] border-[#0046AA] rounded-xl overflow-hidden w-full h-auto xl:h-[85vh] shadow-lg bg-white">
-                        <div className="bg-transparent p-4 md:p-6 flex flex-col justify-between relative md:absolute top-0 md:top-30 w-full md:w-2/5 lg:w-1/4 z-20">
+                        <div className="bg-transparent p-4 md:p-6 flex flex-col justify-between relative md:absolute top-0 md:top-30 w-full md:w-2/5 lg:w-1/3 z-20">
                             <div className="overflow-y-auto max-h-[300px] md:max-h-none">
                                 <ul className="space-y-1">
                                     {serviceHeading.map((service: ServiceHeading) => (
