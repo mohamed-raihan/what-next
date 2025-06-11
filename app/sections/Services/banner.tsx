@@ -120,7 +120,7 @@ const details = [
             <>
                 <p>Our travel assistance service ensures your journey to your destination country is smooth and well-coordinated. We handle flight bookings, travel insurance, airport transfers, and provide pre-departure briefings to prepare you for your international travel experience.</p>
                 <br />
-                <p>We coordinate with airline partners to secure student-friendly fares and flexible booking options. Our travel support includes luggage guidelines, customs regulations, transit procedures, and emergency contact information to ensure you're fully prepared for your journey abroad.</p>
+                <p>We coordinate with airline partners to secure student-friendly fares and flexible booking options. Our travel support includes luggage guidelines, customs regulations, transit procedures, and emergency contact information to ensure you&apos;re fully prepared for your journey abroad.</p>
             </>
         ),
     },
