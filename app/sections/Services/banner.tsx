@@ -32,21 +32,21 @@ type ServiceHeading = {
     title: string;
 }
 
-type ServiceResponse = {
-    data: {
-        title?: string;
-        description?: string;
-        image?: string;
-        [key: string]: any;
-    }
-}
+// type ServiceResponse = {
+//     data: {
+//         title?: string;
+//         description?: string;
+//         image?: string;
+//         [key: string]: any;
+//     }
+// }
 
-export async function getServiceHeading(serviceName: string) {
+export async function getServiceHeading() {
     const response = await api.get(API_URL.SERVICES.GET_SERVICE_HEADING);
     return response;
 }
 
-export async function getServiceDetails(serviceName: string) {
+export async function getServiceDetails() {
     const response = await api.get(API_URL.SERVICES.GET_SERVICE_DETAILS);
     return response;
 }

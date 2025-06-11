@@ -9,7 +9,7 @@ type VideoItem = {
   id: number;
   username: string;
   thumbnail: string;
-  videoUrl: string;
+  video: string;
 };
 
 export async function getSuccessVideos() {
@@ -22,31 +22,31 @@ const initialVideos: VideoItem[] = [
     id: 1,
     username: "@whatnextoverseas",
     thumbnail: "/success1.svg",
-    videoUrl: "#",
+    video: "#",
   },
   {
     id: 2,
     username: "@whatnextoverseas",
     thumbnail: "/success2.svg",
-    videoUrl: "#",
+    video: "#",
   },
   {
     id: 3,
     username: "@whatnextoverseas",
     thumbnail: "/success3.svg",
-    videoUrl: "#",
+    video: "#",
   },
   {
     id: 4,
     username: "@whatnextoverseas",
     thumbnail: "/success1.svg",
-    videoUrl: "#",
+    video: "#",
   },
   {
     id: 5,
     username: "@whatnextoverseas",
     thumbnail: "/success2.svg",
-    videoUrl: "#",
+    video: "#",
   },
 ];
 
@@ -58,11 +58,11 @@ const VoiceOfSuccess = () => {
       try {
         const data = await getSuccessVideos();
         if (data && data.length > 3) {
-          const formattedVideos = data.map((item: any, index: number) => ({
+          const formattedVideos = data.map((item: VideoItem, index: number) => ({
             id: index + 1,
             username: item.username || "@whatnextoverseas",
             thumbnail: item.thumbnail || `/success${(index % 3) + 1}.svg`,
-            videoUrl: item.video || "#"
+            video: item.video || "#"
           }));
           setVideos(formattedVideos);
         }

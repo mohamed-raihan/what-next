@@ -60,8 +60,8 @@ const StudyAbroadSection = () => {
 
       </section>
 
-      <div className="bg-white px-8 py-20 bg-[url('/vector3.svg')] bg-cover object-fill flex justify-center items-center">
-        <div className='rounded-3xl bg-white shadow-lg p-8 w-fit'>
+      <div className="bg-white px-8 py-10 bg-[url('/vector3.svg')] bg-cover object-fill flex justify-center items-center">
+        <div className='rounded-lg bg-white shadow-lg p-8 w-fit'>
           <h3 className="text-center text-2xl font-bold mb-12 text-[#1e3a8a]">Our Services</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {[
@@ -76,7 +76,7 @@ const StudyAbroadSection = () => {
             ].map((service, index) => (
               <div
                 key={index}
-                className="group relative rounded-2xl border-2 border-[#1e3a8a] overflow-hidden transition-all duration-300 hover:shadow-xl"
+                className="group relative rounded-lg border-2 border-[#1e3a8a] overflow-hidden transition-all duration-300 hover:shadow-xl"
               >
                 <div className="relative aspect-square">
                   <Image
@@ -107,7 +107,7 @@ const StudyAbroadSection = () => {
           <h3 className="text-2xl font-bold mb-2 font-roboto font-semibold">Where would you like to go?</h3>
           <p className="mb-10 text-sm font-montserrat">Choose from the best courses from top global universities with WhatNext.</p>
         </div>
-        <div className="max-w-8xl mx-auto px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="max-w-8xl mx-auto px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[1, 2, 3, 4].map((item) => (
             <div key={item} className="bg-white rounded-lg overflow-hidden shadow-md">
               <img src="/newzealand.svg" alt="Study in New Zealand" className="w-full h-40 object-cover" />

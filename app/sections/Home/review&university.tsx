@@ -132,8 +132,8 @@ export default function StudentReviewsAndUniversities() {
       </div>
 
       {/* Featured UK Universities */}
-      <div className="bg-white py-16 px-8 relative">
-        <div className='rounded-3xl relative -top-30 bottom-0 left-0 w-full h-full bg-white shadow-lg p-8'>
+      <div className="bg-white py-16 px-4 relative">
+        <div className='rounded-lg relative -top-30 bottom-0 left-0 w-full h-full bg-white shadow-lg p-8'>
           <h2 className="text-3xl font-bold text-center mb-12">Featured UK Universities</h2>
           {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 px-6">
           {universities.map((uni, index) => (
