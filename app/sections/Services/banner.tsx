@@ -4,7 +4,7 @@ import Image from "next/image";
 import GetintouchForm from "@/app/components/getintouch-form";
 import api from "@/app/api-services/axios";
 import { API_URL } from "@/app/api-services/api_url";
-import { useSearchParams } from "next/navigation";
+// import { useSearchParams } from "next/navigation";
 
 const services = [
     {
