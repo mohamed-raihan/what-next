@@ -229,9 +229,9 @@ export async function getServiceDetails() {
 }
 
 const ServiceBanner = () => {
-    const searchParams = useSearchParams();
-    const service = searchParams.get('service');
-    const [selected, setSelected] = useState(service || services[0].title);
+    // const searchParams = useSearchParams();
+    // const service = searchParams.get('service');
+    const [selected, setSelected] = useState(services[0].title);
     const [allServiceDetails, setAllServiceDetails] = useState<ServiceDetails[]>(details);
     const [serviceDetails, setServiceDetails] = useState<ServiceDetails | null>(null);
     const [isLoading, setIsLoading] = useState(false);
