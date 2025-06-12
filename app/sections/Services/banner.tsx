@@ -360,7 +360,7 @@ const ServiceBanner = () => {
                                                         height={100}
                                                     />
                                                     <h2 className="text-2xl md:text-3xl font-bold mb-4">{serviceDetails.title}</h2>
-                                                    <p className="mb-6 text-[#686868] text-base md:text-lg font-montserrat">
+                                                    <p className="mb-6 text-[#686868] text-[22px] text-base md:text-lg font-montserrat">
                                                         {serviceDetails.description}
                                                     </p>
                                                     <button className="bg-[#2563eb] text-white px-4 md:px-6 py-2 rounded font-semibold font-inter float-right relative md:absolute bottom-0 md:bottom-0 right-4 md:right-10 hover:bg-[#1d4ed8] transition-colors duration-200">
@@ -378,7 +378,7 @@ const ServiceBanner = () => {
                     </div>
                     <div className="relative bg-[url(/service-bg.svg)] bg-cover flex flex-col xl:flex-row justify-between items-center xl:items-start bg-no-repeat md:mt-0 pt-10 md:pt-35 px-2 md:px-10 py-10 lg:px-25 h-auto md:h-[80vh]">
                         <div className="ms-2 md:ms-10 mb-8 md:mb-0 flex-1 flex flex-col">
-                            <h1 className="text-3xl md:text-6xl lg:text-8xl text-[#0046AA] font-medium font-roboto font-semibold">
+                            <h1 className="text-3xl md:text-5xl xl:text-7xl text-[#0046AA] font-medium font-roboto font-semibold">
                                 Get in Touch with<br />
                                 <span className="text-[#288737]">Our Team</span>
                             </h1>

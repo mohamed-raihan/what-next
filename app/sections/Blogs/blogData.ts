@@ -66,7 +66,7 @@ export const blogData: Record<string, BlogData> = {
     slug: 'study-in-australia',
     author: 'Admin',
     date: '27 August, 2024',
-    mainImage: '/blogs/study-in-australia.webp',
+    mainImage: '/blogs/study-in-australia.jpg',
     content: `<h1><b>Discover Australia: Your Gateway to Global Success</b></h1>
         <br />
         <h2>Thinking of Studying Abroad? Here's Why Australia Could Be Your Best Decision Yet</h2>
@@ -123,7 +123,7 @@ export const blogData: Record<string, BlogData> = {
     slug: 'uk-visa-checklist',
     author: 'Admin',
     date: '27 August, 2024',
-    mainImage: '/blogs/uk-visa.webp',
+    mainImage: '/blogs/uk-visa-apprvd.jpg',
     content: `<div class="container">
         <p><b>
             If you are applying for a visa to come to the UK, you need to make sure you have all the necessary documents at the ready. There are a number of supporting documents required to prove your identity and demonstrate that you meet the eligibility criteria for any UK visa application. However, each visa is subject to different requirements and the documents you will need to supply as evidence differs in each case.
@@ -197,7 +197,7 @@ export const blogData: Record<string, BlogData> = {
     slug: 'using-automated-test-results-to-improve-accessibility',
     author: 'Admin',
     date: '27 August, 2024',
-    mainImage: '/blogs/automatedBlog.svg',
+    mainImage: '/blogs/newsBlog.svg',
     content: `<h1><b>Using Automated Test Results To Improve Accessibility in Study Abroad Services</b></h1>
 
 <p>In today&apos;s digital-first world, accessibility is not just a legal or ethical obligation—it&apos;s a key part of creating an inclusive, student-friendly experience. <b>At What Next Study Abroad Consultancy</b>, we&apos;re committed to ensuring that our services are accessible to every aspiring international student, regardless of physical or cognitive limitations. One powerful way we are achieving this is by leveraging <b>automated test results</b> to constantly improve our digital accessibility.</p>
@@ -318,7 +318,7 @@ export const blogData: Record<string, BlogData> = {
     slug: 'ielts-vs-toefl',
     author: 'Admin',
     date: '27 August, 2024',
-    mainImage: '/blogs/ielts-toefl.webp',
+    mainImage: '/blogs/ielts.jpg',
     content: `<h1><b>IELTS vs TOEFL: Which Exam Should You Take?</b></h1>
     <br />
 <p>If you're planning to study abroad in an English-speaking country, chances are you&apose;ll need to prove your English language proficiency. Two of the most popular exams for this purpose are <b>IELTS (International English Language Testing System)</b> and <b>TOEFL (Test of English as a Foreign Language)</b>. But which one is right for you?</p>
@@ -391,5 +391,354 @@ export const blogData: Record<string, BlogData> = {
     category: 'USA',
     readTime: '20 mins',
   },
+
+  'culture-shock': {
+    title: 'Culture Shock Is Real—Here\'s How To Deal With It',
+    slug: 'culture-shock',
+    author: 'Admin',
+    date: '27 August, 2024',
+    mainImage: '/blogs/recent_post01.jpg.svg',
+    content: `<h1><b>Culture Shock Is Real—Here's How To Deal With It</b></h1>
+    <br />
+<p>Moving to a new country for studies or work can be an exciting adventure—but it also comes with challenges, especially when adjusting to a completely new culture. <b>Culture shock</b> is a real experience that many international students and expats go through. The good news? You can overcome it and thrive!</p>
+<br />
+<h3><b>1. What is Culture Shock?</b></h3>
+<p>Culture shock is the feeling of disorientation and stress that occurs when you encounter a culture vastly different from your own. It can affect your emotions, behavior, and even physical health.</p>
+<br />
+<h3><b>2. Common Symptoms of Culture Shock</b></h3>
+<ul>
+  <li>Feeling anxious or overwhelmed</li>
+  <li>Missing home and familiar routines</li>
+  <li>Frustration with local customs or language barriers</li>
+  <li>Difficulty making friends or fitting in</li>
+</ul>
+<br />
+<h3><b>3. The 4 Stages of Culture Shock</b></h3>
+<br />
+<ol>
+  <li><b>Honeymoon Phase:</b> Everything feels new, exciting, and adventurous.</li>
+  <li><b>Frustration Phase:</b> Differences become more apparent and may cause discomfort.</li>
+  <li><b>Adjustment Phase:</b> You start understanding the culture and adapting to it.</li>
+  <li><b>Acceptance Phase:</b> You feel more comfortable and start thriving in the new environment.</li>
+</ol>
+<br />
+<h3><b>4. Tips to Deal With Culture Shock</b></h3>
+<br />
+<ul>
+  <li><b>Keep an Open Mind:</b> Embrace cultural differences as learning opportunities.</li>
+  <li><b>Connect With Locals and Other Students:</b> Building a support system helps ease loneliness.</li>
+  <li><b>Stay in Touch With Home:</b> Regular calls or messages with loved ones provide emotional comfort.</li>
+  <li><b>Establish a Routine:</b> Having structure can create a sense of normalcy.</li>
+  <li><b>Learn the Local Language:</b> Even basic phrases can boost your confidence and connection.</li>
+</ul>
+<br />
+<h3><b>5. When to Seek Help</b></h3>
+<p>If culture shock starts affecting your mental health or daily functioning, don&apos;t hesitate to reach out to a counselor, advisor, or mental health professional. Most universities offer support services specifically for international students.</p>
+<br />  
+<h3><b>6. Final Thoughts</b></h3>
+<p>Feeling out of place is normal in a new culture—but it&apos;s temporary. With time, patience, and the right mindset, you&apos;ll grow stronger and more adaptable. Culture shock is just a step in your global journey—and overcoming it will make you more resilient than ever.</p>
+<br />
+<p><b>Remember:</b> You&apos;re not alone, and every student who has studied abroad has felt the same way at some point. Keep going—you&apos;ve got this!</p>
+`,
+
+    tags: ['Culture Shock', 'Study Abroad', 'Indian Students'],
+    category: 'USA',
+    readTime: '20 mins',
+  },  
+
+  'indian-student-uk-life': {
+    title: 'Indian Student UK Life',
+    slug: 'indian-student-uk-life',
+    author: 'Admin',
+    date: '27 August, 2024',
+    mainImage: '/blogs/Container-6.svg',
+    content: `<h1><b>A Day In The Life Of An Indian Student In The UK</b></h1>
+<p>Moving to the UK for studies is a dream for many Indian students. But what's a typical day like? From attending early morning lectures to cooking Indian meals in shared accommodations, the journey is filled with cultural discovery and learning. Navigating public transport, visiting local cafes, and managing finances are part of the everyday experience.</p>
+<p>Challenges like homesickness, weather changes, and cultural differences are real—but so are the opportunities to grow, make lifelong friends, and embrace independence.</p>
+<h3><b>Key Takeaways:</b></h3>
+<ul>
+  <li>Time management is key for balancing studies and part-time jobs</li>
+  <li>Cooking your own food is both economical and therapeutic</li>
+  <li>Embrace the diverse and inclusive student culture</li>
+</ul>
+<p>Each day is an adventure that shapes your personal and academic growth!</p>`,
+    tags: ['UK', 'Study Abroad', 'Indian Students'],
+    category: 'UK',
+    readTime: '20 mins',
+  },
+  'winning-sop': {
+    title: 'SOP For UK Study',
+    slug: 'winning-sop',
+    author: 'Admin',
+    date: '27 August, 2024',
+    mainImage: '/blogs/s-o-p.jpg',
+    content: `<h1><b>Crafting A Winning SOP: 5 Things You Should Always Include</b></h1>
+<br />
+<p>A Statement of Purpose (SOP) can make or break your university application. It's your chance to present yourself beyond grades and test scores—an opportunity to explain your journey, goals, and motivation. But writing an SOP that stands out requires more than just good English.</p>
+<br />
+<h3><b>Here Are 5 Must-Have Elements In Every Great SOP:</b></h3>
+<br />
+<h3>1. <b>Your Academic Background</b></h3>
+<p>Briefly summarize your educational history. Highlight any achievements, relevant coursework, and what sparked your interest in your chosen field.</p>
+<br />
+<h3>2. <b>Clear Career Goals</b></h3>
+<p>State your short-term and long-term career objectives. Explain how the program aligns with your aspirations.</p>
+<br />
+<h3>3. <b>Why This Course & University?</b></h3>
+<p>Demonstrate your research. Mention specific aspects of the course, faculty, labs, or projects that attract you to this university.</p>
+<br />
+<h3>4. <b>Your Skills & Experience</b></h3>
+<p>Include internships, research, work experience, or extracurriculars that support your application and show your commitment to the field.</p>
+<br />
+<h3>5. <b>Your Motivation & Personality</b></h3>
+<p>Make it personal. Talk about what drives you, your values, and how you plan to contribute to the campus community.</p>
+<br />
+<p>Remember: authenticity, structure, and clarity are key. An impactful SOP not only tells your story—it shows your potential.</p>`,
+
+    tags: ['UK', 'Study Abroad', 'Indian Students','SOP'],
+    category: 'UK',
+    readTime: '20 mins',
+  },
+  'one-pan-sausage-lentils':{
+    title: 'One-Pan Baked Sausage And Lentils',
+    slug: 'one-pan-sausage-lentils',
+    author: 'Admin',
+    date: '27 August, 2024',
+    mainImage: '/blogs/trending_post02.jpg.svg',
+    content: `
+    <h1><b>One-Pan Baked Sausage and Lentils</b></h1>
+    <br />
+    <p><b>Prep Time:</b> 15 mins | <b>Cook Time:</b> 45 mins | <b>Serves:</b> 4-6 | <b>Difficulty:</b> Easy</p>
+    <br />
+    <p>
+        This hearty one-pan meal combines savory sausages with protein-rich lentils and aromatic vegetables for a comforting dinner that's both nutritious and delicious. Perfect for busy weeknights, this dish requires minimal prep and cleanup while delivering maximum flavor.
+    </p>
+    <br />
+    <h2><b>Ingredients</b></h2>
+    <br />
+    <ul>
+        <li>1 lb Italian sausages (sweet or spicy), sliced into rounds</li>
+        <li>1½ cups dried green or brown lentils, rinsed</li>
+        <li>1 large onion, diced</li>
+        <li>3 carrots, diced</li>
+        <li>3 celery stalks, diced</li>
+        <li>4 garlic cloves, minced</li>
+        <li>1 can (14.5 oz) diced tomatoes</li>
+        <li>3 cups chicken or vegetable broth</li>
+        <li>2 bay leaves</li>
+        <li>1 tsp dried thyme</li>
+        <li>1 tsp dried rosemary</li>
+        <li>½ tsp smoked paprika</li>
+        <li>Salt and black pepper to taste</li>
+        <li>2 tbsp olive oil</li>
+        <li>Fresh parsley for garnish</li>
+    </ul>
+    <br />
+    <h2><b>Instructions</b></h2>
+    <br />
+    <ol>
+        <li><b>Preheat oven</b> to 375°F (190°C).</li>
+        <br />
+        <li><b>Prepare the sausages:</b> Heat olive oil in a large oven-safe Dutch oven or heavy-bottomed pot over medium-high heat. Add sliced sausages and cook for 5-6 minutes until browned on both sides. Remove sausages and set aside.</li>
+        <br />
+        <li><b>Sauté vegetables:</b> In the same pot, add onion, carrots, and celery. Cook for 5-7 minutes until vegetables begin to soften. Add garlic and cook for another minute until fragrant.</li>
+        <br />
+        <li><b>Add lentils and seasonings:</b> Stir in lentils, diced tomatoes, bay leaves, thyme, rosemary, and smoked paprika. Season with salt and pepper.</li>
+        <br />
+        <li><b>Add liquid:</b> Pour in the broth and bring to a simmer. Return the browned sausages to the pot, nestling them into the lentil mixture.</li>
+        <br />
+        <li><b>Bake:</b> Cover with a lid and transfer to the preheated oven. Bake for 35-40 minutes until lentils are tender and liquid is mostly absorbed.</li>
+        <br />
+        <li><b>Rest and serve:</b> Remove from oven and let stand for 5 minutes. Remove bay leaves, taste and adjust seasoning. Garnish with fresh chopped parsley before serving.</li>
+    </ol>
+    <br />
+    <h2><b>Chef's Tips</b></h2>
+    <p><b>Lentil variety:</b> Green or brown lentils work best as they hold their shape well during baking. Avoid red lentils as they break down too quickly.</p>
+    <br />
+    <p><b>Make it ahead:</b> This dish tastes even better the next day! Store leftovers in the refrigerator for up to 4 days.</p>
+    <br />
+    <p><b>Serving suggestions:</b> Serve with crusty bread, a dollop of Greek yogurt, or a simple green salad for a complete meal.</p>
+    `,
+    tags: ['UK', 'Study Abroad', 'Indian Students','Food'],
+    category: 'UK',
+    readTime: '20 mins',
+  },
+  'css-advanced-animations':{
+    title: 'CSS Advanced Animations',
+    slug: 'css-advanced-animations',
+    author: 'Admin',
+    date: '27 August, 2024',
+    mainImage: '/blogs/trending_post03.jpg.svg',
+    content: `<h1><b>How To Create Advanced Animations With CSS</b></h1>
+
+<p>CSS has come a long way from simple color changes and hover effects. With the power of modern CSS, you can create stunning, fluid animations that bring your web interfaces to life—without relying on JavaScript or external libraries.</p>
+<br />
+<h3><b>1. Master the Keyframes</b></h3>
+<p>Use <code>@keyframes</code> to define the steps of your animation. Control properties like <code>transform</code>, <code>opacity</code>, and <code>color</code> at different stages.</p>
+<br />
+<pre><code>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</code></pre>
+<br />
+<h3><b>2. Use the Animation Shorthand</b></h3>
+<p>Combine duration, timing, delay, and iteration count in one line:</p>
+<pre><code>
+.element {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+</code></pre>
+<br />
+<h3><b>3. Animate with Transforms & Transitions</b></h3>
+<p>Transformations like <code>scale</code>, <code>rotate</code>, and <code>translate</code> are GPU-accelerated and ensure smooth animations. Combine them with transitions for interactive effects:</p>
+
+<pre><code>
+.button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+</code></pre>
+<br />
+<h3><b>4. Layer Multiple Animations</b></h3>
+<p>Stack multiple animations using comma separation to create complex effects like pulsing, sliding, or fading simultaneously.</p>
+<br />
+<h3><b>5. Don't Forget Accessibility</b></h3>
+<p>Use <code>prefers-reduced-motion</code> to respect users' motion preferences:</p>
+<pre><code>
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</code></pre>
+<br />
+<p>By mastering advanced CSS animations, you can elevate your user experience and build visually engaging websites that stand out—while keeping performance and accessibility in check.</p>`,
+
+    tags: ['UK', 'Study Abroad', 'Indian Students','CSS'],
+    category: 'UK',
+    readTime: '20 mins',
+  },
+  'top-scholarships-2025':{
+    title: 'Top Scholarships For Indian Students In 2025',
+    slug: 'top-scholarships-2025',
+    author: 'Admin',
+    date: '27 August, 2024',
+    mainImage: '/blogs/sop.jpg',
+    content: `<h1><b>Top 7 Scholarships For Indian Students In 2025</b></h1>
+
+  <p>Studying abroad can be expensive—but scholarships can significantly reduce the financial burden for Indian students. Whether you're planning to study in the USA, UK, Canada, Australia, or Europe, numerous opportunities exist to support your academic dreams.</p>
+  
+  <h3><b>Here Are 7 Scholarships You Should Know About in 2025:</b></h3>
+  
+  <h3>1. <b>Chevening Scholarships (UK)</b></h3>
+  <p>Funded by the UK government, this fully-funded scholarship covers tuition fees, living expenses, airfare, and more for one-year masters programs at top UK universities.</p>
+  
+  <h3>2. <b>Fulbright-Nehru Master\'s Fellowships (USA)</b></h3>
+  <p>A prestigious scholarship for Indian students pursuing a masters in the U.S., covering tuition, living costs, travel, and insurance.</p>
+  
+  <h3>3. <b>Commonwealth Scholarships (UK)</b></h3>
+  <p>For students from Commonwealth countries, including India, who wish to pursue postgraduate studies in the UK.</p>
+  
+  <h3>4. <b>DAAD Scholarships (Germany)</b></h3>
+  <p>The German Academic Exchange Service offers a variety of merit-based scholarships to Indian students for postgraduate programs in Germany.</p>
+  
+  <h3>5. <b>Vanier Canada Graduate Scholarships (Canada)</b></h3>
+  <p>Aimed at doctoral students, this scholarship offers CAD $50,000 per year for three years to exceptional students with leadership skills.</p>
+  
+  <h3>6. <b>Australia Awards Scholarships</b></h3>
+  <p>These scholarships provide full financial support to Indian students pursuing undergraduate or postgraduate degrees in Australian institutions.</p>
+  
+  <h3>7. <b>Inlaks Shivdasani Foundation Scholarships</b></h3>
+  <p>For Indian students applying to top-ranking institutions in North America, Europe, and the UK. Covers tuition and living expenses up to USD 100,000.</p>
+  
+  <p><b>Pro Tip:</b> Most scholarships require academic excellence, leadership qualities, a strong SOP, and sometimes a letter of admission. Start your application early and tailor each submission to the specific scholarship criteria.</p>
+  
+  <p>With the right planning and documentation, these scholarships can be your ticket to world-class education in 2025!</p>`,
+    tags: ['UK', 'Study Abroad', 'Indian Students','Scholarships'],
+    category: 'UK',
+    readTime: '20 mins',
+  },
+  'state-of-css-future':{
+    title: 'State Of CSS: Influence The Future Of CSS',
+    slug: 'state-of-css-future',
+    author: 'Admin',
+    date: '27 August, 2024',
+    mainImage: '/blogs/trending_post04.jpg.svg',
+    content: `<h1><b>State Of CSS: Influence The Future Of CSS</b></h1>
+    <br />
+<p>The world of CSS is evolving rapidly, introducing exciting features like container queries, cascade layers, subgrid, and new color models. As a developer, designer, or technologist, your feedback directly shapes the future of web styling—and that's where the <b>State of CSS</b> survey comes in.</p>
+<br />
+<h3><b>Why Does It Matter?</b></h3>
+<p>The State of CSS is an annual community-driven survey that collects insights from thousands of developers around the world. The results not only highlight trends and pain points but also influence browser vendors and framework authors to focus on the most critical features.</p>
+<br />
+<h3><b>What's New in CSS?</b></h3>
+<ul>
+  <li><b>Container Queries:</b> Style elements based on their parent size, not just the viewport</li>
+  <li><b>Cascade Layers:</b> Gain more control over specificity and override order</li>
+  <li><b>New Color Formats:</b> Support for <code>lch()</code> and <code>oklab()</code> for better color accuracy</li>
+  <li><b>Subgrid:</b> Nested layout control with full grid alignment</li>
+</ul>
+<br />
+<h3><b>How You Can Contribute</b></h3>
+<p>Participating in the survey takes just a few minutes and helps guide the tools and standards you use every day. Whether you're a beginner or a seasoned developer, your input is valuable.</p>
+<br />
+<h3><b>Key Benefits of Participating:</b></h3>
+<ul>
+  <li>Stay informed on the latest CSS features and adoption rates</li>
+  <li>Discover tools and techniques you might have missed</li>
+  <li>Help prioritize browser and framework development</li>
+</ul>
+<br />
+<p><b>Final Thought:</b> The future of CSS is in your hands. Take the survey, share your thoughts, and be part of the movement that's redefining how we build the web.</p>`,
+
+    tags: ['UK', 'Study Abroad', 'Indian Students','CSS'],
+    category: 'UK',
+    readTime: '20 mins',
+  },  
+  'cost-of-living-abroad':{
+    title: 'Cost Of Living Abroad: Budgeting Tips For First-Timers',
+    slug: 'cost-of-living-abroad',
+    author: 'Admin',
+    date: '27 August, 2024',
+    mainImage: '/blogs/cost.jpg',
+    content: `<h1><b>Cost Of Living Abroad: Budgeting Tips For First-Timers</b></h1>
+
+<p>Moving abroad for the first time is an exciting journey—but it comes with financial responsibilities that can catch you off guard if you're not prepared. Whether you're heading to the UK, USA, Canada, or Europe, understanding the <b>cost of living</b> is key to managing your money wisely.</p>
+
+<h3><b>Here Are Some Essential Budgeting Tips To Get You Started:</b></h3>
+
+<h3>1. <b>Research Local Expenses</b></h3>
+<p>Start by listing major monthly costs—rent, groceries, transport, health insurance, and internet. Use student forums or cost-of-living calculators to get accurate estimates for your destination city.</p>
+
+<h3>2. <b>Create a Monthly Budget</b></h3>
+<p>Track your income (scholarships, family support, part-time work) and allocate spending caps for food, entertainment, and travel. Stick to it!</p>
+
+<h3>3. <b>Find Student Discounts</b></h3>
+<p>Leverage discounts on public transport, restaurants, and subscriptions like Spotify, Adobe, or even museums. Always carry your student ID!</p>
+
+<h3>4. <b>Cook Instead of Eating Out</b></h3>
+<p>Meal prepping and cooking at home can save hundreds per month. Invest in basic kitchenware and learn simple, healthy recipes.</p>
+
+<h3>5. <b>Use Budgeting Apps</b></h3>
+<p>Apps like Mint, YNAB, or Splitwise help track expenses, split bills, and alert you when you're overspending.</p>
+
+<h3>6. <b>Plan for Emergencies</b></h3>
+<p>Always keep a buffer fund for medical emergencies, unplanned travel, or academic needs. It&apos;s better to be safe than sorry.</p>
+
+<h3>7. <b>Compare Accommodation Options</b></h3>
+<p>Living on-campus may be more convenient, but off-campus shared housing can be cheaper. Always factor in utilities and transport.</p>
+
+<p><b>Pro Tip:</b> Avoid unnecessary subscriptions and impulse spending. Learn to say no to peer pressure—it&apos;s your wallet, your rules.</p>
+
+<p>Managing your finances abroad is a valuable life skill. Budget smart, spend wisely, and focus on the experience of a lifetime!</p>`,
+
+    tags: ['UK', 'Study Abroad', 'Indian Students','Budgeting'],
+    category: 'UK',
+    readTime: '20 mins',
+  },
   // Add more blogs here...
+
 }; 

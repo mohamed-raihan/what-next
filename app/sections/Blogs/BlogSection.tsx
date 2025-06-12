@@ -17,7 +17,7 @@ const BlogSection: React.FC<BlogData> = ({
   return (
     <div className="w-full bg-white">
       {/* Hero Section */}
-      <div className="relative w-full h-64 md:h-96 flex items-end justify-start bg-gray-100 rounded-lg overflow-hidden">
+      <div className="relative w-full h-64 md:h-140 flex items-end justify-start bg-gray-100 rounded-lg overflow-hidden">
         <Image src={mainImage} alt={title} className="absolute inset-0 w-full h-full object-cover center" width={1000} height={1000} />
         <div className="relative z-10 p-6 md:p-10 bg-gradient-to-t from-black/70 to-transparent w-full">
           <span className="inline-block bg-red-600 text-white text-xs px-3 py-1 rounded mb-2 uppercase font-bold tracking-wider">{category}</span>
