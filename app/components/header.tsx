@@ -112,7 +112,7 @@ export default function Header() {
         {/* Desktop CTA Button */}
         <div className="hidden md:block">
           <Link href="/contact-us">
-            <button className="bg-blue-800 text-white px-4 py-2 rounded-md font-inter font-semibold text-[18px] hover:bg-blue-900 transition">
+            <button className="bg-[#1A4FA3] text-white px-4 py-2 rounded-md font-inter font-semibold text-[18px] hover:bg-blue-900 transition">
               Free Consultation
             </button>
           </Link>
