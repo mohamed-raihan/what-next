@@ -198,9 +198,60 @@ export const blogData: Record<string, BlogData> = {
     author: 'Admin',
     date: '27 August, 2024',
     mainImage: '/blogs/automatedBlog.svg',
-    content: `The UK has long been a popular destination for Indian students seeking a high-quality education in a culturally rich and globally connected environment. The country&apose;s prestigious universities consistently rank among the world&apose;s best, offering cutting-edge research opportunities, innovative teaching methods, and a strong emphasis on practical learning. The UK&apose;s education system is designed to foster critical thinking, problem-solving skills, and a global perspective, preparing students for success in a rapidly changing world. The country&apose;s multicultural society makes it an ideal place to study, with a vibrant mix of cultures and languages that create a rich and inclusive learning environment. The UK government has also implemented several initiatives to attract international students, including the Post-Study Work Visa (Subclass 485), which allows graduates to stay and work in the country for up to four years after completing their studies. This visa is particularly beneficial for Indian students, as it provides a pathway to permanent residency and citizenship, making the UK a strong choice for those looking to build a future in the country. The country&apose;s natural beauty, outdoor lifestyle, and strong economy also make it an attractive destination for students, offering a unique blend of academic excellence and a high quality of life. With its commitment to innovation, sustainability, and a focus on international collaboration, the UK continues to be a top choice for Indian students seeking a rewarding and enriching study experience.`,
-    tags: ['UK', 'Study Abroad', 'Indian Students'],
-    category: 'UK',
+    content: `<h1><b>Using Automated Test Results To Improve Accessibility in Study Abroad Services</b></h1>
+
+<p>In today&apos;s digital-first world, accessibility is not just a legal or ethical obligation—it&apos;s a key part of creating an inclusive, student-friendly experience. <b>At What Next Study Abroad Consultancy</b>, we&apos;re committed to ensuring that our services are accessible to every aspiring international student, regardless of physical or cognitive limitations. One powerful way we are achieving this is by leveraging <b>automated test results</b> to constantly improve our digital accessibility.</p>
+<br />
+<h3><b>Why Accessibility Matters in International Education</b></h3>
+<br />
+<p>Students from across the globe rely on digital platforms to research universities, apply for courses, track visa applications, and attend virtual counseling. If a website or application isn&apos;t accessible, it creates a barrier between the student and their academic future.</p>
+<br />
+<p>Accessibility means everyone—regardless of disability—can interact with your services efficiently. This includes visually impaired users using screen readers, users with motor impairments navigating by keyboard, and many others.</p>
+<br />
+<h3><b>The Role of Automated Accessibility Testing</b></h3>
+<br />
+<p>Automated testing tools like Axe, Lighthouse, and WAVE can scan websites and applications to detect issues such as:</p>
+<br />
+<ul>
+  <li>Missing alt text for images</li>
+  <li>Poor color contrast</li>
+  <li>Unlabeled form fields</li>
+  <li>Improper heading structures</li>
+</ul>
+<p><b>At What Next</b>, we regularly run these tools across our website and student portal. The insights we gather help us fix problems quickly—often before a student ever encounters them.</p>
+<br />
+<h3><b>Turning Test Results into Action</b></h3>
+<br />
+<p>Here&apos;s how we transform test data into meaningful improvements:</p>
+<br />
+<ol>
+  <li><b>Real-Time Monitoring:</b> Automated scans flag new issues as we update pages, helping us maintain high accessibility standards.</li>
+  <li><b>Prioritized Fixes:</b> We categorize issues by severity and user impact, ensuring that critical barriers are removed first.</li>
+  <li><b>Continuous Learning:</b> Every issue is a learning opportunity. Our development and content teams receive regular training on accessibility best practices.</li>
+</ol>
+<br />
+<h2><b>Benefits for Our Students</b></h2>
+<br />
+<p>By using automated test results to improve accessibility, students experience:</p>
+<br />
+<ul>
+  <li>Easier navigation on all devices</li>
+  <li>Faster access to application tools and information</li>
+  <li>Inclusive support regardless of ability or location</li>
+  <li>A more professional, trustworthy interaction with our brand</li>
+</ul>
+<br />
+<h2><b>Looking Ahead</b></h2>
+<br />
+<p>Accessibility is not a one-time task—it&apos;s an ongoing commitment. We&apos;re planning to integrate manual user testing, including feedback from students with disabilities, to supplement our automated systems. Together, these efforts will ensure that What Next Study Abroad Consultancy is a place where every student&apos;s journey begins on equal footing.</p>
+<br />
+<h2><b>Final Thoughts</b></h2>
+<br />
+<p>Technology allows us to build smarter, more inclusive systems. By embracing automation and putting student needs first, we can break down digital barriers and empower students from all walks of life to study abroad with confidence.</p>
+`,
+
+    tags: ['UK', 'Study Abroad', 'Indian Students','Automation'],
+    category: 'USA',
     readTime: '20 mins',
   },
 
@@ -209,10 +260,135 @@ export const blogData: Record<string, BlogData> = {
     slug: 'usa-f1-visa',
     author: 'Admin',
     date: '27 August, 2024',
-    mainImage: '/blogs/usaBlog.svg',
-    content: `The UK has long been a popular destination for Indian students seeking a high-quality education in a culturally rich and globally connected environment. The country&apose;s prestigious universities consistently rank among the world&apose;s best, offering cutting-edge research opportunities, innovative teaching methods, and a strong emphasis on practical learning. The UK&apose;s education system is designed to foster critical thinking, problem-solving skills, and a global perspective, preparing students for success in a rapidly changing world. The country&apose;s multicultural society makes it an ideal place to study, with a vibrant mix of cultures and languages that create a rich and inclusive learning environment. The UK government has also implemented several initiatives to attract international students, including the Post-Study Work Visa (Subclass 485), which allows graduates to stay and work in the country for up to four years after completing their studies. This visa is particularly beneficial for Indian students, as it provides a pathway to permanent residency and citizenship, making the UK a strong choice for those looking to build a future in the country. The country&apose;s natural beauty, outdoor lifestyle, and strong economy also make it an attractive destination for students, offering a unique blend of academic excellence and a high quality of life. With its commitment to innovation, sustainability, and a focus on international collaboration, the UK continues to be a top choice for Indian students seeking a rewarding and enriching study experience.`,
-    tags: ['UK', 'Study Abroad', 'Indian Students'],
-    category: 'UK',
+    mainImage: '/blogs/f1-visa.webp',
+    content: `<h1><b>USA F1 Visa: Your Gateway to World-Class Education</b></h1>
+<br />
+<p>The United States has long been a top destination for international students seeking high-quality education, cultural exposure, and global opportunities. If you're planning to study in the U.S., obtaining an <b>F1 Student Visa</b> is your first major step toward making that dream a reality.</p>
+<br />
+<h3><b>1. What is the F1 Visa?</b></h3>
+<p>The F1 Visa is a non-immigrant student visa that allows international students to enter the U.S. and study full-time at accredited academic institutions such as universities, colleges, high schools, or language training programs.</p>
+<br />
+<h3><b>2. Why Choose the USA for Higher Education?</b></h3>
+<ul>
+  <li>Home to Ivy League universities and globally ranked institutions</li>
+  <li>Diverse programs and research opportunities across disciplines</li>
+  <li>Access to cutting-edge technology and innovation hubs</li>
+  <li>Exposure to multicultural experiences and global networking</li>
+</ul>
+<br />
+<h3><b>3. Key F1 Visa Requirements</b></h3>
+<p>To qualify for an F1 Visa, you must:</p>
+<ul>
+  <li>Be accepted by a SEVP-approved U.S. institution</li>
+  <li>Provide proof of sufficient financial support</li>
+  <li>Demonstrate strong ties to your home country</li>
+  <li>Intend to return home after completing your studies</li>
+</ul>
+<br />
+<h3><b>4. Application Process Made Simple</b></h3>
+<p>Here&apos;s a step-by-step overview:</p>
+<ol>
+  <li>Secure admission and receive your <b>I-20 form</b> from a U.S. school</li>
+  <li>Pay the SEVIS I-901 fee</li>
+  <li>Complete the DS-160 online application</li>
+  <li>Schedule and attend a visa interview at the U.S. Embassy or Consulate</li>
+</ol>
+<br />
+<h3><b>5. Tips to Ace Your F1 Visa Interview</b></h3>
+<ul>
+  <li>Be clear and confident about your academic goals</li>
+  <li>Explain why you chose your university and course</li>
+  <li>Provide strong evidence of your intent to return home</li>
+  <li>Carry all supporting documents neatly organized</li>
+</ul>
+<br />
+<h3><b>6. Life After Getting the F1 Visa</b></h3>
+<p>With your F1 Visa in hand, you're ready to begin an exciting academic journey in the U.S. From participating in campus life to gaining Optional Practical Training (OPT) experience after graduation, the opportunities are endless!</p>
+
+<p>Start preparing today and take the first step towards achieving your dreams with an F1 Visa!</p>
+`,
+
+    tags: ['USA ','F1 Visa', 'Study Abroad', 'Indian Students'],
+    category: 'USA',
+    readTime: '20 mins',
+  },
+
+  'ielts-vs-toefl': { 
+    title: 'IELTS Vs TOEFL: Which Exam Should You Take?',
+    slug: 'ielts-vs-toefl',
+    author: 'Admin',
+    date: '27 August, 2024',
+    mainImage: '/blogs/ielts-toefl.webp',
+    content: `<h1><b>IELTS vs TOEFL: Which Exam Should You Take?</b></h1>
+    <br />
+<p>If you're planning to study abroad in an English-speaking country, chances are you&apose;ll need to prove your English language proficiency. Two of the most popular exams for this purpose are <b>IELTS (International English Language Testing System)</b> and <b>TOEFL (Test of English as a Foreign Language)</b>. But which one is right for you?</p>
+<br />
+<h3><b>1. Understanding the Basics</b></h3>
+<p>Both IELTS and TOEFL test your English proficiency across four key skills: <b>Listening, Reading, Writing, and Speaking</b>. However, their formats and scoring systems differ.</p>
+<br />
+<h3><b>2. Test Format Comparison</b></h3>
+<table border="1" cellspacing="0" cellpadding="8">
+  <tr>
+    <th>Section</th>
+    <th>IELTS</th>
+    <th>TOEFL</th>
+  </tr>
+  <tr>
+    <td>Listening</td>
+    <td>4 recordings, 40 questions</td>
+    <td>Lectures & conversations, 28-39 questions</td>
+  </tr>
+  <tr>
+    <td>Reading</td>
+    <td>3 sections, 40 questions</td>
+    <td>3-4 passages, 30-40 questions</td>
+  </tr>
+  <tr>
+    <td>Writing</td>
+    <td>2 tasks (essay + data interpretation)</td>
+    <td>2 tasks (integrated + independent essay)</td>
+  </tr>
+  <tr>
+    <td>Speaking</td>
+    <td>Face-to-face interview</td>
+    <td>Recorded answers via computer</td>
+  </tr>
+</table>
+<br />
+<h3><b>3. IELTS: Key Highlights</b></h3>
+<ul>
+  <li>Offered in both paper-based and computer-based formats</li>
+  <li>Widely accepted in the UK, Australia, Canada, and Europe</li>
+  <li>Speaking section is conducted in person</li>
+  <li>Scored on a band scale of 1-9</li>
+</ul>
+<br />
+<h3><b>4. TOEFL: Key Highlights</b></h3>
+<ul>
+  <li>Internet-based test (TOEFL iBT) is most common</li>
+  <li>Preferred by universities in the USA</li>
+  <li>Entire test (including speaking) is computer-based</li>
+  <li>Scored out of 120</li>
+</ul>
+<br />
+<h3><b>5. Which Test Should You Choose?</b></h3>
+<p>Here&apos;s a quick guide to help you decide:</p>
+<br />
+<ul>
+  <li><b>Choose IELTS</b> if you&apos;re more comfortable with face-to-face speaking, or applying to institutions in the UK, Australia, or Canada.</li>
+  <li><b>Choose TOEFL</b> if you prefer a fully computer-based test and are applying to U.S. universities.</li>
+</ul>
+<br />
+<h3><b>6. Final Thoughts</b></h3>
+<p>Both exams are highly respected and accepted worldwide. Your choice should depend on your study destination, test format preference, and personal strengths.</p>
+<br />  
+<p><b>Pro Tip:</b> Take practice tests for both IELTS and TOEFL to see which one aligns better with your skills before making a decision!</p>
+<br />
+<p>Whichever you choose, preparation is key. Good luck on your journey to studying abroad!</p>
+`,
+
+    tags: ['IELTS', 'TOEFL', 'Study Abroad', 'Indian Students'],
+    category: 'USA',
     readTime: '20 mins',
   },
   // Add more blogs here...

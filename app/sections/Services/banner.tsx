@@ -319,7 +319,7 @@ const ServiceBanner = () => {
                             <Image src="/pencil.svg" alt="pencil" className="w-full h-full object-cover" width={140} height={180} />
                         </div>
                         {/* Main Bordered Div */}
-                        <div className="relative flex flex-col md:flex-row border-[5px] border-[#0046AA] rounded-xl overflow-hidden w-full h-auto xl:h-[85vh] shadow-lg bg-white">
+                        <div className="relative flex flex-col md:flex-row border-[5px] border-[#0046AA] rounded-xl overflow-hidden w-full h-auto  shadow-lg bg-white">
                             <div className="bg-transparent p-4 md:p-6 flex flex-col justify-between relative md:absolute top-0 md:top-30 w-full md:w-2/5 lg:w-1/3 z-20">
                                 <div className="overflow-y-auto max-h-[300px] md:max-h-none">
                                     <ul className="space-y-1">

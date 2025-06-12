@@ -60,7 +60,7 @@ const blogs = [
     },
     {
         title: 'Using Automated Test Results To Improve Accessibility',
-        slug: 'automated-test-accessibility',
+        slug: 'using-automated-test-results-to-improve-accessibility',
         author: 'Admin',
         date: '27 August, 2024',
         image: '/blogs/newsBlog.svg',
