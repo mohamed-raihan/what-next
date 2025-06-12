@@ -9,14 +9,14 @@ export default function OurValues() {
                     <p className="text-md text-white opacity-60 font-semibold  mb-2 font-roboto">Want to study abroad?</p>
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 font-roboto">Get ahead with WhatNext</h2>
                     <p className="text-white text-base leading-relaxed font-montserrat mt-[70px]">
-                        Welcome to WhatNext! If you dream of studying abroad, we’re here to help you find the right course, the right university, and the right funding option. Try our handy search tool, find out everything you need to know if you want to study abroad.
+                        Welcome to WhatNext! If you dream of studying abroad, we&apos;re here to help you find the right course, the right university, and the right funding option. Try our handy search tool, find out everything you need to know if you want to study abroad.
                     </p>
                 </div>
 
                 {/* Right Core Values Section */}
                 <div>
                     <h3 className="text-center text-lg font-bold mb-6 uppercase font-roboto">Our Core Values</h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                         {[
                             {
                                 title: "Striving Towards Excellence",

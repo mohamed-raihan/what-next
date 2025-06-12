@@ -62,12 +62,12 @@ const StudyAbroadSection = () => {
 
       <div className="bg-white px-8 py-10 bg-[url('/vector3.svg')] bg-cover object-fill flex justify-center items-center">
         <div className='rounded-lg bg-white shadow-lg p-8 w-fit'>
-          <h3 className="text-center text-2xl font-bold mb-12 text-[#1e3a8a]">Our Services</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          <h3 className="text-center text-3xl font-bold mb-12 text-[#1e3a8a]">Our Services</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {[
-              { title: 'Career Counselling And Admission Guidance', img: '/ourservice1.svg' },
+              { title: 'Career Counselling', img: '/ourservice1.svg' },
               { title: 'Admission Formalities', img: '/ourservice2.svg' },
-              { title: 'Choosing Right Courses and University', img: '/ourservice3.svg' },
+              { title: 'Choosing Right Courses', img: '/ourservice3.svg' },
               { title: 'Travel Assistance', img: '/ourservice4.svg' },
               { title: 'Application Process', img: '/ourservice5.svg' },
               { title: 'Visa Assistance', img: '/ourservice6.svg' },
@@ -77,7 +77,7 @@ const StudyAbroadSection = () => {
               <Link href={`/services?service=${service.title}`} key={index}>
                 <div
                 key={index}
-                className="group relative rounded-lg border-2 border-[#1e3a8a] overflow-hidden transition-all duration-300 hover:shadow-xl"
+                className="group relative rounded-2xl border-2 border-[#1e3a8a] overflow-hidden transition-all duration-300 hover:shadow-xl"
               >
                 <div className="relative aspect-square">
                   <Image
@@ -85,7 +85,7 @@ const StudyAbroadSection = () => {
                     width={100}
                     height={100}
                     alt={service.title}
-                    className="w-full"
+                    className="w-full transition-all duration-300 group-hover:grayscale"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#FFFFFF]/90"></div>
                   <div className="absolute p-4">

@@ -3,13 +3,12 @@ import { FaX } from "react-icons/fa6";
 
 const GetintouchForm = () => {
     return (
-        <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 md:p-8 w-full max-w-lg mx-auto text-[#0a0a0a]">
+        <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 md:p-8 w-full max-w-xl mx-auto text-[#0a0a0a]">
             <h2 className="text-2xl sm:text-3xl md:text-[45px] font-bold mb-2 font-montserrat">
                 Get in <span className="text-[#288737]">Touch</span>
             </h2>
             <p className="text-[#000000] mb-4 sm:mb-6 font-montserrat text-sm sm:text-base md:text-[14px] font-semibold">
-                Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
-                molestie vel, ornare non id blandit netus.
+            It&apos;s effective, it&apos;s beneficial and it&apos;s absolutely free. Take your virtual counselling session today!
             </p>
 
             <form className="space-y-3 sm:space-y-4">
@@ -55,7 +54,7 @@ const GetintouchForm = () => {
                     <Phone className="w-6 h-6 mb-1" />
                     <div className="ms-3">
                         <p className="font-bold">PHONE</p>
-                        <p className="text-green-600">03 5432 1234</p>
+                        <p className="text-green-600">+91 99005 42429</p>
                     </div>
                 </div>
                 <div className="flex items-center col-span-1 mb-2 sm:mb-0">
