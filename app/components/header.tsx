@@ -74,16 +74,16 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 font-roboto font-semibold text-sm lg:text-lg">
-          <Link href="/" className="text-gray-800 hover:text-blue-600 uppercase ">Home</Link>
-          <Link href="/about-us" className="text-gray-800 hover:text-blue-600 uppercase">About Us</Link>
+          <Link href="/" className="text-gray-800 hover:text-blue-600 uppercase font-medium ">Home</Link>
+          <Link href="/about-us" className="text-gray-800 hover:text-blue-600 uppercase font-medium">About Us</Link>
           <div
             className="relative group"
             onMouseEnter={handleDropdownEnter}
             onMouseLeave={handleDropdownLeave}
           >
-            <button className="text-gray-800 hover:text-blue-600 uppercase flex items-center gap-1">
+            <button className="text-gray-800 hover:text-blue-600 uppercase flex items-center gap-1 font-medium">
               Study Abroad
-              <svg
+              <svg  
                 className={`w-4 h-4 mt-0.5 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -96,17 +96,17 @@ export default function Header() {
               {/* Arrow pointer */}
               <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-t border-l border-gray-100 rotate-45"></div>
               <div className="relative z-1000 bg-white rounded-lg p-2">
-                <Link href="/study-abroad/australia" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase">Australia</Link>
-                <Link href="/study-abroad/canada" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase">Canada</Link>
-                <Link href="/study-abroad/newzealand" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase">New Zealand</Link>
-                <Link href="/study-abroad/uk" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase">UK</Link>
-                <Link href="/study-abroad/usa" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase">USA</Link>
-                <Link href="/study-abroad/europe" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase">Europe</Link>
+                <Link href="/study-abroad/australia" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">Australia</Link>
+                <Link href="/study-abroad/canada" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">Canada</Link>
+                <Link href="/study-abroad/newzealand" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">New Zealand</Link>
+                <Link href="/study-abroad/uk" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">UK</Link>
+                <Link href="/study-abroad/usa" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">USA</Link>
+                <Link href="/study-abroad/europe" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">Europe</Link>
               </div>
             </div>
           </div>
-          <Link href="/services" className="text-gray-800 hover:text-blue-600  uppercase">Services</Link>
-          <Link href="/blogs" className="text-gray-800 hover:text-blue-600  uppercase">Blog</Link>
+          <Link href="/services" className="text-gray-800 hover:text-blue-600  uppercase font-medium">Services</Link>
+          <Link href="/blogs" className="text-gray-800 hover:text-blue-600  uppercase font-medium">Blog</Link>
         </nav>
 
         {/* Desktop CTA Button */}

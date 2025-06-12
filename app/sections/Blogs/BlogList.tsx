@@ -552,7 +552,7 @@ export default function BlogList() {
                     </aside>
                 </div>
             </div>
-            <div className="relative bg-[url(/service-bg.svg)] bg-cover flex flex-col xl:flex-row justify-between items-center xl:items-start bg-no-repeat md:mt-0 pt-10 md:pt-35 px-2 md:px-10 py-10 lg:px-25 h-auto md:h-[80vh]">
+            <div className="relative bg-[url(/service-bg.svg)] bg-cover flex flex-col xl:flex-row justify-between items-center xl:items-start bg-no-repeat md:mt-0 pt-10 md:pt-35 px-2 md:px-14 py-10 lg:px-25 h-auto ">
                 <div className="ms-2 md:ms-10 mb-8 md:mb-0 flex-1 flex flex-col">
                     <h1 className="text-3xl md:text-5xl xl:text-7xl text-[#0046AA] font-medium font-roboto font-semibold">
                         Get in Touch with<br />
