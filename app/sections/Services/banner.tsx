@@ -295,12 +295,12 @@ const ServiceBanner = () => {
             <div>
                 <div className="relative xl:bg-[url(/bannerBg1.svg)] flex flex-col md:flex-row items-center justify-between px-4 py-8 md:px-8 h-auto md:h-[80vh]">
                     {/* Left Column */}
-                    <div className="w-full xl:w-1/2 xl:pl-28 mb-8 md:mb-0">
-                        <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold mb-2 md:mb-4 text-[#686868] font-roboto">Services</h2>
-                        <h2 className="text-[#0046AA] font-semibold font-roboto text-3xl sm:text-4xl md:text-[62px] leading-tight md:leading-[1.1]">Expert Advice.<br />
+                    <div className="w-full xl:w-1/2 xl:pl-20 mb-8 md:mb-0">
+                        <h2 className="text-2xl sm:text-3xl xl:text-[36px] font-bold mb-2 md:mb-4 text-[#686868] font-roboto">Services</h2>
+                        <h2 className="text-[#0046AA] font-semibold font-roboto text-3xl sm:text-4xl md:text-[52px] leading-tight md:leading-[1.1]">Expert Advice.<br />
                             Hassle-Free Process.<br />
                             Trusted by Students.</h2>
-                        <div className="text-base sm:text-lg lg:text-2xl text-grey-100 flex flex-col gap-4 md:gap-8 mt-6 md:mt-10">
+                        <div className="text-base sm:text-lg lg:text-[20px] text-grey-100 flex flex-col gap-4 md:gap-8 mt-6 md:mt-10">
                             <p className="text-[#686868] font-montserrat">With personalized support and expert advice, WhatNext helps aspiring students choose the right course, secure admission to top universities, and navigate visa and financial processes smoothly.</p>
                             <p className="text-[#686868] font-montserrat">Whether you&apos;re aiming for the UK, USA, Canada, Australia, or Europe, WhatNext simplifies the entire process—turning your global education dreams into reality.</p>
                             <p className="text-[#686868] font-montserrat">WhatNext Overseas is a trusted education consultancy dedicated to guiding students on their journey to study abroad.</p>

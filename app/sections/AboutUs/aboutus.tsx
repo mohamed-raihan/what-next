@@ -18,18 +18,18 @@ export default function AboutSection() {
 
             {/* About Us Text Section */}
             <div className="relative">
-                <div className=" max-w-4xl lg:h-[800px] lg:ms-30 px-4 py-20 lg:py-44 xl:py-24 text-left">
+                <div className=" max-w-4xl lg:h-[400px] lg:ms-30 px-4 py-20 lg:py-44 xl:py-24 text-left">
                     <Image src="/bird-right.svg" alt="Top Bird" width={100} height={100} className="absolute w-[200px] lg:w-[300px] xl:w-[600px] right-0 -top-15 md:-top-15 md:right-0" />
                     <h3 className="text-2xl md:text-4xl font-semibold text-[#686868] mt-10 md:mt-0">About Us</h3>
-                    <h1 className="text-3xl md:text-6xl font-bold leading-tight font-roboto mb-20">
+                    <h1 className="text-3xl md:text-6xl font-bold leading-tight font-roboto">
                         <span className="text-[#0046AA]">Experience</span> a Different Kind of <span className="text-[#288737]">Study Abroad Journey</span>
                     </h1>
-                    <p className="py-8 text-[#000000]  font-[100] text-xl md:text-2xl  font-montserrat">
+                    <p className="py-8 text-[#000000]  font-[100] text-xl md:text-[20px]  font-montserrat">
                         WhatNext provides professional education services that are equitable, far
                         reaching, extensive, existent, virtuous and of high quality. We assist students
                         in connecting with higher education institutions all across the world.
                     </p>
-                    <p className="text-[#000000] text-light text-xl md:text-2xl font-montserrat">
+                    <p className="text-[#000000] text-light text-xl md:text-[20px] font-montserrat">
                         We allure the best flair in terms of counsellors and enablers without regard to
                         contention, divinity, or communal as a chosen partner for top worldwide
                         educational institutions, and we provide a tremendous working environment. While
@@ -38,8 +38,12 @@ export default function AboutSection() {
                 </div>
             </div>
 
+            <div className="relative hidden xl:block -z-20 mt-10">
+                <Image src="/connection.svg" alt="About Us" width={100} height={100} className="w-full h-full" />
+            </div>
+
             {/* Destinations */}
-            <div className="relative py-8 lg:py-12 px-10 xl:h-[600px] text-center">
+            <div className="relative py-8 lg:py-12 px-10 xl:h-[500px] text-center -mt-10">
                 <Image src="/bird-left.svg" alt="Bottom Bird" width={100} height={100} className="absolute top-5 lg:-top-50 -z-10 left-0 w-[200px] hidden lg:block lg:w-[300px] xl:w-[600px]"/>
                 <div className="flex justify-center items-center">
                     <p className="text-gray-700   max-w-5xl text-lg md:w-4/5 lg:w-2/3 lg:ms-20 text-base md:text-xl mb-10 font-regular font-montserrat">
@@ -67,7 +71,7 @@ export default function AboutSection() {
             </div>
 
             {/* Vision & Mission */}
-            <div className="relative bg-[url('/blue-rectangle.svg')] bg-cover bg-center pt-10 xl:pb-16 px-4  xl:h-[70rem]">
+            <div className="relative bg-[url('/blue-rectangle.svg')] bg-cover bg-center pt-10 xl:pb-16 px-4 -z-20 xl:h-[70rem]">
                 <div className="max-w-6xl mx-auto grid xl:grid-cols-2 gap-10 lg:gap-16 text-center">
                     {/* <div className="bg-white rounded-xl shadow-md p-6">
                         <h3 className="text-xl font-bold mb-2">Vision</h3>

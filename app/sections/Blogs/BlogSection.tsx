@@ -1,5 +1,6 @@
 import React from 'react';
 import type { BlogData } from './blogData';
+import Image from 'next/image';
 
 // interface Props extends BlogData {}
 
@@ -17,7 +18,7 @@ const BlogSection: React.FC<BlogData> = ({
     <div className="w-full bg-white">
       {/* Hero Section */}
       <div className="relative w-full h-64 md:h-96 flex items-end justify-start bg-gray-100 rounded-lg overflow-hidden">
-        <img src={mainImage} alt={title} className="absolute inset-0 w-full h-full object-cover" />
+        <Image src={mainImage} alt={title} className="absolute inset-0 w-full h-full object-cover center" width={1000} height={1000} />
         <div className="relative z-10 p-6 md:p-10 bg-gradient-to-t from-black/70 to-transparent w-full">
           <span className="inline-block bg-red-600 text-white text-xs px-3 py-1 rounded mb-2 uppercase font-bold tracking-wider">{category}</span>
           <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 max-w-2xl">{title}</h1>
@@ -35,7 +36,10 @@ const BlogSection: React.FC<BlogData> = ({
         {/* Main Content */}
         <div className="flex-1 min-w-0">
           <div className="prose max-w-none text-gray-800">
-            <p className='font-montserrat text-justify'>{content}</p>
+            <div
+              className="font-montserrat text-justify "
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
             {/* Add more content blocks as needed */}
           </div>
           <div className="mt-8 flex flex-wrap gap-2">
@@ -50,7 +54,7 @@ const BlogSection: React.FC<BlogData> = ({
           <div className="bg-white rounded-lg shadow p-4">
             <h3 className="font-bold mb-2">Subscribe & Followers</h3>
             <div className="flex flex-wrap gap-2">
-              {['Facebook','Twitter','Instagram','Youtube','LinkedIn','Pinterest'].map((platform) => (
+              {['Facebook', 'Twitter', 'Instagram', 'Youtube', 'LinkedIn', 'Pinterest'].map((platform) => (
                 <button key={platform} className="bg-gray-100 px-3 py-1 rounded text-xs font-semibold text-gray-700 hover:bg-blue-100">{platform}</button>
               ))}
             </div>
@@ -66,7 +70,7 @@ const BlogSection: React.FC<BlogData> = ({
           <div className="bg-white rounded-lg shadow p-4">
             <h4 className="font-bold mb-2">Popular Study Destinations</h4>
             <div className="flex flex-wrap gap-2">
-              {['Australia','Canada','UK','USA','Europe','New Zealand'].map((dest) => (
+              {['Australia', 'Canada', 'UK', 'USA', 'Europe', 'New Zealand'].map((dest) => (
                 <span key={dest} className="bg-gray-100 px-3 py-1 rounded text-xs font-semibold text-gray-700">{dest}</span>
               ))}
             </div>

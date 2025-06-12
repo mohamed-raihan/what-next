@@ -8,6 +8,7 @@ import { useState, useRef } from "react";
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isStudyAbroadOpen, setIsStudyAbroadOpen] = useState(false);
   const dropdownTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const handleDropdownEnter = () => {
@@ -21,6 +22,15 @@ export default function Header() {
     dropdownTimeoutRef.current = setTimeout(() => {
       setIsDropdownOpen(false);
     }, 200); // 200ms delay before closing
+  };
+
+  const handleMobileMenuClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  const toggleStudyAbroad = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsStudyAbroadOpen(!isStudyAbroadOpen);
   };
 
   return (
@@ -113,22 +123,36 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t">
           <nav className="px-4 py-2 space-y-1">
-            <Link href="/" className="block py-2 text-gray-800 hover:text-blue-600 font-medium">Home</Link>
-            <Link href="/about-us" className="block py-2 text-gray-800 hover:text-blue-600 font-medium">About Us</Link>
+            <Link href="/" className="block py-2 text-gray-800 hover:text-blue-600 font-medium" onClick={handleMobileMenuClick}>Home</Link>
+            <Link href="/about-us" className="block py-2 text-gray-800 hover:text-blue-600 font-medium" onClick={handleMobileMenuClick}>About Us</Link>
             <div className="py-2">
-              <div className="text-gray-800 font-medium mb-2">Study Abroad</div>
-              <div className="pl-4 space-y-1">
-                <Link href="/study-abroad/canada" className="block py-2 text-gray-800 hover:text-blue-600">Canada</Link>
-                <Link href="/study-abroad/usa" className="block py-2 text-gray-800 hover:text-blue-600">USA</Link>
-                <Link href="/study-abroad/uk" className="block py-2 text-gray-800 hover:text-blue-600">UK</Link>
-                <Link href="/study-abroad/australia" className="block py-2 text-gray-800 hover:text-blue-600">Australia</Link>
-                <Link href="/study-abroad/europe" className="block py-2 text-gray-800 hover:text-blue-600">Europe</Link>
-                <Link href="/study-abroad/newzealand" className="block py-2 text-gray-800 hover:text-blue-600">New Zealand</Link>
-              </div>
+              <button 
+                onClick={toggleStudyAbroad}
+                className="w-full text-left text-gray-800 font-medium mb-2 flex items-center justify-between"
+              >
+                Study Abroad
+                <svg
+                  className={`w-4 h-4 transition-transform duration-200 ${isStudyAbroadOpen ? 'rotate-180' : ''}`}
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.585l3.71-4.354a.75.75 0 111.14.976l-4.25 5a.75.75 0 01-1.14 0l-4.25-5a.75.75 0 01.02-1.06z" />
+                </svg>
+              </button>
+              {isStudyAbroadOpen && (
+                <div className="pl-4 space-y-1">
+                  <Link href="/study-abroad/canada" className="block py-2 text-gray-800 hover:text-blue-600" onClick={handleMobileMenuClick}>Canada</Link>
+                  <Link href="/study-abroad/usa" className="block py-2 text-gray-800 hover:text-blue-600" onClick={handleMobileMenuClick}>USA</Link>
+                  <Link href="/study-abroad/uk" className="block py-2 text-gray-800 hover:text-blue-600" onClick={handleMobileMenuClick}>UK</Link>
+                  <Link href="/study-abroad/australia" className="block py-2 text-gray-800 hover:text-blue-600" onClick={handleMobileMenuClick}>Australia</Link>
+                  <Link href="/study-abroad/europe" className="block py-2 text-gray-800 hover:text-blue-600" onClick={handleMobileMenuClick}>Europe</Link>
+                  <Link href="/study-abroad/newzealand" className="block py-2 text-gray-800 hover:text-blue-600" onClick={handleMobileMenuClick}>New Zealand</Link>
+                </div>
+              )}
             </div>
-            <Link href="/services" className="block py-2 text-gray-800 hover:text-blue-600 font-medium">Services</Link>
-            <Link href="/blogs" className="block py-2 text-gray-800 hover:text-blue-600 font-medium">Blog</Link>
-            <Link href="/contact-us" className="block py-2">
+            <Link href="/services" className="block py-2 text-gray-800 hover:text-blue-600 font-medium" onClick={handleMobileMenuClick}>Services</Link>
+            <Link href="/blogs" className="block py-2 text-gray-800 hover:text-blue-600 font-medium" onClick={handleMobileMenuClick}>Blog</Link>
+            <Link href="/contact-us" className="block py-2" onClick={handleMobileMenuClick}>
               <button className="w-full bg-blue-800 text-white px-4 py-2 rounded-md font-inter font-semibold text-[18px] hover:bg-blue-900 transition">
                 Free Consultation
               </button>
