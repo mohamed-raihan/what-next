@@ -15,7 +15,6 @@ export default function AboutSection() {
         <section className=" overflow-hidden">
             {/* Top Bird Graphic */}
 
-
             {/* About Us Text Section */}
             <div className="relative">
                 <div className=" max-w-4xl lg:h-[400px] lg:ms-30 px-4 py-20 lg:py-44 xl:py-24 text-left">
@@ -71,7 +70,7 @@ export default function AboutSection() {
             </div>
 
             {/* Vision & Mission */}
-            <div className="relative bg-[url('/blue-rectangle.svg')] bg-cover bg-center pt-10 xl:pb-16 px-4 -z-20 xl:h-[70rem]">
+            <div className="relative bg-gradient-to-t from-[#59BAFF] from-70% to-white to-100% pt-10 xl:pb-16 px-4 -z-20 xl:h-[70rem]">
                 <div className="max-w-6xl mx-auto grid xl:grid-cols-2 gap-10 lg:gap-16 text-center">
                     {/* <div className="bg-white rounded-xl shadow-md p-6">
                         <h3 className="text-xl font-bold mb-2">Vision</h3>

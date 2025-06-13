@@ -49,8 +49,8 @@ const GetintouchForm = () => {
                 </button>
             </form>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 sm:mt-8 text-sm">
-                <div className="flex items-center col-span-1 mb-2 sm:mb-0">
+            <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 sm:mt-8 text-sm">
+                <div className="flex items-center col-span-1 mb-2 sm:mb-0 ">
                     <Phone className="w-6 h-6 mb-1" />
                     <div className="ms-3">
                         <p className="font-bold">PHONE</p>
@@ -65,7 +65,7 @@ const GetintouchForm = () => {
                     </div>
                 </div>
                 <div className="flex items-center col-span-1">
-                    <Mail className="w-6 h-6 mb-1" />
+                    <Mail className="w-12 h-10" />
                     <div className="ms-3">
                         <p className="font-bold">EMAIL</p>
                         <p className="text-green-600 break-words">info@whatnextov erseas.com</p>

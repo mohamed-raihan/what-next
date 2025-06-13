@@ -360,7 +360,7 @@ const ServiceBanner = () => {
                                                         height={100}
                                                     />
                                                     <h2 className="text-2xl md:text-3xl font-bold mb-4">{serviceDetails.title}</h2>
-                                                    <p className="mb-6 text-[#686868] text-[22px] text-base md:text-lg font-montserrat">
+                                                    <p className="mb-6 text-[#686868] text-[18px] text-base md:text-lg font-montserrat">
                                                         {serviceDetails.description}
                                                     </p>
                                                     <button className="bg-[#2563eb] text-white px-4 md:px-6 py-2 rounded font-semibold font-inter float-right relative md:absolute bottom-0 md:bottom-0 right-4 md:right-10 hover:bg-[#1d4ed8] transition-colors duration-200">
