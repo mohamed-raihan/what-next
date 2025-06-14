@@ -21,7 +21,7 @@ export default function EnquireForm({ setIsEnquireFormOpen}: {setIsEnquireFormOp
               Get in <span className="text-green-600">Touch</span>
             </h2>
             <p className="mt-2 text-gray-700 font-medium">
-              It's effective, it's beneficial and it's absolutely free.
+              It&apos;s effective, it&apos;s beneficial and it&apos;s absolutely free.
               <br />
               Take your virtual counselling session today!
             </p>
