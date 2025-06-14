@@ -7,34 +7,39 @@ import { useEffect, useState } from 'react';
 
 const initialReviews = [
   {
-    name: 'Agnes Remi',
-    designation: 'Back-end Developer at MyDodow',
-    review:
-      'Dico is finally addressing a long time problem we had when building UIs. It&apos;s ease of use and workflow seems really intuitive. Promising!',
+    name: 'Girish.s.c giri',
+    designation: 'Student at University of Birmingham',
+    review: `"WhatNext Overseas Education" provided excellent guidance and support throughout my application
+process. Their knowledgeable team helped me to select the right universities, prepare a strong
+application, and navigate visa procedures. Thanks to their expertise and personalized attention, I am
+now studying at my dream university abroad. I highly recommend their services!" Please do contact
+them once if you have any plans`,
     date: '2021.03.02',
     profile_image: '/reviewimage.svg',
-    company: 'MyDodow',
-    country: 'Nigeria',
+    company: '',
+    country: 'India',
   },
   {
-    name: 'John Carter',
-    designation: 'Full Stack Developer at CodeX',
-    review:
-      'An excellent UI tool that helped us speed up our development process. The team loves it!',
+    name: 'Manideep Parvataneni',
+    designation: 'Student at University of Memphis',
+    review: `"WhatNext Overseas Education is a very good consultancy offering various universities suitable to
+profile in different cost parameters. Also it's supporting candidates for VISA interview for free of
+cost, 24/7 assistance available. I too got my Visa approved through the support from Kalyani
+ma'am(who is the founder) and I am currently studying in University of Memphis, USA."`,
     date: '2021.05.12',
     profile_image: '/reviewimage.svg',
-    company: 'CodeX',
-    country: 'United States',
+    company: '',
+    country: 'India',
   },
   {
-    name: 'Lisa Wong',
-    designation: 'Frontend Engineer at BrightTech',
+    name: 'Noel Sugandh',
+    designation: 'Student at University of Birmingham',
     review:
-      'Very user-friendly and saves a lot of time. The UX is clean and efficient. Highly recommended!',
+      'Overall, I had a wonderful experience with consultancy and thanks to kalyani mam, I am very grateful for their support and guidance. I highly recommend WhatNext Overseas to anyone who wants to study abroad. They have a professional and supportive team that will help you achieve your goals.',
     date: '2022.01.18',
     profile_image: '/reviewimage.svg',
-    company: 'BrightTech',
-    country: 'United States',
+    company: '',
+    country: 'India',
   },
   // Repeat or add more reviewers here
 ];
@@ -104,13 +109,9 @@ export default function StudentReviewsAndUniversities() {
               className="bg-white text-black rounded-xl shadow-lg max-w-sm p-6 flex flex-col items-start"
             >
               <div className="flex items-center gap-3 mb-4">
-                <Image
-                  src={review.profile_image}
-                  alt={review.name}
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
+                <div className="w-[50px] h-[50px] rounded-full bg-[#C7C7C7] flex items-center justify-center text-2xl font-bold text-gray-700">
+                  {review.name.charAt(0).toUpperCase()}
+                </div>
                 <div>
                   <p className="font-bold text-lg">{review.name}</p>
                   <p className="text-sm text-gray-600">{review.designation} {review.company}</p>

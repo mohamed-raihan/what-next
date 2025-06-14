@@ -132,7 +132,7 @@ const StudyAbroadSection = () => {
             </button>
             <div
               id="country-carousel"
-              className="overflow-x-auto h-96 w-full flex flex-row flex-nowrap space-x-6 px-2 scrollbar-thin scrollbar-thumb-[#288737] scrollbar-track-[#e5e7eb]"
+              className="overflow-x-auto h-92 w-full flex flex-row flex-nowrap space-x-6 px-2 scrollbar-thin scrollbar-thumb-[#288737] scrollbar-track-[#e5e7eb]"
               style={{ scrollBehavior: 'smooth' }}
             >
               {[
@@ -174,10 +174,10 @@ const StudyAbroadSection = () => {
                 },
                 // Add more countries as needed
               ].map((country, idx) => (
-                <Link href={country.link} key={idx} className="bg-white rounded-lg overflow-hidden shadow-md max-w-[300px]  flex-shrink-0 hover:shadow-xl transition-all duration-300">
+                <Link href={country.link} key={idx} className="bg-white rounded-lg overflow-hidden shadow-md max-w-[300px] h-[350px] flex-shrink-0 hover:shadow-xl transition-all duration-300">
                   <img src={country.image} alt={`Study in ${country.name}`} className="w-full h-50 object-cover" />
                   <div className="p-4 text-black">
-                    <h4 className="font-regular text-sm font-roboto">STUDY IN</h4>
+                    <h4 className=" text-sm font-roboto font-semibold">STUDY IN</h4>
                     <p className="text-2xl font-bold text-[#0046AA] font-roboto">{country.name}</p>
                     <p className="text-[14px] mt-1 text-[#242424] font-montserrat">{country.description}</p>
                   </div>

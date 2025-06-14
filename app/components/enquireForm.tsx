@@ -180,15 +180,15 @@ export default function EnquireForm({ setIsEnquireFormOpen}: {setIsEnquireFormOp
               </button>
             </form>
 
-            <div className="mt-6 border-t pt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center text-sm text-gray-700">
+            <div className="mt-6 border-t pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-center text-sm text-gray-700">
               <div>
                 <div className="font-bold">📞 PHONE</div>
                 <div className="text-green-600">+91 99005 42429</div>
               </div>
-              <div>
+              {/* <div>
                 <div className="font-bold">📠 FAX</div>
                 <div className="text-green-600">03 5432 1234</div>
-              </div>
+              </div> */}
               <div>
                 <div className="font-bold">📧 EMAIL</div>
                 <div className="text-green-600 break-words">
