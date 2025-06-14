@@ -1,7 +1,11 @@
+'use client';
+import EnquireForm from '@/app/components/enquireForm';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Banner() {
+    const [isEnquireFormOpen, setIsEnquireFormOpen] = useState(false);
     return (
         <div className="relative min-h-[500px] md:min-h-[700px]">
             {/* Background Image */}
@@ -67,7 +71,7 @@ export default function Banner() {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col gap-4 w-full sm:w-auto sm:ml-4">
-                            <Link href="/enquire" className="w-full">
+                            <Link href="" className="w-full" onClick={() => setIsEnquireFormOpen(true)}>
                                 <button className="bg-[#0046AA] text-white px-3 py-3 rounded-lg hover:bg-blue-700 transition w-full text-sm font-semibold font-inter">
                                     Enquire Now
                                 </button>
@@ -81,6 +85,20 @@ export default function Banner() {
                     </div>
                 </div>
             </div>
+
+            {isEnquireFormOpen &&
+                <div className="fixed inset-0 z-50 backdrop-blur-sm bg-black/30 transition-all duration-300 ease-in-out flex justify-center items-center">
+                    <div className="bg-white rounded-2xl w-full max-w-lg p-6 md:p-8 shadow-lg relative">
+                        <button
+                            onClick={() => setIsEnquireFormOpen(false)}
+                            className="absolute top-4 right-4 text-gray-600 hover:text-black text-xl"
+                        >
+                            &times;
+                        </button>
+                        <EnquireForm isEnquireFormOpen={isEnquireFormOpen} setIsEnquireFormOpen={setIsEnquireFormOpen} />
+                    </div>
+                </div>
+            }
         </div>
     );
 }

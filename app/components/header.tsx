@@ -4,13 +4,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef } from "react";
+import EnquireForm from "./enquireForm";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isStudyAbroadOpen, setIsStudyAbroadOpen] = useState(false);
   const dropdownTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
+  const [isEnquireFormOpen, setIsEnquireFormOpen] = useState(false);
   const handleDropdownEnter = () => {
     if (dropdownTimeoutRef.current) {
       clearTimeout(dropdownTimeoutRef.current);
@@ -111,8 +112,8 @@ export default function Header() {
 
         {/* Desktop CTA Button */}
         <div className="hidden md:block">
-          <Link href="/contact-us">
-            <button className="bg-[#1A4FA3] text-white px-4 py-2 rounded-md font-inter font-semibold text-[18px] hover:bg-blue-900 transition">
+          <Link href="">
+            <button className="bg-[#1A4FA3] text-white px-4 py-2 rounded-md font-inter font-semibold text-[18px] hover:bg-blue-900 transition" onClick={() => setIsEnquireFormOpen(true)}>
               Free Consultation
             </button>
           </Link>
@@ -160,6 +161,20 @@ export default function Header() {
           </nav>
         </div>
       )}
+
+      {isEnquireFormOpen &&   
+      <div className="fixed inset-0 z-50 backdrop-blur-sm bg-black/30 transition-all duration-300 ease-in-out flex justify-center items-center">
+          <div className="bg-white rounded-2xl w-full max-w-lg p-6 md:p-8 shadow-lg relative">
+            <button
+              onClick={() => setIsEnquireFormOpen(false)}
+              className="absolute top-4 right-4 text-gray-600 hover:text-black text-xl"
+            >
+              &times;
+            </button>
+            <EnquireForm isEnquireFormOpen={isEnquireFormOpen} setIsEnquireFormOpen={setIsEnquireFormOpen} />
+          </div>
+        </div>
+      }
     </header>
   );
 }
