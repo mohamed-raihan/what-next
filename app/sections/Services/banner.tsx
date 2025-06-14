@@ -243,7 +243,7 @@ const ServiceBanner = () => {
         const fetchServiceHeading = async () => {
             const response = await api.get(API_URL.SERVICES.GET_SERVICE_HEADING);
             console.log(response.data);
-            if (response.data.length > 3) {
+            if (response.data.length > 53) {
                 setServiceHeading(response.data);
             }
         }
@@ -293,7 +293,7 @@ const ServiceBanner = () => {
             </div>
         }>
             <div>
-                <div className="relative xl:bg-[url(/bannerBg1.svg)] flex flex-col md:flex-row items-center justify-between px-4 py-8 md:px-8 h-auto xl:h-[80vh] bg-no-repeat">
+                <div className="relative xl:bg-[url(/bannerBg1.svg)] flex flex-col md:flex-row items-center justify-between px-4 py-8 md:px-8 h-auto xl:h-[80vh] 2xl:h-[85vh] bg-no-repeat">
                     {/* Left Column */}
                     <div className="w-full xl:w-1/2 xl:pl-20 mb-8 md:mb-0">
                         <h2 className="text-2xl sm:text-3xl xl:text-[36px] font-bold mb-2 md:mb-4 text-[#686868] font-roboto">Services</h2>
@@ -308,7 +308,7 @@ const ServiceBanner = () => {
                     </div>
                 </div>
                 <div className="relative">
-                    <div className="h-[100px] md:h-[150px] w-full bg-[#288737]">
+                    <div className="h-[100px] md:h-[180px] w-full bg-[#288737] xl:-mt-10">
                     </div>
                     <div className="relative w-full max-w-7xl mx-auto -mt-20 md:-mt-27 flex items-start px-4 md:px-8">
                         {/* Boy Icon - absolutely positioned */}
@@ -319,30 +319,33 @@ const ServiceBanner = () => {
                             <Image src="/pencil.svg" alt="pencil" className="w-full h-full object-cover" width={140} height={180} />
                         </div>
                         {/* Main Bordered Div */}
-                        <div className="relative flex flex-col md:flex-row border-[5px] border-[#0046AA] rounded-xl overflow-hidden w-full h-auto  shadow-lg bg-white">
-                            <div className="bg-transparent p-4 md:p-6 flex flex-col justify-between relative md:absolute top-0 md:top-30 w-full md:w-2/5 lg:w-1/3 z-20">
-                                <div className="overflow-y-auto max-h-[300px] md:max-h-none">
-                                    <ul className="space-y-1">
-                                        {serviceHeading.map((service: ServiceHeading) => (
-                                            <li
-                                                key={service.id}
-                                                onClick={() => handleServiceSelect(service.title)}
-                                                className={`px-4 py-2 rounded cursor-pointer transition-colors duration-200 ${selected === service.title
-                                                    ? "bg-black text-white"
-                                                    : "hover:bg-gray-100"
-                                                    }`}
-                                            >
-                                                {service.title}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                                <div className="hidden md:block md:mt-10">
-                                    <span className="text-4xl lg:text-5xl font-bold text-[#B2B2B2] leading-none">Our<br />Services</span>
+                        <div className="relative flex flex-col md:flex-row border-[5px] border-[#0046AA] rounded-xl  w-full xl:h-[80vh]  shadow-lg bg-white">
+                            <div className="bg-transparent p-4 md:p-6 flex flex-col justify-between relative md:absolute top-0 md:top-30 w-full md:w-2/5 lg:w-1/3 z-20 h-full">
+                                <div className="flex flex-col h-full">
+                                    <div className="flex-1 overflow-y-auto">
+                                        <ul className="space-y-1">
+                                            {serviceHeading.map((service: ServiceHeading) => (
+                                                <li
+                                                    key={service.id}
+                                                    onClick={() => handleServiceSelect(service.title)}
+                                                    className={`px-4 py-2 rounded cursor-pointer transition-colors duration-200 ${selected === service.title
+                                                        ? "bg-black text-white"
+                                                        : "hover:bg-gray-100"
+                                                        }`}
+                                                >
+                                                    {service.title}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                        <div className="hidden md:block sticky bottom-0 pt-14 bg-white">
+                                            <span className="text-4xl lg:text-5xl font-bold text-[#B2B2B2] leading-none">Our<br />Services</span>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
-                            <div className="flex-1 flex justify-end p-4 md:p-8 relative w-full md:w-1/2 h-full">
+                            <div className="flex-1 flex justify-end p-4 md:p-8 relative w-full md:w-1/2">
                                 <div className="relative px-4 md:px-8 py-8 md:py-16 w-full md:w-2/3">
                                     {isLoading ? (
                                         <div className="flex items-center justify-center h-full">

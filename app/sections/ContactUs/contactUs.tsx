@@ -5,15 +5,15 @@ const ContactSection = () => {
     return (
         <div className="font-sans">
             {/* Section 1: Banner with Form */}
-            <section className="bg-[url('/banner-contact.png')] bg-cover bg-center min-h-[800px] py-8 md:py-16 px-4 sm:px-6 lg:px-8 text-center md:text-left">
-                <div className="max-w-8xl mx-auto md:mx-20 grid lg:grid-cols-2 gap-8 lg:gap-70">
-                    <div className="px-4 md:px-0">
-                        <h2 className="text-[#686868] text-3xl md:text-[40px] font-semibold mb-2">Contact Us</h2>
-                        <h1 className="text-4xl md:text-[70px] text-[#0046AA] font-bold leading-tight md:leading-snug">
+            <section className="bg-[url('/banner-contact.png')] bg-cover bg-center 2xl:min-h-[900px] h-[1000px] md:h-[1100px] lg:h-[1200px] xl:h-[900px] py-8 md:py-16 px-4 sm:px-6 lg:px-8 text-center md:text-left">
+                <div className="max-w-8xl mx-auto md:mx-20 grid xl:grid-cols-2 gap-8 xl:gap-70">
+                    <div className="px-4 md:px-0 text-left">
+                        <h2 className="text-[#686868] text-3xl lg:text-[40px] font-semibold mb-2">Contact Us</h2>
+                        <h1 className="text-4xl lg:text-[70px] 2xl:text-[60px] text-[#0046AA] font-bold leading-tight md:leading-snug">
                             Get in Touch with <br />
                             <span className="text-[#288737]">Our Team</span>
                         </h1>
-                        <p className="mt-4 text-gray-600 text-sm md:text-base">
+                        <p className="mt-4 text-gray-600 text-sm lg:text-lg md:text-base">
                             It&apos;s effective, it&apos;s beneficial and it&apos;s absolutely free. Take your virtual counselling session today!
                         </p>
                     </div>
@@ -25,7 +25,7 @@ const ContactSection = () => {
 
             {/* Section 2: Map & Office Info */}
             <section className="py-8 md:py-10 px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-2 gap-8 mx-auto md:mx-20 items-center">
+                <div className="grid xl:grid-cols-2 gap-8 mx-auto md:mx-20 items-center">
                     <div className="col-span-1 h-full flex items-center justify-center">
                         <iframe
                             className="w-full h-[400px] md:h-[600px] border-4 border-[#1B4FA3]"
@@ -35,7 +35,7 @@ const ContactSection = () => {
                             referrerPolicy="no-referrer-when-downgrade"
                         ></iframe>
                     </div>
-                    <div className="flex flex-col justify-center items-center px-4 md:px-0">
+                    <div className="flex flex-col justify-center items-center px-4 md:px-0 mt-10 xl:mt-0">
                         <div className="max-w-7xl mx-auto text-center mb-8 md:mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold text-[#0046AA] font-roboto">
                                 Our Offices <span className="text-[#288737]">Near You</span>

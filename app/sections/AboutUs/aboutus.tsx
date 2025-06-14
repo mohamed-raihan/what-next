@@ -17,7 +17,7 @@ export default function AboutSection() {
 
             {/* About Us Text Section */}
             <div className="relative">
-                <div className=" max-w-4xl lg:h-[400px] lg:ms-30 px-4 py-20 lg:py-44 xl:py-24 text-left">
+                <div className=" max-w-4xl xl:h-[400px] lg:ms-30 px-4 py-20 lg:py-44 xl:py-24 text-left">
                     <Image src="/bird-right.svg" alt="Top Bird" width={100} height={100} className="absolute w-[200px] lg:w-[300px] xl:w-[600px] right-0 -top-15 md:-top-15 md:right-0" />
                     <h3 className="text-2xl md:text-4xl font-semibold text-[#686868] mt-10 md:mt-0">About Us</h3>
                     <h1 className="text-3xl md:text-6xl font-bold leading-tight font-roboto">
@@ -42,7 +42,7 @@ export default function AboutSection() {
             </div>
 
             {/* Destinations */}
-            <div className="relative py-8 lg:py-12 px-10 xl:h-[500px] text-center -mt-10">
+            <div className="relative py-8 lg:py-4 px-10 xl:h-[550px] text-center -mt-10 lg:-mt-30 xl:-mt-10">
                 <Image src="/bird-left.svg" alt="Bottom Bird" width={100} height={100} className="absolute top-5 lg:-top-50 -z-10 left-0 w-[200px] hidden lg:block lg:w-[300px] xl:w-[600px]"/>
                 <div className="flex justify-center items-center">
                     <p className="text-gray-700   max-w-5xl text-lg md:w-4/5 lg:w-2/3 lg:ms-20 text-base md:text-xl mb-10 font-regular font-montserrat">
@@ -70,7 +70,7 @@ export default function AboutSection() {
             </div>
 
             {/* Vision & Mission */}
-            <div className="relative bg-gradient-to-t from-[#59BAFF] from-70% to-white to-100% pt-10 xl:pb-16 px-4 -z-20 xl:h-[70rem]">
+            <div className="relative bg-gradient-to-t from-[#59BAFF] from-80% to-white to-100% pt-10 xl:pb-16 px-4 -z-20 xl:h-[70rem]">
                 <div className="max-w-6xl mx-auto grid xl:grid-cols-2 gap-10 lg:gap-16 text-center">
                     {/* <div className="bg-white rounded-xl shadow-md p-6">
                         <h3 className="text-xl font-bold mb-2">Vision</h3>

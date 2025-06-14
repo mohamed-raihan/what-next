@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t mt-16 relative">
+    <footer className="bg-white mt-4 relative">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
@@ -16,7 +16,7 @@ export default function Footer() {
                 alt="WhatNext Logo" 
                 width={320} 
                 height={60}
-                className="w-auto h-auto max-w-[250px]" 
+                className="w-auto h-auto max-w-[250px] lg:max-w-[320px]" 
               />
             </div>
             <p className="text-sm text-gray-600 mt-4 font-rubik">
@@ -24,26 +24,28 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4 sm:space-x-6 mt-4 sm:mt-6 justify-center md:justify-start md:items-start items-center">
               <a href="#" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
-                <Image src="/faceook.png" alt="Facebook" width={25} height={25} className="w-5 h-5 sm:w-6 sm:h-6" />
+                <Image src="/faceook.png" alt="Facebook" width={50} height={50} className="w-10 h-10 sm:w-6 sm:h-6" />
               </a>
               <a href="#" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
-                <Image src="/twitter.png" alt="Twitter" width={25} height={25} className="w-5 h-5 sm:w-6 sm:h-6" />
+                <Image src="/twitter.png" alt="Twitter" width={50} height={50} className="w-10 h-10 sm:w-6 sm:h-6" />
               </a>
               <a href="#" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
-                <Image src="/instagram.png" alt="Instagram" width={25} height={25} className="w-5 h-5 sm:w-6 sm:h-6" />
+                <Image src="/instagram.png" alt="Instagram" width={50} height={50} className="w-10 h-10 sm:w-6 sm:h-6" />
               </a>
             </div>
             <p className="text-xs text-gray-400">©2020 WhatNext</p>
           </div>
 
           {/* Navigation Links */}
-          <div className="space-y-4">
+          <div className="space-y-4 lg:flex lg:flex-col lg:items-center lg:text-left">
+            <div>
             <h4 className="font-semibold text-gray-900 text-base sm:text-lg mb-4 sm:mb-6">Home</h4>
             <div className="flex flex-col space-y-3 sm:space-y-4">
               <Link href="/about-us" className="text-[#4F5665] text-sm hover:text-blue-600">About Us</Link>
               <Link href="/services" className="text-[#4F5665] text-sm hover:text-blue-600">Services</Link>
               <Link href="/contact-us" className="text-[#4F5665] text-sm hover:text-blue-600">Contact Us</Link>
               <Link href="/blogs" className="text-[#4F5665] text-sm hover:text-blue-600">Blog</Link>
+            </div>
             </div>
           </div>
 
@@ -75,7 +77,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Banner with Illustration */}
-      <div className="relative mt-8">
+      <div className="relative lg:-mt-10">
         <Image
           src="/footer-image.png"
           alt="Footer Background"
@@ -83,7 +85,7 @@ export default function Footer() {
           height={200}
           className="w-full h-auto"
         />
-        <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 text-white text-xs sm:text-sm">
+        <div className="  bg-[#288737] w-full h-10 text-white text-xs sm:text-sm flex items-center justify-center">
           © 2025 WhatNext. All Rights Reserved.
         </div>
       </div>

@@ -21,7 +21,7 @@ const StudyAbroadSection = () => {
             institutions, and we provide a tremendous working environment. While being equipped to be
             globally productive citizens, student&apos;s lives are enriched.
           </p>
-          <button className="mt-6 bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800 transition font-inter font-semibold">
+          <button className="mt-6 bg-[#288737] text-white px-6 py-2 rounded hover:bg-green-800 transition font-inter font-semibold">
             Discover More
           </button>
         </div>
@@ -76,25 +76,30 @@ const StudyAbroadSection = () => {
             ].map((service, index) => (
               <Link href={`/services?service=${service.title}`} key={index}>
                 <div
-                key={index}
-                className="group relative rounded-2xl border-2 border-[#1e3a8a] overflow-hidden transition-all duration-300 hover:shadow-xl"
-              >
-                <div className="relative aspect-square">
-                  <Image
-                    src={service.img}
-                    width={100}
-                    height={100}
-                    alt={service.title}
-                    className="w-full transition-all duration-300 group-hover:grayscale"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#FFFFFF]/90"></div>
-                  <div className="absolute p-4">
-                    <h4 className="font-semibold text-[#0046AA] text-lg font-roboto">
-                      {service.title}
-                    </h4>
+                  key={index}
+                  className="group relative border-2 border-[#D4D4D4] overflow-hidden transition-all duration-300 hover:shadow-xl"
+                  style={{
+                    
+                    borderRadius: '1rem',
+                  }}
+                >
+                  <div className="relative aspect-square">
+                    <Image
+                      src={service.img}
+                      width={100}
+                      height={100}
+                      alt={service.title}
+                      className="w-full transition-all duration-300 group-hover:grayscale"
+                    />
+                    <div className="absolute p-4">
+                      <h4 className="font-semibold text-[#0046AA] text-lg font-roboto">
+                        {service.title}
+                      </h4>
+                    </div>
+                    <div className="absolute bottom-0 left-1/3 transform -translate-x-1/2 w-28 h-2 bg-[#288737]"></div>
                   </div>
                 </div>
-              </div>
+
               </Link>
             ))}
           </div>
