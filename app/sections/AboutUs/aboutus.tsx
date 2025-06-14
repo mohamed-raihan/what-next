@@ -45,7 +45,7 @@ export default function AboutSection() {
             <div className="relative py-8 lg:py-4 px-10 xl:h-[550px] text-center -mt-10 lg:-mt-30">
                 <Image src="/bird-left.svg" alt="Bottom Bird" width={100} height={100} className="absolute top-5 lg:-top-40 -z-10 left-0 w-[200px] hidden lg:block lg:w-[300px] xl:w-[500px]"/>
                 <div className="flex justify-center items-center">
-                    <p className="text-gray-700 max-w-5xl text-lg md:w-4/5   text-base md:text-xl mb-10 font-regular font-montserrat">
+                    <p className="text-[#000000] max-w-5xl text-lg md:w-4/5   text-base md:text-xl mb-10 font-regular font-montserrat">
                         WhatNext admits to deliver the excellent student advice and counselling. With us,
                         you can study in the top educational hubs across the world, including the United
                         States, Canada, the United Kingdom, Australia, New Zealand, and Europe.
@@ -71,7 +71,7 @@ export default function AboutSection() {
 
             {/* Vision & Mission */}
             <div className="relative bg-gradient-to-t from-[#59BAFF] from-80% to-white to-100% pt-10 xl:pt-0 xl:pb-16 px-4 -z-20 xl:h-[70rem]">
-                <div className="max-w-6xl mx-auto grid xl:grid-cols-2 gap-10 lg:gap-16 text-center">
+                <div className="max-w-6xl mx-auto grid xl:grid-cols-2 gap-10 lg:gap-16 text-center ">
                     {/* <div className="bg-white rounded-xl shadow-md p-6">
                         <h3 className="text-xl font-bold mb-2">Vision</h3>
                         <p>

@@ -1,6 +1,35 @@
+'use client';
 import GetintouchForm from '@/app/components/getintouch-form';
 import Link from 'next/link';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLinkedinIn, FaPinterestP } from 'react-icons/fa';
 // import blogs from './blogs';
+
+
+const SocialMediaButtons = () => {
+    const platforms = [
+        { name: 'Facebook', icon: <FaFacebookF className="inline-block mr-2" />, link: "https://www.facebook.com/whatnextoverseas" },
+        { name: 'Twitter', icon: <FaTwitter className="inline-block mr-2" />, link: "#" },
+        { name: 'Instagram', icon: <FaInstagram className="inline-block mr-2" />, link: "https://www.instagram.com/whatnextoverseas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+        { name: 'Youtube', icon: <FaYoutube className="inline-block mr-2" />, link: "https://www.youtube.com/@WhatNextOverseas" },
+        { name: 'LinkedIn', icon: <FaLinkedinIn className="inline-block mr-2" />, link: "https://www.linkedin.com/company/what-next-overseas-education-consultancy-service/" },
+        // { name: 'Pinterest', icon: <FaPinterestP className="inline-block mr-2" />, link: "#" }
+    ];
+
+    return (
+        <div className="grid grid-cols-2 gap-2">
+            {platforms.map((platform) => (
+                <button 
+                    key={platform.name} 
+                    className="bg-gray-100 px-3 py-2 rounded text-xs font-semibold text-gray-700 hover:bg-blue-100 text-left flex items-center" 
+                    onClick={() => window.open(platform.link, '_blank')}
+                >
+                    {platform.icon}
+                    {platform.name}
+                </button>
+            ))}
+        </div>
+    );
+};
 
 interface Blog {
     title: string;
@@ -432,13 +461,7 @@ export default function BlogList() {
                         {/* Subscribe & Followers */}
                         <div>
                             <h3 className="font-bold mb-2">Subscribe & Followers</h3>
-                            <div className="grid grid-cols-2 gap-2">
-                                {['Facebook', 'Twitter', 'Instagram', 'Youtube', 'LinkedIn', 'Pinterest'].map((platform) => (
-                                    <button key={platform} className="bg-gray-100 px-3 py-2 rounded text-xs font-semibold text-gray-700 hover:bg-blue-100 text-left">
-                                        {platform}
-                                    </button>
-                                ))}
-                            </div>
+                            <SocialMediaButtons />
                         </div>
                         {/* Newsletter */}
                         <div className="bg-blue-900 rounded-lg shadow p-4 text-white">
