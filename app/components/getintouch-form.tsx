@@ -15,17 +15,80 @@ const GetintouchForm = () => {
         find_us: ''
     });
 
+    const [errors, setErrors] = useState({
+        name: '',
+        email: '',
+        phone_number: '',
+        find_us: ''
+    });
+
+    const validateForm = () => {
+        let isValid = true;
+        const newErrors = {
+            name: '',
+            email: '',
+            phone_number: '',
+            find_us: ''
+        };
+
+        // Name validation
+        if (!formData.name.trim()) {
+            newErrors.name = 'Name is required';
+            isValid = false;
+        }
+
+        // Email validation
+        if (formData.email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(formData.email)) {
+                newErrors.email = 'Invalid email format';
+                isValid = false;
+            }
+        }
+
+        // Phone number validation
+        if (!formData.phone_number.trim()) {
+            newErrors.phone_number = 'Phone number is required';
+            isValid = false;
+        } else {
+            const phoneRegex = /^[0-9]{10,15}$/;
+            if (!phoneRegex.test(formData.phone_number.replace(/\D/g, ''))) {
+                newErrors.phone_number = 'Invalid phone number format';
+                isValid = false;
+            }
+        }
+
+        setErrors(newErrors);
+        return isValid;
+    };
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+        // Clear error when user starts typing
+        if (errors[name as keyof typeof errors]) {
+            setErrors(prev => ({ ...prev, [name]: '' }));
+        }
     };
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        
+        if (!validateForm()) {
+            return;
+        }
+
         try {
             const response = await api.post(API_URL.CONTACT_US.POST_CONTACT_US, formData);
             console.log(response);
             toast.success('Message sent successfully');
             setFormData({
+                name: '',
+                email: '',
+                phone_number: '',
+                find_us: ''
+            });
+            setErrors({
                 name: '',
                 email: '',
                 phone_number: '',
@@ -51,35 +114,38 @@ const GetintouchForm = () => {
                     <input
                         type="text"
                         placeholder="Name *"
-                        className="w-full border border-gray-300 px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-sm sm:text-base"
+                        className={`w-full border ${errors.name ? 'border-red-500' : 'border-gray-300'} px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-sm sm:text-base`}
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
                     />
+                    {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
                 </div>
                 <div>
                     <input
                         type="email"
                         placeholder="Email"
-                        className="w-full border border-gray-300 px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-sm sm:text-base"
+                        className={`w-full border ${errors.email ? 'border-red-500' : 'border-gray-300'} px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-sm sm:text-base`}
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
                     />
+                    {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                 </div>
                 <div>
                     <input
                         type="tel"
                         placeholder="Phone number *"
-                        className="w-full border border-gray-300 px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-sm sm:text-base"
+                        className={`w-full border ${errors.phone_number ? 'border-red-500' : 'border-gray-300'} px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-sm sm:text-base`}
                         name="phone_number"
                         value={formData.phone_number}
                         onChange={handleChange}
                     />
+                    {errors.phone_number && <p className="text-red-500 text-sm mt-1">{errors.phone_number}</p>}
                 </div>
                 <div>
                     <select     
-                        className="w-full border border-gray-300 px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-gray-700 text-sm sm:text-base"
+                        className={`w-full border ${errors.find_us ? 'border-red-500' : 'border-gray-300'} px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-gray-700 text-sm sm:text-base`}
                         name="find_us"
                         value={formData.find_us}
                         onChange={handleChange}
@@ -91,10 +157,11 @@ const GetintouchForm = () => {
                         <option value="Twitter">Twitter</option>
                         <option value="Other">Other</option>
                     </select>
+                    {errors.find_us && <p className="text-red-500 text-sm mt-1">{errors.find_us}</p>}
                 </div>
                 <button
                     type="submit"
-                    className="w-full bg-[#003DA5] text-white py-2 sm:py-3 font-bold rounded text-base sm:text-lg"
+                    className="w-full bg-[#003DA5] text-white py-2 sm:py-3 font-bold rounded text-base sm:text-lg hover:bg-[#002d7a] transition-colors"
                 >
                     SEND
                 </button>

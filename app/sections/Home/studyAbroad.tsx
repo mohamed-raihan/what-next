@@ -117,17 +117,84 @@ const StudyAbroadSection = () => {
           <h3 className="text-2xl font-bold mb-2 font-roboto font-semibold">Where would you like to go?</h3>
           <p className="mb-10 text-sm font-montserrat">Choose from the best courses from top global universities with WhatNext.</p>
         </div>
-        <div className="max-w-8xl mx-auto px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {[1, 2, 3, 4].map((item) => (
-            <div key={item} className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img src="/newzealand.svg" alt="Study in New Zealand" className="w-full h-40 object-cover" />
-              <div className="p-4 text-black">
-                <h4 className="font-regular text-sm font-montserrat">STUDY IN</h4>
-                <p className="text-2xl font-medium text-[#363636] font-montserrat">New Zealand</p>
-                <p className="text-[10px] mt-1 text-[#242424] font-roboto">When you choose to study in New Zealand, you can be confident.</p>
-              </div>
+        {/* Vertical Carousel */}
+        <div className="flex flex-col items-center">
+          <div className="flex items-center w-full px-10 relative">
+            <button
+              className="mr-2 bg-white text-[#0046AA] rounded-full shadow p-2 hover:bg-gray-200 transition"
+              onClick={() => {
+                const el = document.getElementById('country-carousel');
+                if (el) el.scrollBy({ left: -300, behavior: 'smooth' });
+              }}
+              aria-label="Scroll Left"
+            >
+              ◀
+            </button>
+            <div
+              id="country-carousel"
+              className="overflow-x-auto h-96 w-full flex flex-row flex-nowrap space-x-6 px-2 scrollbar-thin scrollbar-thumb-[#288737] scrollbar-track-[#e5e7eb]"
+              style={{ scrollBehavior: 'smooth' }}
+            >
+              {[
+                {
+                  name: 'New Zealand',
+                  image: '/newzealand.svg',
+                  description: 'When you choose to study in New Zealand, you can be confident.',
+                  link: '/study-abroad/newzealand'
+                },
+                {
+                  name: 'Australia',
+                  image: '/australia.svg',
+                  description: 'Australia offers world-class education and vibrant student life.',
+                  link: '/study-abroad/australia'
+                },
+                {
+                  name: 'Canada',
+                  image: '/canada.svg',
+                  description: 'Canada is known for its excellent universities and welcoming culture.',
+                  link: '/study-abroad/canada'
+                },
+                {
+                  name: 'United Kingdom',
+                  image: '/uk.svg',
+                  description: "The UK is home to some of the world's top universities.",
+                  link: '/study-abroad/uk'
+                },
+                {
+                  name: 'United States',
+                  image: '/usa.svg',
+                  description: 'The USA offers diverse programs and vibrant campus life.',
+                  link: '/study-abroad/usa'
+                },
+                {
+                  name: 'Europe',
+                  image: '/europe.svg',
+                  description: 'Europe offers world-class education and vibrant student life.',
+                  link: '/study-abroad/europe'
+                },
+                // Add more countries as needed
+              ].map((country, idx) => (
+                <Link href={country.link} key={idx} className="bg-white rounded-lg overflow-hidden shadow-md max-w-[300px]  flex-shrink-0 hover:shadow-xl transition-all duration-300">
+                  <img src={country.image} alt={`Study in ${country.name}`} className="w-full h-50 object-cover" />
+                  <div className="p-4 text-black">
+                    <h4 className="font-regular text-sm font-roboto">STUDY IN</h4>
+                    <p className="text-2xl font-bold text-[#0046AA] font-roboto">{country.name}</p>
+                    <p className="text-[14px] mt-1 text-[#242424] font-montserrat">{country.description}</p>
+                  </div>
+                </Link>
+              ))}
             </div>
-          ))}
+            <button
+              className="ml-2 bg-white text-[#0046AA] rounded-full shadow p-2 hover:bg-gray-200 transition"
+              onClick={() => {
+                const el = document.getElementById('country-carousel');
+                if (el) el.scrollBy({ left: 300, behavior: 'smooth' });
+              }}
+              aria-label="Scroll Right"
+            >
+              ▶
+            </button>
+          </div>
         </div>
         <div className="flex justify-end items-center">
           <Image src="/gosectionwhite.svg" alt="Study Abroad" width={200} height={200} className='relative -bottom-10 md:-bottom-19 w-150' />
