@@ -1,7 +1,7 @@
 'use client';
 import { Mail, Phone } from "lucide-react";
 import { useState } from "react";
-import { FaX } from "react-icons/fa6";
+// import { FaX } from "react-icons/fa6";
 import { API_URL } from "../api-services/api_url";
 import { toast } from "react-toastify";
 import api from "../api-services/axios";
