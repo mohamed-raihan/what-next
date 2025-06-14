@@ -1,5 +1,4 @@
 import GetintouchForm from '@/app/components/getintouch-form';
-import Image from 'next/image';
 import Link from 'next/link';
 // import blogs from './blogs';
 
