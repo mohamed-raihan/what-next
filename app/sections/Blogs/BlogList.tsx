@@ -1,7 +1,7 @@
 'use client';
 import GetintouchForm from '@/app/components/getintouch-form';
 import Link from 'next/link';
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLinkedinIn, FaPinterestP } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
 // import blogs from './blogs';
 
 
