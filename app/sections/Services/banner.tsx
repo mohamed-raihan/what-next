@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState, Suspense } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import GetintouchForm from "@/app/components/getintouch-form";
 import api from "@/app/api-services/axios";
