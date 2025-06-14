@@ -1,8 +1,11 @@
+'use client'
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { useRouter } from 'next/navigation';
 
 const StudyAbroadSection = () => {
+  const router = useRouter();
   return (
     <div className="">
       <section className="relative xl:h-screen mx-auto py-16 bg-[url('/education-learning1.svg')] bg-no-repeat bg-cover bg-center">
@@ -21,7 +24,7 @@ const StudyAbroadSection = () => {
             institutions, and we provide a tremendous working environment. While being equipped to be
             globally productive citizens, student&apos;s lives are enriched.
           </p>
-          <button className="mt-6 bg-[#288737] text-white px-6 py-2 rounded hover:bg-green-800 transition font-inter font-semibold">
+          <button className="mt-6 bg-[#288737] text-white px-6 py-2 rounded hover:bg-green-800 transition font-inter font-semibold" onClick={() => router.push('/services')}> 
             Discover More
           </button>
         </div>

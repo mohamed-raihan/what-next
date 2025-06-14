@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter, Montserrat, Roboto, Rubik } from "next/font/g
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import { ToastContainer } from "react-toastify";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,6 +62,7 @@ export default function RootLayout({
         <Header/>
         {children}
         <Footer/>
+        <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
       </body>
     </html>
   );

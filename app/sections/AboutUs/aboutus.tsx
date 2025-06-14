@@ -18,7 +18,7 @@ export default function AboutSection() {
             {/* About Us Text Section */}
             <div className="relative">
                 <div className=" max-w-4xl xl:h-[400px] lg:ms-20 px-4 py-20 lg:py-44 xl:py-24 text-left">
-                    <Image src="/bird-right.svg" alt="Top Bird" width={100} height={100} className="absolute w-[200px] lg:w-[300px] xl:w-[500px] right-0 -top-15 md:-top-15 md:right-0" />
+                    <Image src="/bird-right.svg" alt="Top Bird" width={100} height={100} className="absolute w-[200px] lg:w-[300px] xl:w-[500px] right-0 -top-15 md:-top-10 xl:top-0 md:right-0" />
                     <h3 className="text-2xl md:text-4xl font-semibold text-[#686868] mt-10 md:mt-0">About Us</h3>
                     <h1 className="text-3xl md:text-6xl font-bold leading-tight font-roboto">
                         <span className="text-[#0046AA]">Experience</span> a Different Kind of <span className="text-[#288737]">Study Abroad Journey</span>
@@ -37,21 +37,21 @@ export default function AboutSection() {
                 </div>
             </div>
 
-            <div className="relative hidden xl:block -z-20 mt-10">
+            <div className="relative hidden xl:block -z-20">
                 <Image src="/connection.svg" alt="About Us" width={100} height={100} className="w-full h-full" />
             </div>
 
             {/* Destinations */}
-            <div className="relative py-8 lg:py-4 px-10 xl:h-[550px] text-center -mt-10 lg:-mt-20">
+            <div className="relative py-8 lg:py-4 px-10 xl:h-[550px] text-center -mt-10 lg:-mt-30">
                 <Image src="/bird-left.svg" alt="Bottom Bird" width={100} height={100} className="absolute top-5 lg:-top-40 -z-10 left-0 w-[200px] hidden lg:block lg:w-[300px] xl:w-[500px]"/>
                 <div className="flex justify-center items-center">
-                    <p className="text-gray-700   max-w-5xl text-lg md:w-4/5 lg:w-2/3 lg:ms-20 text-base md:text-xl mb-10 font-regular font-montserrat">
+                    <p className="text-gray-700 max-w-5xl text-lg md:w-4/5   text-base md:text-xl mb-10 font-regular font-montserrat">
                         WhatNext admits to deliver the excellent student advice and counselling. With us,
                         you can study in the top educational hubs across the world, including the United
                         States, Canada, the United Kingdom, Australia, New Zealand, and Europe.
                     </p>
                 </div>
-                <div className="flex flex-wrap justify-center gap-4 lg:pl-30 md:mt-20 lg:mt-10 xl:mt-0">
+                <div className="flex flex-wrap justify-center gap-4  md:mt-20 lg:mt-16 xl:mt-0">
                     {destinations.map((dest, idx) => (
                         <Link href={dest.url} key={idx}>
                             <div key={idx} className="">

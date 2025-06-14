@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OurValues() {
     return (
-        <section className="bg-[#1A4FA3] min-h-[446px] text-white py-20 px-6 md:px-12 -mt-[100px]">
+        <section className="bg-[#1A4FA3] min-h-[406px] text-white py-20 px-6 md:px-12 -mt-[100px]">
             <div className="max-w-8xl mx-auto grid md:grid-cols-2 gap-10 items-center">
                 {/* Left Text Section */}
                 <div>

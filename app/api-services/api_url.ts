@@ -12,4 +12,8 @@ export const API_URL = {
         GET_BLOG_CATEGORIES: '/api/blog-category',
         PATCH_BLOG_CATEGORY: (id: string) => `/api/blog-category/${id}`,
     },
+    CONTACT_US: {
+        GET_CONTACT_US: '/api/contact/',
+        POST_CONTACT_US: '/api/contact/',
+    },
 }

@@ -1,7 +1,43 @@
+'use client';
+import axios from "axios";
 import { Mail, Phone } from "lucide-react";
+import { useState } from "react";
 import { FaX } from "react-icons/fa6";
+import { API_URL } from "../api-services/api_url";
+import { toast } from "react-toastify";
+import api from "../api-services/axios";
 
 const GetintouchForm = () => {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone_number: '',
+        find_us: ''
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        try {
+            const response = await api.post(API_URL.CONTACT_US.POST_CONTACT_US, formData);
+            console.log(response);
+            toast.success('Message sent successfully');
+            setFormData({
+                name: '',
+                email: '',
+                phone_number: '',
+                find_us: ''
+            });
+        } catch (error) {
+            console.log(error);
+            toast.error('Message not sent');
+        }
+    };  
+
     return (
         <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 md:p-8 w-full max-w-xl mx-auto text-[#0a0a0a]">
             <h2 className="text-2xl sm:text-3xl md:text-[45px] font-bold mb-2 font-montserrat">
@@ -11,12 +47,15 @@ const GetintouchForm = () => {
             It&apos;s effective, it&apos;s beneficial and it&apos;s absolutely free. Take your virtual counselling session today!
             </p>
 
-            <form className="space-y-3 sm:space-y-4">
+            <form className="space-y-3 sm:space-y-4" onSubmit={handleSubmit}>
                 <div>
                     <input
                         type="text"
                         placeholder="Name *"
                         className="w-full border border-gray-300 px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-sm sm:text-base"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
                     />
                 </div>
                 <div>
@@ -24,6 +63,9 @@ const GetintouchForm = () => {
                         type="email"
                         placeholder="Email"
                         className="w-full border border-gray-300 px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-sm sm:text-base"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                     />
                 </div>
                 <div>
@@ -31,14 +73,24 @@ const GetintouchForm = () => {
                         type="tel"
                         placeholder="Phone number *"
                         className="w-full border border-gray-300 px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-sm sm:text-base"
+                        name="phone_number"
+                        value={formData.phone_number}
+                        onChange={handleChange}
                     />
                 </div>
                 <div>
-                    <select className="w-full border border-gray-300 px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-gray-700 text-sm sm:text-base">
-                        <option>How did you find us?</option>
-                        <option>Google</option>
-                        <option>Referral</option>
-                        <option>Social Media</option>
+                    <select     
+                        className="w-full border border-gray-300 px-3 py-2 sm:px-4 sm:py-3 rounded outline-none text-gray-700 text-sm sm:text-base"
+                        name="find_us"
+                        value={formData.find_us}
+                        onChange={handleChange}
+                    >
+                        <option value="">How did you find us?</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Whatsapp">Whatsapp</option>
+                        <option value="Telegram">Telegram</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
                 <button

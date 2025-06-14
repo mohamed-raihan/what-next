@@ -1,13 +1,47 @@
 'use client';
 
+import { useState } from "react";
+import api from "../api-services/axios";
+import { API_URL } from "../api-services/api_url";
+import { toast } from "react-toastify";
+
 // import { useState } from 'react';
 
 export default function EnquireForm({ setIsEnquireFormOpen}: {setIsEnquireFormOpen: (isOpen: boolean) => void}) {
 
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone_number: '',
+        find_us: ''
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+
+        e.preventDefault();
+        try {
+            const response = await api.post(API_URL.CONTACT_US.POST_CONTACT_US, formData);
+            console.log(response);
+            toast.success('Message sent successfully');
+            setFormData({
+                name: '',
+                email: '',
+                phone_number: '',
+                find_us: ''
+            });
+            setIsEnquireFormOpen(false);
+        } catch (error) {
+            console.log(error);
+            toast.error('Message not sent');
+        }
+    };
+
   return (
     <>
-      
-      
         <div className="fixed inset-0 z-50 bg-transparent bg-opacity-40  flex justify-center items-center">
           <div className="bg-white rounded-2xl w-full max-w-lg p-6 md:p-8 shadow-lg relative">
             <button
@@ -26,30 +60,43 @@ export default function EnquireForm({ setIsEnquireFormOpen}: {setIsEnquireFormOp
               Take your virtual counselling session today!
             </p>
 
-            <form className="space-y-4 mt-6">
+            <form className="space-y-4 mt-6" onSubmit={handleSubmit}>
               <input
                 type="text"
                 placeholder="Name *"
                 className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
               />
               <input
                 type="email"
                 placeholder="Email"
                 className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
               />
               <input
                 type="tel"
                 placeholder="Phone number *"
                 className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+                name="phone_number"
+                value={formData.phone_number}
+                onChange={handleChange}
               />
               <select
                 className="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-green-500"
+                name="find_us"
+                value={formData.find_us}
+                onChange={handleChange}
               >
-                <option>How did you find us?</option>
-                <option>Google</option>
-                <option>Social Media</option>
-                <option>Friend</option>
-                <option>Other</option>
+                <option value="">How did you find us?</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Telegram">Telegram</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Other">Other</option>
               </select>
               <button
                 type="submit"

@@ -14,9 +14,6 @@ export interface CountryData {
     blueAnimal: string;
 }
 
-
-
-
 export const countryData: Record<string, CountryData> = {
     australia: {
         name: 'Australia',
