@@ -490,9 +490,9 @@ export default function BlogList() {
                     <section className="flex-1">
                         <div className="flex items-center justify-between mb-4">
                             <h2 className="text-xl md:text-2xl font-bold">Trending News</h2>
-                            <button className="text-xs font-semibold flex items-center gap-1 border px-3 py-1 rounded hover:bg-gray-100">
+                            {/* <button className="text-xs font-semibold flex items-center gap-1 border px-3 py-1 rounded hover:bg-gray-100">
                                 VIEW ALL <span>→</span>
-                            </button>
+                            </button> */}
                         </div>
                         <div className="border-b mb-6" />
                         <div className="flex flex-col gap-6">
@@ -517,7 +517,7 @@ export default function BlogList() {
                                             <span>{trending[0].readTime}</span>
                                         </div>
                                         <p className="text-gray-700 mb-4">
-                                            Browned Butter And Brown Sugar Area Caramelly Goodness, Crispy Edgesick And Soft Centers Rare Melty Little Puddles Of Chocolate First Favorite Thing About These Browned Butter.
+                                        Moving to the UK for studies is a dream for many Indian students. But what&apos;s a typical day like? From attending early morning lectures to cooking Indian meals in shared accommodations.
                                         </p>
                                         <Link href={`/blogs/${trending[0].slug}`}>
                                             <button className="border px-4 py-2 rounded text-sm font-semibold flex items-center gap-1 hover:bg-gray-100">

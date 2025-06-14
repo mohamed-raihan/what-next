@@ -27,16 +27,16 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4 sm:space-x-6 mt-4 sm:mt-6 justify-center md:justify-start md:items-start items-center">
               <a href="#" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
-                <Image src="/faceook.png" alt="Facebook" width={50} height={50} className="w-10 h-10 sm:w-6 sm:h-6" />
+                <Image src="/faceook.png" alt="Facebook" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
               </a>
               <a href="#" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
-                <Image src="/twitter.png" alt="Twitter" width={50} height={50} className="w-10 h-10 sm:w-6 sm:h-6" />
+                <Image src="/twitter.png" alt="Twitter" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
               </a>
               <a href="#" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
-                <Image src="/instagram.png" alt="Instagram" width={50} height={50} className="w-10 h-10 sm:w-6 sm:h-6" />
+                <Image src="/instagram.png" alt="Instagram" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
               </a>
             </div>
-            <p className="text-xs text-gray-400">©2020 WhatNext</p>
+            {/* <p className="text-xs text-gray-400">©2020 WhatNext</p> */}
           </div>
 
           {/* Navigation Links */}

@@ -183,7 +183,7 @@ const GetintouchForm = () => {
                     </div>
                 </div> */}
                 <div className="flex items-center col-span-1">
-                    <Mail className="w-12 h-10" />
+                    <Mail className="w-6 h-6 xl:w-8 xl:h-8" />
                     <div className="ms-3">
                         <p className="font-bold">EMAIL</p>
                         <p className="text-green-600 break-words">info@whatnextov erseas.com</p>

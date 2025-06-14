@@ -23,7 +23,7 @@ const services = [
     },
     {
         id: 4,
-        title: "Career Counselling And Admission Guidance",
+        title: "Career Counselling",
     },
     {
         id: 5,
@@ -90,7 +90,7 @@ const details = [
     {
         id: 4,
         service_header: 4,
-        title: "Career Counselling And Admission Guidance",
+        title: "Career Counselling",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -326,11 +326,11 @@ const ServiceBanner = () => {
                                                     key={service.id}
                                                     onClick={() => handleServiceSelect(service.title)}
                                                     className={`px-4 py-2 rounded cursor-pointer transition-colors duration-200 ${selected === service.title
-                                                        ? "bg-black text-white"
+                                                        ? "bg-[#0046AA] text-white"
                                                         : "hover:bg-gray-100"
                                                         }`}
                                                 >
-                                                    {service.title}
+                                                   ✒︎ {service.title}
                                                 </li>
                                             ))}
                                         </ul>
