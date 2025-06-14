@@ -1,8 +1,11 @@
-// src/components/Footer.tsx
+'use client';
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import EnquireForm from "./enquireForm";
 
 export default function Footer() {
+  const [isEnquireFormOpen, setIsEnquireFormOpen] = useState(false);
   return (
     <footer className="bg-white mt-4 relative">
       {/* Main Footer Content */}
@@ -67,7 +70,7 @@ export default function Footer() {
             <h4 className="text-xl sm:text-2xl font-semibold text-[#262626] mb-4 sm:mb-6">
               Book a free<br />Consultation today
             </h4>
-            <Link href="/contact">
+            <Link href="" onClick={() => setIsEnquireFormOpen(true)}>
               <button className="bg-blue-800 text-white px-6 py-2.5 sm:py-3 rounded-md hover:bg-blue-900 transition w-fit font-bold font-inter text-sm sm:text-base">
                 Free Consultation
               </button>
@@ -89,6 +92,19 @@ export default function Footer() {
           © 2025 WhatNext. All Rights Reserved.
         </div>
       </div>
+      {isEnquireFormOpen &&
+        <div className="fixed inset-0 z-50 backdrop-blur-sm bg-black/30 transition-all duration-300 ease-in-out flex justify-center items-center">
+          <div className="bg-white rounded-2xl w-full max-w-lg p-6 md:p-8 shadow-lg relative">
+            <button
+              onClick={() => setIsEnquireFormOpen(false)}
+              className="absolute top-4 right-4 text-gray-600 hover:text-black text-xl"
+            >
+              &times;
+            </button>
+            <EnquireForm setIsEnquireFormOpen={setIsEnquireFormOpen} />
+          </div>
+        </div>
+      }
     </footer>
   );
 }

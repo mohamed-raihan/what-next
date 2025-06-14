@@ -4,6 +4,7 @@ import Image from "next/image";
 import GetintouchForm from "@/app/components/getintouch-form";
 import api from "@/app/api-services/axios";
 import { API_URL } from "@/app/api-services/api_url";
+import EnquireForm from "@/app/components/enquireForm";
 // import { useSearchParams } from "next/navigation";
 
 const services = [
@@ -236,7 +237,7 @@ const ServiceBanner = () => {
     const [serviceDetails, setServiceDetails] = useState<ServiceDetails | null>(null);
     const [isLoading, setIsLoading] = useState(false);
     const [serviceHeading, setServiceHeading] = useState<ServiceHeading[]>(services);
-
+    const [isEnquireFormOpen, setIsEnquireFormOpen] = useState(false);  
     // Fetch all services on mount
     useEffect(() => {
 
@@ -362,7 +363,7 @@ const ServiceBanner = () => {
                                                     <p className="mb-6 text-[#686868] text-[18px] text-base md:text-lg font-montserrat">
                                                         {serviceDetails.description}
                                                     </p>
-                                                    <button className="bg-[#2563eb] text-white px-4 md:px-6 py-2 rounded font-semibold font-inter float-right relative md:absolute bottom-0 md:bottom-0 right-4 md:right-10 hover:bg-[#1d4ed8] transition-colors duration-200">
+                                                    <button onClick={() => setIsEnquireFormOpen(true)} className="bg-[#2563eb] text-white px-4 md:px-6 py-2 rounded font-semibold font-inter float-right relative md:absolute bottom-0 md:bottom-0 right-4 md:right-10 hover:bg-[#1d4ed8] transition-colors duration-200">
                                                         Enquire Now
                                                     </button>
                                                 </>
@@ -390,6 +391,19 @@ const ServiceBanner = () => {
                         </div>
                     </div>
                 </div>
+                {isEnquireFormOpen &&
+                <div className="fixed inset-0 z-50 backdrop-blur-sm bg-black/30 transition-all duration-300 ease-in-out flex justify-center items-center">
+                    <div className="bg-white rounded-2xl w-full max-w-lg p-6 md:p-8 shadow-lg relative">
+                        <button
+                            onClick={() => setIsEnquireFormOpen(false)}
+                            className="absolute top-4 right-4 text-gray-600 hover:text-black text-xl"
+                        >
+                            &times;
+                        </button>
+                        <EnquireForm setIsEnquireFormOpen={setIsEnquireFormOpen} />
+                    </div>
+                </div>
+                }
             </div>
        
     );
