@@ -287,13 +287,9 @@ const ServiceBanner = () => {
     };
 
     return (
-        <Suspense fallback={
-            <div className="flex items-center justify-center h-screen">
-                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#0046AA]"></div>
-            </div>
-        }>
+        
             <div>
-                <div className="relative xl:bg-[url(/bannerBg1.svg)] flex flex-col md:flex-row items-center justify-between px-4 py-8 md:px-8 h-auto xl:h-[100vh] w-fit bg-no-repeat">
+                <div className="relative xl:bg-[url(/bannerBg1.svg)] flex flex-col md:flex-row items-center justify-between px-4 py-8 md:px-8 h-auto xl:h-[52rem] w-fit bg-no-repeat">
                     {/* Left Column */}
                     <div className="w-full xl:w-1/2 xl:pl-20 mb-8 md:mb-0">
                         <h2 className="text-2xl sm:text-3xl xl:text-[36px] font-bold mb-2 md:mb-4 text-[#686868] font-roboto">Services</h2>
@@ -319,7 +315,7 @@ const ServiceBanner = () => {
                             <Image src="/pencil.svg" alt="pencil" className="w-full h-full object-cover" width={140} height={180} />
                         </div>
                         {/* Main Bordered Div */}
-                        <div className="relative flex flex-col md:flex-row border-[5px] border-[#0046AA] rounded-xl  w-full xl:h-[80vh]  shadow-lg bg-white">
+                        <div className="relative flex flex-col md:flex-row border-[5px] border-[#0046AA] rounded-xl  w-full xl:h-[52rem]  shadow-lg bg-white">
                             <div className="bg-transparent p-4 md:p-6 flex flex-col justify-between relative md:absolute top-0 md:top-30 w-full md:w-2/5 lg:w-1/3 z-20 h-full">
                                 <div className="flex flex-col h-full">
                                     <div className="flex-1 overflow-y-auto">
@@ -395,7 +391,7 @@ const ServiceBanner = () => {
                     </div>
                 </div>
             </div>
-        </Suspense>
+       
     );
 };
 
