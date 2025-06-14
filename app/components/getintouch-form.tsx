@@ -1,5 +1,4 @@
 'use client';
-import axios from "axios";
 import { Mail, Phone } from "lucide-react";
 import { useState } from "react";
 import { FaX } from "react-icons/fa6";
