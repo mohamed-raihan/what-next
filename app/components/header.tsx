@@ -171,7 +171,7 @@ export default function Header() {
             >
               &times;
             </button>
-            <EnquireForm isEnquireFormOpen={isEnquireFormOpen} setIsEnquireFormOpen={setIsEnquireFormOpen} />
+            <EnquireForm setIsEnquireFormOpen={setIsEnquireFormOpen} />
           </div>
         </div>
       }

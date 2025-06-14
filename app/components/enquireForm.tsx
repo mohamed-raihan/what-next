@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+// import { useState } from 'react';
 
-export default function EnquireForm({isEnquireFormOpen, setIsEnquireFormOpen}: {isEnquireFormOpen: boolean, setIsEnquireFormOpen: (isOpen: boolean) => void}) {
+export default function EnquireForm({ setIsEnquireFormOpen}: {setIsEnquireFormOpen: (isOpen: boolean) => void}) {
 
   return (
     <>

@@ -95,7 +95,7 @@ export default function Banner() {
                         >
                             &times;
                         </button>
-                        <EnquireForm isEnquireFormOpen={isEnquireFormOpen} setIsEnquireFormOpen={setIsEnquireFormOpen} />
+                        <EnquireForm setIsEnquireFormOpen={setIsEnquireFormOpen} />
                     </div>
                 </div>
             }
