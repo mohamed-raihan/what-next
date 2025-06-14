@@ -117,14 +117,17 @@ const StudyAbroadSection = () => {
           <h3 className="text-2xl font-bold mb-2 font-roboto font-semibold">Where would you like to go?</h3>
           <p className="mb-10 text-sm font-montserrat">Choose from the best courses from top global universities with WhatNext.</p>
         </div>
-        {/* Vertical Carousel */}
+        {/* Horizontal Carousel */}
         <div className="flex flex-col items-center">
-          <div className="flex items-center w-full px-10 relative">
+          <div className="flex items-center w-full px-2 sm:px-10 relative">
             <button
               className="mr-2 bg-white text-[#0046AA] rounded-full shadow p-2 hover:bg-gray-200 transition"
               onClick={() => {
                 const el = document.getElementById('country-carousel');
-                if (el) el.scrollBy({ left: -300, behavior: 'smooth' });
+                if (el) {
+                  const scrollAmount = window.innerWidth < 640 ? el.offsetWidth : 300;
+                  el.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                }
               }}
               aria-label="Scroll Left"
             >
@@ -132,7 +135,7 @@ const StudyAbroadSection = () => {
             </button>
             <div
               id="country-carousel"
-              className="overflow-x-auto h-92 w-full flex flex-row flex-nowrap space-x-6 px-2 scrollbar-thin scrollbar-thumb-[#288737] scrollbar-track-[#e5e7eb]"
+              className="overflow-x-auto h-[350px] w-full flex flex-row flex-nowrap space-x-6 px-2 scrollbar-thin scrollbar-thumb-[#288737] scrollbar-track-[#e5e7eb] snap-x snap-mandatory"
               style={{ scrollBehavior: 'smooth' }}
             >
               {[
@@ -174,10 +177,14 @@ const StudyAbroadSection = () => {
                 },
                 // Add more countries as needed
               ].map((country, idx) => (
-                <Link href={country.link} key={idx} className="bg-white rounded-lg overflow-hidden shadow-md max-w-[300px] h-[350px] flex-shrink-0 hover:shadow-xl transition-all duration-300">
+                <Link
+                  href={country.link}
+                  key={idx}
+                  className="bg-white rounded-lg overflow-hidden shadow-md min-w-full sm:min-w-[300px] max-w-full sm:max-w-[300px] h-[350px] flex-shrink-0 hover:shadow-xl transition-all duration-300 snap-center"
+                >
                   <img src={country.image} alt={`Study in ${country.name}`} className="w-full h-50 object-cover" />
                   <div className="p-4 text-black">
-                    <h4 className=" text-sm font-roboto font-semibold">STUDY IN</h4>
+                    <h4 className="text-sm font-roboto font-semibold">STUDY IN</h4>
                     <p className="text-2xl font-bold text-[#0046AA] font-roboto">{country.name}</p>
                     <p className="text-[14px] mt-1 text-[#242424] font-montserrat">{country.description}</p>
                   </div>
@@ -188,7 +195,10 @@ const StudyAbroadSection = () => {
               className="ml-2 bg-white text-[#0046AA] rounded-full shadow p-2 hover:bg-gray-200 transition"
               onClick={() => {
                 const el = document.getElementById('country-carousel');
-                if (el) el.scrollBy({ left: 300, behavior: 'smooth' });
+                if (el) {
+                  const scrollAmount = window.innerWidth < 640 ? el.offsetWidth : 300;
+                  el.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                }
               }}
               aria-label="Scroll Right"
             >
