@@ -1,8 +1,10 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import type { CountryData } from './countryData';
 // import Image from 'next/image';
 import GetintouchForm from '@/app/components/getintouch-form';
 import Link from 'next/link';
+import EnquireForm from '@/app/components/enquireForm';
 
 const CountrySection: React.FC<CountryData> = ({
     name,
@@ -14,7 +16,7 @@ const CountrySection: React.FC<CountryData> = ({
     whyChooseCards,
     blueAnimal,
 }) => {
-
+    const [isEnquireFormOpen, setIsEnquireFormOpen] = useState(false);
     return (
         <div className="w-full">
             {/* Hero Section */}
@@ -32,7 +34,7 @@ const CountrySection: React.FC<CountryData> = ({
                         {paragraph}
                     </p>
                     <button className="mt-6 bg-[#0046AA] text-white w-fit px-6 py-2 rounded hover:bg-[#0046AB] transition font-inter font-semibold">
-                        <Link href={`/contact-us`}>
+                        <Link href={``} onClick={() => setIsEnquireFormOpen(true)}>
                             Enquire Now
                         </Link>
                     </button>
@@ -113,6 +115,20 @@ const CountrySection: React.FC<CountryData> = ({
                     <GetintouchForm />
                 </div>
             </div>
+
+            {isEnquireFormOpen &&
+                <div className="fixed inset-0 z-50 backdrop-blur-sm bg-black/30 transition-all duration-300 ease-in-out flex justify-center items-center">
+                    <div className="bg-white rounded-2xl w-full max-w-lg p-6 md:p-8 shadow-lg relative">
+                        <button
+                            onClick={() => setIsEnquireFormOpen(false)}
+                            className="absolute top-4 right-4 text-gray-600 hover:text-black text-xl"
+                        >
+                            &times;
+                        </button>
+                        <EnquireForm setIsEnquireFormOpen={setIsEnquireFormOpen} />
+                    </div>
+                </div>
+            }
         </div>
     );
 };
