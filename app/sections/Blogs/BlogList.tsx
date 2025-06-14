@@ -468,7 +468,7 @@ export default function BlogList() {
                             <h4 className="font-bold mb-2">Daily Newsletter</h4>
                             <p className="text-xs mb-3">Get All The Top Stories From Blogs To Keep Track.</p>
                             <div className="flex">
-                                <input type="email" placeholder="Enter your e-mail" className="w-full px-3 py-2 rounded text-gray-900 mb-2" />
+                                <input type="email" placeholder="Enter your e-mail" className="w-full px-3 py-2 rounded text-gray-900 mb-2 bg-white" />
                                 <button className="ml-2 bg-green-600 text-white px-4 py-2 rounded font-bold">→</button>
                             </div>
                         </div>
