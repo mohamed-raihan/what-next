@@ -135,7 +135,7 @@ const StudyAbroadSection = () => {
             </button>
             <div
               id="country-carousel"
-              className="overflow-x-auto h-[350px] w-full flex flex-row flex-nowrap space-x-6 px-2 scrollbar-thin scrollbar-thumb-[#288737] scrollbar-track-[#e5e7eb] snap-x snap-mandatory"
+              className="overflow-x-auto overflow-y-hidden h-[350px] w-full flex flex-row flex-nowrap space-x-6 px-2 snap-x snap-mandatory scrollbar-none [&::-webkit-scrollbar]:hidden"
               style={{ scrollBehavior: 'smooth' }}
             >
               {[
