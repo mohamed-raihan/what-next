@@ -5,8 +5,8 @@ import VoiceOfSuccess from "./sections/Home/success";
 import StudentReviewsAndUniversities from "./sections/Home/review&university";
 import Head from "next/head";
 import { Metadata } from "next";
-import api from "./api-services/axios";
-import { API_URL } from "./api-services/api_url";
+// import api from "./api-services/axios";
+// import { API_URL } from "./api-services/api_url";
 
 const seoData = {
   title: "What Next",
