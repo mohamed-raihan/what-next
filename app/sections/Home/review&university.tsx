@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 const initialReviews = [
   {
     name: 'Girish.s.c giri',
-    designation: 'Student at University of Birmingham',
+    designation: 'Student at University of Texas at Arlington',
     review: `"WhatNext Overseas Education" provided excellent guidance and support throughout my application
 process. Their knowledgeable team helped me to select the right universities, prepare a strong
 application, and navigate visa procedures. Thanks to their expertise and personalized attention, I am
