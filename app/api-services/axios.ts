@@ -2,13 +2,16 @@ import axios from 'axios';
 
 // Create axios instance with default config
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000',
+  baseURL: 'https://whatnext-mcve.onrender.com',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
   },
 });
+
+//https://whatnext-mcve.onrender.com/
+//http://127.0.0.1:8000
 
 // Request interceptor
 api.interceptors.request.use(

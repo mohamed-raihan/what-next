@@ -117,7 +117,7 @@ export default function StudentReviewsAndUniversities() {
                   <p className="text-sm text-gray-600">{review.designation} {review.company}</p>
                 </div>
               </div>
-              <p className="text-sm mb-4">«{review.review}»</p>
+              <p className="text-sm mb-4">{review.review}</p>
               <p className="text-xs text-gray-500">
                 {review.date}
               </p>

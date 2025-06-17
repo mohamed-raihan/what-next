@@ -4,6 +4,7 @@ import { useState } from "react";
 import api from "../api-services/axios";
 import { API_URL } from "../api-services/api_url";
 import { toast } from "react-toastify";
+import { Mail, Phone } from "lucide-react";
 
 // import { useState } from 'react';
 
@@ -180,22 +181,31 @@ export default function EnquireForm({ setIsEnquireFormOpen}: {setIsEnquireFormOp
               </button>
             </form>
 
-            <div className="mt-6 border-t pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-center text-sm text-gray-700">
-              <div>
-                <div className="font-bold">📞 PHONE</div>
-                <div className="text-green-600">+91 99005 42429</div>
-              </div>
-              {/* <div>
-                <div className="font-bold">📠 FAX</div>
-                <div className="text-green-600">03 5432 1234</div>
-              </div> */}
-              <div>
-                <div className="font-bold">📧 EMAIL</div>
-                <div className="text-green-600 break-words">
-                  info@whatnextoverseas.com
+            
+            <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mt-6 sm:mt-8 text-sm">
+                <div className="flex items-center col-span-1 mb-2 sm:mb-0 ">
+                    <Phone className="w-6 h-6 mb-1" />
+                    <div className="ms-3">
+                        <p className="font-bold">PHONE</p>
+                        <p className="text-green-600">+91 99005 42429</p>
+                    </div>
                 </div>
-              </div>
+                {/* <div className="flex items-center col-span-1 mb-2 sm:mb-0">
+                    <FaX className="w-6 h-6 mb-1" />
+                    <div className="ms-3">
+                        <p className="font-bold">FAX</p>
+                        <p className="text-green-600">03 5432 1234</p>
+                    </div>
+                </div> */}
+                <div className="flex items-center col-span-1">
+                    <Mail className="w-6 h-6 xl:w-8 xl:h-8" />
+                    <div className="ms-3">
+                        <p className="font-bold">EMAIL</p>
+                        <p className="text-green-600 break-words">info@whatnextoverseas.com</p>
+                    </div>
+                </div>
             </div>
+
           </div>
         </div>
       

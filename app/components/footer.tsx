@@ -14,12 +14,12 @@ export default function Footer() {
           {/* Logo + Description */}
           <div className="space-y-4 sm:space-y-6">
             <div className="flex justify-center md:justify-start items-center md:items-start">
-              <Image 
-                src="/Whatnext-logo.png" 
-                alt="WhatNext Logo" 
-                width={320} 
+              <Image
+                src="/Whatnext-logo.png"
+                alt="WhatNext Logo"
+                width={320}
                 height={60}
-                className="w-auto h-auto max-w-[250px] lg:max-w-[320px]" 
+                className="w-auto h-auto max-w-[250px] lg:max-w-[320px]"
               />
             </div>
             <p className="text-sm text-gray-600 mt-4 font-rubik">
@@ -36,19 +36,22 @@ export default function Footer() {
                 <Image src="/instagram.png" alt="Instagram" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
               </a>
             </div>
+            <div className="flex gap-6 w-full justify-center md:justify-start">
+              
+            </div>
             {/* <p className="text-xs text-gray-400">©2020 WhatNext</p> */}
           </div>
 
           {/* Navigation Links */}
           <div className="space-y-4 lg:flex lg:flex-col lg:items-center lg:text-left">
             <div>
-            <h4 className="font-semibold text-gray-900 text-base sm:text-lg mb-4 sm:mb-6">Home</h4>
-            <div className="flex flex-col space-y-3 sm:space-y-4">
-              <Link href="/about-us" className="text-[#4F5665] text-sm hover:text-blue-600">About Us</Link>
-              <Link href="/services" className="text-[#4F5665] text-sm hover:text-blue-600">Services</Link>
-              <Link href="/contact-us" className="text-[#4F5665] text-sm hover:text-blue-600">Contact Us</Link>
-              <Link href="/blogs" className="text-[#4F5665] text-sm hover:text-blue-600">Blog</Link>
-            </div>
+              <h4 className="font-semibold text-gray-900 text-base sm:text-lg mb-4 sm:mb-6">Home</h4>
+              <div className="flex flex-col space-y-3 sm:space-y-4">
+                <Link href="/about-us" className="text-[#4F5665] text-sm hover:text-blue-600">About Us</Link>
+                <Link href="/services" className="text-[#4F5665] text-sm hover:text-blue-600">Services</Link>
+                <Link href="/contact-us" className="text-[#4F5665] text-sm hover:text-blue-600">Contact Us</Link>
+                <Link href="/blogs" className="text-[#4F5665] text-sm hover:text-blue-600">Blog</Link>
+              </div>
             </div>
           </div>
 
@@ -66,15 +69,21 @@ export default function Footer() {
           </div>
 
           {/* CTA Section */}
-          <div className="flex flex-col justify-center">
-            <h4 className="text-xl sm:text-2xl font-semibold text-[#262626] mb-4 sm:mb-6">
+          <div className="flex flex-col gap-4 ">
+            <h4 className="text-xl sm:text-2xl font-semibold text-[#262626]">
               Book a free<br />Consultation today
             </h4>
             <Link href="" onClick={() => setIsEnquireFormOpen(true)}>
-              <button className="bg-blue-800 text-white px-6 py-2.5 sm:py-3 rounded-md hover:bg-blue-900 transition w-fit font-bold font-inter text-sm sm:text-base">
+              <button className="bg-blue-800 text-white px-6 py-2.5 sm:py-3 rounded-md hover:bg-blue-900 transition w-full font-bold font-inter text-sm sm:text-base">
                 Free Consultation
               </button>
             </Link>
+            <div className="flex justify-center md:justify-start gap-3">
+              <Link href="https://www.icef.com/agency/0016M00002h2lxNQAQ" target="_blank">
+                <Image src="/icefLogo.png" alt="" width={100} height={100} className="w-20 md:w-100 " />
+              </Link>
+              <Image src="/airc-whatnext-comments.png" alt="" width={50} height={50} className="h-20 w-50" />
+            </div>
           </div>
         </div>
       </div>

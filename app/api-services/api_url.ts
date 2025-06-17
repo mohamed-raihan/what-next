@@ -16,4 +16,11 @@ export const API_URL = {
         GET_CONTACT_US: '/api/contact/',
         POST_CONTACT_US: '/api/contact/',
     },
+    SEO: {
+        GET_HOME_SEO: '/api/MetaTagsHome/',
+        GET_BLOG_SEO: '/api/blogmeta/',
+        GET_CONTACT_SEO: '/api/contactmeta/',
+        GET_STUDY_ABROAD_SEO: '/api/countrymeta/',
+        GET_SERVICE_SEO: '/api/servicemeta/',
+    },
 }

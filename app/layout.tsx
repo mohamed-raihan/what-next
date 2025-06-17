@@ -45,6 +45,15 @@ export const metadata: Metadata = {
   description: "What Next is a platform for students to find the best study abroad options for them.",
   icons: {
     icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+    other: {
+      rel: "icon",
+      url: "/logo.png",
+    },
+  },
+  openGraph: {
+    images: "/logo.png",
   },
 };
 
