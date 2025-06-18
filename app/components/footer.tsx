@@ -26,13 +26,13 @@ export default function Footer() {
               <span className="font-semibold">WhatNext</span> is a private virtual network that has unique features and has high security.
             </p>
             <div className="flex space-x-4 sm:space-x-6 mt-4 sm:mt-6 justify-center md:justify-start md:items-start items-center">
-              <a href="#" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
+              <a href="https://www.facebook.com/whatnextoverseas" target="_blank" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
                 <Image src="/faceook.png" alt="Facebook" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
               </a>
               <a href="#" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
                 <Image src="/twitter.png" alt="Twitter" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
               </a>
-              <a href="#" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
+              <a href="https://www.instagram.com/whatnextoverseas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
                 <Image src="/instagram.png" alt="Instagram" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
               </a>
             </div>
@@ -78,11 +78,11 @@ export default function Footer() {
                 Free Consultation
               </button>
             </Link>
-            <div className="flex justify-center md:justify-start gap-3">
+            <div className="flex justify-center gap-3">
               <Link href="https://www.icef.com/agency/0016M00002h2lxNQAQ" target="_blank">
-                <Image src="/icefLogo.png" alt="" width={100} height={100} className="w-20 md:w-100 " />
+                <Image src="/icefLogo.png" alt="" width={100} height={100} className="" />
               </Link>
-              <Image src="/airc-whatnext-comments.png" alt="" width={50} height={50} className="h-20 w-50" />
+              <Image src="/airc-logo.gif" alt="" width={120} height={50} className="" />
             </div>
           </div>
         </div>
