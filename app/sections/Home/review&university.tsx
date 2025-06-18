@@ -41,6 +41,42 @@ ma'am(who is the founder) and I am currently studying in University of Memphis, 
     company: '',
     country: 'India',
   },
+  {
+    name: 'Krishna Raparla',
+    designation: 'Student',
+    review:
+      'I am very glad to share my experience with WhatNext Overseas Education Consultants, for their guidance and support to achieve my goal. Thank you "Kalyani mam" she feel it as their own responsibility and had done my entire process with patience and perseverance in the tough times from start to end.They helped me with everything and she makes the students in a way that we built confidence in ourselves. And I would like to be thankful to every one who has taken mock interviews for me. I\'m very much thankful to the entire team who has supported me. I Highly recommend for upcoming students to prefer this consultants to achieve your dream.',
+    date: '2022.01.18',
+    profile_image: '/reviewimage.svg',
+    company: '',
+    country: 'India',
+  },
+  {
+    name: 'Mateen Mohammed',
+    designation: 'Student',
+    review: `I am very happy that my Visa got approved. Thanks top Sridhar Sir, Vishal Sir and Pavana Madam. I must recommend the services of NxtStep Overseas, if you are planning for abroad education. They quickly solve all the queries and are always willing to help.`,
+    date: '2021.03.02',
+    profile_image: '/reviewimage.svg',
+    company: '',
+    country: 'India',
+  },
+  {
+    name: 'Romicherla Ramesh Kumar',
+    designation: 'Student',
+    review: `While I have been seeking guidance for a quality education for my younger son who is studying grade 8th in CBSE curriculum for the last few months, I am very fortunate that, one of my colleagues advised me to contact “WhatNext overseas Education Consultants” well in time.
+
+I will forever be grateful to Kalyani Ma\'am for her excellent guidance to uncover my child\'s potential and to build his competencies to face the world. She advised me IB world schools which are in top 10 ranks to choose keeping my child\'s future in mind and to find admissions in prominent Institutions of higher learning both in India and the most reputed universities and colleges globally.
+
+With her support and guidance my younger Son has got the admission into one of the top IB world school well in advance, will be joining in the month of July\'2024.
+
+From the bottom of my heart, I would like to appreciate Kalyani Ma\'am for her outstanding services.
+
+If you\'re looking for quality of service to guide your child\'s education to pursue higher studies abroad “WhatNext” is the best choice.`,
+    date: '2021.05.12',
+    profile_image: '/reviewimage.svg',
+    company: '',
+    country: 'India',
+  },
   // Repeat or add more reviewers here
 ];
 
@@ -81,6 +117,12 @@ export async function getReviews() {
 export default function StudentReviewsAndUniversities() {
   // const [currentIndex, setCurrentIndex] = useState(0);\
   const [reviews, setReviews] = useState<Review[]>(initialReviews);
+  const [currentPage, setCurrentPage] = useState(0);
+  const reviewsPerPage = 3;
+
+  const totalPages = Math.ceil(reviews.length / reviewsPerPage);
+  const startIndex = currentPage * reviewsPerPage;
+  const currentReviews = reviews.slice(startIndex, startIndex + reviewsPerPage);
   useEffect(() => {
     const fetchReviews = async () => {
       try {
@@ -101,36 +143,42 @@ export default function StudentReviewsAndUniversities() {
     <section className='-mb-30'>
       {/* Student Reviews Section */}
       <div className="bg-[url('/reviewBg.svg')] bg-cover bg-center text-white pb-25 pt-15 relative">
-        <h2 className="text-3xl font-bold font-roboto text-center mb-10">Student Reviews</h2>
-        <div className="flex justify-center gap-6 flex-wrap px-4">
-          {reviews.map((review, index) => (
-            <div
-              key={index}
-              className="bg-white text-black rounded-xl shadow-lg max-w-sm p-6 flex flex-col items-start"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-[50px] h-[50px] rounded-full bg-[#C7C7C7] flex items-center justify-center text-2xl font-bold text-gray-700">
-                  {review.name.charAt(0).toUpperCase()}
-                </div>
-                <div>
-                  <p className="font-bold text-lg">{review.name}</p>
-                  <p className="text-sm text-gray-600">{review.designation} {review.company}</p>
-                </div>
+      <h2 className="text-3xl font-bold font-roboto text-center mb-10">Student Reviews</h2>
+
+      <div className="flex justify-center gap-6 flex-wrap px-4">
+        {currentReviews.map((review, index) => (
+          <div
+            key={index}
+            className="bg-white text-black rounded-xl shadow-lg max-w-sm p-6 flex flex-col items-start h-[21rem] overflow-y-auto scrollbar-hide [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-[50px] h-[50px] rounded-full bg-[#C7C7C7] flex items-center justify-center text-2xl font-bold text-gray-700">
+                {review.name.charAt(0).toUpperCase()}
               </div>
-              <p className="text-sm mb-4">{review.review}</p>
-              <p className="text-xs text-gray-500">
-                {review.date}
-              </p>
+              <div>
+                <p className="font-bold text-lg">{review.name}</p>
+                <p className="text-sm text-gray-600">{review.designation} {review.company}</p>
+              </div>
             </div>
-          ))}
-        </div>
-        {/* Pagination Dots */}
-        <div className="mt-6 flex justify-center gap-2">
-          <span className="w-3 h-3 rounded-full bg-white" />
-          <span className="w-3 h-3 rounded-full bg-white/40" />
-          <span className="w-3 h-3 rounded-full bg-white/40" />
-        </div>
+            <p className="text-sm mb-4">{review.review}</p>
+            <p className="text-xs text-gray-500">{review.date}</p>
+          </div>
+        ))}
       </div>
+
+      {/* Pagination Dots */}
+      <div className="mt-6 flex justify-center gap-2">
+        {Array.from({ length: totalPages }).map((_, i) => (
+          <span
+            key={i}
+            onClick={() => setCurrentPage(i)}
+            className={`w-3 h-3 rounded-full cursor-pointer ${
+              i === currentPage ? "bg-white" : "bg-white/40"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
 
       {/* Featured UK Universities */}
       <div className="bg-white py-10 px-8 relative">

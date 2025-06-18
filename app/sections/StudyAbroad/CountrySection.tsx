@@ -56,7 +56,7 @@ const CountrySection: React.FC<CountryData> = ({
 
             {/* Top Universities */}
             <div className="py-8 md:py-12 text-center font-roboto px-2 md:px-0">
-                <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold mb-4 text-[#0046AA] font-roboto">
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold mb-4 text-[#0046AA] font-roboto uppercase">
                     Top Universities <span>in</span> <span className='text-[#288737]'>{name}</span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-6 md:gap-12 lg:gap-20 py-6 md:py-12 items-center w-full">
@@ -91,9 +91,9 @@ const CountrySection: React.FC<CountryData> = ({
                                     </div>
                                 </div>
                                 {/* Title */}
-                                <h4 className="font-bold text-base md:text-lg uppercase text-center mb-2 md:mb-3 mt-2 tracking-wide font-roboto">{card.title}</h4>
+                                <h4 className="font-bold text-base md:text-xl text-center mb-2 md:mb-3 mt-2 tracking-wide font-roboto">{card.title}</h4>
                                 {/* Description */}
-                                <p className="text-gray-700 text-sm md:text-base text-center text-[16px] md:text-[18px] leading-relaxed font-montserrat">{card.description}</p>
+                                <p className="text-gray-900 text-sm md:text-base text-center text-[16px] md:text-[16px] leading-relaxed font-montserrat">{card.description}</p>
                             </div>
                         ))}
                     </div>
