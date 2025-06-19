@@ -12,14 +12,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
           {/* Logo + Description */}
-          <div className="space-y-4 sm:space-y-6">
-            <div className="flex justify-center md:justify-start items-center md:items-start">
+          <div className="space-y-4 sm:space-y-6 lg:-mt-15">
+            <div className="flex justify-center xl:justify-start  items-center w-full">
               <Image
-                src="/Whatnext-logo.png"
+                src="/logo.svg"
                 alt="WhatNext Logo"
-                width={320}
-                height={60}
-                className="w-auto h-auto max-w-[250px] lg:max-w-[320px]"
+                width={200}
+                height={200}
+                className=""
               />
             </div>
             <p className="text-sm text-gray-600 mt-4 font-rubik">
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
 
           {/* CTA Section */}
-          <div className="relative bg-[#288737] bg-no-repeat rounded-2xl shadow-xl/20 min-h-[220px] xl:min-w-[350px] overflow-hidden">
+          <div className="relative bg-[#288737] bg-no-repeat rounded-2xl shadow-xl/20 min-h-[250px] lg:w-[350px] overflow-hidden">
             {/* Special characters at top right */}
             <div className="absolute -top-5 right-0 sm:-top-5 sm:right-3 z-10 lg:hidden xl:block">
               <Image src="/footer-icons.svg" alt="Special Characters" width={100} height={100} className="w-50" />
