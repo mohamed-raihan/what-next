@@ -83,7 +83,7 @@ export default function Footer() {
                 onClick={() => setIsEnquireFormOpen(true)}
                 className="text-[#0046AA] px-6 py-3 rounded-md bg-white transition font-bold font-inter text-base sm:text-xl w-full shadow-md hover:bg-gray-100"
               >
-                Let's Talk
+                Let&apos;s Talk
               </button>
             </div>
           </div>
