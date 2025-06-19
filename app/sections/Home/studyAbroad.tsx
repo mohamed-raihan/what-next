@@ -140,16 +140,10 @@ const StudyAbroadSection = () => {
             >
               {[
                 {
-                  name: 'New Zealand',
-                  image: '/newzealand.svg',
-                  description: 'When you choose to study in New Zealand, you can be confident.',
-                  link: '/study-abroad/newzealand'
-                },
-                {
-                  name: 'Australia',
-                  image: '/australia.svg',
-                  description: 'Australia offers world-class education and vibrant student life.',
-                  link: '/study-abroad/australia'
+                  name: 'United States',
+                  image: '/usa.svg',
+                  description: 'The USA offers diverse programs and vibrant campus life.',
+                  link: '/study-abroad/usa'
                 },
                 {
                   name: 'Canada',
@@ -164,16 +158,22 @@ const StudyAbroadSection = () => {
                   link: '/study-abroad/uk'
                 },
                 {
-                  name: 'United States',
-                  image: '/usa.svg',
-                  description: 'The USA offers diverse programs and vibrant campus life.',
-                  link: '/study-abroad/usa'
-                },
-                {
                   name: 'Europe',
                   image: '/europe.svg',
                   description: 'Europe offers world-class education and vibrant student life.',
                   link: '/study-abroad/europe'
+                },
+                {
+                  name: 'Australia',
+                  image: '/australia.svg',
+                  description: 'Australia offers world-class education and vibrant student life.',
+                  link: '/study-abroad/australia'
+                },
+                {
+                  name: 'New Zealand',
+                  image: '/newzealand.svg',
+                  description: 'When you choose to study in New Zealand, you can be confident.',
+                  link: '/study-abroad/newzealand'
                 },
                 // Add more countries as needed
               ].map((country, idx) => (

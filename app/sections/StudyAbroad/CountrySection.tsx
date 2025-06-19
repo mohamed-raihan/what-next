@@ -57,7 +57,7 @@ const CountrySection: React.FC<CountryData> = ({
             {/* Top Universities */}
             <div className="py-8 md:py-12 text-center font-roboto px-2 md:px-0">
                 <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold mb-4 text-[#0046AA] font-roboto uppercase">
-                    Top Universities <span>in</span> <span className='text-[#288737]'>{name}</span>
+                    Top 8 Universities <span>in</span> <span className='text-[#288737]'>{name}</span>
                 </h2>
                 <div className="flex flex-wrap justify-center gap-6 md:gap-12 lg:gap-20 py-6 md:py-12 items-center w-full">
                     {universityLogos.map((logo, idx) => (

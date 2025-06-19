@@ -84,7 +84,7 @@ export default function Header() {
           >
             <button className="text-gray-800 hover:text-blue-600 uppercase flex items-center gap-1 font-medium">
               Study Abroad
-              <svg  
+              <svg
                 className={`w-4 h-4 mt-0.5 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -97,12 +97,12 @@ export default function Header() {
               {/* Arrow pointer */}
               <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-t border-l border-gray-100 rotate-45"></div>
               <div className="relative z-1000 bg-white rounded-lg p-2">
-                <Link href="/study-abroad/australia" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">Australia</Link>
-                <Link href="/study-abroad/canada" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">Canada</Link>
-                <Link href="/study-abroad/newzealand" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">New Zealand</Link>
-                <Link href="/study-abroad/uk" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">UK</Link>
                 <Link href="/study-abroad/usa" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">USA</Link>
+                <Link href="/study-abroad/canada" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">Canada</Link>
+                <Link href="/study-abroad/uk" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">UK</Link>
                 <Link href="/study-abroad/europe" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">Europe</Link>
+                <Link href="/study-abroad/australia" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">Australia</Link>
+                <Link href="/study-abroad/newzealand" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">New Zealand</Link>
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function Header() {
             <Link href="/" className="block py-2 text-gray-800 hover:text-blue-600 font-medium" onClick={handleMobileMenuClick}>Home</Link>
             <Link href="/about-us" className="block py-2 text-gray-800 hover:text-blue-600 font-medium" onClick={handleMobileMenuClick}>About Us</Link>
             <div className="py-2">
-              <button 
+              <button
                 onClick={toggleStudyAbroad}
                 className="w-full text-left text-gray-800 font-medium mb-2 flex items-center justify-between"
               >
@@ -162,8 +162,8 @@ export default function Header() {
         </div>
       )}
 
-      {isEnquireFormOpen &&   
-      <div className="fixed inset-0 z-50 backdrop-blur-sm bg-black/30 transition-all duration-300 ease-in-out flex justify-center items-center">
+      {isEnquireFormOpen &&
+        <div className="fixed inset-0 z-50 backdrop-blur-sm bg-black/30 transition-all duration-300 ease-in-out flex justify-center items-center">
           <div className="bg-white rounded-2xl w-full max-w-lg p-6 md:p-8 shadow-lg relative">
             <button
               onClick={() => setIsEnquireFormOpen(false)}

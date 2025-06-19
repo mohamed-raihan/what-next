@@ -82,23 +82,23 @@ export default function AboutSection() {
                     </div> */}
                     <div className="bg-gradient-to-br from-[#c5e4ff] to-[#3da8ff] p-4 rounded-[40px] max-w-xl mx-auto mt-10">
                         <div className="bg-white rounded-[30px] text-center p-8 md:p-10 shadow-lg">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-roboto">Vision</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-roboto">Mission</h2>
                             <p className="text-lg text-gray-800 leading-relaxed font-montserrat">
-                                To make a revolutionary impact on the Study Abroad Service Sector all over the
-                                world while maintaining a high level of professionalism through continuous
-                                innovation in student services.
+                            To be a global leader in the internationalisation of the student
+                                experience by being inventive, collaborative, and globally
+                                significant. To provide personalised solutions to the students who
+                                want to study abroad, strive for organic growth for our firm through
+                                integrity, honesty and excellence.
                             </p>
                         </div>
                     </div>
                     <div className="bg-gradient-to-br from-[#c5e4ff] to-[#3da8ff] p-4 rounded-[40px] max-w-xl mx-auto xl:-mt-20 xl:absolute xl:right-30">
                         <div className="bg-white rounded-[30px] text-center p-8 md:p-10 shadow-lg">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-roboto">Mission</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-roboto">Vision</h2>
                             <p className="text-lg text-gray-800 leading-relaxed font-montserrat">
-                                To be a global leader in the internationalisation of the student
-                                experience by being inventive, collaborative, and globally
-                                significant. To provide personalised solutions to the students who
-                                want to study abroad, strive for organic growth for our firm through
-                                integrity, honesty and excellence.
+                                To make a revolutionary impact on the Study Abroad Service Sector all over the
+                                world while maintaining a high level of professionalism through continuous
+                                innovation in student services.
                             </p>
                         </div>
                     </div>
