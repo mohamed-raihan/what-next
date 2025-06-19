@@ -290,7 +290,7 @@ const ServiceBanner = () => {
     return (
         
             <div>
-                <div className="relative xl:bg-[url(/bannerBg1.svg)] flex flex-col md:flex-row items-center justify-between px-4 py-8 md:px-8 h-auto xl:h-[52rem] bg-no-repeat">
+                <div className="relative xl:bg-[url(/bg-service.svg)] flex flex-col md:flex-row items-center justify-between px-4 py-8 md:px-8 h-auto xl:h-[52rem] bg-no-repeat">
                     {/* Left Column */}
                     <div className="w-full xl:w-1/2 xl:pl-20 mb-8 md:mb-0">
                         <h2 className="text-2xl sm:text-3xl xl:text-[36px] font-bold mb-2 md:mb-4 text-[#686868] font-roboto">Services</h2>
