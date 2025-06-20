@@ -31,11 +31,11 @@ export default function Banner() {
 
                 {/* Main Headlines */}
                 <div className="space-y-2 sm:space-y-4 mb-8 sm:mb-12 font-roboto">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold">
                         <span className="text-[#0046AA]">Empowering </span>
                         <span className="text-[#288737]">Dreams</span>
                     </h1>
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
                         <span className="text-[#0046AA]">Extending </span>
                         <span className="text-[#288737]">Education</span>
                     </h1>
