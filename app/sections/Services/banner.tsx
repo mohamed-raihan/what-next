@@ -290,9 +290,9 @@ const ServiceBanner = () => {
     return (
         
             <div>
-                <div className="relative xl:bg-[url(/bg-service.svg)] flex flex-col md:flex-row items-center justify-between px-4 py-8 md:px-8 h-auto xl:h-[52rem] bg-no-repeat">
+                <div className="relative  flex flex-col xl:gap-8 md:flex-row items-center justify-between ps-4 pb-8 md:ps-8 h-auto xl:h-[52rem] bg-no-repeat">
                     {/* Left Column */}
-                    <div className="w-full xl:w-1/2 xl:pl-20 mb-8 md:mb-0">
+                    <div className="w-full xl:w-1/2  mb-8 md:mb-0 pe-4 pt-8">
                         <h2 className="text-2xl sm:text-3xl xl:text-[36px] font-bold mb-2 md:mb-4 text-[#686868] font-roboto">Services</h2>
                         <h2 className="text-[#0046AA] font-semibold font-roboto text-3xl sm:text-4xl md:text-[52px] leading-tight md:leading-[1.1]">Expert Advice.<br />
                             Hassle-Free Process.<br />
@@ -302,6 +302,9 @@ const ServiceBanner = () => {
                             <p className="text-[#686868] font-montserrat">Whether you&apos;re aiming for the UK, USA, Canada, Australia, or Europe, WhatNext simplifies the entire process—turning your global education dreams into reality.</p>
                             <p className="text-[#686868] font-montserrat">WhatNext Overseas is a trusted education consultancy dedicated to guiding students on their journey to study abroad.</p>
                         </div>
+                    </div>
+                    <div className="bg-[#0046AA] xl:w-1/2 h-full w-full hidden xl:flex items-center justify-center">
+                        <Image src="/service-bg-globe.svg" alt="" width={600} height={600} />
                     </div>
                 </div>
                 <div className="relative">
