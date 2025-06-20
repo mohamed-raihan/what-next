@@ -15,27 +15,27 @@ const services = [
     },
     {
         id: 2,
-        title: "Admission Formalities",
+        title: "Enrollment Guidelines",
     },
     {
         id: 3,
-        title: "Choosing Right Courses and University",
+        title: "Course & College Advisory",
     },
     {
         id: 4,
-        title: "Career Counselling",
+        title: "Unlock Your Future",
     },
     {
         id: 5,
-        title: "Financial Guidance",
+        title: "Monetary Guidance",
     },
     {
         id: 6,
-        title: "Travel Assistance",
+        title: "Student Travel Assistance",
     },
     {
         id: 7,
-        title: "Visa Assistance",
+        title: "Immigration Support",
     },
     {
         id: 8,
@@ -64,7 +64,7 @@ const details = [
     {
         id: 2,
         service_header: 2,
-        title: "Admission Formalities",
+        title: "Enrollment Guidelines",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -77,7 +77,7 @@ const details = [
     {
         id: 3,
         service_header: 3,
-        title: "Choosing Right Courses and University",
+        title: "Course & College Advisory",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -90,7 +90,7 @@ const details = [
     {
         id: 4,
         service_header: 4,
-        title: "Career Counselling",
+        title: "Unlock Your Future",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -103,7 +103,7 @@ const details = [
     {
         id: 5,
         service_header: 5,
-        title: "Financial Guidance",
+        title: "Monetary Guidance",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -116,7 +116,7 @@ const details = [
     {
         id: 6,
         service_header: 6,
-        title: "Travel Assistance",
+        title: "Student Travel Assistance",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -129,11 +129,11 @@ const details = [
     {
         id: 7,
         service_header: 7,
-        title: "Visa Assistance",
+        title: "Immigration Support",
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Complete visa assistance, including application preparation, simulated visa interviews, and documents. We take care of everything for you, from filling out forms to preparing for interviews.</p>
+                <p>Complete immigration Support, including application preparation, simulated visa interviews, and documents. We take care of everything for you, from filling out forms to preparing for interviews.</p>
                 <br />
                 <p>Our skilled team has extensive knowledge and experience in dealing with visa requirements for a variety of destinations.</p>
             </>

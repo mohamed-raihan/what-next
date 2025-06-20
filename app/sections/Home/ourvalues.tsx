@@ -31,7 +31,7 @@ export default function OurValues() {
                                 icon: "/valueicon3.png",
                             },
                             {
-                                title: "Pursue With Passion",
+                                title: "Personalized Learning Programs",
                                 icon: "/valueicon4.png",
                             },
                         ].map((value, index) => (

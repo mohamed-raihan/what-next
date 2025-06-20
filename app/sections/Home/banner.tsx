@@ -35,7 +35,7 @@ export default function Banner() {
                         <span className="text-[#0046AA]">Empowering </span>
                         <span className="text-[#288737]">Dreams</span>
                     </h1>
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold">
                         <span className="text-[#0046AA]">Extending </span>
                         <span className="text-[#288737]">Education</span>
                     </h1>
@@ -43,7 +43,7 @@ export default function Banner() {
 
                 <div className='lg:absolute lg:right-10 lg:bottom-40 flex lg:flex-col xl:flex-row gap-4 w-full lg:w-fit justify-center md:justify-start items-center py-3'>
                 <Image src="/airc-logo.gif" alt="WhatNext Logo" width={100} height={100} className="md:w-35" />
-                <Image src="/nafsa.svg" alt="WhatNext Logo" width={100} height={100} className="md:w-40" />
+                <Image src="/nafsalogo.svg" alt="WhatNext Logo" width={100} height={100} className="md:w-40" />
                 <Image src="/icefLogo.png" alt="WhatNext Logo" width={100} height={100} className="md:w-30" />
             </div>
 
@@ -62,7 +62,7 @@ export default function Banner() {
                         {/* Stats Section */}
                         <div className="flex flex-col sm:flex-row items-start sm:items-center divide-y sm:divide-y-0 sm:divide-x divide-gray-300 w-full sm:w-auto">
                             <div className="pb-4 sm:pb-0 sm:pr-8 md:pr-12 flex flex-col items-center justify-center w-full sm:w-auto">
-                                <h3 className="text-[#0046AA] text-2xl sm:text-3xl font-bold mb-2">140+</h3>
+                                <h3 className="text-[#0046AA] text-2xl sm:text-3xl font-bold mb-2">180+</h3>
                                 <p className="text-gray-600 text-sm">University Partners</p>
                             </div>
                             <div className="py-4 sm:py-0 sm:px-8 md:px-12 w-full sm:w-auto flex flex-col items-center justify-center">

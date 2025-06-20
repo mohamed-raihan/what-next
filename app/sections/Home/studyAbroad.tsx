@@ -68,14 +68,14 @@ const StudyAbroadSection = () => {
           <h3 className="text-center text-3xl font-bold mb-12 text-[#1e3a8a]">Our Services</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {[
-              { title: 'Career Counselling', img: '/ourservice1.svg' },
-              { title: 'Admission Formalities', img: '/ourservice2.svg' },
-              { title: 'Choosing Right Courses', img: '/ourservice3.svg' },
-              { title: 'Travel Assistance', img: '/ourservice4.svg' },
-              { title: 'Application Process', img: '/ourservice5.svg' },
-              { title: 'Visa Assistance', img: '/ourservice6.svg' },
-              { title: 'Scholarship Guidance', img: '/ourservice7.svg' },
-              { title: 'Financial Guidance', img: '/ourservice8.svg' }
+              { title: 'Unlock Your Future', img: '/ourservice1.svg' },
+              { title: 'Enrollment Guidelines', img: '/ourservice2.svg' },
+              { title: 'Course & College Advisory', img: '/ourservice3.svg' },
+              { title: 'Student Travel Assistance', img: '/ourservice4.svg' },
+              { title: 'Enrollment Procedure', img: '/ourservice5.svg' },
+              { title: 'Immigration Support', img: '/ourservice6.svg' },
+              { title: 'Scholarship Assistance', img: '/ourservice7.svg' },
+              { title: 'Monetary Guidance', img: '/ourservice8.svg' }
             ].map((service, index) => (
               <Link href={`/services?service=${service.title}`} key={index}>
                 <div
