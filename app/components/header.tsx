@@ -115,7 +115,7 @@ export default function Header() {
         <div className="hidden md:block">
           <Link href="">
             <button className="bg-[#1A4FA3] text-white px-4 py-2 rounded-md font-inter font-semibold text-[18px] hover:bg-blue-900 transition" onClick={() => setIsEnquireFormOpen(true)}>
-              Let's Talk
+              Let&apos;s Talk
             </button>
           </Link>
         </div>
