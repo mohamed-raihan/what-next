@@ -142,43 +142,42 @@ export default function StudentReviewsAndUniversities() {
   return (
     <section className='-mb-30'>
       {/* Student Reviews Section */}
-      <div className="bg-[url('/reviewBg.svg')] bg-cover bg-center text-white pb-25 pt-15 relative">
-      <h2 className="text-3xl font-bold font-roboto text-center mb-10">Student Reviews</h2>
+      <div className="bg-[url('/reviewBg.svg')] bg-cover bg-center text-white pb-25 pt-45 md:pt-15 relative">
+        <h2 className="text-3xl font-bold font-roboto text-center mb-10">Student Reviews</h2>
 
-      <div className="flex justify-center gap-6 flex-wrap px-4">
-        {currentReviews.map((review, index) => (
-          <div
-            key={index}
-            className="bg-white text-black rounded-xl shadow-lg max-w-sm p-6 flex flex-col items-start h-[21rem] overflow-y-auto scrollbar-hide [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
-          >
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-[50px] h-[50px] rounded-full bg-[#C7C7C7] flex items-center justify-center text-2xl font-bold text-gray-700">
-                {review.name.charAt(0).toUpperCase()}
+        <div className="flex justify-center gap-6 flex-wrap px-4">
+          {currentReviews.map((review, index) => (
+            <div
+              key={index}
+              className="bg-white text-black rounded-xl shadow-lg max-w-sm p-6 flex flex-col items-start h-[21rem] overflow-y-auto scrollbar-hide [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-[50px] h-[50px] rounded-full bg-[#C7C7C7] flex items-center justify-center text-2xl font-bold text-gray-700">
+                  {review.name.charAt(0).toUpperCase()}
+                </div>
+                <div>
+                  <p className="font-bold text-lg">{review.name}</p>
+                  <p className="text-sm text-gray-600">{review.designation} {review.company}</p>
+                </div>
               </div>
-              <div>
-                <p className="font-bold text-lg">{review.name}</p>
-                <p className="text-sm text-gray-600">{review.designation} {review.company}</p>
-              </div>
+              <p className="text-sm mb-4">{review.review}</p>
+              <p className="text-xs text-gray-500">{review.date}</p>
             </div>
-            <p className="text-sm mb-4">{review.review}</p>
-            <p className="text-xs text-gray-500">{review.date}</p>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      {/* Pagination Dots */}
-      <div className="mt-6 flex justify-center gap-2">
-        {Array.from({ length: totalPages }).map((_, i) => (
-          <span
-            key={i}
-            onClick={() => setCurrentPage(i)}
-            className={`w-3 h-3 rounded-full cursor-pointer ${
-              i === currentPage ? "bg-white" : "bg-white/40"
-            }`}
-          />
-        ))}
+        {/* Pagination Dots */}
+        <div className="mt-6 flex justify-center gap-2">
+          {Array.from({ length: totalPages }).map((_, i) => (
+            <span
+              key={i}
+              onClick={() => setCurrentPage(i)}
+              className={`w-3 h-3 rounded-full cursor-pointer ${i === currentPage ? "bg-white" : "bg-white/40"
+                }`}
+            />
+          ))}
+        </div>
       </div>
-    </div>
 
       {/* Featured UK Universities */}
       <div className="bg-white py-10 px-8 relative">

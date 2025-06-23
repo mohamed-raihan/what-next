@@ -8,17 +8,17 @@ const StudyAbroadSection = () => {
   const router = useRouter();
   return (
     <div className="">
-      <section className="relative xl:h-screen mx-auto py-16 bg-[url('/education-learning1.svg')] bg-no-repeat bg-cover bg-center">
+      <section className="relative xl:h-screen mx-auto py-16 px-4 bg-[url('/education-learning1.svg')] bg-no-repeat bg-cover bg-center">
         <div className="text-center h-full flex flex-col justify-center items-center">
           <p className="text-xl md:text-2xl font-semibold text-[#686868]">About Us</p>
           <h2 className="font-bold mt-2 font-roboto text-[#0046AA] font-semibold text-[25px] md:text-[40px]">Experience a Different Kind of</h2>
           <h2 className="text-[#288737] font-roboto font-semibold text-[35px] md:text-[75px]">Study Abroad Journey</h2>
-          <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-lg font-montserrat">
+          <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-md md:text-lg font-montserrat">
             WhatNext provides professional education services that are equitable, far reaching,
             extensive, existent, virtuous and of high quality. We assist students in connecting with
             higher education institutions all across the world.
           </p>
-          <p className="mt-4 text-gray-600 max-w-3xl mx-auto text-lg font-montserrat">
+          <p className="mt-4 text-gray-600 max-w-3xl mx-auto text-md md:text-lg font-montserrat">
             We allure the best flair in terms of counsellors and enablers without regard to
             contention, divinity, or communal as a chosen partner for top worldwide educational
             institutions, and we provide a tremendous working environment. While being equipped to be
@@ -69,13 +69,14 @@ const StudyAbroadSection = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {[
               { title: 'Unlock Your Future', img: '/ourservice1.svg' },
+              { title: 'Courses & Universities', img: '/ourservice3.svg' },
               { title: 'Enrollment Guidelines', img: '/ourservice2.svg' },
-              { title: 'Course & College Advisory', img: '/ourservice3.svg' },
-              { title: 'Student Travel Assistance', img: '/ourservice4.svg' },
               { title: 'Enrollment Procedure', img: '/ourservice5.svg' },
               { title: 'Immigration Support', img: '/ourservice6.svg' },
               { title: 'Scholarship Assistance', img: '/ourservice7.svg' },
-              { title: 'Monetary Guidance', img: '/ourservice8.svg' }
+              { title: 'Monetary Guidance', img: '/ourservice8.svg' },
+              { title: 'Student Travel Assistance', img: '/ourservice4.svg' },
+
             ].map((service, index) => (
               <Link href={`/services?service=${service.title}`} key={index}>
                 <div

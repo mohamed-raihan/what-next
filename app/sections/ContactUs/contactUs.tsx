@@ -1,5 +1,5 @@
-import React from "react";
 import GetintouchForm from "@/app/components/getintouch-form";
+import React from "react";
 
 const ContactSection = () => {
     return (
@@ -17,7 +17,7 @@ const ContactSection = () => {
                             It&apos;s effective, it&apos;s beneficial and it&apos;s absolutely free. Take your virtual counselling session today!
                         </p>
                     </div>
-                    <div className="px-4 md:px-0">
+                    <div className="max-w-full md:max-w-xl flex-1 flex items-center justify-center">
                         <GetintouchForm/>
                     </div>
                 </div>

@@ -103,6 +103,7 @@ export default function Header() {
                 <Link href="/study-abroad/europe" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">Europe</Link>
                 <Link href="/study-abroad/australia" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">Australia</Link>
                 <Link href="/study-abroad/newzealand" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">New Zealand</Link>
+                <Link href="/study-abroad/uae" className="block px-4 py-2.5 hover:bg-blue-50 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-150 uppercase font-medium">UAE</Link>
               </div>
             </div>
           </div>
@@ -114,7 +115,7 @@ export default function Header() {
         <div className="hidden md:block">
           <Link href="">
             <button className="bg-[#1A4FA3] text-white px-4 py-2 rounded-md font-inter font-semibold text-[18px] hover:bg-blue-900 transition" onClick={() => setIsEnquireFormOpen(true)}>
-              Free Consultation
+              Let's Talk
             </button>
           </Link>
         </div>
@@ -148,6 +149,7 @@ export default function Header() {
                   <Link href="/study-abroad/australia" className="block py-2 text-gray-800 hover:text-blue-600" onClick={handleMobileMenuClick}>Australia</Link>
                   <Link href="/study-abroad/europe" className="block py-2 text-gray-800 hover:text-blue-600" onClick={handleMobileMenuClick}>Europe</Link>
                   <Link href="/study-abroad/newzealand" className="block py-2 text-gray-800 hover:text-blue-600" onClick={handleMobileMenuClick}>New Zealand</Link>
+                  <Link href="/study-abroad/uae" className="block py-2 text-gray-800 hover:text-blue-600">UAE</Link>
                 </div>
               )}
             </div>

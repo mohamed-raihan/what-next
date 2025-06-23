@@ -168,7 +168,7 @@ const GetintouchForm = () => {
             </form>
 
             <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mt-6 sm:mt-8 text-sm">
-                <div className="flex items-center col-span-1 mb-2 sm:mb-0 ">
+                <div className="flex items-center col-span-1 mb-2 sm:mb-0 text-left">
                     <Phone className="w-6 h-6 mb-1" />
                     <div className="ms-3">
                         <p className="font-bold">PHONE</p>
@@ -182,7 +182,7 @@ const GetintouchForm = () => {
                         <p className="text-green-600">03 5432 1234</p>
                     </div>
                 </div> */}
-                <div className="flex items-center col-span-1">
+                <div className="flex items-center col-span-1 text-left">
                     <Mail className="w-6 h-6 xl:w-8 xl:h-8" />
                     <div className="ms-3">
                         <p className="font-bold">EMAIL</p>

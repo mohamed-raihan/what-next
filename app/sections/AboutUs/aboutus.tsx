@@ -23,12 +23,12 @@ export default function AboutSection() {
                     <h1 className="text-3xl md:text-6xl font-bold leading-tight font-roboto">
                         <span className="text-[#0046AA]">Experience</span> a Different Kind of <span className="text-[#288737]">Study Abroad Journey</span>
                     </h1>
-                    <p className="py-8 text-[#000000]  font-[100] text-xl md:text-[20px]  font-montserrat">
+                    <p className="py-8 text-[#000000]  font-[100] text-lg md:text-[20px]  font-montserrat">
                         WhatNext provides professional education services that are equitable, far
                         reaching, extensive, existent, virtuous and of high quality. We assist students
                         in connecting with higher education institutions all across the world.
                     </p>
-                    <p className="text-[#000000] text-light text-xl md:text-[20px] font-montserrat">
+                    <p className="text-[#000000] text-light text-lg md:text-[20px] font-montserrat">
                         We allure the best flair in terms of counsellors and enablers without regard to
                         contention, divinity, or communal as a chosen partner for top worldwide
                         educational institutions, and we provide a tremendous working environment. While

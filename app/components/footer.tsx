@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
           {/* Logo + Description */}
           <div className="space-y-4 sm:space-y-6 lg:-mt-15">
-            <div className="flex justify-center xl:justify-start  items-center w-full">
+            <div className="flex justify-center xl:justify-center items-center w-full">
               <Image
                 src="/logo.svg"
                 alt="WhatNext Logo"
@@ -22,9 +22,14 @@ export default function Footer() {
                 className=""
               />
             </div>
-            <p className="text-sm text-gray-600 mt-4 font-rubik">
-              <span className="font-semibold">Unit No - 1111, BARTON CENTRE, Mahatma Gandhi Rd, Haridevpur, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001</span>
+            <p className="text-sm text-gray-600  mt-4 font-rubik font-semibold">
+              <span className="">What Next Overseas Education Consultancy Service, Unit No - 111, Barton Centre, M.G.Road, Bangalore - 560001</span>
+              <br/>
+              <span>+91 9900542429</span>
+              <br/>
+              <span>info@whatnextoverseas.com</span>
             </p>
+
             <div className="flex space-x-4 sm:space-x-6 mt-4 sm:mt-6 justify-center md:justify-start md:items-start items-center">
               <a href="https://www.facebook.com/whatnextoverseas" target="_blank" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
                 <Image src="/faceook.png" alt="Facebook" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />

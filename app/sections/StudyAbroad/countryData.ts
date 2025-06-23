@@ -1,3 +1,5 @@
+import { getStudyAbroadData } from "@/app/api-services/services/studyAbroad";
+
 export interface WhyChooseCard {
     title: string;
     description: string;
@@ -68,7 +70,7 @@ export const countryData: Record<string, CountryData> = {
             {
                 title: 'Outstanding Education',
                 description:
-                    'Through the unique curriculum, the education system not only emphasizes on majors but also on liberal arts. Liberal arts may not provide much of subject knowledge as a major does but instead contributes to more creative, thoughtful, and bold problem-solving ability. You will start thinking beyond the boundaries of only “majors”.',
+                    'Through the unique curriculum, the education system not only emphasizes on majors but also on liberal arts. Liberal arts may not provide much of subject knowledge as a major does but instead contributes to more creative, thoughtful, and bold problem-solving ability. You will start thinking beyond the boundaries of only "majors".',
             },
             {
                 title: 'Multicultural Environment',
@@ -78,7 +80,7 @@ export const countryData: Record<string, CountryData> = {
             {
                 title: 'Flexibility in the U.S. Education System',
                 description:
-                    'A flexible education system is available in the country, so you are not forced to pursue general studies all over the year. Liberal arts of choosing the interesting subjects help the U.S. your want to study in a concentrated & narrowed-down view. University is available at all levels such as associate, bachelor’s, master’s, and doctorate. It is distinctly different from other rigid education systems.',
+                    "A flexible education system is available in the country, so you are not forced to pursue general studies all over the year. Liberal arts of choosing the interesting subjects help the U.S. your want to study in a concentrated & narrowed-down view. University is available at all levels such as associate, bachelor's, master's, and doctorate. It is distinctly different from other rigid education systems.",
             },
             {
                 title: 'Practical Aspects of Education',
@@ -113,7 +115,7 @@ export const countryData: Record<string, CountryData> = {
             {
                 title: 'How much money will it take to study in Canada?',
                 description:
-                    'Cost of studying in Canada will depend upon the level of degree, university and program you are applying to. Average tuition fees of bachelor’s degree is between 18000 to 20000 CAD per annum and masters costs around 25000 to 17000 CAD per annum.',
+                    "Cost of studying in Canada will depend upon the level of degree, university and program you are applying to. Average tuition fees of bachelor's degree is between 18000 to 20000 CAD per annum and masters costs around 25000 to 17000 CAD per annum.",
             },
             {
                 title: 'Which course is best for study in Canada?',
@@ -136,10 +138,10 @@ export const countryData: Record<string, CountryData> = {
     newzealand: {
         name: 'New Zealand',
         paragraph:
-            'New Zealand, one of the finest locations to live, is home to some of the world\'s most prestigious educational institutions. Because New Zealand is tiny and uncrowded, moving around and getting things done is simple.',
+            "New Zealand, one of the finest locations to live, is home to some of the world's most prestigious educational institutions. Because New Zealand is tiny and uncrowded, moving around and getting things done is simple.",
         backgroundImage: '/new-zealand/newzealand-bg.svg', // Update based on your asset path
         greenSectionContent: [
-            'New Zealand is the world\'s second most peaceful country with all the 8 State-Funded Universities in the top 3% world university rankings.',
+            "New Zealand is the world's second most peaceful country with all the 8 State-Funded Universities in the top 3% world university rankings.",
             'Easy entry requirements.',
             'A great destination.',
             'The healthy outdoor student lifestyle.',
@@ -180,11 +182,11 @@ export const countryData: Record<string, CountryData> = {
     uk: {
         name: 'United Kingdom',
         paragraph:
-            'The United Kingdom has been the favored destination for some of history\'s most influential thinkers. The United Kingdom\'s long-standing reputation for intellectual achievement, as well as its universities, continue to raise the standard in the academic world.',
+            "The United Kingdom has been the favored destination for some of history's most influential thinkers. The United Kingdom's long-standing reputation for intellectual achievement, as well as its universities, continue to raise the standard in the academic world.",
         backgroundImage: '/uk/uk-bg.svg', // Update with actual image path
         greenSectionContent: [
             'Colleges in UK are reliably positioning among the best on the planet and capabilities are globally valued and recognized.',
-            'The UK expects 5 percent of the world\'s systematic research and creates 14 percent of the world\'s most regularly referred to papers.',
+            "The UK expects 5 percent of the world's systematic research and creates 14 percent of the world's most regularly referred to papers.",
             'Joined Kingdom colleges give suppleness of decision and grant you to blend scholastic and professional courses of your decision.',
             'The educating and study technique utilized in the UK offer you the opportunity to be unique and improve aptitudes sets and independence.',
         ],
@@ -205,7 +207,7 @@ export const countryData: Record<string, CountryData> = {
             {
                 title: 'Shorter Duration of Courses',
                 description:
-                    'Courses in the UK are generally shorter than in many other countries. The country offers 3-year undergraduate degrees and 1-year master\'s programmers at the universities. It helps reduce tuition and accommodation costs to study in the UK for international students.',
+                    "Courses in the UK are generally shorter than in many other countries. The country offers 3-year undergraduate degrees and 1-year master's programmers at the universities. It helps reduce tuition and accommodation costs to study in the UK for international students.",
             },
             {
                 title: 'Scholarship and Financial Aid',
@@ -215,15 +217,15 @@ export const countryData: Record<string, CountryData> = {
         ],
     },
 
-    europe: {   
+    europe: {
         name: 'Europe',
         paragraph:
-            'With over 40 countries in Europe, it can be hard to decide where to spend a semester, summer, J-term, or year learning overseas! Each country has something to offer whether it\'s the cuisine, culture, stunning landscapes, or captivating languages.',
+            "With over 40 countries in Europe, it can be hard to decide where to spend a semester, summer, J-term, or year learning overseas! Each country has something to offer whether it's the cuisine, culture, stunning landscapes, or captivating languages.",
         backgroundImage: '/europe/europe-bg.svg', // Update with actual path
         greenSectionContent: [
             'The continent of Europe has always been one of the world centers of learning and technological development. Europe today has over 4000 higher education institutions.',
             'Education in Europe is highly subsidized through taxes.',
-            'Besides the high academic standards in Europe, foreign students also gain a rich cultural experience thanks to Europe\'s cultural and linguistic diversity.',
+            "Besides the high academic standards in Europe, foreign students also gain a rich cultural experience thanks to Europe's cultural and linguistic diversity.",
         ],
         animalShadow: '/europe/eagle-shadow.svg', // Replace with accurate shadow if different
         universityLogos: [
@@ -233,12 +235,12 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/europe/sigillvm.svg', height: '' },
             { logo: '/europe/osloensis.svg', height: '' },
         ],
-        blueAnimal: '/europe/eagle-blue.svg',        
+        blueAnimal: '/europe/eagle-blue.svg',
         whyChooseCards: [
             {
                 title: 'Quality of Education',
                 description:
-                    'Europe\'s quality of universities is extremely good and includes some of the world\'s top-ranked institutions. These universities – as well as many other European universities – are all held in high regard worldwide and demonstrate Europe\'s ability to provide an exceptional standard of teaching for postgraduate students.',
+                    "Europe's quality of universities is extremely good and includes some of the world's top-ranked institutions. These universities – as well as many other European universities – are all held in high regard worldwide and demonstrate Europe's ability to provide an exceptional standard of teaching for postgraduate students.",
             },
             {
                 title: 'High Standard of Living',
@@ -247,10 +249,73 @@ export const countryData: Record<string, CountryData> = {
             },
             {
                 title: 'Job Prospects',
-                description:    
+                description:
                     'Studying in a European city is beneficial for your future career as they tend to be large and diverse in their student population. This enables the postgraduate student a wider life experience as well as offering an excellent networking potential.',
             },
         ],
     },
+    uae: {
+        name: 'UAE',
+        paragraph:
+            "The United Arab Emirates (UAE) is rapidly emerging as a global education hub with its futuristic cities, world-class infrastructure, and diverse student population. From business to AI, the UAE offers top-tier education aligned with global industry needs.",
+        backgroundImage: '/uae/uae-bg.png', // Update with actual background image path
+        greenSectionContent: [
+            'UAE is home to globally ranked universities including international campuses from the US, UK, and Australia.',
+            'The country offers a safe, multicultural environment and modern lifestyle with excellent student amenities.',
+            'UAE\'s strategic location provides access to global opportunities, internships, and employment across sectors.',
+        ],
+        animalShadow: '/uae/falcon.png', // Replace with accurate falcon shadow
+        universityLogos: [
+            { logo: '/uae/Khalifa.png', height: '' },
+            { logo: '/uae/ueau.jpg', height: '' },
+            { logo: '/uae/aus.png', height: '' },
+            { logo: '/uae/nyu.png', height: '' },
+            { logo: '/uae/zu.png', height: '' },
+        ],
+        blueAnimal: '/uae/falcon-blue.png', // Stylized falcon image
+        whyChooseCards: [
+            {
+                title: 'Global Education Hub',
+                description:
+                    'UAE hosts top-ranking universities and international campuses offering globally recognized degrees across various disciplines.',
+            },
+            {
+                title: 'Safe & Diverse Environment',
+                description:
+                    'The UAE is known for its safety, hospitality, and cultural diversity, making it a welcoming destination for international students.',
+            },
+            {
+                title: 'Work Opportunities & Career Growth',
+                description:
+                    'Students can access internships, part-time work (with approvals), and job opportunities in sectors like technology, finance, media, and hospitality.',
+            },
+            {
+                title: 'Affordable Tuition & Modern Living',
+                description:
+                    'Compared to other study destinations, UAE offers competitive tuition fees, world-class housing, and modern amenities tailored for student life.',
+            },
+            {
+                title: 'Post-Study Residency Options',
+                description:
+                    'Graduates can apply for job-seeker or long-term visas, and exceptional students may qualify for the UAE Golden Visa program.',
+            },
+        ],
+    },
+
     // Add other countries here...
+};
+
+export const getCountryData = async () => {
+    try {
+        const apiData = await getStudyAbroadData();
+        console.log(apiData);
+
+        if (Object.keys(apiData).length > 5) {
+            return apiData;
+        }
+        return countryData;
+    } catch (error) {
+        console.error("API call failed, falling back to mock data", error);
+        return countryData;
+    }
 }; 

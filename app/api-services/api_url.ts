@@ -23,4 +23,9 @@ export const API_URL = {
         GET_STUDY_ABROAD_SEO: '/api/countrymeta/',
         GET_SERVICE_SEO: '/api/servicemeta/',
     },
+    STUDY_ABROAD: {
+        GET_COUNTRY: '/api/countries/',
+        GET_UNIVERSITY: '/api/university/',
+        GET_WHYCHOOSE: '/api/why-choose/'
+    }
 }

@@ -50,7 +50,7 @@ const CountrySection: React.FC<CountryData> = ({
                     ))}
                 </ul>
                 <div className='absolute right-2 md:right-20  hidden md:block w-24 md:w-32 lg:w-70 '>
-                    <img src={animalShadow} className="w-24 md:w-50 lg:w-70" />
+                    <img src={animalShadow} className="w-24 md:w-50" />
                 </div>
             </div>
 
@@ -65,7 +65,7 @@ const CountrySection: React.FC<CountryData> = ({
                             key={idx}
                             src={logo.logo}
                             alt="university logo"
-                            className="h-10 md:h-14 lg:h-20 object-contain max-w-[120px] md:max-w-[160px] lg:max-w-[200px]"
+                            className="h-10 md:h-14 lg:h-30 object-contain max-w-[120px] md:max-w-[160px] lg:max-w-[200px]"
                         />
                     ))}
                 </div>
@@ -78,7 +78,7 @@ const CountrySection: React.FC<CountryData> = ({
                         <h3 className="text-2xl md:text-4xl lg:text-5xl font-roboto mb-8 md:mb-20 font-semibold text-center text-[#0046AA] ">
                             WHY CHOOSE <span className='text-[#288737] uppercase'>{name}</span> <br /><span className='text-[#000000]'>FOR STUDY?</span>
                         </h3>
-                        <img src={blueAnimal} alt="blue animal" className="absolute right-0 -top-14 xl:top-0 md:w-40 lg:w-50 xl:w-60 hidden md:block" />
+                        <img src={blueAnimal} alt="blue animal" className="absolute -right-10 -top-14 xl:top-0 md:w-40 lg:w-50 xl:w-60 hidden md:block" />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto ">
 
@@ -101,7 +101,7 @@ const CountrySection: React.FC<CountryData> = ({
             </div>
 
             {/* Contact Section */}
-            <div className="relative bg-[url(/service-bg.svg)] bg-cover flex flex-col xl:flex-row justify-between items-center xl:items-start bg-no-repeat md:mt-0 pt-10 pt-18 xl:pt-35 px-2 md:px-10 py-10 lg:px-25 h-auto">
+            <div className="relative bg-[url(/service-bg.svg)] bg-cover flex flex-col xl:flex-row justify-between items-center xl:items-start bg-no-repeat md:mt-0   xl:pt-35 px-2 md:px-10 py-10 lg:px-25 h-auto">
                 <div className="ms-2 md:ms-10 mb-8 md:mb-0 flex-1 flex flex-col hidden xl:block">
                     <h1 className="text-3xl md:text-5xl xl:text-7xl text-[#0046AA] font-medium font-roboto font-semibold">
                         Get in Touch with<br />
