@@ -70,6 +70,7 @@ export default function Footer() {
               <Link href="/study-abroad/europe" className="text-[#4F5665] text-sm hover:text-blue-600">Study in Europe</Link>
               <Link href="/study-abroad/australia" className="text-[#4F5665] text-sm hover:text-blue-600">Study in Australia</Link>
               <Link href="/study-abroad/newzealand" className="text-[#4F5665] text-sm hover:text-blue-600">Study in New Zealand</Link>
+              <Link href="/study-abroad/uae" className="text-[#4F5665] text-sm hover:text-blue-600">Study in UAE</Link>
             </div>
           </div>
 

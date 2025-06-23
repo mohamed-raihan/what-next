@@ -2,11 +2,7 @@ import { getCountryData } from '../../sections/StudyAbroad/countryData';
 import CountrySection from '../../sections/StudyAbroad/CountrySection';
 import { notFound } from 'next/navigation';
 
-interface Props {
-    params: { country: string };
-  }
-
-export default async function StudyAbroadCountryPage({ params }: Props) {
+export default async function StudyAbroadCountryPage({ params }: { params: { country: string } }) {
   const { country } = params;
   const allCountryData = await getCountryData();
   const data = allCountryData[country.toLowerCase()];
