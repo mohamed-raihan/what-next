@@ -5,7 +5,8 @@ const logos = [
   { src: '/icefLogo.png', alt: 'ICEF Agency Status' },
   { src: '/nafsalogo.svg', alt: 'NAFSA' },
   { src: '/toefl-grace.webp', alt: 'ETS TOEFL' },
-  { src: '/idp-ielts.png', alt: 'IDP IELTS' },
+  { src: '/idp.png', alt: 'IDP IELTS' },
+  { src: '/ielts.png', alt: 'IDP IELTS' },
 ];
 
 const IndustryPartnerships = () => {
