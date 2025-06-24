@@ -22,7 +22,7 @@ export default function Footer() {
                 className=""
               />
             </div>
-            <p className="text-sm text-gray-600  mt-4 font-rubik font-semibold">
+            <p className="text-sm text-gray-600  mt-4 font-rubik font-semibold text-center">
               <span className="">What Next Overseas Education Consultancy Service, Unit No - 111, Barton Centre, M.G.Road, Bangalore - 560001</span>
               <br/>
               <span>+91 9900542429</span>
@@ -30,12 +30,12 @@ export default function Footer() {
               <span>info@whatnextoverseas.com</span>
             </p>
 
-            <div className="flex space-x-4 sm:space-x-6 mt-4 sm:mt-6 justify-center md:justify-start md:items-start items-center">
+            <div className="flex space-x-4 sm:space-x-6 mt-4 sm:mt-6 justify-center  items-center">
               <a href="https://www.facebook.com/whatnextoverseas" target="_blank" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
                 <Image src="/faceook.png" alt="Facebook" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
               </a>
               <a href="#" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
-                <Image src="/twitter.png" alt="Twitter" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
+                <Image src="/linkedIn.png" alt="Twitter" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
               </a>
               <a href="https://www.instagram.com/whatnextoverseas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
                 <Image src="/instagram.png" alt="Instagram" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />

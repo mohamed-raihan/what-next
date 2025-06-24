@@ -44,6 +44,7 @@ interface Blog {
     is_trending: boolean;
     featured: boolean;
     excerpt?: string;
+    is_event?: boolean;
 }
 
 const blogs = [
@@ -270,6 +271,77 @@ const blogs = [
         is_trending: false,
         featured: false,
     },
+    {
+        title: 'Activities and Events for Aspiring Abroad Students',
+        slug: 'activities-and-events',
+        author: 'Admin',
+        date: '24 June, 2025',
+        image: '/blogs/activities1.jpg',
+        category: 'News',
+        readTime: '18 mins',
+        is_editors: true,
+        is_recent: true,
+        is_trending: true,
+        featured: false,
+        is_event: true,
+      },
+    // Events & Activities
+    {
+        title: 'Pre-Departure Briefing for Fall 2024 Intake',
+        slug: 'pre-departure-briefing-fall-2024',
+        author: 'Admin',
+        date: '15 July, 2024',
+        image: '/blogs/pre-departure.jpg',
+        category: 'Event',
+        readTime: '10 mins',
+        is_editors: false,
+        is_recent: false,
+        is_trending: false,
+        featured: false,
+        is_event: true,
+    },
+    {
+        title: 'USA F1 Visa Workshop: Common Mistakes to Avoid',
+        slug: 'usa-f1-visa-workshop',
+        author: 'Admin',
+        date: '20 June, 2024',
+        image: '/blogs/visa-workshop.jpg',
+        category: 'Event',
+        readTime: '15 mins',
+        is_editors: false,
+        is_recent: false,
+        is_trending: false,
+        featured: false,
+        is_event: true,
+    },
+    {
+        title: 'Meet and Greet with University Representatives',
+        slug: 'meet-university-reps',
+        author: 'Admin',
+        date: '05 June, 2024',
+        image: '/blogs/uni-reps-meet.jpg',
+        category: 'Event',
+        readTime: '12 mins',
+        is_editors: false,
+        is_recent: false,
+        is_trending: false,
+        featured: false,
+        is_event: true,
+    },
+    {
+        title: 'Education Loan Fair for Aspiring Study Abroad Students',
+        slug: 'education-loan-fair',
+        author: 'Admin',
+        date: '25 May, 2024',
+        image: '/blogs/loan-fair.jpg',
+        category: 'Event',
+        readTime: '8 mins',
+        is_editors: false,
+        is_recent: false,
+        is_trending: false,
+        featured: false,
+        is_event: true,
+    },
     // Add more blogs as needed...
 ];
 
@@ -280,6 +352,8 @@ export default function BlogList() {
     const side = blogs.filter((b: Blog) => b.slug !== main.slug).slice(0, 3);
     // Editors Choice
     const editors = blogs.filter((b: Blog) => b.is_editors).slice(0, 4);
+    // Events and Activities
+    const events = blogs.filter((b: Blog) => b.is_event).slice(0, 4);
     // Recent Posts (first is large, rest are small)
     const recent = blogs.filter((b: Blog) => b.is_recent).slice(0, 4);
     // Trending News
@@ -393,6 +467,37 @@ export default function BlogList() {
                     </div>
                     <div className="flex gap-6 overflow-x-auto pb-2">
                         {editors.map((post: Blog) => (
+                            <Link
+                                key={post.slug}
+                                href={`/blogs/${post.slug}`}
+                                className="min-w-[260px] max-w-[260px] bg-white rounded-lg shadow hover:shadow-lg transition flex-shrink-0"
+                            >
+                                <img src={post.image} alt={post.title} className="w-full h-36 object-cover rounded-t-lg" />
+                                <div className="p-4">
+                                    <span className="inline-block bg-gray-200 text-xs px-2 py-1 rounded font-bold mb-2 uppercase">{post.category}</span>
+                                    <h3 className="font-semibold text-base mb-2">{post.title}</h3>
+                                    <div className="text-xs text-gray-500">{post.date}</div>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </section>
+
+                {/* Events and Activities */}
+                <section className="mb-12">
+                    <div className="flex items-center justify-between mb-4">
+                        <h2 className="text-xl md:text-2xl font-bold">Events and Activities</h2>
+                        <div className="flex gap-2">
+                            <button className="w-8 h-8 flex items-center justify-center rounded border text-gray-500 hover:bg-gray-100">
+                                <span>&lt;</span>
+                            </button>
+                            <button className="w-8 h-8 flex items-center justify-center rounded border text-gray-500 hover:bg-gray-100">
+                                <span>&gt;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div className="flex gap-6 overflow-x-auto pb-2">
+                        {events.map((post: Blog) => (
                             <Link
                                 key={post.slug}
                                 href={`/blogs/${post.slug}`}

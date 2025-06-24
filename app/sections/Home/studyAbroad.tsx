@@ -176,6 +176,12 @@ const StudyAbroadSection = () => {
                   description: 'When you choose to study in New Zealand, you can be confident.',
                   link: '/study-abroad/newzealand'
                 },
+                {
+                  name: 'UAE',
+                  image: '/uae-slide.png',
+                  description: 'UAE welcomes international students to thrive in a global classroom.',
+                  link: '/study-abroad/uae'
+                },
                 // Add more countries as needed
               ].map((country, idx) => (
                 <Link

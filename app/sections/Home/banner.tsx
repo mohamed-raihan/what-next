@@ -41,11 +41,11 @@ export default function Banner() {
                     </h1>
                 </div>
 
-                <div className='lg:absolute lg:right-10 lg:bottom-40 flex lg:flex-col xl:flex-row gap-4 w-full lg:w-fit justify-center md:justify-start items-center py-3'>
-                <Image src="/airc-logo.gif" alt="WhatNext Logo" width={100} height={100} className="md:w-35" />
-                <Image src="/nafsalogo.svg" alt="WhatNext Logo" width={100} height={100} className="md:w-40" />
-                <Image src="/icefLogo.png" alt="WhatNext Logo" width={100} height={100} className="md:w-30" />
-            </div>
+                {/* <div className='lg:absolute lg:right-10 lg:bottom-40 flex lg:flex-col xl:flex-row gap-4 w-full lg:w-fit justify-center md:justify-start items-center py-3'>
+                    <Image src="/ai_rc.png" alt="WhatNext Logo" width={100} height={100} className="md:w-35" />
+                    <Image src="/nafsalogo.svg" alt="WhatNext Logo" width={100} height={100} className="md:w-40" />
+                    <Image src="/icefLogo.png" alt="WhatNext Logo" width={100} height={100} className="md:w-30" />
+                </div> */}
 
                 {/* Stats Card */}
                 <div className="bg-white rounded-lg p-4 sm:p-6 max-w-3xl border border-[#E5E5E5]">

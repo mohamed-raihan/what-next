@@ -10,36 +10,36 @@ import EnquireForm from "@/app/components/enquireForm";
 const services = [
     {
         id: 1,
-        title: "Application Process",
+        title: "Unlock Your Future",
 
     },
     {
         id: 2,
-        title: "Enrollment Guidelines",
+        title: "Courses & Universities",
     },
     {
         id: 3,
-        title: "Course & College Advisory",
+        title: "Enrollment Guidelines",
     },
     {
         id: 4,
-        title: "Unlock Your Future",
+        title: "Enrollment Procedure",
     },
     {
         id: 5,
-        title: "Monetary Guidance",
-    },
-    {
-        id: 6,
-        title: "Student Travel Assistance",
-    },
-    {
-        id: 7,
         title: "Immigration Support",
     },
     {
+        id: 6,
+        title: "Scholarship Assistance",
+    },
+    {
+        id: 7,
+        title: "Monetary Guidance",
+    },
+    {
         id: 8,
-        title: "Orientation About Country Place",
+        title: "Student Travel Assistance",
     },
     {
         id: 9,
@@ -51,71 +51,97 @@ const details = [
     {
         id: 1,
         service_header: 1,
-        title: "Application Process",
+        title: "Unlock Your Future",
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Our team manages point-to-point communications, from providing information to ensuring it reaches the appropriate source. At WhatNext, we devote our time and attention to assisting you with the time-consuming application filing process.</p>
+                <p>Choose our expertise and experience to assist you in determining the best course for your desired career and shaping your passion. Our professional counselors provide you with the most up-to-date information and insights while also recognizing your aspirations, aptitudes, and awareness, preparing you properly throughout the counseling and admission phases.</p>
                 <br />
-                <p>We make sure the documents are free of errors and readable. Our skilled team is here to assist you in adhering to all norms and rules in order to decrease misunderstanding, eliminate unnecessary errors, and build a compelling case through accurate information presentation.</p>
+                <p>We assist you in learning about education, institutions, faculty, admission procedures, and a variety of other topics. Applying to institutions overseas can be a stressful process, but with the help of our knowledgeable counselors, we make it simple and orderly. Based on the possibility of admission for your profile and credentials, trust us to be ambitious, safe, and practical.</p>
             </>
         ),
     },
     {
         id: 2,
         service_header: 2,
-        title: "Enrollment Guidelines",
+        title: "Courses & Universities",
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Our team manages point-to-point communications, from providing information to ensuring it reaches the appropriate source.</p>
-                <br />
-                <p>It&apos;s time-consuming, often stressful, and complicated; nevertheless, don&apos;t worry; we&apos;ll provide the greatest available support to make it hassle-free for you. We provide one-on-one help with the last steps of the application process. We give an interface as well as a detailed guide to assist you in completing each stage and level of difficulty. We can assist you in gaining confidence and skills in this area by assisting you with preparation.</p>
-            </>
-        ),
-    },
-    {
-        id: 3,
-        service_header: 3,
-        title: "Course & College Advisory",
-        image: "/applicationImage.svg",
-        description: (
-            <>
-                <p>It is just as vital to identify and select the appropriate institution as it is to select your professional route and educational course. What Next can assist you in taking proactive steps in this direction and guiding you to the ideal venue for your academics. It is difficult to choose the right university when there are so many to choose from. We use discerning parameters that correspond to your preferences, professional goals, and other factors.</p>
+                <p>It is just as vital to identify and select the appropriate institution as it is to select your professional route and educational course. What Next can assist you in taking proactive steps in this direction and guiding you to the ideal institution for your academics. It is difficult to choose the right university when there are so many to choose from. We use discerning parameters that correspond to your preferences, professional goals, and other factors.</p>
                 <br />
                 <p>What Next will also walk you through the modules and curriculum you&apos;ll be studying when you&apos;ve been accepted. We keep track of socioeconomic and university-related data to keep you informed on all fronts.</p>
             </>
         ),
     },
     {
-        id: 4,
-        service_header: 4,
-        title: "Unlock Your Future",
+        id: 3,
+        service_header: 3,
+        title: "Enrollment Guidelines",
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Choose our expertise and experience in assisting you in determining the best course for your desire and shaping your passion. Our professional counsellors provide you with the most up-to-date information and insights while also recognising your aspirations, aptitudes, and awareness, and preparing you properly both throughout the counselling and admission phases.</p>
+                <p>Our team manages point-to-point communications, from providing information to ensuring it reaches the appropriate source. It&apos;s time-consuming, often stressful, and complicated; nevertheless, don&apos;t worry; we&apos;ll provide the best support available to make it hassle-free for you.</p>
                 <br />
-                <p>We assist you in learning about education, institutions, teachers, admission procedures, and a variety of other topics. Applying to institutions overseas can be a stressful process, but with the help of our knowledgeable counsellors, we make it simple and orderly. Based on the possibility of admissions for your profile and credentials, trust us to be ambitious, safe, and practical.</p>
+                <p>We provide one-on-one help with the last steps of the application process. We provide an interface and a detailed guide to assist you in completing each stage and level of difficulty. We can assist you in gaining confidence and skills in this area by assisting you with your preparation.</p>
+            </>
+        ),
+    },
+    {
+        id: 4,
+        service_header: 4,
+        title: "Enrollment Procedure",
+        image: "/applicationImage.svg",
+        description: (
+            <>
+                <p>Our team manages point-to-point communications, from providing information to ensuring it reaches the appropriate source. At WhatNext, we devote our time and attention to assisting you with the time-consuming application filing process.</p>
+                <br />
+                <p>We make sure the documents are free of errors and readable. Our skilled team is here to assist you in adhering to all norms and rules to reduce misunderstanding, eliminate unnecessary errors, and build a compelling case through accurate information presentation.</p>
             </>
         ),
     },
     {
         id: 5,
         service_header: 5,
-        title: "Monetary Guidance",
+        title: "Immigration Support",
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Because we recognize that studying abroad entails not only your aspirations and deeds, but also a significant financial component that is difficult to achieve for everyone. Because of a lack of sufficient resources, right sources to approach, and most crucially, proper information about the availability and manner to acquire bank loans, it is frequently a lost game even before it begins for most students and their families.</p>
+                <p>Complete immigration support, including application preparation, simulated visa interviews, and documents. We take care of everything for you, from filling out forms to preparing for interviews.</p>
                 <br />
-                <p>What Next Overseas has put in place an experienced team to serve as a single point of contact for information in this direction. We&apos;re also forming strategic partnerships with financial institutions that will provide favorable interest rates, quicker and faster loan processing, and increased loan approval chances.</p>
+                <p>Our skilled team has extensive knowledge and experience in dealing with visa requirements for a variety of destinations.</p>
             </>
         ),
     },
     {
         id: 6,
         service_header: 6,
+        title: "Scholarship Assistance",
+        image: "/applicationImage.svg",
+        description: (
+            <>
+                <p>We help students find and apply for scholarships to reduce the financial burden of studying abroad. Our team provides guidance on eligibility criteria, application deadlines, and essay writing to maximize your chances of securing funding.</p>
+                <br />
+                <p>With our expert assistance, you can navigate the competitive scholarship landscape with confidence and secure the financial aid you need for your education.</p>
+            </>
+        ),
+    },
+    {
+        id: 7,
+        service_header: 7,
+        title: "Monetary Guidance",
+        image: "/applicationImage.svg",
+        description: (
+            <>
+                <p>We recognize that studying abroad entails not only your aspirations and deeds but also a significant financial component that is difficult for many to achieve. A lack of sufficient resources, the right sources to approach, and crucial information about obtaining bank loans can often be a roadblock for many students and their families.</p>
+                <br />
+                <p>What Next Overseas has an experienced team to serve as a single point of contact for information. We are also forming strategic partnerships with financial institutions that will provide favorable interest rates, quicker loan processing, and increased loan approval chances.</p>
+            </>
+        ),
+    },
+    {
+        id: 8,
+        service_header: 8,
         title: "Student Travel Assistance",
         image: "/applicationImage.svg",
         description: (
@@ -123,32 +149,6 @@ const details = [
                 <p>What Next assists you in planning your trip and provides helpful advice.</p>
                 <br />
                 <p>What Next Overseas Education Consultancy provides assistance with everything from finding the best and cheapest airline to travel suggestions, airport information, and local commuting. In addition, we can assist you with forex.</p>
-            </>
-        ),
-    },
-    {
-        id: 7,
-        service_header: 7,
-        title: "Immigration Support",
-        image: "/applicationImage.svg",
-        description: (
-            <>
-                <p>Complete immigration Support, including application preparation, simulated visa interviews, and documents. We take care of everything for you, from filling out forms to preparing for interviews.</p>
-                <br />
-                <p>Our skilled team has extensive knowledge and experience in dealing with visa requirements for a variety of destinations.</p>
-            </>
-        ),
-    },
-    {
-        id: 8,
-        service_header: 8,
-        title: "Orientation About Country Place",
-        image: "/applicationImage.svg",
-        description: (
-            <>
-                <p>Learn more about the country you are entering, the weather, the people, and a brief history of the city you will call home for the next few years.</p>
-                <br />
-                <p>We provide the most critical information to assist you in effectively negotiating with local communities, laws of the land, and weather conditions.</p>
             </>
         ),
     },

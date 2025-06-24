@@ -20,7 +20,7 @@ export const countryData: Record<string, CountryData> = {
     australia: {
         name: 'Australia',
         paragraph: 'The United States takes pride in its technical development, and it has ensured that all levels of education are well-equipped with cutting-edge equipment.', // placeholder
-        backgroundImage: '/australia/australia-bg.svg',
+        backgroundImage: '/australia/opera.png',
         greenSectionContent: [
             'Australia has the second-most astounding human advancement list of all inclusive.',
             'Australian degrees are universally perceived.',
@@ -50,7 +50,7 @@ export const countryData: Record<string, CountryData> = {
         name: 'USA',
         paragraph:
             'The United States takes pride in its technical development, and it has ensured that all levels of education are well-equipped with cutting-edge equipment.',
-        backgroundImage: '/usa/usa-bg.svg', // Replace with actual background image path if different
+        backgroundImage: '/usa/usaN.png', // Replace with actual background image path if different
         greenSectionContent: [
             'The US has six of the top 10 universities in the world. Degrees from these colleges have a global repute.',
             'Campus life is famous for its diversity; people across the globe to study here and you get to mix with people from various cultural and linguistic backgrounds.',
@@ -94,7 +94,7 @@ export const countryData: Record<string, CountryData> = {
         name: 'Canada',
         paragraph:
             'Get an education in Canada, and your diploma will be instantly recognized around the world.',
-        backgroundImage: '/canada/canada-bg.svg', // Update the path based on your project
+        backgroundImage: '/canada/canadaN.png', // Update the path based on your project
         greenSectionContent: [
             'Great Canadian universities.',
             'Accessible Canadian student visa process.',
@@ -139,7 +139,7 @@ export const countryData: Record<string, CountryData> = {
         name: 'New Zealand',
         paragraph:
             "New Zealand, one of the finest locations to live, is home to some of the world's most prestigious educational institutions. Because New Zealand is tiny and uncrowded, moving around and getting things done is simple.",
-        backgroundImage: '/new-zealand/newzealand-bg.svg', // Update based on your asset path
+        backgroundImage: '/new-zealand/newzeland.png', // Update based on your asset path
         greenSectionContent: [
             "New Zealand is the world's second most peaceful country with all the 8 State-Funded Universities in the top 3% world university rankings.",
             'Easy entry requirements.',
@@ -221,7 +221,7 @@ export const countryData: Record<string, CountryData> = {
         name: 'Europe',
         paragraph:
             "With over 40 countries in Europe, it can be hard to decide where to spend a semester, summer, J-term, or year learning overseas! Each country has something to offer whether it's the cuisine, culture, stunning landscapes, or captivating languages.",
-        backgroundImage: '/europe/europe-bg.svg', // Update with actual path
+        backgroundImage: '/europe/europe.png', // Update with actual path
         greenSectionContent: [
             'The continent of Europe has always been one of the world centers of learning and technological development. Europe today has over 4000 higher education institutions.',
             'Education in Europe is highly subsidized through taxes.',

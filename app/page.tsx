@@ -5,6 +5,8 @@ import VoiceOfSuccess from "./sections/Home/success";
 import StudentReviewsAndUniversities from "./sections/Home/review&university";
 import Head from "next/head";
 import { Metadata } from "next";
+import EventsSection from "./sections/Home/activities";
+import IndustryPartnerships from "./sections/Home/badges";
 // import api from "./api-services/axios";
 // import { API_URL } from "./api-services/api_url";
 
@@ -87,6 +89,10 @@ export default function Home() {
       <StudyAbroadSection />
       <VoiceOfSuccess />
       <StudentReviewsAndUniversities />
+      <IndustryPartnerships/>
+      <div className="">
+      <EventsSection />
+    </div>
     </>
   );
 }

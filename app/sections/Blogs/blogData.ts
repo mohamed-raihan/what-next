@@ -791,6 +791,71 @@ export const blogData: Record<string, BlogData> = {
     readTime: '20 mins',
   },
 
+  'activities-and-events': {
+  title: 'Activities and Events for Aspiring Abroad Students',
+  slug: 'activities-and-events',
+  author: 'Admin',
+  date: '24 June, 2025',
+  mainImage: '/blogs/activities-and-events.jpg',
+  content: `<h1><b>Guiding Dreams: Activities & Events for Indian Students Who Aspire to Study Abroad</b></h1>
+      <br />
+      <h2>From First Steps to Final Flight - We&apos;re With You All the Way</h2>
+      <br />
+      <p>
+          Studying abroad is a life-changing journey. At "What Next", we ensure that Indian students are not only prepared academically but also emotionally and logistically for their global leap. Our range of activities and events are designed to provide clarity, confidence, and community throughout the process.
+      </p>
+      <br />
+      <h1><b>What Do We Offer Beyond Consultation?</b></h1>
+      <br />
+      <h3>1. <b>Personalized Career Counseling</b></h3>
+      <p>
+          Every student is unique. Our one-on-one sessions identify strengths, goals, and ideal countries, helping students make informed decisions about their future.
+      </p>
+      <br />
+      <h3>2. <b>University Fairs and Webinars</b></h3>
+      <p>
+          Meet university representatives from top global institutions. Whether it's a live event or an online webinar, students get direct insights and answers about admissions, scholarships, and campus life.
+      </p>
+      <br />
+      <h3>3. <b>Application & SOP Workshops</b></h3>
+      <p>
+          We organize interactive sessions focused on perfecting Statement of Purpose (SOP), Letters of Recommendation (LOR), resumes, and online applications. Our expert guidance increases success rates significantly.
+      </p>
+      <br />
+      <h3>4. <b>Visa Guidance & Mock Interviews</b></h3>
+      <p>
+          From preparing documents to facing the visa officer confidently — our mock interviews and visa support cover every critical detail.
+      </p>
+      <br />
+      <h3>5. <b>Pre-Departure Orientation</b></h3>
+      <p>
+          We host detailed briefings before students leave for their destination. Topics include travel prep, housing tips, part-time jobs, culture shock, and connecting with peers.
+      </p>
+      <br />
+      <h3>6. <b>Alumni Connect & Networking</b></h3>
+      <p>
+          Our alumni network is a valuable post-arrival resource. Students can connect with seniors for mentorship, support, and guidance on adjusting abroad.
+      </p>
+      <br />
+      <div class="cta-section">
+          <h2>Your Journey Starts Here with "What Next"</h2>
+          <p>Our mission is to make studying abroad smooth, structured, and successful for every Indian student. Here’s how we support you:</p>
+          <br />
+          <div class="service-list">
+              <ul>
+                  <li><b>End-to-end student support</b></li>
+                  <li><b>Expert-led documentation assistance</b></li>
+                  <li><b>Dedicated visa and travel teams</b></li>
+                  <li><b>Global alumni support community</b></li>
+              </ul>
+          </div>
+      </div>`,
+  tags: ['StudyAbroadEvents', 'IndianStudents', 'WhatNextAbroad'],
+  category: 'General',
+  readTime: '18 mins',
+},
+
+
   // Add more blogs here...
 
 

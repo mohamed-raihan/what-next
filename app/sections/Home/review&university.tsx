@@ -140,7 +140,7 @@ export default function StudentReviewsAndUniversities() {
   console.log(reviews);
 
   return (
-    <section className='-mb-30'>
+    <section className=''>
       {/* Student Reviews Section */}
       <div className="bg-[url('/reviewBg.svg')] bg-cover bg-center text-white pb-25 pt-45 md:pt-15 relative">
         <h2 className="text-3xl font-bold font-roboto text-center mb-10">Student Reviews</h2>
@@ -180,10 +180,10 @@ export default function StudentReviewsAndUniversities() {
       </div>
 
       {/* Featured UK Universities */}
-      <div className="bg-white py-10 px-8 relative">
+      {/* <div className="bg-white py-10 px-8 relative">
         <div className='rounded-lg relative -top-30 bottom-0 left-0 w-full h-full bg-white shadow-lg p-8'>
           <h2 className="text-3xl font-bold text-center mb-12">Featured UK Universities</h2>
-          {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 px-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 px-6">
           {universities.map((uni, index) => (
             <div
               key={index}
@@ -198,12 +198,12 @@ export default function StudentReviewsAndUniversities() {
               />
             </div>
           ))}
-        </div> */}
+        </div>
           <div>
             <Image src="/university.svg" alt="University" width={100} height={50} className="w-full object-cover" />
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
