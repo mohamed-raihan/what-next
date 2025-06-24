@@ -1,7 +1,6 @@
 "use client"
 import api from '@/app/api-services/axios';
 import { API_URL } from '@/app/api-services/api_url';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 // import { useState } from 'react';
 

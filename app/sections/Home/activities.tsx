@@ -67,7 +67,7 @@ const EventsSection = () => {
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4 font-roboto">Guiding Dreams: Activities & Events for Indian Students Who Aspire to Study Abroad</h3>
                 <p className="text-gray-600 leading-relaxed font-montserrat">
-                Studying abroad is a life-changing journey. At "What Next", we ensure that Indian students are not only prepared academically but also emotionally and logistically for their global leap. Our range of activities and events are designed to provide clarity, confidence, and community throughout the process.
+                Studying abroad is a life-changing journey. At &quot;What Next&quot;, we ensure that Indian students are not only prepared academically but also emotionally and logistically for their global leap. Our range of activities and events are designed to provide clarity, confidence, and community throughout the process.
                 </p>
               </div>
 
