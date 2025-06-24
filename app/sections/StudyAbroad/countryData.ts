@@ -154,7 +154,7 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/new-zealand/canterbury.svg', height: '' },
             { logo: '/new-zealand/massey.svg', height: '' },
         ],
-        blueAnimal: '/newzealand/kiwi-bird-blue.svg',
+        blueAnimal: '/new-zealand/newzealand.png',
         whyChooseCards: [
             {
                 title: 'Imparts High Quality Education',

@@ -855,7 +855,429 @@ export const blogData: Record<string, BlogData> = {
   readTime: '18 mins',
 },
 
-
+'pre-departure-briefing-fall-2024': {
+  title: 'Pre-Departure Briefing for Fall 2024 Intake',
+  slug: 'pre-departure-briefing-fall-2024',
+  author: 'Admin',
+  date: '24 June, 2025',
+  mainImage: '/blogs/activity7.jpg',
+  content: `<h1><b>Pre-Departure Briefing for Fall 2024 Intake: Your Final Step Before the Big Leap</b></h1>
+    <br />
+    <h2>Make Your Transition Abroad Smooth, Safe, and Successful</h2>
+    <br />
+    <p>
+        With your visa stamped and flights booked, you're almost there. But before you take off for your study destination, the <b>Pre-Departure Briefing (PDB)</b> ensures you're ready — mentally, practically, and emotionally.
+        At "What Next", we hosted a comprehensive PDB session for Fall 2024 students, covering every detail you need for a confident start abroad.
+    </p>
+    <br />
+    <h1><b>What Was Covered in the Fall 2024 PDB?</b></h1>
+    <br />
+    <h3>1. <b>Travel Preparation & Essentials</b></h3>
+    <p>
+        From what to pack to airport protocols and flight transfers, we gave a detailed checklist so students arrive worry-free.
+    </p>
+    <br />
+    <h3>2. <b>Documents You Should Never Forget</b></h3>
+    <p>
+        Visa, admission letter, health insurance, accommodation proof — we ensured students had all required paperwork for immigration and university verification.
+    </p>
+    <br />
+    <h3>3. <b>Accommodation & Arrival Guidance</b></h3>
+    <p>
+        Whether you\'ve pre-booked a dorm or need help finding a place, we guided students on first-week essentials, safety, and settling in.
+    </p>
+    <br />
+    <h3>4. <b>Local Culture, Laws & Student Etiquette</b></h3>
+    <p>
+        We briefed students on adapting to the local culture, respecting rules, and making the most of their time as global citizens.
+    </p>
+    <br />
+    <h3>5. <b>Part-Time Jobs & Banking Abroad</b></h3>
+    <p>
+        We shared legal work-hour limits, how to apply for jobs, and how to set up a bank account abroad, helping students become financially independent.
+    </p>
+    <br />
+    <h3>6. <b>Emergency Contacts & Student Helplines</b></h3>
+    <p>
+        Safety is a priority. We provided a list of embassy contacts, university support numbers, and “What Next” alumni mentors in major cities.
+    </p>
+    <br />
+    <div class="cta-section">
+      <h2>Heading Abroad Soon? Join Our Next Briefing</h2>
+      <p>
+        Our Pre-Departure Briefings are held every major intake and are open to all students who applied through us. Stay informed, stay safe, and start strong!
+      </p>
+      <div class="service-list">
+        <ul>
+          <li><b>Guidance from travel to settling in</b></li>
+          <li><b>Peer networking and alumni interaction</b></li>
+          <li><b>Live Q&A with visa and travel experts</b></li>
+        </ul>
+      </div>
+    </div>`,
+  tags: ['PreDeparture2024', 'StudyAbroadIndia', 'WhatNextGlobal'],
+  category: 'General',
+  readTime: '15 mins',
+},
+'usa-f1-visa-workshop': {
+  title: 'USA F1 Visa Workshop: Common Mistakes to Avoid',
+  slug: 'usa-f1-visa-workshop',
+  author: 'Admin',
+  date: '24 June, 2025',
+  mainImage: '/blogs/f1visa.jpg',
+  content: `<h1><b>USA F1 Visa Workshop: Avoid These Common Pitfalls</b></h1>
+    <br />
+    <h2>Make Your Visa Interview Count — The First Step to Your American Dream</h2>
+    <br />
+    <p>
+      The F1 visa interview can be intimidating — but it doesn’t have to be. At "What Next", we conducted a focused workshop for students heading to the U.S. to ensure they’re fully prepared to ace their interviews and avoid common mistakes that lead to rejections.
+    </p>
+    <br />
+    <h1><b>Top Mistakes We Helped Students Avoid</b></h1>
+    <br />
+    <h3>1. <b>Weak Answers on Intent</b></h3>
+    <p>
+      Many students fail to clearly communicate their purpose of study or future plans. We coached participants on how to answer confidently and align with the visa officer's expectations.
+    </p>
+    <br />
+    <h3>2. <b>Over-Dependence on Memorized Scripts</b></h3>
+    <p>
+      Visa officers prefer natural, conversational answers. Our mock sessions helped students practice real-time responses rather than memorized dialogues.
+    </p>
+    <br />
+    <h3>3. <b>Financial Documentation Errors</b></h3>
+    <p>
+      Incomplete or unclear funding proof is a common red flag. We reviewed financial documents and offered templates to present them properly.
+    </p>
+    <br />
+    <h3>4. <b>Unclear Ties to Home Country</b></h3>
+    <p>
+      Officers want assurance that students will return post-study. We guided students in presenting strong personal and professional ties to India.
+    </p>
+    <br />
+    <h3>5. <b>Ignoring Dress Code and Body Language</b></h3>
+    <p>
+      First impressions matter. We educated students on how to dress professionally and maintain confident posture and tone during the interview.
+    </p>
+    <br />
+    <div class="cta-section">
+      <h2>Why Our F1 Visa Workshop Works</h2>
+      <p>
+        Led by former visa officers and experienced consultants, our sessions simulate real scenarios, provide honest feedback, and boost your confidence.
+      </p>
+      <div class="service-list">
+        <ul>
+          <li><b>Mock interviews with real-time feedback</b></li>
+          <li><b>Visa document checklist and SOP guidance</b></li>
+          <li><b>Live Q&A with alumni who’ve successfully cleared F1 interviews</b></li>
+        </ul>
+      </div>
+    </div>`,
+  tags: ['USAF1Visa', 'VisaWorkshop', 'StudyInUSA'],
+  category: 'USA',
+  readTime: '14 mins',
+},
+'meet-university-representatives': {
+  title: 'Meet and Greet with University Representatives',
+  slug: 'meet-university-representatives',
+  author: 'Admin',
+  date: '24 June, 2025',
+  mainImage: '/blogs/meet-university-representatives.jpg',
+  content: `<h1><b>Meet & Greet with Top University Representatives: A Golden Opportunity for Indian Students</b></h1>
+    <br />
+    <h2>Direct Conversations. Real Guidance. Genuine Connections.</h2>
+    <br />
+    <p>
+      Choosing the right university is a life-changing decision. To make this process more personal and informed, "What Next" organized an exclusive Meet & Greet event with representatives from top universities in the USA, UK, Canada, and Australia.
+    </p>
+    <br />
+    <h1><b>What Made This Event Special?</b></h1>
+    <br />
+    <h3>1. <b>Face-to-Face Guidance from University Officials</b></h3>
+    <p>
+      Students and parents got the rare opportunity to interact directly with admission officers and regional managers, ask questions, and understand entry requirements in depth.
+    </p>
+    <br />
+    <h3>2. <b>Clarified Admission Processes</b></h3>
+    <p>
+      Confused about deadlines, documents, or interviews? Representatives walked attendees through everything — including how to strengthen applications.
+    </p>
+    <br />
+    <h3>3. <b>Spot Offers and Application Fee Waivers</b></h3>
+    <p>
+      Several universities offered on-the-spot application evaluations and even waived application fees for eligible candidates at the event.
+    </p>
+    <br />
+    <h3>4. <b>Network with Fellow Aspirants</b></h3>
+    <p>
+      The event also brought together students across India planning to study abroad, creating a vibrant network of future global learners.
+    </p>
+    <br />
+    <h3>5. <b>Scholarship Information & Funding Tips</b></h3>
+    <p>
+      University reps shared insight into scholarship opportunities and how to increase chances of financial aid through strong profiles.
+    </p>
+    <br />
+    <div class="cta-section">
+      <h2>Why Events Like This Matter</h2>
+      <p>
+        With so much online information, it's easy to get overwhelmed. Meeting someone from your dream university adds clarity and confidence to your journey abroad.
+      </p>
+      <div class="service-list">
+        <ul>
+          <li><b>Direct answers from decision-makers</b></li>
+          <li><b>Insights into academic life, campus culture, and career support</b></li>
+          <li><b>Pre-application profile review sessions</b></li>
+        </ul>
+      </div>
+    </div>`,
+  tags: ['UniversityEvent', 'MeetAndGreet', 'StudyAbroad'],
+  category: 'Events',
+  readTime: '12 mins',
+},
+'education-loan-fair': {
+  title: 'Education Loan Fair for Aspiring Study Abroad Students',
+  slug: 'education-loan-fair',
+  author: 'Admin',
+  date: '24 June, 2025',
+  mainImage: '/blogs/activity6.jpeg',
+  content: `<h1><b>Breaking Financial Barriers: Education Loan Fair 2025</b></h1>
+    <br />
+    <h2>Your Dream of Studying Abroad Shouldn't Be Stopped by Finances</h2>
+    <br />
+    <p>
+      To support Indian students planning overseas education, "What Next" organized an exclusive <b>Education Loan Fair</b>—bringing top public and private banks, NBFCs, and fintech lenders under one roof.
+    </p>
+    <br />
+    <h1><b>Highlights of the Loan Fair</b></h1>
+    <br />
+    <h3>1. <b>Compare Loan Options Instantly</b></h3>
+    <p>
+      Attendees compared interest rates, processing fees, repayment tenures, and margin money requirements from major institutions like SBI, ICICI, HDFC Credila, Auxilo, and Avanse.
+    </p>
+    <br />
+    <h3>2. <b>On-Spot Loan Eligibility Checks</b></h3>
+    <p>
+      Financial partners conducted quick eligibility checks and gave pre-approval offers on the spot—saving students time and uncertainty.
+    </p>
+    <br />
+    <h3>3. <b>Expert Guidance on Secured vs. Unsecured Loans</b></h3>
+    <p>
+      Not sure whether to opt for collateral-based or non-collateral funding? Finance advisors were present to walk students and parents through pros, cons, and documentation.
+    </p>
+    <br />
+    <h3>4. <b>Q&A Sessions with Loan Officers</b></h3>
+    <p>
+      Dedicated breakout sessions allowed participants to clarify doubts on repayment during study, moratorium periods, co-borrower requirements, and tax benefits under Section 80E.
+    </p>
+    <br />
+    <div class="cta-section">
+      <h2>Empowering Students with Financial Freedom</h2>
+      <p>
+        At "What Next", we believe that no student should miss out on global education because of financial constraints. This event is part of our commitment to enable access and affordability.
+      </p>
+      <div class="service-list">
+        <ul>
+          <li><b>Loan comparison support</b></li>
+          <li><b>Document checklist guidance</b></li>
+          <li><b>Follow-up with partner banks until disbursal</b></li>
+        </ul>
+      </div>
+    </div>`,
+  tags: ['EducationLoan', 'FinanceSupport', 'StudyAbroadFunding'],
+  category: 'Finance',
+  readTime: '10 mins',
+},
+'meet-university-reps': {
+  title: 'Meet and Greet with University Representatives',
+  slug: 'meet-university-reps',
+  author: 'Admin',
+  date: '24 June, 2025',
+  mainImage: '/blogs/activity5.jpg',
+  content: `<h1><b>Meet and Greet: Bridging the Gap Between Students and Global Universities</b></h1>
+    <br />
+    <h2>Real Conversations. Real Opportunities.</h2>
+    <br />
+    <p>
+      Choosing the right university abroad can be overwhelming. To help students make informed decisions, "What Next" hosted an exclusive <b>Meet and Greet session with top international university representatives</b> — a dynamic event fostering real-time dialogue, trust, and clarity.
+    </p>
+    <br />
+    <h1><b>Event Highlights</b></h1>
+    <br />
+    <h3>1. <b>Direct Interaction with Admission Teams</b></h3>
+    <p>
+      Students engaged one-on-one with delegates from universities in the USA, UK, Canada, Australia, and more — discussing course offerings, eligibility, scholarships, and student life.
+    </p>
+    <br />
+    <h3>2. <b>Profile Evaluation On the Spot</b></h3>
+    <p>
+      Representatives reviewed academic transcripts, SOPs, and resumes, offering tailored feedback to strengthen applications and boost acceptance chances.
+    </p>
+    <br />
+    <h3>3. <b>Understanding Campus Culture and Support</b></h3>
+    <p>
+      Students got a taste of what life abroad feels like — from academic rigour and faculty interaction to housing, clubs, and part-time job opportunities.
+    </p>
+    <br />
+    <h3>4. <b>Scholarship Insights and Financial Planning</b></h3>
+    <p>
+      Universities shared updates on available scholarships, financial aid processes, and budgeting tips — helping families plan wisely.
+    </p>
+    <br />
+    <div class="cta-section">
+      <h2>Building Global Pathways</h2>
+      <p>
+        Events like these empower students with clarity and confidence. At "What Next", we\'re committed to guiding you from exploration to enrollment.
+      </p>
+      <div class="service-list">
+        <ul>
+          <li><b>University shortlisting with real input</b></li>
+          <li><b>SOP and document feedback</b></li>
+          <li><b>Scholarship and visa assistance</b></li>
+        </ul>
+      </div>
+    </div>`,
+  tags: ['UniversityMeet', 'StudyAbroadEvents', 'GlobalEducation'],
+  category: 'Events',
+  readTime: '9 mins',
+},
+'tech-internships-abroad': {
+  title: 'Cracking the Code: A Guide to Tech Internships Abroad',
+  slug: 'tech-internships-abroad',
+  author: 'Admin',
+  date: '24 June, 2025',
+  mainImage: '/blogs/tech-internships.jpg',
+  content: `<h1><b>Land the Internship. Launch the Future.</b></h1>
+    <br />
+    <p>
+      Want to intern at Google, Amazon, or a fast-paced startup in Berlin? Tech internships abroad open doors to real-world innovation and global career growth. Here’s your go-to guide for making it happen.
+    </p>
+    <br />
+    <h2>What Makes Interning Abroad Unique?</h2>
+    <ul>
+      <li><b>Global Exposure</b> — Work with diverse teams and cutting-edge tech</li>
+      <li><b>Real Skill Development</b> — Beyond theory, you\'ll solve live problems</li>
+      <li><b>Networking</b> — Build contacts with mentors, peers, and future employers</li>
+    </ul>
+    <br />
+    <h2>How to Land One</h2>
+    <ul>
+      <li><b>Perfect Your Resume</b> — Focus on real projects, GitHub contributions, and concise achievements</li>
+      <li><b>Use Platforms Like LinkedIn, AngelList, and Handshake</b></li>
+      <li><b>Ace the Interviews</b> — Leetcode, system design, and strong soft skills matter</li>
+      <li><b>Tap Your University's Career Services</b> — Especially in the US, UK, and Canada</li>
+    </ul>
+    <br />
+    <p>
+      “What Next” also supports you with mock interviews, resume reviews, and internship application tracking.
+    </p>`,
+  tags: ['TechInternships', 'StudyAbroadCareer', 'GlobalTech'],
+  category: 'Career',
+  readTime: '8 mins',
+},
+'personal-statement-art': {
+  title: 'The Art of the Personal Statement',
+  slug: 'personal-statement-art',
+  author: 'Admin',
+  date: '24 June, 2025',
+  mainImage: '/blogs/personal-statement.jpg',
+  content: `<h1><b>Stand Out with a Story That Matters</b></h1>
+    <br />
+    <p>
+      Your personal statement is more than just words — it\'s your first impression on the admissions committee. Whether applying to the UK, US, or EU, a strong statement sets the tone.
+    </p>
+    <br />
+    <h2>What Makes a Great Statement?</h2>
+    <ul>
+      <li><b>Authenticity</b> — Write in your voice, with your passion</li>
+      <li><b>Clear Structure</b> — Hook, journey, goals, and why this course/university</li>
+      <li><b>Tailored Content</b> — Customize for each university</li>
+      <li><b>Proofread & Review</b> — Grammatical polish is non-negotiable</li>
+    </ul>
+    <br />
+    <h2>Pro Tips from Our Counselors</h2>
+    <ul>
+      <li>Start early — at least a month before deadlines</li>
+      <li>Include specific projects, achievements, and learnings</li>
+      <li>Avoid clichés and unnecessary flattery</li>
+    </ul>
+    <br />
+    <p>
+      “What Next” offers one-on-one SOP editing, brainstorming sessions, and final review support to help you shine.
+    </p>`,
+  tags: ['PersonalStatement', 'SOPWriting', 'AdmissionsTips'],
+  category: 'Admissions',
+  readTime: '6 mins',
+},
+'scholarship-hunt': {
+  title: 'Scholarship Hunt: Finding Funding for Your Studies',
+  slug: 'scholarship-hunt',
+  author: 'Admin',
+  date: '24 June, 2025',
+  mainImage: '/blogs/scholarship-hunt.jpg',
+  content: `<h1><b>Your Talent Deserves to Be Funded</b></h1>
+    <br />
+    <p>
+      Dreaming of studying abroad but worried about tuition costs? Scholarships make it possible. This guide walks you through how and where to hunt for financial aid that fits your goals and profile.
+    </p>
+    <br />
+    <h2>Types of Scholarships to Explore</h2>
+    <ul>
+      <li><b>Merit-Based</b> — Awarded for academic excellence or test scores</li>
+      <li><b>Need-Based</b> — Designed for students with demonstrated financial need</li>
+      <li><b>Government Scholarships</b> — Think Fulbright (USA), Chevening (UK), DAAD (Germany)</li>
+      <li><b>University-Specific Grants</b> — Many universities automatically consider you during application</li>
+    </ul>
+    <br />
+    <h2>Where to Start?</h2>
+    <ul>
+      <li><b>University websites</b> — Always check the \'funding\' section</li>
+      <li><b>Scholarship portals</b> — Like Buddy4Study, Scholarships.com, and StudyAbroadShiksha</li>
+      <li><b>Early deadlines</b> — Apply at least 3-6 months before your intake</li>
+    </ul>
+    <br />
+    <p>
+      “What Next” provides personalized scholarship mapping and SOP assistance to improve your chances.
+    </p>`,
+  tags: ['ScholarshipGuide', 'FundingAbroad', 'StudyAbroadFinance'],
+  category: 'Finance',
+  readTime: '7 mins',
+},
+'visa-application-guide': {
+  title: 'Navigating Visa Applications: A Step-by-Step Guide',
+  slug: 'visa-application-guide',
+  author: 'Admin',
+  date: '24 June, 2025',
+  mainImage: '/blogs/visa-application-guide.jpg',
+  content: `<h1><b>Don\'t Let Paperwork Stop Your Global Dream</b></h1>
+    <br />
+    <p>
+      Applying for a student visa can feel overwhelming — but it doesn\'t have to be. Here\'s a simplified breakdown of what to expect, how to prepare, and when to act.
+    </p>
+    <br />
+    <h2>Visa Process at a Glance</h2>
+    <ul>
+      <li><b>Step 1: Secure Admission</b> — Visa eligibility starts with an offer letter</li>
+      <li><b>Step 2: Financial Proof</b> — Bank statements, loan letters, and sponsor documents</li>
+      <li><b>Step 3: Online Application</b> — Country-specific portals like DS-160 (USA), VFS (UK/Canada)</li>
+      <li><b>Step 4: Visa Interview (if applicable)</b> — Know your answers, be honest, and confident</li>
+      <li><b>Step 5: Biometrics & Approval</b> — Wait for stamping and tracking via embassy portals</li>
+    </ul>
+    <br />
+    <h2>Pro Tips</h2>
+    <ul>
+      <li>Apply at least 8-10 weeks before departure</li>
+      <li>Double-check your documents twice</li>
+      <li>Practice interviews and avoid scripted answers</li>
+    </ul>
+    <br />
+    <p>
+      “What Next” offers expert visa counseling, mock interviews, and document verification services.
+    </p>`,
+  tags: ['VisaApplication', 'StudentVisaGuide', 'AbroadStudies'],
+  category: 'Visa',
+  readTime: '8 mins',
+},
   // Add more blogs here...
 
 
