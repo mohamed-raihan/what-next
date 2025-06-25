@@ -61,21 +61,17 @@ const StudyAbroadSection = () => {
 
     let animationFrameId: number;
     let scrollPosition = 0;
-    const scrollSpeed = 0.5; // Adjusted for smoother animation with requestAnimationFrame
+    const scrollSpeed = 0.5;
 
     const autoScroll = () => {
-      if (isHoveringRef.current || !carousel) return;
-
-      // const itemWidth = carousel.firstElementChild ? carousel.firstElementChild.clientWidth + 24 : 324; // 24 is for gap-6
-      const totalWidth = carousel.scrollWidth / 2; // Since we duplicated items
-
-      scrollPosition += scrollSpeed;
-      
-      if (scrollPosition >= totalWidth) {
-        scrollPosition = 0;
+      if (!isHoveringRef.current) {
+        const totalWidth = carousel.scrollWidth / 2;
+        scrollPosition += scrollSpeed;
+        if (scrollPosition >= totalWidth) {
+          scrollPosition = 0;
+        }
+        carousel.style.transform = `translateX(-${scrollPosition}px)`;
       }
-      
-      carousel.style.transform = `translateX(-${scrollPosition}px)`;
       animationFrameId = requestAnimationFrame(autoScroll);
     };
 
@@ -92,16 +88,19 @@ const StudyAbroadSection = () => {
       }
     };
 
-    carousel.addEventListener('mouseenter', () => isHoveringRef.current = true);
-    carousel.addEventListener('mouseleave', () => isHoveringRef.current = false);
+    const handleMouseEnter = () => { isHoveringRef.current = true; };
+    const handleMouseLeave = () => { isHoveringRef.current = false; };
+
+    carousel.addEventListener('mouseenter', handleMouseEnter);
+    carousel.addEventListener('mouseleave', handleMouseLeave);
     
     startAutoScroll();
 
     return () => {
       stopAutoScroll();
       if (carousel) {
-        carousel.removeEventListener('mouseenter', () => isHoveringRef.current = true);
-        carousel.removeEventListener('mouseleave', () => isHoveringRef.current = false);
+        carousel.removeEventListener('mouseenter', handleMouseEnter);
+        carousel.removeEventListener('mouseleave', handleMouseLeave);
       }
     };
   }, [countries]);
