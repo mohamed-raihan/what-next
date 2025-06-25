@@ -23,7 +23,7 @@ const services = [
     },
     {
         id: 4,
-        title: "Quick & Easy Enrollment",
+        title: "Streamlined Admissions",
     },
     {
         id: 5,
@@ -97,7 +97,7 @@ const details = [
     {
         id: 4,
         service_header: 4,
-        title: "Quick & Easy Enrollment",
+        title: "Streamlined Admissions",
         image: "/applicationImage.svg",
         description: (
             <>

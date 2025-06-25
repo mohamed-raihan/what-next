@@ -107,8 +107,8 @@ export default function AboutSection() {
             </div>
 
             {/* Destinations Carousel */}
-            <div className="relative py-8 lg:py-4 px-10 xl:h-[550px] text-center -mt-10 lg:-mt-30">
-                <Image src="/bird-left.svg" alt="Bottom Bird" width={100} height={100} className="absolute top-5 lg:-top-40 -z-10 left-0 w-[200px] hidden lg:block lg:w-[300px] xl:w-[500px]"/>
+            <div className="relative py-8 lg:py-4 xl:px-10 xl:h-[550px] text-center -mt-10 lg:-mt-30">
+                <Image src="/bird-left.svg" alt="Bottom Bird" width={100} height={100} className="absolute top-5 lg:-top-40 -z-10 left-0 w-[200px] hidden xl:block lg:w-[300px] xl:w-[500px]"/>
                 <div className="flex justify-center items-center">
                     <p className="text-[#000000] max-w-5xl text-lg md:w-4/5   text-base md:text-xl mb-10 font-regular font-montserrat">
                         WhatNext admits to deliver the excellent student advice and counselling. With us,

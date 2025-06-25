@@ -59,59 +59,54 @@ const StudyAbroadSection = () => {
     const carousel = carouselRef.current;
     if (!carousel) return;
 
+    let animationFrameId: number;
     let scrollPosition = 0;
-    const scrollSpeed = 1; // pixels per frame
-    const itemWidth = 324; // 300px card + 24px gap
-    const totalItems = countries.length + 3; // including duplicates
-    const maxScroll = (totalItems - 5) * itemWidth; // scroll until we show the last 5 items
+    const scrollSpeed = 0.5; // Adjusted for smoother animation with requestAnimationFrame
 
     const autoScroll = () => {
-      if (isHoveringRef.current) return; // Pause on hover
-      
+      if (isHoveringRef.current || !carousel) return;
+
+      const itemWidth = carousel.firstElementChild ? carousel.firstElementChild.clientWidth + 24 : 324; // 24 is for gap-6
+      const totalWidth = carousel.scrollWidth / 2; // Since we duplicated items
+
       scrollPosition += scrollSpeed;
       
-      if (scrollPosition >= maxScroll) {
+      if (scrollPosition >= totalWidth) {
         scrollPosition = 0;
       }
       
       carousel.style.transform = `translateX(-${scrollPosition}px)`;
+      animationFrameId = requestAnimationFrame(autoScroll);
     };
 
     const startAutoScroll = () => {
-      intervalRef.current = setInterval(autoScroll, 50); // 50ms = 20fps
-    };
-
-    const stopAutoScroll = () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-        intervalRef.current = null;
+      if (!animationFrameId) {
+        animationFrameId = requestAnimationFrame(autoScroll);
       }
     };
 
-    // Mouse event handlers
-    const handleMouseEnter = () => {
-      isHoveringRef.current = true;
-      stopAutoScroll();
+    const stopAutoScroll = () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+        animationFrameId = 0;
+      }
     };
 
-    const handleMouseLeave = () => {
-      isHoveringRef.current = false;
-      startAutoScroll();
-    };
-
-    // Add event listeners
-    carousel.addEventListener('mouseenter', handleMouseEnter);
-    carousel.addEventListener('mouseleave', handleMouseLeave);
-
-    // Start auto-scroll
+    carousel.addEventListener('mouseenter', () => isHoveringRef.current = true);
+    carousel.addEventListener('mouseleave', () => isHoveringRef.current = false);
+    
     startAutoScroll();
 
     return () => {
       stopAutoScroll();
-      carousel.removeEventListener('mouseenter', handleMouseEnter);
-      carousel.removeEventListener('mouseleave', handleMouseLeave);
+      if (carousel) {
+        carousel.removeEventListener('mouseenter', () => isHoveringRef.current = true);
+        carousel.removeEventListener('mouseleave', () => isHoveringRef.current = false);
+      }
     };
-  }, []);
+  }, [countries]);
+
+  const duplicatedCountries = [...countries, ...countries];
 
   return (
     <div className="">
@@ -178,7 +173,7 @@ const StudyAbroadSection = () => {
               { title: 'Unlock Your Future', img: '/ourservice1.svg' },
               { title: 'Courses & Universities', img: '/ourservice3.svg' },
               { title: 'Enrollment Guidelines', img: '/ourservice2.svg' },
-              { title: 'Quick & Easy Enrollment', img: '/ourservice5.svg' },
+              { title: 'Streamlined Admissions', img: '/ourservice5.svg' },
               { title: 'Immigration Support', img: '/ourservice6.svg' },
               { title: 'Scholarship Assistance', img: '/ourservice7.svg' },
               { title: 'Monetary Guidance', img: '/ourservice8.svg' },
@@ -226,48 +221,25 @@ const StudyAbroadSection = () => {
           <p className="mb-10 text-sm font-montserrat">Choose from the best courses from top global universities with WhatNext.</p>
         </div>
         {/* Auto-scroll Carousel */}
-        <div className="flex flex-col items-center">
-          <div className="w-full px-2 sm:px-10 relative">
-            {/* Carousel Container - Fixed width to show exactly 5 items */}
-            <div className="w-[1620px] mx-auto overflow-hidden" style={{ width: '1620px' }}> {/* 5 items * 300px + 4 gaps * 30px = 1620px */}
-              <div 
-                ref={carouselRef}
-                className="flex gap-6 transition-all duration-100 ease-in-out"
-                style={{
-                  width: `${(countries.length + 3) * 324}px` // Total width for all items plus duplicates
-                }}
+        <div className="w-full overflow-hidden">
+          <div 
+            ref={carouselRef}
+            className="flex gap-6 py-4"
+          >
+            {duplicatedCountries.map((country, idx) => (
+              <Link
+                href={country.link}
+                key={`${country.name}-${idx}`}
+                className="bg-white rounded-lg overflow-hidden shadow-md w-[300px] h-[350px] flex-shrink-0 hover:shadow-xl transition-all duration-300"
               >
-                {countries.map((country, idx) => (
-                  <Link
-                    href={country.link}
-                    key={idx}
-                    className="bg-white rounded-lg overflow-hidden shadow-md w-[300px] h-[350px] flex-shrink-0 hover:shadow-xl transition-all duration-300"
-                  >
-                    <img src={country.image} alt={`Study in ${country.name}`} className="w-full h-50 object-cover" />
-                    <div className="p-4 text-black">
-                      <h4 className="text-sm font-roboto font-semibold">STUDY IN</h4>
-                      <p className="text-2xl font-bold text-[#0046AA] font-roboto">{country.name}</p>
-                      <p className="text-[14px] mt-1 text-[#242424] font-montserrat">{country.description}</p>
-                    </div>
-                  </Link>
-                ))}
-                {/* Duplicate first few items for seamless loop */}
-                {countries.slice(0, 3).map((country, idx) => (
-                  <Link
-                    href={country.link}
-                    key={`duplicate-${idx}`}
-                    className="bg-white rounded-lg overflow-hidden shadow-md w-[300px] h-[350px] flex-shrink-0 hover:shadow-xl transition-all duration-300"
-                  >
-                    <img src={country.image} alt={`Study in ${country.name}`} className="w-full h-50 object-cover" />
-                    <div className="p-4 text-black">
-                      <h4 className="text-sm font-roboto font-semibold">STUDY IN</h4>
-                      <p className="text-2xl font-bold text-[#0046AA] font-roboto">{country.name}</p>
-                      <p className="text-[14px] mt-1 text-[#242424] font-montserrat">{country.description}</p>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
+                <img src={country.image} alt={`Study in ${country.name}`} className="w-full h-50 object-cover" />
+                <div className="p-4 text-black">
+                  <h4 className="text-sm font-roboto font-semibold">STUDY IN</h4>
+                  <p className="text-2xl font-bold text-[#0046AA] font-roboto">{country.name}</p>
+                  <p className="text-[14px] mt-1 text-[#242424] font-montserrat">{country.description}</p>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
         <div className="flex justify-end items-center">
