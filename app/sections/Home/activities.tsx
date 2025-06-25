@@ -149,7 +149,7 @@ Our carefully curated activities and events are tailored to empower students wit
                                 >
                                     {/* Duplicate photos for seamless loop */}
                                     {[...column1Photos, ...column1Photos].map((photo, index) => (
-                                        <Link href={`/blogs/${photo.slug}`} key={`col1-${photo.id}-${index}`}>
+                                        <Link href={`/blogs/${photo.slug}`} target='_blank' key={`col1-${photo.id}-${index}`}>
                                             <div
                                                 className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
                                                 onMouseEnter={() => setIsPaused(true)}
@@ -180,7 +180,7 @@ Our carefully curated activities and events are tailored to empower students wit
                                 >
                                     {/* Duplicate photos for seamless loop */}
                                     {[...column2Photos, ...column2Photos].map((photo, index) => (
-                                        <Link href={`/blogs/${photo.slug}`} key={`col2-${photo.id}-${index}`}>
+                                        <Link href={`/blogs/${photo.slug}`} target='_blank' key={`col2-${photo.id}-${index}`}>
                                             <div
                                                 className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
                                                 onMouseEnter={() => setIsPaused(true)}
