@@ -1,14 +1,14 @@
 "use client"
 import api from '@/app/api-services/axios';
 import { API_URL } from '@/app/api-services/api_url';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 // import { useState } from 'react';
 
 const initialReviews = [
   {
     name: 'Girish.s.c giri',
     designation: 'Student at University of Texas at Arlington',
-    review: `"WhatNext Overseas Education" provided excellent guidance and support throughout my application
+    review: `WhatNext Overseas Education provided excellent guidance and support throughout my application
 process. Their knowledgeable team helped me to select the right universities, prepare a strong
 application, and navigate visa procedures. Thanks to their expertise and personalized attention, I am
 now studying at my dream university abroad. I highly recommend their services!" Please do contact
@@ -21,10 +21,10 @@ them once if you have any plans`,
   {
     name: 'Manideep Parvataneni',
     designation: 'Student at University of Memphis',
-    review: `"WhatNext Overseas Education is a very good consultancy offering various universities suitable to
+    review: `WhatNext Overseas Education is a very good consultancy offering various universities suitable to
 profile in different cost parameters. Also it's supporting candidates for VISA interview for free of
 cost, 24/7 assistance available. I too got my Visa approved through the support from Kalyani
-ma'am(who is the founder) and I am currently studying in University of Memphis, USA."`,
+ma'am(who is the founder) and I am currently studying in University of Memphis, USA.`,
     date: '2021.05.12',
     profile_image: '/reviewimage.svg',
     company: '',
@@ -32,7 +32,7 @@ ma'am(who is the founder) and I am currently studying in University of Memphis, 
   },
   {
     name: 'Noel Sugandh',
-    designation: 'Student at University of Birmingham',
+    designation: 'Student',
     review:
       'Overall, I had a wonderful experience with consultancy and thanks to kalyani mam, I am very grateful for their support and guidance. I highly recommend WhatNext Overseas to anyone who wants to study abroad. They have a professional and supportive team that will help you achieve your goals.',
     date: '2022.01.18',
@@ -62,7 +62,7 @@ ma'am(who is the founder) and I am currently studying in University of Memphis, 
   {
     name: 'Romicherla Ramesh Kumar',
     designation: 'Student',
-    review: `While I have been seeking guidance for a quality education for my younger son who is studying grade 8th in CBSE curriculum for the last few months, I am very fortunate that, one of my colleagues advised me to contact “WhatNext overseas Education Consultants” well in time.
+    review: `While I have been seeking guidance for a quality education for my younger son who is studying grade 8th in CBSE curriculum for the last few months, I am very fortunate that, one of my colleagues advised me to contact "WhatNext overseas Education Consultants" well in time.
 
 I will forever be grateful to Kalyani Ma\'am for her excellent guidance to uncover my child\'s potential and to build his competencies to face the world. She advised me IB world schools which are in top 10 ranks to choose keeping my child\'s future in mind and to find admissions in prominent Institutions of higher learning both in India and the most reputed universities and colleges globally.
 
@@ -70,7 +70,7 @@ With her support and guidance my younger Son has got the admission into one of t
 
 From the bottom of my heart, I would like to appreciate Kalyani Ma\'am for her outstanding services.
 
-If you\'re looking for quality of service to guide your child\'s education to pursue higher studies abroad “WhatNext” is the best choice.`,
+If you\'re looking for quality of service to guide your child\'s education to pursue higher studies abroad "WhatNext" is the best choice.`,
     date: '2021.05.12',
     profile_image: '/reviewimage.svg',
     company: '',
@@ -118,10 +118,13 @@ export default function StudentReviewsAndUniversities() {
   const [reviews, setReviews] = useState<Review[]>(initialReviews);
   const [currentPage, setCurrentPage] = useState(0);
   const reviewsPerPage = 3;
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const isHoveringRef = useRef(false);
 
   const totalPages = Math.ceil(reviews.length / reviewsPerPage);
   const startIndex = currentPage * reviewsPerPage;
   const currentReviews = reviews.slice(startIndex, startIndex + reviewsPerPage);
+
   useEffect(() => {
     const fetchReviews = async () => {
       try {
@@ -136,6 +139,54 @@ export default function StudentReviewsAndUniversities() {
     fetchReviews();
   }, []);
 
+  useEffect(() => {
+    const autoSwitchReviews = () => {
+      if (isHoveringRef.current) return; // Pause on hover
+      
+      setCurrentPage((prevPage) => (prevPage + 1) % totalPages);
+    };
+
+    const startAutoSwitch = () => {
+      intervalRef.current = setInterval(autoSwitchReviews, 5000); // Switch every 5 seconds
+    };
+
+    const stopAutoSwitch = () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
+
+    // Mouse event handlers for the reviews container
+    const handleMouseEnter = () => {
+      isHoveringRef.current = true;
+      stopAutoSwitch();
+    };
+
+    const handleMouseLeave = () => {
+      isHoveringRef.current = false;
+      startAutoSwitch();
+    };
+
+    // Start auto-switching
+    startAutoSwitch();
+
+    // Add event listeners to the reviews container
+    const reviewsContainer = document.querySelector('.reviews-container');
+    if (reviewsContainer) {
+      reviewsContainer.addEventListener('mouseenter', handleMouseEnter);
+      reviewsContainer.addEventListener('mouseleave', handleMouseLeave);
+    }
+
+    return () => {
+      stopAutoSwitch();
+      if (reviewsContainer) {
+        reviewsContainer.removeEventListener('mouseenter', handleMouseEnter);
+        reviewsContainer.removeEventListener('mouseleave', handleMouseLeave);
+      }
+    };
+  }, [totalPages]);
+
   console.log(reviews);
 
   return (
@@ -144,7 +195,7 @@ export default function StudentReviewsAndUniversities() {
       <div className="bg-[url('/reviewBg.svg')] bg-cover bg-center text-white pb-25 pt-45 md:pt-15 relative">
         <h2 className="text-3xl font-bold font-roboto text-center mb-10">Student Reviews</h2>
 
-        <div className="flex justify-center gap-6 flex-wrap px-4">
+        <div className="reviews-container flex justify-center gap-6 flex-wrap px-4">
           {currentReviews.map((review, index) => (
             <div
               key={index}
@@ -171,7 +222,7 @@ export default function StudentReviewsAndUniversities() {
             <span
               key={i}
               onClick={() => setCurrentPage(i)}
-              className={`w-3 h-3 rounded-full cursor-pointer ${i === currentPage ? "bg-white" : "bg-white/40"
+              className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${i === currentPage ? "bg-white" : "bg-white/40"
                 }`}
             />
           ))}

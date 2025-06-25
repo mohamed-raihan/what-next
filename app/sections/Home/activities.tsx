@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface Photo {
   id: number;
@@ -19,56 +20,56 @@ const EventsSection = () => {
   const photos: Photo[] = [
     {
       id: 1,
-      src: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=300&h=400&fit=crop',
+      src: '/blogs/activity7.jpg',
       alt: 'Event photo 1',
       title: 'Pre-Departure Briefing for Fall 2024 Intake',
       slug: 'pre-departure-briefing-fall-2024'
     },
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=300&h=400&fit=crop',
+      src: '/blogs/f1visa.jpg',
       alt: 'Event photo 2',
       title: 'USA F1 Visa Workshop: Common Mistakes to Avoid',
       slug: 'usa-f1-visa-workshop'
     },
     {
       id: 3,
-      src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=400&fit=crop',
+      src: '/blogs/activity5.jpg',
       alt: 'Event photo 3',
       title: 'Meet and Greet with University Representatives',
       slug: 'meet-university-reps'
     },
     {
       id: 4,
-      src: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=300&h=400&fit=crop',
+      src: '/blogs/activity6.jpeg',
       alt: 'Event photo 4',
       title: 'Education Loan Fair for Aspiring Study Abroad Students',
       slug: 'education-loan-fair'
     },
     {
       id: 5,
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=400&fit=crop',
+      src: '/blogs/activity7.jpg',
       alt: 'Event photo 5',
       title: 'Cracking the Code: A Guide to Tech Internships Abroad',
       slug: 'tech-internships-abroad'
     },
     {
       id: 6,
-      src: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=300&h=400&fit=crop',
+      src: '/blogs/activities1.jpg',
       alt: 'Event photo 6',
       title: 'The Art of the Personal Statement',
       slug: 'personal-statement-art'
     },
     {
       id: 7,
-      src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&h=400&fit=crop',
+      src: '/blogs/activity3.jpg',
       alt: 'Event photo 7',
       title: 'Navigating Visa Applications: A Step-by-Step Guide',
       slug: 'visa-application-guide'
     },
     {
       id: 8,
-      src: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=300&h=400&fit=crop',
+      src: '/blogs/activity4.avif',
       alt: 'Event photo 8',
       title: 'Scholarship Hunt: Finding Funding for Your Studies',
       slug: 'scholarship-hunt'
@@ -114,7 +115,7 @@ const EventsSection = () => {
               <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-6 font-roboto">
                 Events & Activities
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-8"></div>
+              {/* <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-8"></div> */}
             </div>
 
             <div className="space-y-6 animate-fade-in overflow-y-auto h-full" style={{ animationDelay: '0.2s' }}>
@@ -146,9 +147,11 @@ const EventsSection = () => {
                         onMouseEnter={() => setIsPaused(true)}
                         onMouseLeave={() => setIsPaused(false)}
                       >
-                        <img
+                        <Image
                           src={photo.src}
                           alt={photo.alt}
+                          width={300}
+                          height={192}
                           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
@@ -175,9 +178,11 @@ const EventsSection = () => {
                         onMouseEnter={() => setIsPaused(true)}
                         onMouseLeave={() => setIsPaused(false)}
                       >
-                        <img
+                        <Image
                           src={photo.src}
                           alt={photo.alt}
+                          width={300}
+                          height={192}
                           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">

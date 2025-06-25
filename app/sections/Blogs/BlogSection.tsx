@@ -15,7 +15,7 @@ const BlogSection: React.FC<BlogData> = ({
   readTime,
 }) => {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white mb-20">
       {/* Hero Section */}
       <div className="relative w-full h-64 md:h-140 flex items-end justify-start bg-gray-100 rounded-lg overflow-hidden">
         <Image src={mainImage} alt={title} className="absolute inset-0 w-full h-full object-cover center" width={1000} height={1000} />
@@ -63,7 +63,7 @@ const BlogSection: React.FC<BlogData> = ({
           <div className="bg-blue-900 rounded-lg shadow p-4 text-white">
             <h4 className="font-bold mb-2">Daily Newsletter</h4>
             <p className="text-xs mb-3">Get All The Top Stories From Blogs To Keep Track.</p>
-            <input type="email" placeholder="Enter your e-mail" className="w-full px-3 py-2 rounded text-gray-900 mb-2" />
+            <input type="email" placeholder="Enter your e-mail" className="w-full px-3 py-2 rounded bg-white text-gray-900 mb-2" />
             <button className="w-full bg-green-600 text-white py-2 rounded font-bold">Subscribe</button>
           </div>
           {/* Popular Study Destinations */}

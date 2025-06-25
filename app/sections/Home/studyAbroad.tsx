@@ -1,11 +1,118 @@
 'use client'
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
 const StudyAbroadSection = () => {
   const router = useRouter();
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const isHoveringRef = useRef(false);
+
+  const countries = [
+    {
+      name: 'United States',
+      image: '/usa.svg',
+      description: 'The USA offers diverse programs and vibrant campus life.',
+      link: '/study-abroad/usa'
+    },
+    {
+      name: 'Canada',
+      image: '/canada.svg',
+      description: 'Canada is known for its excellent universities and welcoming culture.',
+      link: '/study-abroad/canada'
+    },
+    {
+      name: 'United Kingdom',
+      image: '/uk.svg',
+      description: "The UK is home to some of the world's top universities.",
+      link: '/study-abroad/uk'
+    },
+    {
+      name: 'Europe',
+      image: '/europe.svg',
+      description: 'Europe offers world-class education and vibrant student life.',
+      link: '/study-abroad/europe'
+    },
+    {
+      name: 'Australia',
+      image: '/australia.svg',
+      description: 'Australia offers world-class education and vibrant student life.',
+      link: '/study-abroad/australia'
+    },
+    {
+      name: 'New Zealand',
+      image: '/newzealand.svg',
+      description: 'When you choose to study in New Zealand, you can be confident.',
+      link: '/study-abroad/newzealand'
+    },
+    {
+      name: 'UAE',
+      image: '/uae-slide.png',
+      description: 'UAE welcomes international students to thrive in a global classroom.',
+      link: '/study-abroad/uae'
+    },
+  ];
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    if (!carousel) return;
+
+    let scrollPosition = 0;
+    const scrollSpeed = 1; // pixels per frame
+    const itemWidth = 324; // 300px card + 24px gap
+    const totalItems = countries.length + 3; // including duplicates
+    const maxScroll = (totalItems - 5) * itemWidth; // scroll until we show the last 5 items
+
+    const autoScroll = () => {
+      if (isHoveringRef.current) return; // Pause on hover
+      
+      scrollPosition += scrollSpeed;
+      
+      if (scrollPosition >= maxScroll) {
+        scrollPosition = 0;
+      }
+      
+      carousel.style.transform = `translateX(-${scrollPosition}px)`;
+    };
+
+    const startAutoScroll = () => {
+      intervalRef.current = setInterval(autoScroll, 50); // 50ms = 20fps
+    };
+
+    const stopAutoScroll = () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
+
+    // Mouse event handlers
+    const handleMouseEnter = () => {
+      isHoveringRef.current = true;
+      stopAutoScroll();
+    };
+
+    const handleMouseLeave = () => {
+      isHoveringRef.current = false;
+      startAutoScroll();
+    };
+
+    // Add event listeners
+    carousel.addEventListener('mouseenter', handleMouseEnter);
+    carousel.addEventListener('mouseleave', handleMouseLeave);
+
+    // Start auto-scroll
+    startAutoScroll();
+
+    return () => {
+      stopAutoScroll();
+      carousel.removeEventListener('mouseenter', handleMouseEnter);
+      carousel.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
+
   return (
     <div className="">
       <section className="relative xl:h-screen mx-auto py-16 px-4 bg-[url('/education-learning1.svg')] bg-no-repeat bg-cover bg-center">
@@ -71,7 +178,7 @@ const StudyAbroadSection = () => {
               { title: 'Unlock Your Future', img: '/ourservice1.svg' },
               { title: 'Courses & Universities', img: '/ourservice3.svg' },
               { title: 'Enrollment Guidelines', img: '/ourservice2.svg' },
-              { title: 'Enrollment Procedure', img: '/ourservice5.svg' },
+              { title: 'Quick & Easy Enrollment', img: '/ourservice5.svg' },
               { title: 'Immigration Support', img: '/ourservice6.svg' },
               { title: 'Scholarship Assistance', img: '/ourservice7.svg' },
               { title: 'Monetary Guidance', img: '/ourservice8.svg' },
@@ -118,99 +225,49 @@ const StudyAbroadSection = () => {
           <h3 className="text-2xl font-bold mb-2 font-roboto font-semibold">Where would you like to go?</h3>
           <p className="mb-10 text-sm font-montserrat">Choose from the best courses from top global universities with WhatNext.</p>
         </div>
-        {/* Horizontal Carousel */}
+        {/* Auto-scroll Carousel */}
         <div className="flex flex-col items-center">
-          <div className="flex items-center w-full px-2 sm:px-10 relative">
-            <button
-              className="mr-2 bg-white text-[#0046AA] rounded-full shadow p-2 hover:bg-gray-200 transition"
-              onClick={() => {
-                const el = document.getElementById('country-carousel');
-                if (el) {
-                  const scrollAmount = window.innerWidth < 640 ? el.offsetWidth : 300;
-                  el.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-                }
-              }}
-              aria-label="Scroll Left"
-            >
-              ◀
-            </button>
-            <div
-              id="country-carousel"
-              className="overflow-x-auto overflow-y-hidden h-[350px] w-full flex flex-row flex-nowrap space-x-6 px-2 snap-x snap-mandatory scrollbar-none [&::-webkit-scrollbar]:hidden"
-              style={{ scrollBehavior: 'smooth' }}
-            >
-              {[
-                {
-                  name: 'United States',
-                  image: '/usa.svg',
-                  description: 'The USA offers diverse programs and vibrant campus life.',
-                  link: '/study-abroad/usa'
-                },
-                {
-                  name: 'Canada',
-                  image: '/canada.svg',
-                  description: 'Canada is known for its excellent universities and welcoming culture.',
-                  link: '/study-abroad/canada'
-                },
-                {
-                  name: 'United Kingdom',
-                  image: '/uk.svg',
-                  description: "The UK is home to some of the world's top universities.",
-                  link: '/study-abroad/uk'
-                },
-                {
-                  name: 'Europe',
-                  image: '/europe.svg',
-                  description: 'Europe offers world-class education and vibrant student life.',
-                  link: '/study-abroad/europe'
-                },
-                {
-                  name: 'Australia',
-                  image: '/australia.svg',
-                  description: 'Australia offers world-class education and vibrant student life.',
-                  link: '/study-abroad/australia'
-                },
-                {
-                  name: 'New Zealand',
-                  image: '/newzealand.svg',
-                  description: 'When you choose to study in New Zealand, you can be confident.',
-                  link: '/study-abroad/newzealand'
-                },
-                {
-                  name: 'UAE',
-                  image: '/uae-slide.png',
-                  description: 'UAE welcomes international students to thrive in a global classroom.',
-                  link: '/study-abroad/uae'
-                },
-                // Add more countries as needed
-              ].map((country, idx) => (
-                <Link
-                  href={country.link}
-                  key={idx}
-                  className="bg-white rounded-lg overflow-hidden shadow-md min-w-full sm:min-w-[300px] max-w-full sm:max-w-[300px] h-[350px] flex-shrink-0 hover:shadow-xl transition-all duration-300 snap-center"
-                >
-                  <img src={country.image} alt={`Study in ${country.name}`} className="w-full h-50 object-cover" />
-                  <div className="p-4 text-black">
-                    <h4 className="text-sm font-roboto font-semibold">STUDY IN</h4>
-                    <p className="text-2xl font-bold text-[#0046AA] font-roboto">{country.name}</p>
-                    <p className="text-[14px] mt-1 text-[#242424] font-montserrat">{country.description}</p>
-                  </div>
-                </Link>
-              ))}
+          <div className="w-full px-2 sm:px-10 relative">
+            {/* Carousel Container - Fixed width to show exactly 5 items */}
+            <div className="w-[1620px] mx-auto overflow-hidden" style={{ width: '1620px' }}> {/* 5 items * 300px + 4 gaps * 30px = 1620px */}
+              <div 
+                ref={carouselRef}
+                className="flex gap-6 transition-all duration-100 ease-in-out"
+                style={{
+                  width: `${(countries.length + 3) * 324}px` // Total width for all items plus duplicates
+                }}
+              >
+                {countries.map((country, idx) => (
+                  <Link
+                    href={country.link}
+                    key={idx}
+                    className="bg-white rounded-lg overflow-hidden shadow-md w-[300px] h-[350px] flex-shrink-0 hover:shadow-xl transition-all duration-300"
+                  >
+                    <img src={country.image} alt={`Study in ${country.name}`} className="w-full h-50 object-cover" />
+                    <div className="p-4 text-black">
+                      <h4 className="text-sm font-roboto font-semibold">STUDY IN</h4>
+                      <p className="text-2xl font-bold text-[#0046AA] font-roboto">{country.name}</p>
+                      <p className="text-[14px] mt-1 text-[#242424] font-montserrat">{country.description}</p>
+                    </div>
+                  </Link>
+                ))}
+                {/* Duplicate first few items for seamless loop */}
+                {countries.slice(0, 3).map((country, idx) => (
+                  <Link
+                    href={country.link}
+                    key={`duplicate-${idx}`}
+                    className="bg-white rounded-lg overflow-hidden shadow-md w-[300px] h-[350px] flex-shrink-0 hover:shadow-xl transition-all duration-300"
+                  >
+                    <img src={country.image} alt={`Study in ${country.name}`} className="w-full h-50 object-cover" />
+                    <div className="p-4 text-black">
+                      <h4 className="text-sm font-roboto font-semibold">STUDY IN</h4>
+                      <p className="text-2xl font-bold text-[#0046AA] font-roboto">{country.name}</p>
+                      <p className="text-[14px] mt-1 text-[#242424] font-montserrat">{country.description}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
-            <button
-              className="ml-2 bg-white text-[#0046AA] rounded-full shadow p-2 hover:bg-gray-200 transition"
-              onClick={() => {
-                const el = document.getElementById('country-carousel');
-                if (el) {
-                  const scrollAmount = window.innerWidth < 640 ? el.offsetWidth : 300;
-                  el.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-                }
-              }}
-              aria-label="Scroll Right"
-            >
-              ▶
-            </button>
           </div>
         </div>
         <div className="flex justify-end items-center">

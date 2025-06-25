@@ -53,9 +53,10 @@ export const countryData: Record<string, CountryData> = {
         backgroundImage: '/usa/usaN.png', // Replace with actual background image path if different
         greenSectionContent: [
             'The US has six of the top 10 universities in the world. Degrees from these colleges have a global repute.',
-            'Campus life is famous for its diversity; people across the globe to study here and you get to mix with people from various cultural and linguistic backgrounds.',
-            'You will have a wonderful classroom with interactive professors, debates and discussions and rubbing shoulders with the greats in the field.',
-            'The universities provide state-of-the-art facilities such as knowledge resources, computers, the internet, modern classrooms and trending technology.',
+            'Campus life is rich in diversity, bringing together students from around the world and various cultural backgrounds.',
+            'Experience interactive learning with expert professors, debates, and peer engagement.',
+            'Universities offer modern facilities, advanced technology, and rich knowledge resources.',
+            'Universities offer state-of-the-art facilities, including modern classrooms, high-speed internet, and advanced technology',
         ],
         animalShadow: '/usa/eagle-green.svg', // Replace with actual image path used in the image (e.g., eagle)
         universityLogos: [
@@ -141,12 +142,12 @@ export const countryData: Record<string, CountryData> = {
             "New Zealand, one of the finest locations to live, is home to some of the world's most prestigious educational institutions. Because New Zealand is tiny and uncrowded, moving around and getting things done is simple.",
         backgroundImage: '/new-zealand/newzeland.png', // Update based on your asset path
         greenSectionContent: [
-            "New Zealand is the world's second most peaceful country with all the 8 State-Funded Universities in the top 3% world university rankings.",
+            "New Zealand, the world\'s second most peaceful country, has all 8 state universities ranked in the top 3% globally.",
             'Easy entry requirements.',
             'A great destination.',
             'The healthy outdoor student lifestyle.',
         ],
-        animalShadow: '/newzealand/kiwi-bird.svg', // Placeholder path, adjust if needed
+        animalShadow: '/new-zealand/kiwi.svg', // Placeholder path, adjust if needed
         universityLogos: [
             { logo: '/new-zealand/lincoln.svg', height: '' },
             { logo: '/new-zealand/ingenio.svg', height: '' },
@@ -183,21 +184,21 @@ export const countryData: Record<string, CountryData> = {
         name: 'United Kingdom',
         paragraph:
             "The United Kingdom has been the favored destination for some of history's most influential thinkers. The United Kingdom's long-standing reputation for intellectual achievement, as well as its universities, continue to raise the standard in the academic world.",
-        backgroundImage: '/uk/uk-bg.svg', // Update with actual image path
+        backgroundImage: '/uk/uk-bg.jpg', // Update with actual image path
         greenSectionContent: [
-            'Colleges in UK are reliably positioning among the best on the planet and capabilities are globally valued and recognized.',
-            "The UK expects 5 percent of the world's systematic research and creates 14 percent of the world's most regularly referred to papers.",
-            'Joined Kingdom colleges give suppleness of decision and grant you to blend scholastic and professional courses of your decision.',
-            'The educating and study technique utilized in the UK offer you the opportunity to be unique and improve aptitudes sets and independence.',
-        ],
-        animalShadow: '/uk/beever.svg', // Placeholder, update as needed
+            'UK colleges rank among the best and offer globally recognized qualifications.',
+            'The UK produces 5% of global research and 14% of the most cited papers.',
+            'Universities offer flexible options to mix academic and professional courses.',
+            'Teaching methods encourage creativity, skill development, and independence.',
+          ],
+        animalShadow: '/uk/deer-shadow.svg', // Placeholder, update as needed
         universityLogos: [
             { logo: '/uk/lse.svg', height: '' },
             { logo: '/uk/cambridge.svg', height: '' },
             { logo: '/uk/oxford.svg', height: '' },
             { logo: '/uk/edinburgh.svg', height: '' },
         ],
-        blueAnimal: '/uk/beever-blue.svg',
+        blueAnimal: '/uk/deer-blue.png',
         whyChooseCards: [
             {
                 title: 'Great Place to Live and Study',
@@ -223,11 +224,11 @@ export const countryData: Record<string, CountryData> = {
             "With over 40 countries in Europe, it can be hard to decide where to spend a semester, summer, J-term, or year learning overseas! Each country has something to offer whether it's the cuisine, culture, stunning landscapes, or captivating languages.",
         backgroundImage: '/europe/europe.png', // Update with actual path
         greenSectionContent: [
-            'The continent of Europe has always been one of the world centers of learning and technological development. Europe today has over 4000 higher education institutions.',
-            'Education in Europe is highly subsidized through taxes.',
-            "Besides the high academic standards in Europe, foreign students also gain a rich cultural experience thanks to Europe's cultural and linguistic diversity.",
-        ],
-        animalShadow: '/europe/eagle-shadow.svg', // Replace with accurate shadow if different
+            'Europe is a historic hub for learning with over 4000 higher education institutions.',
+            'Education is largely subsidized through taxes in Europe.',
+            'Students benefit from high academic standards and rich cultural diversity.',
+          ],
+        animalShadow: '/europe/yakh.svg', // Replace with accurate shadow if different
         universityLogos: [
             { logo: '/europe/kth.svg', height: '' },
             { logo: '/europe/ludovich.svg', height: '' },
@@ -235,7 +236,7 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/europe/sigillvm.svg', height: '' },
             { logo: '/europe/osloensis.svg', height: '' },
         ],
-        blueAnimal: '/europe/eagle-blue.svg',
+        blueAnimal: '/europe/europe-blue.png',
         whyChooseCards: [
             {
                 title: 'Quality of Education',

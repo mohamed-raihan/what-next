@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import EnquireForm from "./enquireForm";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   const [isEnquireFormOpen, setIsEnquireFormOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm text-gray-600  mt-4 font-rubik font-semibold text-center">
-              <span className="">What Next Overseas Education Consultancy Service, Unit No - 111, Barton Centre, M.G.Road, Bangalore - 560001</span>
+              <span className="">What Next Overseas Education Consultancy Service Private Limited, Unit No - 111, Barton Centre, M.G.Road, Bangalore - 560001</span>
               <br/>
               <span>+91 9900542429</span>
               <br/>
@@ -34,8 +35,8 @@ export default function Footer() {
               <a href="https://www.facebook.com/whatnextoverseas" target="_blank" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
                 <Image src="/faceook.png" alt="Facebook" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
               </a>
-              <a href="#" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
-                <Image src="/linkedIn.png" alt="Twitter" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
+              <a href="https://www.linkedin.com/search/results/all/?keywords=whatnext%20overseas%20education%20journey&origin=HISTORY&sid=TH)" target="_blank" className="bg-white shadow-md rounded-full p-2 sm:p-4 hover:shadow-lg transition-shadow">
+              <FaLinkedin className="w-7 h-7  text-[#288737]" />
               </a>
               <a href="https://www.instagram.com/whatnextoverseas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
                 <Image src="/instagram.png" alt="Instagram" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />

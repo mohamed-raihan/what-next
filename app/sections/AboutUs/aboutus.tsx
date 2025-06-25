@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,9 +9,73 @@ const destinations = [
     { country: "Canada",url: "/study-abroad/canada", image: "/canada.svg", flag: "/flags/ca.png" },
     { country: "Europe",url: "/study-abroad/europe", image: "/europe.svg", flag: "/flags/eu.png" },
     { country: "Australia",url: "/study-abroad/australia", image: "/australia.svg", flag: "/flags/au.png" },
+    { country: "New Zealand",url: "/study-abroad/new-zealand", image: "/newzealand.svg", flag: "/flags/nz.png" },
+    { country: "uae",url: "/study-abroad/uae", image: "/uae-slide.png", flag: "/flags/ie.png" },
 ];
 
 export default function AboutSection() {
+    const carouselRef = useRef<HTMLDivElement>(null);
+    const intervalRef = useRef<NodeJS.Timeout | null>(null);
+    const isHoveringRef = useRef(false);
+
+    useEffect(() => {
+        const carousel = carouselRef.current;
+        if (!carousel) return;
+
+        let scrollPosition = 0;
+        const scrollSpeed = 1; // pixels per frame
+        const itemWidth = 250; // width of each item including gap
+        const totalItems = destinations.length + 3; // including duplicates
+        const maxScroll = (totalItems - 5) * itemWidth; // scroll until we show the last 5 items
+
+        const autoScroll = () => {
+            if (isHoveringRef.current) return; // Pause on hover
+            
+            scrollPosition += scrollSpeed;
+            
+            if (scrollPosition >= maxScroll) {
+                scrollPosition = 0;
+            }
+            
+            carousel.style.transform = `translateX(-${scrollPosition}px)`;
+        };
+
+        const startAutoScroll = () => {
+            intervalRef.current = setInterval(autoScroll, 50); // 50ms = 20fps
+        };
+
+        const stopAutoScroll = () => {
+            if (intervalRef.current) {
+                clearInterval(intervalRef.current);
+                intervalRef.current = null;
+            }
+        };
+
+        // Mouse event handlers
+        const handleMouseEnter = () => {
+            isHoveringRef.current = true;
+            stopAutoScroll();
+        };
+
+        const handleMouseLeave = () => {
+            isHoveringRef.current = false;
+            startAutoScroll();
+        };
+
+        // Add event listeners
+        carousel.addEventListener('mouseenter', handleMouseEnter);
+        carousel.addEventListener('mouseleave', handleMouseLeave);
+
+        // Start auto-scroll
+        startAutoScroll();
+
+        return () => {
+            stopAutoScroll();
+            carousel.removeEventListener('mouseenter', handleMouseEnter);
+            carousel.removeEventListener('mouseleave', handleMouseLeave);
+        };
+    }, []);
+
     return (
         <section className=" overflow-hidden">
             {/* Top Bird Graphic */}
@@ -41,7 +106,7 @@ export default function AboutSection() {
                 <Image src="/connection.svg" alt="About Us" width={100} height={100} className="w-full h-full" />
             </div>
 
-            {/* Destinations */}
+            {/* Destinations Carousel */}
             <div className="relative py-8 lg:py-4 px-10 xl:h-[550px] text-center -mt-10 lg:-mt-30">
                 <Image src="/bird-left.svg" alt="Bottom Bird" width={100} height={100} className="absolute top-5 lg:-top-40 -z-10 left-0 w-[200px] hidden lg:block lg:w-[300px] xl:w-[500px]"/>
                 <div className="flex justify-center items-center">
@@ -51,21 +116,44 @@ export default function AboutSection() {
                         States, Canada, the United Kingdom, Australia, New Zealand, and Europe.
                     </p>
                 </div>
-                <div className="flex flex-wrap justify-center gap-4  md:mt-20 lg:mt-16 xl:mt-0">
-                    {destinations.map((dest, idx) => (
-                        <Link href={dest.url} key={idx}>
-                            <div key={idx} className="">
-                            <Image
-                                src={dest.image}
-                                alt={dest.country}
-                                width={230}
-                                height={140}
-                                className="rounded shadow-md "
-                            />
-                            {/* <p className="mt-2 font-medium">Study in {dest.country}</p> */}
-                        </div>
-                        </Link>
-                    ))}
+                
+                {/* Carousel Container - Fixed width to show exactly 5 items */}
+                <div className="w-[1250px] mx-auto overflow-hidden" style={{ width: '1250px' }}> {/* 5 items * 230px + 4 gaps * 20px = 1250px */}
+                    <div 
+                        ref={carouselRef}
+                        className="flex gap-5 transition-all duration-100 ease-in-out"
+                        style={{
+                            width: `${(destinations.length + 3) * 250}px` // Total width for all items plus duplicates
+                        }}
+                    >
+                        {destinations.map((dest, idx) => (
+                            <Link href={dest.url} key={idx}>
+                                <div className="flex-shrink-0 w-[230px]">
+                                    <Image
+                                        src={dest.image}
+                                        alt={dest.country}
+                                        width={230}
+                                        height={140}
+                                        className="rounded shadow-md hover:shadow-lg transition-shadow duration-300"
+                                    />
+                                </div>
+                            </Link>
+                        ))}
+                        {/* Duplicate first few items for seamless loop */}
+                        {destinations.slice(0, 3).map((dest, idx) => (
+                            <Link href={dest.url} key={`duplicate-${idx}`}>
+                                <div className="flex-shrink-0 w-[230px]">
+                                    <Image
+                                        src={dest.image}
+                                        alt={dest.country}
+                                        width={230}
+                                        height={140}
+                                        className="rounded shadow-md hover:shadow-lg transition-shadow duration-300"
+                                    />
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
                 </div>
             </div>
 
@@ -134,7 +222,7 @@ export default function AboutSection() {
                             className="bg-white shadow-lg rounded-xl p-6 w-48 xl:mx-15 xl:-mt-10 text-center w-[248px] h-[220px] xl:rotate-6"
                         >
                             <Image src="/Sparkle.svg" alt="Value" width={80} height={80} className="mx-auto mb-2" />
-                            <p className="font-semibold font-roboto text-[22px]">Pursue With Passion</p>
+                            <p className="font-semibold font-roboto text-[22px]">Custom Learning Paths</p>
                         </div>
                         <div
                             key=""

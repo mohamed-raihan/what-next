@@ -1146,7 +1146,7 @@ export const blogData: Record<string, BlogData> = {
   slug: 'tech-internships-abroad',
   author: 'Admin',
   date: '24 June, 2025',
-  mainImage: '/blogs/tech-internships.jpg',
+  mainImage: '/blogs/activity7.jpg',
   content: `<h1><b>Land the Internship. Launch the Future.</b></h1>
     <br />
     <p>
@@ -1180,7 +1180,7 @@ export const blogData: Record<string, BlogData> = {
   slug: 'personal-statement-art',
   author: 'Admin',
   date: '24 June, 2025',
-  mainImage: '/blogs/personal-statement.jpg',
+  mainImage: '/blogs/activities1.jpg',
   content: `<h1><b>Stand Out with a Story That Matters</b></h1>
     <br />
     <p>
@@ -1214,7 +1214,7 @@ export const blogData: Record<string, BlogData> = {
   slug: 'scholarship-hunt',
   author: 'Admin',
   date: '24 June, 2025',
-  mainImage: '/blogs/scholarship-hunt.jpg',
+  mainImage: '/blogs/activity4.avif',
   content: `<h1><b>Your Talent Deserves to Be Funded</b></h1>
     <br />
     <p>
@@ -1248,7 +1248,7 @@ export const blogData: Record<string, BlogData> = {
   slug: 'visa-application-guide',
   author: 'Admin',
   date: '24 June, 2025',
-  mainImage: '/blogs/visa-application-guide.jpg',
+  mainImage: '/blogs/activity3.jpg',
   content: `<h1><b>Don\'t Let Paperwork Stop Your Global Dream</b></h1>
     <br />
     <p>

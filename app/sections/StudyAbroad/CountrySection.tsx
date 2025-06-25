@@ -50,7 +50,7 @@ const CountrySection: React.FC<CountryData> = ({
                     ))}
                 </ul>
                 <div className='absolute right-2 md:right-20  hidden md:block w-24 md:w-32 lg:w-70 '>
-                    <img src={animalShadow} className="w-24 md:w-50" />
+                    <img src={animalShadow} className="w-24 md:w-35" />
                 </div>
             </div>
 
@@ -78,7 +78,7 @@ const CountrySection: React.FC<CountryData> = ({
                         <h3 className="text-2xl md:text-4xl lg:text-5xl font-roboto mb-8 md:mb-20 font-semibold text-center text-[#0046AA] ">
                             WHY CHOOSE <span className='text-[#288737] uppercase'>{name}</span> <br /><span className='text-[#000000]'>FOR STUDY?</span>
                         </h3>
-                        <img src={blueAnimal} alt="blue animal" className="absolute -right-10 -top-14 xl:top-0 md:w-40 lg:w-50 xl:w-60 hidden md:block" />
+                        <img src={blueAnimal} alt="blue animal" className="absolute right-0 -top-14 xl:top-0 md:w-40  hidden md:block" />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto ">
 
@@ -103,12 +103,12 @@ const CountrySection: React.FC<CountryData> = ({
             {/* Contact Section */}
             <div className="relative bg-[url(/service-bg.svg)] bg-cover flex flex-col xl:flex-row justify-between items-center xl:items-start bg-no-repeat md:mt-0   xl:pt-35 px-2 md:px-10 py-10 lg:px-25 h-auto">
                 <div className="ms-2 md:ms-10 mb-8 md:mb-0 flex-1 flex flex-col hidden xl:block">
-                    <h1 className="text-3xl md:text-5xl xl:text-7xl text-[#0046AA] font-medium font-roboto font-semibold">
-                        Get in Touch with<br />
-                        <span className="text-[#288737]">Our Team</span>
+                    <h1 className="text-3xl md:text-5xl xl:text-6xl text-[#0046AA] font-medium font-roboto font-semibold">
+                    Connect with Experts,<br />
+                        <span className="text-[#288737]">Start Your Journey</span>
                     </h1>
                     <p className="w-full md:w-xl text-base md:text-[18px] text-gray-600 mt-5 font-montserrat">
-                        It&apos;s effective, it&apos;s beneficial and it&apos;s absolutely free. Take your virtual counselling session today!
+                    Get personalized guidance for your study abroad plans. Our experienced counselors are here to help—book your free virtual session now and take the first step toward your future.
                     </p>
                 </div>
                 <div className="max-w-full md:max-w-xl flex-1 flex items-center justify-center">
