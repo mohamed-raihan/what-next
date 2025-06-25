@@ -70,7 +70,7 @@ const details = [
             <>
                 <p>It is just as vital to identify and select the appropriate institution as it is to select your professional route and educational course. What Next can assist you in taking proactive steps in this direction and guiding you to the ideal venue for your academics. It is difficult to choose the right university when there are so many to choose from. We use discerning parameters that correspond to your preferences, professional goals, and other factors.</p>
                 <br />
-                <p>What Next will also walk you through the modules and curriculum you&apose;ll be studying when you've been accepted. We keep track of socioeconomic and university-related data to keep you informed on all fronts.</p>
+                <p>What Next will also walk you through the modules and curriculum you&apos;ll be studying when you&apos;ve been accepted. We keep track of socioeconomic and university-related data to keep you informed on all fronts.</p>
             </>
         ),
     },
@@ -85,7 +85,7 @@ const details = [
                     Our team manages point-to-point communications, from providing information to ensuring it reaches the appropriate source.
 
                     <br /><br />
-                    It's time-consuming, often stressful, and complicated; nevertheless, don't worry; we'll provide the greatest available support to make it hassle-free for you.
+                    It&apos;s time-consuming, often stressful, and complicated; nevertheless, don&apos;t worry; we&apos;ll provide the greatest available support to make it hassle-free for you.
 
                     <br /><br />We provide one-on-one help with the last steps of the application process. We give an interface as well as a detailed guide to assist you in completing each stage and level of difficulty.
 
