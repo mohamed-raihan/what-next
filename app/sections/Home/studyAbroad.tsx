@@ -13,43 +13,43 @@ const StudyAbroadSection = () => {
   const countries = [
     {
       name: 'United States',
-      image: '/usa.svg',
+      image: '/usa1.svg',
       description: 'The USA offers diverse programs and vibrant campus life.',
       link: '/study-abroad/usa'
     },
     {
       name: 'Canada',
-      image: '/canada.svg',
+      image: '/canada1.svg',
       description: 'Canada is known for its excellent universities and welcoming culture.',
       link: '/study-abroad/canada'
     },
     {
       name: 'United Kingdom',
-      image: '/uk.svg',
+      image: '/uk1.svg',
       description: "The UK is home to some of the world's top universities.",
       link: '/study-abroad/uk'
     },
     {
       name: 'Europe',
-      image: '/europe.svg',
+      image: '/europe1.svg',
       description: 'Europe offers world-class education and vibrant student life.',
       link: '/study-abroad/europe'
     },
     {
       name: 'Australia',
-      image: '/australia.svg',
+      image: '/australia1.svg',
       description: 'Australia offers world-class education and vibrant student life.',
       link: '/study-abroad/australia'
     },
     {
       name: 'New Zealand',
-      image: '/newzealand.svg',
+      image: '/newzeland.svg',
       description: 'When you choose to study in New Zealand, you can be confident.',
       link: '/study-abroad/newzealand'
     },
     {
       name: 'UAE',
-      image: '/uae-slide.png',
+      image: '/uae1.svg',
       description: 'UAE welcomes international students to thrive in a global classroom.',
       link: '/study-abroad/uae'
     },

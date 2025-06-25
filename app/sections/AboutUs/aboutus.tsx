@@ -4,13 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 const destinations = [
-    { country: "USA",url: "/study-abroad/usa", image: "/usa.svg", flag: "/flags/us.png" },
-    { country: "United Kingdom",url: "/study-abroad/uk", image: "/uk.svg", flag: "/flags/uk.png" },
-    { country: "Canada",url: "/study-abroad/canada", image: "/canada.svg", flag: "/flags/ca.png" },
-    { country: "Europe",url: "/study-abroad/europe", image: "/europe.svg", flag: "/flags/eu.png" },
-    { country: "Australia",url: "/study-abroad/australia", image: "/australia.svg", flag: "/flags/au.png" },
-    { country: "New Zealand",url: "/study-abroad/new-zealand", image: "/newzealand.svg", flag: "/flags/nz.png" },
-    { country: "uae",url: "/study-abroad/uae", image: "/uae-slide.png", flag: "/flags/ie.png" },
+    { country: "USA",url: "/study-abroad/usa", image: "/usa1.svg", flag: "/flags/us.png" },
+    { country: "United Kingdom",url: "/study-abroad/uk", image: "/uk1.svg", flag: "/flags/uk.png" },
+    { country: "Canada",url: "/study-abroad/canada", image: "/canada1.svg", flag: "/flags/ca.png" },
+    { country: "Europe",url: "/study-abroad/europe", image: "/europe1.svg", flag: "/flags/eu.png" },
+    { country: "Australia",url: "/study-abroad/australia", image: "/australia1.svg", flag: "/flags/au.png" },
+    { country: "New Zealand",url: "/study-abroad/new-zealand", image: "/newzeland.svg", flag: "/flags/nz.png" },
+    { country: "uae",url: "/study-abroad/uae", image: "/uae1.svg", flag: "/flags/ie.png" },
 ];
 
 export default function AboutSection() {
