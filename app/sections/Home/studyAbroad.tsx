@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 const StudyAbroadSection = () => {
   const router = useRouter();
   const carouselRef = useRef<HTMLDivElement>(null);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  // const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const isHoveringRef = useRef(false);
 
   const countries = [
@@ -66,7 +66,7 @@ const StudyAbroadSection = () => {
     const autoScroll = () => {
       if (isHoveringRef.current || !carousel) return;
 
-      const itemWidth = carousel.firstElementChild ? carousel.firstElementChild.clientWidth + 24 : 324; // 24 is for gap-6
+      // const itemWidth = carousel.firstElementChild ? carousel.firstElementChild.clientWidth + 24 : 324; // 24 is for gap-6
       const totalWidth = carousel.scrollWidth / 2; // Since we duplicated items
 
       scrollPosition += scrollSpeed;
