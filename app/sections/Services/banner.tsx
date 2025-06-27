@@ -10,36 +10,35 @@ import EnquireForm from "@/app/components/enquireForm";
 const services = [
     {
         id: 1,
-        title: "Unlock Your Future",
-
+        title: "Future Blueprint Design",
     },
     {
         id: 2,
-        title: "Courses & Universities",
+        title: "Course & University Curation",
     },
     {
         id: 3,
-        title: "Enrollment Guidelines",
+        title: "Enrollment Essentials Guide",
     },
     {
         id: 4,
-        title: "Streamlined Admissions",
+        title: "Accelerated Admission Support",
     },
     {
         id: 5,
-        title: "Immigration Support",
+        title: "Immigration Strategy & Visa Facilitation",
     },
     {
         id: 6,
-        title: "Scholarship Assistance",
+        title: "MeritEdge Scholarship Support",
     },
     {
         id: 7,
-        title: "Monetary Guidance",
+        title: "Financial Structuring & Resource Planning",
     },
     {
         id: 8,
-        title: "Student Travel Assistance",
+        title: "Global Student Mobility Desk",
     },
     {
         id: 9,
@@ -51,7 +50,7 @@ const details = [
     {
         id: 1,
         service_header: 1,
-        title: "Unlock Your Future",
+        title: "Future Blueprint Design",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -64,7 +63,7 @@ const details = [
     {
         id: 2,
         service_header: 2,
-        title: "Courses & Universities",
+        title: "Course & University Curation",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -77,7 +76,7 @@ const details = [
     {
         id: 3,
         service_header: 3,
-        title: "Enrollment Guidelines",
+        title: "Enrollment Essentials Guide",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -97,7 +96,7 @@ const details = [
     {
         id: 4,
         service_header: 4,
-        title: "Streamlined Admissions",
+        title: "Accelerated Admission Support",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -110,7 +109,7 @@ const details = [
     {
         id: 5,
         service_header: 5,
-        title: "Immigration Support",
+        title: "Immigration Strategy & Visa Facilitation",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -123,7 +122,7 @@ const details = [
     {
         id: 6,
         service_header: 6,
-        title: "Scholarship Assistance",
+        title: "MeritEdge Scholarship Support",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -136,7 +135,7 @@ const details = [
     {
         id: 7,
         service_header: 7,
-        title: "Monetary Guidance",
+        title: "Financial Structuring & Resource Planning",
         image: "/applicationImage.svg",
         description: (
             <>
@@ -149,7 +148,7 @@ const details = [
     {
         id: 8,
         service_header: 8,
-        title: "Student Travel Assistance",
+        title: "Global Student Mobility Desk",
         image: "/applicationImage.svg",
         description: (
             <>

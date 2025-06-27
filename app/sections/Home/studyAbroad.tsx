@@ -169,15 +169,14 @@ const StudyAbroadSection = () => {
           <h3 className="text-center text-3xl font-bold mb-12 text-[#1e3a8a]">Our Services</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {[
-              { title: 'Unlock Your Future', img: '/ourservice1.svg' },
-              { title: 'Courses & Universities', img: '/ourservice3.svg' },
-              { title: 'Enrollment Guidelines', img: '/ourservice2.svg' },
-              { title: 'Streamlined Admissions', img: '/ourservice5.svg' },
-              { title: 'Immigration Support', img: '/ourservice6.svg' },
-              { title: 'Scholarship Assistance', img: '/ourservice7.svg' },
-              { title: 'Monetary Guidance', img: '/ourservice8.svg' },
-              { title: 'Student Travel Assistance', img: '/ourservice4.svg' },
-
+              { title: 'Future Blueprint Design', img: '/ourservice1.svg' },
+              { title: 'Course & University Curation', img: '/ourservice3.svg' },
+              { title: 'Enrollment Essentials Guide', img: '/ourservice2.svg' },
+              { title: 'Accelerated Admission Support', img: '/ourservice5.svg' },
+              { title: 'Immigration Strategy & Visa Facilitation', img: '/ourservice6.svg' },
+              { title: 'MeritEdge Scholarship Support', img: '/ourservice7.svg' },
+              { title: 'Financial Structuring & Resource Planning', img: '/ourservice8.svg' },
+              { title: 'Global Student Mobility Desk', img: '/ourservice4.svg' },
             ].map((service, index) => (
               <Link href={`/services?service=${service.title}`} key={index}>
                 <div

@@ -31,7 +31,7 @@ export default function OurValues() {
                                 icon: "/valueicon3.png",
                             },
                             {
-                                title: "Custom Learning Paths",
+                                title: "Customize Your Passion",
                                 icon: "/valueicon4.png",
                             },
                         ].map((value, index) => (
