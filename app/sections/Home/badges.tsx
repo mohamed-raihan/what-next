@@ -6,7 +6,7 @@ const logos = [
   { src: '/nafsalogo.svg', alt: 'NAFSA', width:"" },
   { src: '/toefl-grace.webp', alt: 'ETS TOEFL', width:"" },
   // { src: '/idp.png', alt: 'IDP IELTS' },
-  { src: '/logo-idp-ielts.png', alt: 'IDP IELTS', width:"" },
+  { src: '/idp_ielts_logo.svg', alt: 'IDP IELTS', width:"" },
 ];
 
 const IndustryPartnerships = () => {

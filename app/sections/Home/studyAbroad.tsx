@@ -195,7 +195,7 @@ const StudyAbroadSection = () => {
                       alt={service.title}
                       className="w-full transition-all duration-300 group-hover:grayscale"
                     />
-                    <div className="absolute p-4">
+                    <div className="absolute px-4 py-3">
                       <h4 className="font-semibold text-[#0046AA] text-lg font-roboto">
                         {service.title}
                       </h4>
