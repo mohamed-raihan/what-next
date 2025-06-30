@@ -32,11 +32,11 @@ export default function Footer() {
             </p>
 
             <div className="flex space-x-4 sm:space-x-6 mt-4 sm:mt-6 justify-center  items-center">
+              <a href="https://www.linkedin.com/search/results/all/?keywords=whatnext%20overseas%20education%20journey&origin=HISTORY&sid=TH)" target="_blank" className="bg-white shadow-md rounded-full p-2 sm:p-4 hover:shadow-lg transition-shadow">
+              <FaLinkedin className="w-6 h-6  text-[#288737]" />
+              </a>
               <a href="https://www.facebook.com/whatnextoverseas" target="_blank" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
                 <Image src="/faceook.png" alt="Facebook" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />
-              </a>
-              <a href="https://www.linkedin.com/search/results/all/?keywords=whatnext%20overseas%20education%20journey&origin=HISTORY&sid=TH)" target="_blank" className="bg-white shadow-md rounded-full p-2 sm:p-4 hover:shadow-lg transition-shadow">
-              <FaLinkedin className="w-7 h-7  text-[#288737]" />
               </a>
               <a href="https://www.instagram.com/whatnextoverseas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" className="bg-white shadow-md rounded-full p-2 sm:p-2.5 hover:shadow-lg transition-shadow">
                 <Image src="/instagram.png" alt="Instagram" width={50} height={50} className="w-10 h-10 sm:w-10 sm:h-10" />

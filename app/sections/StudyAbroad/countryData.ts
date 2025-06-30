@@ -259,7 +259,7 @@ export const countryData: Record<string, CountryData> = {
         name: 'UAE',
         paragraph:
             "The United Arab Emirates (UAE) is rapidly emerging as a global education hub with its futuristic cities, world-class infrastructure, and diverse student population. From business to AI, the UAE offers top-tier education aligned with global industry needs.",
-        backgroundImage: '/uae/uae-bg.png', // Update with actual background image path
+        backgroundImage: '/uae/burj-khalifa.jpg', // Update with actual background image path
         greenSectionContent: [
             'UAE is home to globally ranked universities including international campuses from the US, UK, and Australia.',
             'The country offers a safe, multicultural environment and modern lifestyle with excellent student amenities.',

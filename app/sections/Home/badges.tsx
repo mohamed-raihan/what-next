@@ -5,8 +5,8 @@ const logos = [
   { src: '/icefLogo.png', alt: 'ICEF Agency Status', width:""  },
   { src: '/nafsalogo.svg', alt: 'NAFSA', width:"" },
   { src: '/toefl-grace.webp', alt: 'ETS TOEFL', width:"" },
-  // { src: '/idp.png', alt: 'IDP IELTS' },
-  { src: '/idp_ielts_logo.svg', alt: 'IDP IELTS', width:"" },
+  { src: '/idp.png', alt: 'IDP IELTS' },
+  { src: '/ielts.png', alt: 'IDP IELTS', width:"" },
 ];
 
 const IndustryPartnerships = () => {
@@ -24,7 +24,7 @@ const IndustryPartnerships = () => {
         {logos.map((logo, index) => (
           <div
             key={index}
-            className={`${index === logos.length - 1 ? 'w-66 h-40' : 'w-40 h-40'} relative`}
+            className={`${index === logos.length - 1 ? 'w-40 h-40' : 'w-40 h-40'} relative`}
           >
             <Image
               src={logo.src}
