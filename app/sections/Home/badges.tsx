@@ -6,7 +6,7 @@ const logos = [
   { src: '/nafsalogo.svg', alt: 'NAFSA', width:"" },
   { src: '/toefl-grace.webp', alt: 'ETS TOEFL', width:"" },
   { src: '/idp.png', alt: 'IDP IELTS' },
-  { src: '/ielts.png', alt: 'IDP IELTS', width:"" },
+  { src: '/ielts-logo.png', alt: 'IDP IELTS', width:"" },
 ];
 
 const IndustryPartnerships = () => {
@@ -20,12 +20,12 @@ const IndustryPartnerships = () => {
         volumes about our credibility and standing.
       </p>
 
-      <div className="mt-8 flex flex-wrap justify-center gap-22">
+      <div className="mt-8 flex flex-wrap justify-center gap-10 ">
         {logos.map((logo, index) => (
           <div
             key={index}
             className={`${
-              index === logos.length - 1 ? 'w-40 h-40 md:-ml-20' : 'w-40 h-40'
+              index === logos.length - 1 ? 'w-40 h-40 ' : 'w-40 h-40'
             } relative`}
           >
             <Image
