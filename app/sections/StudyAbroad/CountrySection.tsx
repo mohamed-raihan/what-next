@@ -15,8 +15,14 @@ const CountrySection: React.FC<CountryData> = ({
     universityLogos,
     whyChooseCards,
     blueAnimal,
+    heading,
 }) => {
     const [isEnquireFormOpen, setIsEnquireFormOpen] = useState(false);
+
+    const firstHalf = universityLogos.length > 15 ? universityLogos.slice(0, Math.ceil(universityLogos.length / 2)) : universityLogos;
+    const secondHalf = universityLogos.length > 15 ? universityLogos.slice(Math.ceil(universityLogos.length / 2)) : [];
+
+
     return (
         <div className="w-full">
             {/* Hero Section */}
@@ -55,28 +61,63 @@ const CountrySection: React.FC<CountryData> = ({
             </div>
 
             {/* Top Universities */}
-            <div className="py-8 md:py-12 text-center font-roboto px-2 md:px-0">
+            {/* <div className="py-8 md:py-12 text-center font-roboto px-2 md:px-0">
                 <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold mb-4 text-[#0046AA] font-roboto uppercase">
-                    Top 8 Universities <span>in</span> <span className='text-[#288737]'>{name}</span>
+                    {heading}
                 </h2>
-                <div className="flex flex-wrap justify-center gap-6 md:gap-12 lg:gap-20 py-6 md:py-12 items-center w-full">
+                <div className="flex flex-wrap justify-center gap-6 md:gap-12 lg:gap-20 py-6 md:pt-12 items-center w-full">
                     {universityLogos.map((logo, idx) => (
                         <img
                             key={idx}
                             src={logo.logo}
                             alt="university logo"
-                            className="h-10 md:h-14 lg:h-30 object-contain max-w-[120px] md:max-w-[160px] lg:max-w-[200px]"
+                            className="h-10 md:h-14 lg:h-30 object-contain max-w-[120px] md:max-w-[160px] lg:max-w-[140px]"
                         />
                     ))}
                 </div>
+            </div> */}
+
+            <div className="py-8 md:py-12 text-center font-roboto px-2 md:px-0 w-full overflow-hidden">
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold mb-10 text-[#0046AA] font-roboto">
+                    {heading}
+                </h2>
+
+                {/* First Row - scroll left */}
+                <div className="relative w-full overflow-hidden ">
+                    <div className="flex gap-8 animate-scroll-left w-max">
+                        {[...firstHalf, ...firstHalf].map((logo, idx) => (
+                            <img
+                                key={`first-${idx}`}
+                                src={logo.logo}
+                                alt="university logo"
+                                className="h-10 md:h-14 lg:h-30 object-contain max-w-[120px] md:max-w-[200px] lg:max-w-[140px]"
+                            />
+                        ))}
+                    </div>
+                </div>
+
+                {/* Second Row - scroll right (if applicable) */}
+                <div className="relative w-full overflow-hidden">
+                    <div className="flex gap-8 animate-scroll-right w-max">
+                        {[...secondHalf, ...secondHalf].map((logo, idx) => (
+                            <img
+                                key={`first-${idx}`}
+                                src={logo.logo}
+                                alt="university logo"
+                                className="h-10 md:h-14 lg:h-30 object-contain max-w-[120px] md:max-w-[200px] lg:max-w-[140px]"
+                            />
+                        ))}
+                    </div>
+                </div>
             </div>
 
+
             {/* Why Choose Section */}
-            <div className='px-7 md:px-8 lg:px-20 py-6 md:py-10 rounded-lg flex justify-center items-center'>
+            <div className='px-7 md:px-8 lg:px-20  rounded-lg flex justify-center items-center '>
                 <div className="py-8 md:py-18 px-2 md:px-10 bg-[url('/whychoose.svg')] bg-cover bg-center w-full rounded-lg bg-no-repeat">
                     <div className='relative flex justify-center items-center'>
                         <h3 className="text-2xl md:text-4xl lg:text-5xl font-roboto mb-8 md:mb-20 font-semibold text-center text-[#0046AA] ">
-                            WHY CHOOSE <span className='text-[#288737] uppercase'>{name}</span> <br /><span className='text-[#000000]'>FOR STUDY?</span>
+                            Why Choose <span className='text-[#288737] '>{name}</span> <br /><span className='text-[#000000]'>For Study?</span>
                         </h3>
                         <img src={blueAnimal} alt="blue animal" className="absolute right-0 -top-14 xl:top-0 md:w-40  hidden md:block" />
                     </div>
@@ -104,11 +145,11 @@ const CountrySection: React.FC<CountryData> = ({
             <div className="relative bg-[url(/service-bg.svg)] bg-cover flex flex-col xl:flex-row justify-between items-center xl:items-start bg-no-repeat md:mt-0   xl:pt-35 px-2 md:px-10 py-10 lg:px-25 h-auto">
                 <div className="ms-2 md:ms-10 mb-8 md:mb-0 flex-1 flex flex-col hidden xl:block">
                     <h1 className="text-3xl md:text-5xl xl:text-6xl text-[#0046AA] font-medium font-roboto font-semibold">
-                    Connect with Experts,<br />
+                        Connect with Experts,<br />
                         <span className="text-[#288737]">Start Your Journey</span>
                     </h1>
                     <p className="w-full md:w-xl text-base md:text-[18px] text-gray-600 mt-5 font-montserrat">
-                    Get personalized guidance for your study abroad plans. Our experienced counselors are here to help—book your free virtual session now and take the first step toward your future.
+                        Get personalized guidance for your study abroad plans. Our experienced counselors are here to help—book your free virtual session now and take the first step toward your future.
                     </p>
                 </div>
                 <div className="max-w-full md:max-w-xl flex-1 flex items-center justify-center">

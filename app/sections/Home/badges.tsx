@@ -24,7 +24,9 @@ const IndustryPartnerships = () => {
         {logos.map((logo, index) => (
           <div
             key={index}
-            className={`${index === logos.length - 1 ? 'w-40 h-40' : 'w-40 h-40'} relative`}
+            className={`${
+              index === logos.length - 1 ? 'w-40 h-40 md:-ml-20' : 'w-40 h-40'
+            } relative`}
           >
             <Image
               src={logo.src}

@@ -14,11 +14,13 @@ export interface CountryData {
     universityLogos: { logo: string, height: string }[]; // image paths
     whyChooseCards: WhyChooseCard[];
     blueAnimal: string;
+    heading: string;
 }
 
 export const countryData: Record<string, CountryData> = {
     australia: {
         name: 'Australia',
+        heading: 'Group of Eight Universities',
         paragraph: 'The United States takes pride in its technical development, and it has ensured that all levels of education are well-equipped with cutting-edge equipment.', // placeholder
         backgroundImage: '/australia/opera.png',
         greenSectionContent: [
@@ -30,11 +32,14 @@ export const countryData: Record<string, CountryData> = {
         ],
         animalShadow: '/australia/kangaroo.svg',
         universityLogos: [
-            { logo: '/australia/Melbourne1.svg', height: '' },
-            { logo: '/australia/unsw.svg', height: '' },
-            { logo: '/australia/logo-ANU.svg', height: '' },
-            { logo: '/australia/westernAus.svg', height: '' },
-            { logo: '/australia/adelaide.svg', height: '' },
+            { logo: '/australia/Australian_National_University-Logo.wine.png', height: '' }, // ANU
+            { logo: '/australia/Monash_University_logo.svg.png', height: '' },               // Monash
+            { logo: '/australia/adelaide.svg', height: '' },                                 // Adelaide
+            { logo: '/australia/Melbourne1.svg', height: '' },                               // Melbourne
+            { logo: '/australia/unsw.svg', height: '' },                                     // UNSW
+            { logo: '/australia/The_University_Of_Queensland_logo_logotype.png', height: '' }, // Queensland
+            { logo: '/australia/The-university-of-Sydney_Logo_original.png', height: '' },   // Sydney
+            { logo: '/australia/westernAus.svg', height: '' },                               // Western Australia
         ],
         blueAnimal: '/australia/kangaroo-blue.svg',
         whyChooseCards: [
@@ -48,9 +53,10 @@ export const countryData: Record<string, CountryData> = {
 
     usa: {
         name: 'USA',
+        heading: 'IVY League Universities',
         paragraph:
             'The United States takes pride in its technical development, and it has ensured that all levels of education are well-equipped with cutting-edge equipment.',
-        backgroundImage: '/usa/usaN.png', // Replace with actual background image path if different
+        backgroundImage: '/usa/usaN.png',
         greenSectionContent: [
             'The US has six of the top 10 universities in the world. Degrees from these colleges have a global repute.',
             'Campus life is rich in diversity, bringing together students from around the world and various cultural backgrounds.',
@@ -58,13 +64,16 @@ export const countryData: Record<string, CountryData> = {
             'Universities offer modern facilities, advanced technology, and rich knowledge resources.',
             'Universities offer state-of-the-art facilities, including modern classrooms, high-speed internet, and advanced technology',
         ],
-        animalShadow: '/usa/eagle-green.svg', // Replace with actual image path used in the image (e.g., eagle)
+        animalShadow: '/usa/eagle-green.svg',
         universityLogos: [
-            { logo: '/usa/massachusetts.svg', height: '' },
-            { logo: '/usa/luxcet.svg', height: '' },
-            { logo: '/usa/vettesen.svg', height: '' },
-            { logo: '/usa/stanford.svg', height: '' },
-            { logo: '/usa/harvard.svg', height: '' },
+            { logo: '/usa/Brown-University.png', height: '' },                // Brown
+            { logo: '/usa/columbia-university.jpg', height: '' },             // Columbia
+            { logo: '/usa/cornell-university.png', height: '' },              // Cornell
+            { logo: '/usa/Dartmouth-College-Logo.png', height: '' },          // Dartmouth
+            { logo: '/usa/harvard-logo.png', height: '' },                    // Harvard
+            { logo: '/usa/UniversityofPenn.png', height: '' },                // University of Pennsylvania
+            { logo: '/usa/princeton-logo.png', height: '' },                  // Princeton
+            { logo: '/usa/yale-university.png', height: '' },                 // Yale
         ],
         blueAnimal: '/usa/eagle-blue.svg',
         whyChooseCards: [
@@ -90,12 +99,14 @@ export const countryData: Record<string, CountryData> = {
             },
         ],
     },
+    
 
     canada: {
         name: 'Canada',
+        heading: 'Top-tier, Prestigious Schools of Canada',
         paragraph:
             'Get an education in Canada, and your diploma will be instantly recognized around the world.',
-        backgroundImage: '/canada/canadaN.png', // Update the path based on your project
+        backgroundImage: '/canada/canadaN.png',
         greenSectionContent: [
             'Great Canadian universities.',
             'Accessible Canadian student visa process.',
@@ -103,13 +114,18 @@ export const countryData: Record<string, CountryData> = {
             'Canada has affordable tuition fees and living costs.',
             'Canada has a perfect blend of nature, technology, and culture.',
         ],
-        animalShadow: '/canada/animal-green.svg', // Placeholder, update with correct asset if available
+        animalShadow: '/canada/animal-green.svg',
         universityLogos: [
-            { logo: '/canada/mcMaster.svg', height: '' },
-            { logo: '/canada/grandscunt.svg', height: '' },
-            { logo: '/canada/velute.svg', height: '' },
-            { logo: '/canada/waterloo.svg', height: '' },
-            { logo: '/canada/uOttawa.svg', height: '' },
+            { logo: '/canada/University_of_Toronto-Logo.wine.png', height: '' },      // University of Toronto
+            { logo: '/canada/mcgill.svg', height: '' },                    // McGill
+            { logo: '/canada/university of british columbia.png', height: '' },       // UBC
+            { logo: '/canada/university-of-alberta.svg', height: '' },                // Alberta
+            { logo: '/canada/Universite_de_Montreal_logo.png', height: '' },          // Montreal
+            { logo: '/canada/university of calgary.png', height: '' },                // Calgary
+            { logo: '/canada/university-of-ottawa.png', height: '' },                 // Ottawa
+            { logo: '/canada/velute.svg', height: '' },                               // Western University (assumed logo)
+            { logo: '/canada/University_of_Waterloo.png', height: '' },               // Waterloo
+            { logo: '/canada/McMaster_University.png', height: '' },                  // McMaster
         ],
         blueAnimal: '/canada/animal-blue.svg',
         whyChooseCards: [
@@ -135,9 +151,11 @@ export const countryData: Record<string, CountryData> = {
             },
         ],
     },
+    
 
     newzealand: {
         name: 'New Zealand',
+        heading: "Top 8 Universities in New Zealand",
         paragraph:
             "New Zealand, one of the finest locations to live, is home to some of the world's most prestigious educational institutions. Because New Zealand is tiny and uncrowded, moving around and getting things done is simple.",
         backgroundImage: '/new-zealand/newzeland.png', // Update based on your asset path
@@ -150,10 +168,16 @@ export const countryData: Record<string, CountryData> = {
         animalShadow: '/new-zealand/kiwi.svg', // Placeholder path, adjust if needed
         universityLogos: [
             { logo: '/new-zealand/lincoln.svg', height: '' },
-            { logo: '/new-zealand/ingenio.svg', height: '' },
-            { logo: '/new-zealand/unvstylogo.svg', height: '' },
             { logo: '/new-zealand/canterbury.svg', height: '' },
+            { logo: '/new-zealand/ingenio.svg', height: '' },
             { logo: '/new-zealand/massey.svg', height: '' },
+            { logo: '/new-zealand/unvstylogo.svg', height: '' },
+            { logo: '/new-zealand/lincoln.svg', height: '' },
+            { logo: '/new-zealand/canterbury.svg', height: '' },
+            { logo: '/new-zealand/ingenio.svg', height: '' },
+            { logo: '/new-zealand/massey.svg', height: '' },
+            { logo: '/new-zealand/unvstylogo.svg', height: '' },
+
         ],
         blueAnimal: '/new-zealand/newzealand.png',
         whyChooseCards: [
@@ -182,21 +206,41 @@ export const countryData: Record<string, CountryData> = {
 
     uk: {
         name: 'United Kingdom',
+        heading: 'The Russell Group',
         paragraph:
             "The United Kingdom has been the favored destination for some of history's most influential thinkers. The United Kingdom's long-standing reputation for intellectual achievement, as well as its universities, continue to raise the standard in the academic world.",
-        backgroundImage: '/uk/uk-bg.jpg', // Update with actual image path
+        backgroundImage: '/uk/uk-bg.jpg',
         greenSectionContent: [
             'UK colleges rank among the best and offer globally recognized qualifications.',
             'The UK produces 5% of global research and 14% of the most cited papers.',
             'Universities offer flexible options to mix academic and professional courses.',
             'Teaching methods encourage creativity, skill development, and independence.',
-          ],
-        animalShadow: '/uk/deer-shadow.svg', // Placeholder, update as needed
+        ],
+        animalShadow: '/uk/deer-shadow.svg',
         universityLogos: [
-            { logo: '/uk/lse.svg', height: '' },
-            { logo: '/uk/cambridge.svg', height: '' },
-            { logo: '/uk/oxford.svg', height: '' },
-            { logo: '/uk/edinburgh.svg', height: '' },
+            { logo: '/uk/university-of-oxford9718.jpg', height: '' },                     // Oxford
+            { logo: '/uk/cambridge.svg', height: '' },                                     // Cambridge
+            { logo: '/uk/imperial-college-london-university.png', height: '' },           // Imperial
+            { logo: '/uk/university-of-bristol9427.jpg', height: '' },                    // Bristol
+            { logo: '/uk/Logo-page-graphics6-e1737113535639.webp', height: '' },          // Leeds (assumed)
+            { logo: '/uk/the-university-of-nottingham-1-logo-svg-vector (1).svg', height: '' }, // Nottingham
+            { logo: '/uk/university-of-sheffield.webp', height: '' },                     // Sheffield
+            { logo: '/uk/University_of_Warwick_logo.svg', height: '' },                   // Warwick
+            { logo: '/uk/queens-university-belfast-logo.png', height: '' },               // Queen's Belfast
+            { logo: '/uk/Uni_Exeter.svg.png', height: '' },                                    // Exeter
+            { logo: '/uk/manchester.jpg', height: '' },                                    // Manchester
+            { logo: '/uk/edinburgh.jpeg', height: '' },                                    // Edinburgh
+            { logo: '/uk/queen-mary-university.png', height: '' },                         // Queen Mary
+            { logo: '/uk/CardiffMet_logo-1.png', height: '' },                             // Cardiff
+            { logo: '/uk/university_liverpool.jpg', height: '' },                          // Liverpool
+            { logo: '/uk/durhan-university.png', height: '' },                             // Durham
+            { logo: '/uk/university of york.png', height: '' },                            // York
+            { logo: '/uk/University_of_Southampton.png', height: '' },                     // Southampton
+            { logo: '/uk/newcastle university.png', height: '' },                          // Newcastle
+            { logo: '/uk/university of glassgow.png', height: '' },                        // Glasgow
+            { logo: '/uk/King\'s_College_London.png', height: '' },                        // King's College
+            { logo: '/uk/London_school_of_economics.png', height: '' },                    // LSE
+            { logo: '/uk/University_College_London.png', height: '' },                     // UCL
         ],
         blueAnimal: '/uk/deer-blue.png',
         whyChooseCards: [
@@ -220,6 +264,7 @@ export const countryData: Record<string, CountryData> = {
 
     europe: {
         name: 'Europe',
+        heading: 'Top Universities in Europe',
         paragraph:
             "With over 40 countries in Europe, it can be hard to decide where to spend a semester, summer, J-term, or year learning overseas! Each country has something to offer whether it's the cuisine, culture, stunning landscapes, or captivating languages.",
         backgroundImage: '/europe/europe.png', // Update with actual path
@@ -230,6 +275,11 @@ export const countryData: Record<string, CountryData> = {
           ],
         animalShadow: '/europe/yakh.svg', // Replace with accurate shadow if different
         universityLogos: [
+            { logo: '/europe/kth.svg', height: '' },
+            { logo: '/europe/ludovich.svg', height: '' },
+            { logo: '/europe/munich.svg', height: '' },
+            { logo: '/europe/sigillvm.svg', height: '' },
+            { logo: '/europe/osloensis.svg', height: '' },
             { logo: '/europe/kth.svg', height: '' },
             { logo: '/europe/ludovich.svg', height: '' },
             { logo: '/europe/munich.svg', height: '' },
@@ -257,6 +307,7 @@ export const countryData: Record<string, CountryData> = {
     },
     uae: {
         name: 'UAE',
+        heading: 'Top Universities in UAE',
         paragraph:
             "The United Arab Emirates (UAE) is rapidly emerging as a global education hub with its futuristic cities, world-class infrastructure, and diverse student population. From business to AI, the UAE offers top-tier education aligned with global industry needs.",
         backgroundImage: '/uae/burj-khalifa.jpg', // Update with actual background image path
@@ -272,6 +323,11 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/uae/aus.png', height: '' },
             { logo: '/uae/nyu.png', height: '' },
             { logo: '/uae/zu.png', height: '' },
+            { logo: '/uae/Heriot-Watt_University_logo.svg', height: '' },
+            { logo: '/uae/UD-logo.png', height: '' },
+            { logo: '/uae/middlesex-university-png.png', height: '' },
+
+
         ],
         blueAnimal: '/uae/falcon-blue.png', // Stylized falcon image
         whyChooseCards: [
