@@ -13,6 +13,7 @@ interface ApiCountry {
     alt_img_caption: string;
     alt_img_description: string;
     slug: string;
+    heading: string;
 }
 
 interface ApiUniversity {
@@ -68,6 +69,7 @@ export const getStudyAbroadData = async (): Promise<Record<string, CountryData>>
             countryData[countryName] = {
                 name: country.title,
                 paragraph: country.description,
+                heading: country.heading,
                 backgroundImage: country.alt_img_text,
                 greenSectionContent: country.subtitle.split('+').map(s => s.trim()),
                 animalShadow: country.image,
