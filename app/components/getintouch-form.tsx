@@ -151,10 +151,11 @@ const GetintouchForm = () => {
                         onChange={handleChange}
                     >
                         <option value="">How did you find us?</option>
+                        <option value="Linkedin">LinkedIn</option>
                         <option value="Facebook">Facebook</option>
                         <option value="Whatsapp">Whatsapp</option>
-                        <option value="Telegram">Telegram</option>
-                        <option value="Twitter">Twitter</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Google">Google</option>
                         <option value="Other">Other</option>
                     </select>
                     {errors.find_us && <p className="text-red-500 text-sm mt-1">{errors.find_us}</p>}

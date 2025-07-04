@@ -82,33 +82,54 @@ const CountrySection: React.FC<CountryData> = ({
                     {heading}
                 </h2>
 
-                {/* First Row - scroll left */}
-                <div className="relative w-full overflow-hidden ">
-                    <div className="flex gap-8 animate-scroll-left w-max">
-                        {[...firstHalf, ...firstHalf].map((logo, idx) => (
-                            <img
-                                key={`first-${idx}`}
-                                src={logo.logo}
-                                alt="university logo"
-                                className="h-10 md:h-14 lg:h-30 object-contain max-w-[120px] md:max-w-[200px] lg:max-w-[140px]"
-                            />
-                        ))}
-                    </div>
-                </div>
+                {universityLogos.length >= 8 ? (
+                    <>
+                        {/* First Row - scroll left */}
+                        <div className="relative w-full overflow-hidden ">
+                            <div className="flex gap-8 animate-scroll-left w-max">
+                                {[...firstHalf, ...firstHalf].map((logo, idx) => (
+                                    <img
+                                        key={`first-${idx}`}
+                                        src={logo.logo}
+                                        alt="university logo"
+                                        className="h-10 md:h-14 lg:h-30 object-contain max-w-[120px] md:max-w-[200px] lg:max-w-[140px]"
+                                    />
+                                ))}
+                            </div>
+                        </div>
 
-                {/* Second Row - scroll right (if applicable) */}
-                <div className="relative w-full overflow-hidden">
-                    <div className="flex gap-8 animate-scroll-right w-max">
-                        {[...secondHalf, ...secondHalf].map((logo, idx) => (
+                        {/* Second Row - scroll right (if applicable) */}
+                        <div className="relative w-full overflow-hidden">
+                            <div className="flex gap-8 animate-scroll-right w-max">
+                                {[...secondHalf, ...secondHalf].map((logo, idx) => (
+                                    <img
+                                        key={`first-${idx}`}
+                                        src={logo.logo}
+                                        alt="university logo"
+                                        className="h-10 md:h-14 lg:h-30 object-contain max-w-[120px] md:max-w-[200px] lg:max-w-[140px]"
+                                    />
+                                ))}
+                            </div>
+                        </div>
+                    </>
+                ) : (
+                    // Static grid for fewer logos
+                    <div className="flex flex-wrap justify-center gap-6 md:gap-12 lg:gap-20 py-6 md:pt-12 items-center w-full">
+                        {universityLogos.map((logo, idx) => (
+                            <div className='flex flex-col justify-center items-center gap-3'>
                             <img
-                                key={`first-${idx}`}
+                                key={`static-${idx}`}
                                 src={logo.logo}
                                 alt="university logo"
-                                className="h-10 md:h-14 lg:h-30 object-contain max-w-[120px] md:max-w-[200px] lg:max-w-[140px]"
+                                className="h-10 md:h-14 lg:h-30 object-contain max-w-[120px] md:max-w-[160px] lg:max-w-[140px]"
                             />
+                            <p>
+                                {logo.title}
+                            </p>
+                            </div>
                         ))}
                     </div>
-                </div>
+                )}
             </div>
 
 

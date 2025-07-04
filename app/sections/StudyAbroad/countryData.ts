@@ -11,7 +11,7 @@ export interface CountryData {
     backgroundImage: string;
     greenSectionContent: string[];
     animalShadow: string; // image path or component
-    universityLogos: { logo: string, height: string }[]; // image paths
+    universityLogos: { logo: string, height: string, title: string }[]; // image paths
     whyChooseCards: WhyChooseCard[];
     blueAnimal: string;
     heading: string;
@@ -32,14 +32,14 @@ export const countryData: Record<string, CountryData> = {
         ],
         animalShadow: '/australia/kangaroo.svg',
         universityLogos: [
-            { logo: '/australia/Australian_National_University-Logo.wine.png', height: '' }, // ANU
-            { logo: '/australia/Monash_University_logo.svg.png', height: '' },               // Monash
-            { logo: '/australia/adelaide.svg', height: '' },                                 // Adelaide
-            { logo: '/australia/Melbourne1.svg', height: '' },                               // Melbourne
-            { logo: '/australia/unsw.svg', height: '' },                                     // UNSW
-            { logo: '/australia/The_University_Of_Queensland_logo_logotype.png', height: '' }, // Queensland
-            { logo: '/australia/The-university-of-Sydney_Logo_original.png', height: '' },   // Sydney
-            { logo: '/australia/westernAus.svg', height: '' },                               // Western Australia
+            { logo: '/australia/Australian_National_University-Logo.wine.png', height: '', title: 'Australian National University' },
+            { logo: '/australia/Monash_University_logo.svg.png', height: '', title: 'Monash University' },
+            { logo: '/australia/adelaide.svg', height: '', title: 'University of Adelaide' },
+            { logo: '/australia/Melbourne1.svg', height: '', title: 'University of Melbourne' },
+            { logo: '/australia/unsw.svg', height: '', title: 'University of New South Wales' },
+            { logo: '/australia/The_University_Of_Queensland_logo_logotype.png', height: '', title: 'University of Queensland' },
+            { logo: '/australia/The-university-of-Sydney_Logo_original.png', height: '', title: 'University of Sydney' },
+            { logo: '/australia/westernAus.svg', height: '', title: 'University of Western Australia' },
         ],
         blueAnimal: '/australia/kangaroo-blue.svg',
         whyChooseCards: [
@@ -66,14 +66,14 @@ export const countryData: Record<string, CountryData> = {
         ],
         animalShadow: '/usa/eagle-green.svg',
         universityLogos: [
-            { logo: '/usa/Brown-University.png', height: '' },                // Brown
-            { logo: '/usa/columbia-university.jpg', height: '' },             // Columbia
-            { logo: '/usa/cornell-university.png', height: '' },              // Cornell
-            { logo: '/usa/Dartmouth-College-Logo.png', height: '' },          // Dartmouth
-            { logo: '/usa/harvard-logo.png', height: '' },                    // Harvard
-            { logo: '/usa/UniversityofPenn.png', height: '' },                // University of Pennsylvania
-            { logo: '/usa/princeton-logo.png', height: '' },                  // Princeton
-            { logo: '/usa/yale-university.png', height: '' },                 // Yale
+            { logo: '/usa/Brown-University.png', height: '', title: 'Brown University' },
+            { logo: '/usa/columbia-university.jpg', height: '', title: 'Columbia University' },
+            { logo: '/usa/cornell-university.png', height: '', title: 'Cornell University' },
+            { logo: '/usa/Dartmouth-College-Logo.png', height: '', title: 'Dartmouth College' },
+            { logo: '/usa/harvard-logo.png', height: '', title: 'Harvard University' },
+            { logo: '/usa/UniversityofPenn.png', height: '', title: 'University of Pennsylvania' },
+            { logo: '/usa/princeton-logo.png', height: '', title: 'Princeton University' },
+            { logo: '/usa/yale-university.png', height: '', title: 'Yale University' },
         ],
         blueAnimal: '/usa/eagle-blue.svg',
         whyChooseCards: [
@@ -116,16 +116,16 @@ export const countryData: Record<string, CountryData> = {
         ],
         animalShadow: '/canada/animal-green.svg',
         universityLogos: [
-            { logo: '/canada/University_of_Toronto-Logo.wine.png', height: '' },      // University of Toronto
-            { logo: '/canada/mcgill.svg', height: '' },                    // McGill
-            { logo: '/canada/university of british columbia.png', height: '' },       // UBC
-            { logo: '/canada/university-of-alberta.svg', height: '' },                // Alberta
-            { logo: '/canada/Universite_de_Montreal_logo.png', height: '' },          // Montreal
-            { logo: '/canada/university of calgary.png', height: '' },                // Calgary
-            { logo: '/canada/university-of-ottawa.png', height: '' },                 // Ottawa
-            { logo: '/canada/velute.svg', height: '' },                               // Western University (assumed logo)
-            { logo: '/canada/University_of_Waterloo.png', height: '' },               // Waterloo
-            { logo: '/canada/McMaster_University.png', height: '' },                  // McMaster
+            { logo: '/canada/University_of_Toronto-Logo.wine.png', height: '', title: 'University of Toronto' },
+            { logo: '/canada/mcgill.svg', height: '', title: 'McGill University' },
+            { logo: '/canada/university of british columbia.png', height: '', title: 'University of British Columbia' },
+            { logo: '/canada/university-of-alberta.svg', height: '', title: 'University of Alberta' },
+            { logo: '/canada/Universite_de_Montreal_logo.png', height: '', title: 'Université de Montréal' },
+            { logo: '/canada/university of calgary.png', height: '', title: 'University of Calgary' },
+            { logo: '/canada/university-of-ottawa.png', height: '', title: 'University of Ottawa' },
+            { logo: '/canada/velute.svg', height: '', title: 'Western University' },
+            { logo: '/canada/University_of_Waterloo.png', height: '', title: 'University of Waterloo' },
+            { logo: '/canada/McMaster_University.png', height: '', title: 'McMaster University' },
         ],
         blueAnimal: '/canada/animal-blue.svg',
         whyChooseCards: [
@@ -167,17 +167,11 @@ export const countryData: Record<string, CountryData> = {
         ],
         animalShadow: '/new-zealand/kiwi.svg', // Placeholder path, adjust if needed
         universityLogos: [
-            { logo: '/new-zealand/lincoln.svg', height: '' },
-            { logo: '/new-zealand/canterbury.svg', height: '' },
-            { logo: '/new-zealand/ingenio.svg', height: '' },
-            { logo: '/new-zealand/massey.svg', height: '' },
-            { logo: '/new-zealand/unvstylogo.svg', height: '' },
-            { logo: '/new-zealand/lincoln.svg', height: '' },
-            { logo: '/new-zealand/canterbury.svg', height: '' },
-            { logo: '/new-zealand/ingenio.svg', height: '' },
-            { logo: '/new-zealand/massey.svg', height: '' },
-            { logo: '/new-zealand/unvstylogo.svg', height: '' },
-
+            { logo: '/new-zealand/lincoln.svg', height: '', title: 'Lincoln University' },
+            { logo: '/new-zealand/canterbury.svg', height: '', title: 'University of Canterbury' },
+            { logo: '/new-zealand/ingenio.svg', height: '', title: 'University of Auckland' },
+            { logo: '/new-zealand/massey.svg', height: '', title: 'Massey University' },
+            { logo: '/new-zealand/unvstylogo.svg', height: '', title: 'Victoria University of Wellington' },
         ],
         blueAnimal: '/new-zealand/newzealand.png',
         whyChooseCards: [
@@ -218,29 +212,29 @@ export const countryData: Record<string, CountryData> = {
         ],
         animalShadow: '/uk/deer-shadow.svg',
         universityLogos: [
-            { logo: '/uk/university-of-oxford9718.jpg', height: '' },                     // Oxford
-            { logo: '/uk/cambridge.svg', height: '' },                                     // Cambridge
-            { logo: '/uk/imperial-college-london-university.png', height: '' },           // Imperial
-            { logo: '/uk/university-of-bristol9427.jpg', height: '' },                    // Bristol
-            { logo: '/uk/Logo-page-graphics6-e1737113535639.webp', height: '' },          // Leeds (assumed)
-            { logo: '/uk/the-university-of-nottingham-1-logo-svg-vector (1).svg', height: '' }, // Nottingham
-            { logo: '/uk/university-of-sheffield.webp', height: '' },                     // Sheffield
-            { logo: '/uk/University_of_Warwick_logo.svg', height: '' },                   // Warwick
-            { logo: '/uk/queens-university-belfast-logo.png', height: '' },               // Queen's Belfast
-            { logo: '/uk/Uni_Exeter.svg.png', height: '' },                                    // Exeter
-            { logo: '/uk/manchester.jpg', height: '' },                                    // Manchester
-            { logo: '/uk/edinburgh.jpeg', height: '' },                                    // Edinburgh
-            { logo: '/uk/queen-mary-university.png', height: '' },                         // Queen Mary
-            { logo: '/uk/CardiffMet_logo-1.png', height: '' },                             // Cardiff
-            { logo: '/uk/university_liverpool.jpg', height: '' },                          // Liverpool
-            { logo: '/uk/durhan-university.png', height: '' },                             // Durham
-            { logo: '/uk/university of york.png', height: '' },                            // York
-            { logo: '/uk/University_of_Southampton.png', height: '' },                     // Southampton
-            { logo: '/uk/newcastle university.png', height: '' },                          // Newcastle
-            { logo: '/uk/university of glassgow.png', height: '' },                        // Glasgow
-            { logo: '/uk/King\'s_College_London.png', height: '' },                        // King's College
-            { logo: '/uk/London_school_of_economics.png', height: '' },                    // LSE
-            { logo: '/uk/University_College_London.png', height: '' },                     // UCL
+            { logo: '/uk/university-of-oxford9718.jpg', height: '', title: 'University of Oxford' },
+            { logo: '/uk/cambridge.svg', height: '', title: 'University of Cambridge' },
+            { logo: '/uk/imperial-college-london-university.png', height: '', title: 'Imperial College London' },
+            { logo: '/uk/university-of-bristol9427.jpg', height: '', title: 'University of Bristol' },
+            { logo: '/uk/Logo-page-graphics6-e1737113535639.webp', height: '', title: 'University of Leeds' },
+            { logo: '/uk/the-university-of-nottingham-1-logo-svg-vector (1).svg', height: '', title: 'University of Nottingham' },
+            { logo: '/uk/university-of-sheffield.webp', height: '', title: 'University of Sheffield' },
+            { logo: '/uk/University_of_Warwick_logo.svg', height: '', title: 'University of Warwick' },
+            { logo: '/uk/queens-university-belfast-logo.png', height: '', title: "Queen's University Belfast" },
+            { logo: '/uk/Uni_Exeter.svg.png', height: '', title: 'University of Exeter' },
+            { logo: '/uk/manchester.jpg', height: '', title: 'University of Manchester' },
+            { logo: '/uk/edinburgh.jpeg', height: '', title: 'University of Edinburgh' },
+            { logo: '/uk/queen-mary-university.png', height: '', title: 'Queen Mary University of London' },
+            { logo: '/uk/CardiffMet_logo-1.png', height: '', title: 'Cardiff Metropolitan University' },
+            { logo: '/uk/university_liverpool.jpg', height: '', title: 'University of Liverpool' },
+            { logo: '/uk/durhan-university.png', height: '', title: 'Durham University' },
+            { logo: '/uk/university of york.png', height: '', title: 'University of York' },
+            { logo: '/uk/University_of_Southampton.png', height: '', title: 'University of Southampton' },
+            { logo: '/uk/newcastle university.png', height: '', title: 'Newcastle University' },
+            { logo: '/uk/university of glassgow.png', height: '', title: 'University of Glasgow' },
+            { logo: "/uk/King's_College_London.png", height: '', title: "King's College London" },
+            { logo: '/uk/London_school_of_economics.png', height: '', title: 'London School of Economics' },
+            { logo: '/uk/University_College_London.png', height: '', title: 'University College London' },
         ],
         blueAnimal: '/uk/deer-blue.png',
         whyChooseCards: [
@@ -275,16 +269,11 @@ export const countryData: Record<string, CountryData> = {
           ],
         animalShadow: '/europe/yakh.svg', // Replace with accurate shadow if different
         universityLogos: [
-            { logo: '/europe/kth.svg', height: '' },
-            { logo: '/europe/ludovich.svg', height: '' },
-            { logo: '/europe/munich.svg', height: '' },
-            { logo: '/europe/sigillvm.svg', height: '' },
-            { logo: '/europe/osloensis.svg', height: '' },
-            { logo: '/europe/kth.svg', height: '' },
-            { logo: '/europe/ludovich.svg', height: '' },
-            { logo: '/europe/munich.svg', height: '' },
-            { logo: '/europe/sigillvm.svg', height: '' },
-            { logo: '/europe/osloensis.svg', height: '' },
+            { logo: '/europe/kth.svg', height: '', title: 'KTH Royal Institute of Technology' },
+            { logo: '/europe/ludovich.svg', height: '', title: 'Ludwig Maximilian University of Munich' },
+            { logo: '/europe/tum_logo.jpg', height: '', title: 'Technical University of Munich' },
+            { logo: '/europe/sigillvm.svg', height: '', title: 'University of Bologna' },
+            { logo: '/europe/osloensis.svg', height: '', title: 'University of Oslo' },
         ],
         blueAnimal: '/europe/europe-blue.png',
         whyChooseCards: [
@@ -318,16 +307,13 @@ export const countryData: Record<string, CountryData> = {
         ],
         animalShadow: '/uae/falcon.png', // Replace with accurate falcon shadow
         universityLogos: [
-            { logo: '/uae/Khalifa.png', height: '' },
-            { logo: '/uae/ueau.jpg', height: '' },
-            { logo: '/uae/aus.png', height: '' },
-            { logo: '/uae/nyu.png', height: '' },
-            { logo: '/uae/zu.png', height: '' },
-            { logo: '/uae/Heriot-Watt_University_logo.svg', height: '' },
-            { logo: '/uae/UD-logo.png', height: '' },
-            { logo: '/uae/middlesex-university-png.png', height: '' },
-
-
+            { logo: '/uae/Khalifa.png', height: '', title: 'Khalifa University' },
+            { logo: '/uae/ueau.jpg', height: '', title: 'United Arab Emirates University' },
+            { logo: '/uae/aus.png', height: '', title: 'American University of Sharjah' },
+            { logo: '/uae/nyu.png', height: '', title: 'New York University Abu Dhabi' },
+            { logo: '/uae/zu.png', height: '', title: 'Zayed University' },
+            { logo: '/uae/Heriot-Watt_University_logo.svg', height: '', title: 'Heriot-Watt University Dubai' },
+            { logo: '/uae/UD-logo.png', height: '', title: 'University of Dubai' },
         ],
         blueAnimal: '/uae/falcon-blue.png', // Stylized falcon image
         whyChooseCards: [

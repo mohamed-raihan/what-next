@@ -46,12 +46,12 @@ export const getStudyAbroadData = async (): Promise<Record<string, CountryData>>
         console.log("coun",countries,"uni",universities,"why",whyChooses);
         
 
-        const universitiesByCountry = new Map<number, { logo: string, height: string }[]>();
+        const universitiesByCountry = new Map<number, { logo: string, height: string, title: string }[]>();
         universities.forEach(uni => {
             if (!universitiesByCountry.has(uni.country)) {
                 universitiesByCountry.set(uni.country, []);
             }
-            universitiesByCountry.get(uni.country)?.push({ logo: uni.logo, height: '' });
+            universitiesByCountry.get(uni.country)?.push({ logo: uni.logo, height: '', title: uni.title });
         });
 
         const whyChoosesByCountry = new Map<number, WhyChooseCard[]>();
