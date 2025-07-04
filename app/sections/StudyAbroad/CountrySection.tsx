@@ -116,16 +116,15 @@ const CountrySection: React.FC<CountryData> = ({
                     // Static grid for fewer logos
                     <div className="flex flex-wrap justify-center gap-6 md:gap-12 lg:gap-20 py-6 md:pt-12 items-center w-full">
                         {universityLogos.map((logo, idx) => (
-                            <div className='flex flex-col justify-center items-center gap-3'>
-                            <img
-                                key={`static-${idx}`}
-                                src={logo.logo}
-                                alt="university logo"
-                                className="h-10 md:h-14 lg:h-30 object-contain max-w-[120px] md:max-w-[160px] lg:max-w-[140px]"
-                            />
-                            <p>
-                                {logo.title}
-                            </p>
+                            <div key={`static-${idx}`} className='flex flex-col justify-center items-center gap-3'>
+                                <img
+                                    src={logo.logo}
+                                    alt="university logo"
+                                    className="h-10 md:h-14 lg:h-30 object-contain max-w-[120px] md:max-w-[160px] lg:max-w-[140px]"
+                                />
+                                <p>
+                                    {logo.title}
+                                </p>
                             </div>
                         ))}
                     </div>
