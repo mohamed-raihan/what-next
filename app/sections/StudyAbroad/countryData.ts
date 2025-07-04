@@ -53,7 +53,7 @@ export const countryData: Record<string, CountryData> = {
 
     usa: {
         name: 'USA',
-        heading: 'IVY League Universities',
+        heading: 'Ivy League Schools',
         paragraph:
             'The United States takes pride in its technical development, and it has ensured that all levels of education are well-equipped with cutting-edge equipment.',
         backgroundImage: '/usa/usaN.png',
