@@ -310,7 +310,6 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/uae/Khalifa.png', height: '', title: 'Khalifa University' },
             { logo: '/uae/ueau.jpg', height: '', title: 'United Arab Emirates University' },
             { logo: '/uae/aus.png', height: '', title: 'American University of Sharjah' },
-            { logo: '/uae/nyu.png', height: '', title: 'New York University Abu Dhabi' },
             { logo: '/uae/zu.png', height: '', title: 'Zayed University' },
             { logo: '/uae/Heriot-Watt_University_logo.svg', height: '', title: 'Heriot-Watt University Dubai' },
             { logo: '/uae/UD-logo.png', height: '', title: 'University of Dubai' },
