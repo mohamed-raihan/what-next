@@ -310,7 +310,7 @@ const ServiceBanner = () => {
                     </div>
                 </div>
                 <div className="bg-[#0046AA] xl:w-1/2 h-full w-full hidden xl:flex items-center justify-center">
-                    <Image src="/service-bg-globe1.svg" alt="" width={600} height={600} />
+                    <Image src="/service-globe1.svg" alt="" width={600} height={600} />
                 </div>
             </div>
             <div className="relative">

@@ -307,12 +307,12 @@ export const countryData: Record<string, CountryData> = {
         ],
         animalShadow: '/uae/falcon.png', // Replace with accurate falcon shadow
         universityLogos: [
-            { logo: '/uae/Khalifa.png', height: '', title: 'Khalifa University' },
-            { logo: '/uae/ueau.jpg', height: '', title: 'United Arab Emirates University' },
-            { logo: '/uae/aus.png', height: '', title: 'American University of Sharjah' },
-            { logo: '/uae/zu.png', height: '', title: 'Zayed University' },
-            { logo: '/uae/Heriot-Watt_University_logo.svg', height: '', title: 'Heriot-Watt University Dubai' },
-            { logo: '/uae/UD-logo.png', height: '', title: 'University of Dubai' },
+            { logo: '/uae/Khalifa.png', height: '', title: '' },
+            { logo: '/uae/ueau.jpg', height: '', title: '' },
+            { logo: '/uae/aus.png', height: '', title: '' },
+            { logo: '/uae/zu.png', height: '', title: '' },
+            { logo: '/uae/Heriot-Watt_University_logo.svg', height: '', title: '' },
+            { logo: '/uae/UD-logo.png', height: '', title: '' },
         ],
         blueAnimal: '/uae/falcon-blue.png', // Stylized falcon image
         whyChooseCards: [
