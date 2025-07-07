@@ -225,7 +225,7 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/uk/manchester.jpg', height: '', title: 'University of Manchester' },
             { logo: '/uk/edinburgh.jpeg', height: '', title: 'University of Edinburgh' },
             { logo: '/uk/queen-mary-university.png', height: '', title: 'Queen Mary University of London' },
-            { logo: '/uk/CardiffMet_logo-1.png', height: '', title: 'Cardiff Metropolitan University' },
+            // { logo: '/uk/CardiffMet_logo-1.png', height: '', title: 'Cardiff Metropolitan University' },
             { logo: '/uk/university_liverpool.jpg', height: '', title: 'University of Liverpool' },
             { logo: '/uk/durhan-university.png', height: '', title: 'Durham University' },
             { logo: '/uk/university of york.png', height: '', title: 'University of York' },
@@ -273,7 +273,10 @@ export const countryData: Record<string, CountryData> = {
             { logo: '/europe/ludovich.svg', height: '', title: 'Ludwig Maximilian University of Munich' },
             { logo: '/europe/tum_logo.jpg', height: '', title: 'Technical University of Munich' },
             { logo: '/europe/sigillvm.svg', height: '', title: 'University of Bologna' },
-            { logo: '/europe/osloensis.svg', height: '', title: 'University of Oslo' },
+            // { logo: '/europe/osloensis.svg', height: '', title: 'University of Oslo' },
+            { logo: '/europe/University_of_Edinburgh.png', height: '', title: 'University of Edinburgh' },
+            { logo: '/europe/cambridge-logo.png', height: '', title: 'University of Cambridge' },
+
         ],
         blueAnimal: '/europe/europe-blue.png',
         whyChooseCards: [

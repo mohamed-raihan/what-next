@@ -76,7 +76,7 @@ export default function Footer() {
           </div>
 
           {/* CTA Section */}
-          <div className="relative bg-[#288737] bg-no-repeat rounded-2xl shadow-xl/20 min-h-[250px] lg:w-[350px] overflow-hidden">
+          <div className="relative bg-[#288737] bg-no-repeat rounded-2xl shadow-xl/20 min-h-[250px]  overflow-hidden">
             {/* Special characters at top right */}
             <div className="absolute -top-5 right-0 sm:-top-5 sm:right-3 z-10 lg:hidden xl:block">
               <Image src="/footer-icons.svg" alt="Special Characters" width={100} height={100} className="w-50" />

@@ -165,9 +165,7 @@ const details = [
         image: "/applicationImage.svg",
         description: (
             <>
-                <p>Trust us to find more resources to assist you with your course preparation, travel, and admissions procedures.</p>
-                <br />
-                <p>We aid you in preparing for aptitude exams and in learning more about the GRE, TOEFL, and IELTS.</p>
+                <p>IELTS ,TOEFL and similarly PTE or Duolingo are Language Proficiency exams. Add a descriptive for the Aptitude Tests and Language Proficiency exam trainings we provide.</p>
             </>
         ),
     },
@@ -385,9 +383,9 @@ const ServiceBanner = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative bg-[url(/service-bg.svg)] bg-cover flex flex-col xl:flex-row justify-between items-center xl:items-start bg-no-repeat md:mt-0 pt-10 pt-18 xl:pt-35 px-2 md:px-10 py-10 lg:px-25 h-auto">
+                <div className="relative bg-[url(/service-bg.svg)] bg-cover flex flex-col xl:flex-row justify-between items-center xl:items-start bg-no-repeat md:mt-0 pt-10 pt-18 xl:pt-35 px-2 md:px-18 py-10  h-auto">
                     <div className="ms-2 md:ms-10 mb-8 md:mb-0 flex-1 flex flex-col hidden xl:block">
-                        <h1 className="text-3xl md:text-5xl xl:text-6xl text-[#0046AA] font-medium font-roboto font-semibold">
+                        <h1 className="text-3xl md:text-5xl xl:text-5xl text-[#0046AA] font-medium font-roboto font-semibold">
                             Connect with Experts,<br />
                             <span className="text-[#288737]">Start Your Journey</span>
                         </h1>

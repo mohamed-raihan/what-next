@@ -115,9 +115,7 @@ const StudyAbroadSection = () => {
           <h2 className="font-bold mt-2 font-roboto text-[#0046AA] font-semibold text-[25px] md:text-[40px]">Experience a Different Kind of</h2>
           <h2 className="text-[#288737] font-roboto font-semibold text-[35px] md:text-[75px]">Study Abroad Journey</h2>
           <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-md md:text-lg font-montserrat">
-            WhatNext provides professional education services that are equitable, far reaching,
-            extensive, existent, virtuous and of high quality. We assist students in connecting with
-            higher education institutions all across the world.
+          WhatNext provides professional education services that are equitable, far-reaching, extensive, existent, virtuous, and of high quality. We assist students in connecting with higher education institutions all across the world.
           </p>
           <p className="mt-4 text-gray-600 max-w-3xl mx-auto text-md md:text-lg font-montserrat">
             We allure the best flair in terms of counsellors and enablers without regard to
@@ -174,7 +172,7 @@ const StudyAbroadSection = () => {
               { title: 'Enrollment Essentials Guide', img: '/ourservice2.svg' },
               { title: 'Accelerated Admission Support', img: '/ourservice5.svg' },
               { title: 'Immigration Strategy & Visa Facilitation', img: '/ourservice6.svg' },
-              { title: 'MeritEdge Scholarship Support', img: '/ourservice7.svg' },
+              { title: 'Merited Scholarship Support', img: '/ourservice7.svg' },
               { title: 'Financial Structuring & Resource Planning', img: '/ourservice8.svg' },
               { title: 'Global Student Mobility Desk', img: '/ourservice4.svg' },
             ].map((service, index) => (
