@@ -16,6 +16,10 @@ const config: Config = {
         rubik: ['var(--font-rubik)'],
         montserrat: ['var(--font-montserrat)'],
       },
+      screens: {
+        custom1280: { 'raw': '(min-width: 1280px) and (max-height: 800px)' },
+        gt1300: '1300px',
+      },
     },
   },
   plugins: [],
