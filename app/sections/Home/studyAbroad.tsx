@@ -181,7 +181,6 @@ const StudyAbroadSection = () => {
                   key={index}
                   className="group relative border-2 border-[#D4D4D4] overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105"
                   style={{
-                    
                     borderRadius: '1rem',
                   }}
                 >
@@ -193,7 +192,7 @@ const StudyAbroadSection = () => {
                       alt={service.title}
                       className="w-full transition-all duration-300 hover:scale-105"
                     />
-                    <div className="absolute px-4 py-3">
+                    <div className="px-4 py-3">
                       <h4 className="font-semibold text-[#0046AA] text-lg font-roboto">
                         {service.title}
                       </h4>
