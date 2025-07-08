@@ -103,7 +103,7 @@ export const blogData: Record<string, BlogData> = {
         </p>
         <br />
         <div class="cta-section">
-            <h2>How "What Next" Helps You Every Step of the Way</h2>
+            <h2>How "WhatNext" Helps You Every Step of the Way</h2>
             <p>We're not just a consultancy — we're your partner from the first step to your flight. Here's what we offer:</p>
             <br />
             <div class="service-list">
@@ -200,7 +200,7 @@ export const blogData: Record<string, BlogData> = {
     mainImage: '/blogs/newsBlog.svg',
     content: `<h1><b>Using Automated Test Results To Improve Accessibility in Study Abroad Services</b></h1>
 
-<p>In today&apos;s digital-first world, accessibility is not just a legal or ethical obligation—it&apos;s a key part of creating an inclusive, student-friendly experience. <b>At What Next Study Abroad Consultancy</b>, we&apos;re committed to ensuring that our services are accessible to every aspiring international student, regardless of physical or cognitive limitations. One powerful way we are achieving this is by leveraging <b>automated test results</b> to constantly improve our digital accessibility.</p>
+<p>In today&apos;s digital-first world, accessibility is not just a legal or ethical obligation—it&apos;s a key part of creating an inclusive, student-friendly experience. <b>At WhatNext Study Abroad Consultancy</b>, we&apos;re committed to ensuring that our services are accessible to every aspiring international student, regardless of physical or cognitive limitations. One powerful way we are achieving this is by leveraging <b>automated test results</b> to constantly improve our digital accessibility.</p>
 <br />
 <h3><b>Why Accessibility Matters in International Education</b></h3>
 <br />
@@ -218,7 +218,7 @@ export const blogData: Record<string, BlogData> = {
   <li>Unlabeled form fields</li>
   <li>Improper heading structures</li>
 </ul>
-<p><b>At What Next</b>, we regularly run these tools across our website and student portal. The insights we gather help us fix problems quickly—often before a student ever encounters them.</p>
+<p><b>At WhatNext</b>, we regularly run these tools across our website and student portal. The insights we gather help us fix problems quickly—often before a student ever encounters them.</p>
 <br />
 <h3><b>Turning Test Results into Action</b></h3>
 <br />
@@ -243,7 +243,7 @@ export const blogData: Record<string, BlogData> = {
 <br />
 <h2><b>Looking Ahead</b></h2>
 <br />
-<p>Accessibility is not a one-time task—it&apos;s an ongoing commitment. We&apos;re planning to integrate manual user testing, including feedback from students with disabilities, to supplement our automated systems. Together, these efforts will ensure that What Next Study Abroad Consultancy is a place where every student&apos;s journey begins on equal footing.</p>
+<p>Accessibility is not a one-time task—it&apos;s an ongoing commitment. We&apos;re planning to integrate manual user testing, including feedback from students with disabilities, to supplement our automated systems. Together, these efforts will ensure that WhatNext Study Abroad Consultancy is a place where every student&apos;s journey begins on equal footing.</p>
 <br />
 <h2><b>Final Thoughts</b></h2>
 <br />
@@ -802,7 +802,7 @@ export const blogData: Record<string, BlogData> = {
       <h2>From First Steps to Final Flight - We&apos;re With You All the Way</h2>
       <br />
       <p>
-          Studying abroad is a life-changing journey. At "What Next", we ensure that Indian students are not only prepared academically but also emotionally and logistically for their global leap. Our range of activities and events are designed to provide clarity, confidence, and community throughout the process.
+          Studying abroad is a life-changing journey. At "WhatNext", we ensure that Indian students are not only prepared academically but also emotionally and logistically for their global leap. Our range of activities and events are designed to provide clarity, confidence, and community throughout the process.
       </p>
       <br />
       <h1><b>What Do We Offer Beyond Consultation?</b></h1>
@@ -838,7 +838,7 @@ export const blogData: Record<string, BlogData> = {
       </p>
       <br />
       <div class="cta-section">
-          <h2>Your Journey Starts Here with "What Next"</h2>
+          <h2>Your Journey Starts Here with "WhatNext"</h2>
           <p>Our mission is to make studying abroad smooth, structured, and successful for every Indian student. Here’s how we support you:</p>
           <br />
           <div class="service-list">
@@ -867,7 +867,7 @@ export const blogData: Record<string, BlogData> = {
     <br />
     <p>
         With your visa stamped and flights booked, you're almost there. But before you take off for your study destination, the <b>Pre-Departure Briefing (PDB)</b> ensures you're ready — mentally, practically, and emotionally.
-        At "What Next", we hosted a comprehensive PDB session for Fall 2024 students, covering every detail you need for a confident start abroad.
+        At "WhatNext", we hosted a comprehensive PDB session for Fall 2024 students, covering every detail you need for a confident start abroad.
     </p>
     <br />
     <h1><b>What Was Covered in the Fall 2024 PDB?</b></h1>
@@ -899,7 +899,7 @@ export const blogData: Record<string, BlogData> = {
     <br />
     <h3>6. <b>Emergency Contacts & Student Helplines</b></h3>
     <p>
-        Safety is a priority. We provided a list of embassy contacts, university support numbers, and “What Next” alumni mentors in major cities.
+        Safety is a priority. We provided a list of embassy contacts, university support numbers, and “WhatNext” alumni mentors in major cities.
     </p>
     <br />
     <div class="cta-section">
@@ -930,7 +930,7 @@ export const blogData: Record<string, BlogData> = {
     <h2>Make Your Visa Interview Count — The First Step to Your American Dream</h2>
     <br />
     <p>
-      The F1 visa interview can be intimidating — but it doesn’t have to be. At "What Next", we conducted a focused workshop for students heading to the U.S. to ensure they’re fully prepared to ace their interviews and avoid common mistakes that lead to rejections.
+      The F1 visa interview can be intimidating — but it doesn’t have to be. At "WhatNext", we conducted a focused workshop for students heading to the U.S. to ensure they’re fully prepared to ace their interviews and avoid common mistakes that lead to rejections.
     </p>
     <br />
     <h1><b>Top Mistakes We Helped Students Avoid</b></h1>
@@ -988,7 +988,7 @@ export const blogData: Record<string, BlogData> = {
     <h2>Direct Conversations. Real Guidance. Genuine Connections.</h2>
     <br />
     <p>
-      Choosing the right university is a life-changing decision. To make this process more personal and informed, "What Next" organized an exclusive Meet & Greet event with representatives from top universities in the USA, UK, Canada, and Australia.
+      Choosing the right university is a life-changing decision. To make this process more personal and informed, "WhatNext" organized an exclusive Meet & Greet event with representatives from top universities in the USA, UK, Canada, and Australia.
     </p>
     <br />
     <h1><b>What Made This Event Special?</b></h1>
@@ -1046,7 +1046,7 @@ export const blogData: Record<string, BlogData> = {
     <h2>Your Dream of Studying Abroad Shouldn't Be Stopped by Finances</h2>
     <br />
     <p>
-      To support Indian students planning overseas education, "What Next" organized an exclusive <b>Education Loan Fair</b>—bringing top public and private banks, NBFCs, and fintech lenders under one roof.
+      To support Indian students planning overseas education, "WhatNext" organized an exclusive <b>Education Loan Fair</b>—bringing top public and private banks, NBFCs, and fintech lenders under one roof.
     </p>
     <br />
     <h1><b>Highlights of the Loan Fair</b></h1>
@@ -1074,7 +1074,7 @@ export const blogData: Record<string, BlogData> = {
     <div class="cta-section">
       <h2>Empowering Students with Financial Freedom</h2>
       <p>
-        At "What Next", we believe that no student should miss out on global education because of financial constraints. This event is part of our commitment to enable access and affordability.
+        At "WhatNext", we believe that no student should miss out on global education because of financial constraints. This event is part of our commitment to enable access and affordability.
       </p>
       <div class="service-list">
         <ul>
@@ -1099,7 +1099,7 @@ export const blogData: Record<string, BlogData> = {
     <h2>Real Conversations. Real Opportunities.</h2>
     <br />
     <p>
-      Choosing the right university abroad can be overwhelming. To help students make informed decisions, "What Next" hosted an exclusive <b>Meet and Greet session with top international university representatives</b> — a dynamic event fostering real-time dialogue, trust, and clarity.
+      Choosing the right university abroad can be overwhelming. To help students make informed decisions, "WhatNext" hosted an exclusive <b>Meet and Greet session with top international university representatives</b> — a dynamic event fostering real-time dialogue, trust, and clarity.
     </p>
     <br />
     <h1><b>Event Highlights</b></h1>
@@ -1127,7 +1127,7 @@ export const blogData: Record<string, BlogData> = {
     <div class="cta-section">
       <h2>Building Global Pathways</h2>
       <p>
-        Events like these empower students with clarity and confidence. At "What Next", we\'re committed to guiding you from exploration to enrollment.
+        Events like these empower students with clarity and confidence. At "WhatNext", we\'re committed to guiding you from exploration to enrollment.
       </p>
       <div class="service-list">
         <ul>
@@ -1169,7 +1169,7 @@ export const blogData: Record<string, BlogData> = {
     </ul>
     <br />
     <p>
-      “What Next” also supports you with mock interviews, resume reviews, and internship application tracking.
+      “WhatNext” also supports you with mock interviews, resume reviews, and internship application tracking.
     </p>`,
   tags: ['TechInternships', 'StudyAbroadCareer', 'GlobalTech'],
   category: 'Career',
@@ -1203,7 +1203,7 @@ export const blogData: Record<string, BlogData> = {
     </ul>
     <br />
     <p>
-      “What Next” offers one-on-one SOP editing, brainstorming sessions, and final review support to help you shine.
+      “WhatNext” offers one-on-one SOP editing, brainstorming sessions, and final review support to help you shine.
     </p>`,
   tags: ['PersonalStatement', 'SOPWriting', 'AdmissionsTips'],
   category: 'Admissions',
@@ -1237,7 +1237,7 @@ export const blogData: Record<string, BlogData> = {
     </ul>
     <br />
     <p>
-      “What Next” provides personalized scholarship mapping and SOP assistance to improve your chances.
+      “WhatNext” provides personalized scholarship mapping and SOP assistance to improve your chances.
     </p>`,
   tags: ['ScholarshipGuide', 'FundingAbroad', 'StudyAbroadFinance'],
   category: 'Finance',
@@ -1272,7 +1272,7 @@ export const blogData: Record<string, BlogData> = {
     </ul>
     <br />
     <p>
-      “What Next” offers expert visa counseling, mock interviews, and document verification services.
+      “WhatNext” offers expert visa counseling, mock interviews, and document verification services.
     </p>`,
   tags: ['VisaApplication', 'StudentVisaGuide', 'AbroadStudies'],
   category: 'Visa',

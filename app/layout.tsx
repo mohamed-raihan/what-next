@@ -41,8 +41,8 @@ const montserrat = Montserrat({
 
 
 export const metadata: Metadata = {
-  title: "What Next",
-  description: "What Next is a platform for students to find the best study abroad options for them.",
+  title: "WhatNext",
+  description: "WhatNext is a platform for students to find the best study abroad options for them.",
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",

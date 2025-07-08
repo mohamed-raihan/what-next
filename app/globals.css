@@ -63,7 +63,7 @@ body {
 }
 
 .animate-scroll-left {
-  animation: scrollLeft 60s linear infinite;
+  animation: scrollLeft 100s linear infinite;
 }
 
 .animate-scroll-right {

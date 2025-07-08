@@ -25,7 +25,7 @@ export default function Banner() {
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2">
                     <Image src="/flightlogo.png" alt="WhatNext Logo" width={80} height={21} className="mb-2 sm:mb-6" />
                     <h2 className="text-[#242424] font-semibold text-lg sm:text-xl mb-6 font-montserrat">
-                        What Next Overseas Educational Consultancy
+                        WhatNext Overseas Educational Consultancy
                     </h2>
                 </div>
 

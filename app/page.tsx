@@ -11,16 +11,16 @@ import IndustryPartnerships from "./sections/Home/badges";
 // import { API_URL } from "./api-services/api_url";
 
 const seoData = {
-  title: "What Next",
-  meta_description: "What Next is a platform for students to find the best study abroad options for them.",
+  title: "WhatNext",
+  meta_description: "WhatNext is a platform for students to find the best study abroad options for them.",
   meta_keywords: "study abroad, study abroad options, study abroad programs, study abroad destinations, study abroad countries, study abroad universities, study abroad scholarships, study abroad visa, study abroad immigration, study abroad education, study abroad opportunities, study abroad benefits, study abroad advantages, study abroad opportunities for students, study abroad opportunities for high school students, study abroad opportunities for college students, study abroad opportunities for university students, study abroad opportunities for high school students, study abroad opportunities for college students, study abroad opportunities for university students",
   canonical_url: "https://whatnextoverseas.com",
-  og_title: "What Next",
-  og_description: "What Next is a platform for students to find the best study abroad options for them.",
+  og_title: "WhatNext",
+  og_description: "WhatNext is a platform for students to find the best study abroad options for them.",
   og_image: "/logo.png",
   twitter_card: "summary_large_image",
-  twitter_title: "What Next",
-  twitter_description: "What Next is a platform for students to find the best study abroad options for them.",
+  twitter_title: "WhatNext",
+  twitter_description: "WhatNext is a platform for students to find the best study abroad options for them.",
   twitter_image: "/logo.png",
   noindex: false,
   nofollow: false,

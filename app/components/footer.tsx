@@ -24,7 +24,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm text-gray-600  mt-4 font-rubik font-semibold text-center">
-              <span className="">What Next Overseas Education Consultancy Service Private Limited, Unit No - 111, Barton Centre, M.G.Road, Bangalore - 560001</span>
+              <span className="">WhatNext Overseas Education Consultancy Service Private Limited, Unit No - 111, Barton Centre, M.G.Road, Bangalore - 560001</span>
               <br/>
               <span>+91 9900542429</span>
               <br/>

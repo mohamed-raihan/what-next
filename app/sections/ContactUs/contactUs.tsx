@@ -46,7 +46,7 @@ const ContactSection = () => {
                         </div>
                         <div className="bg-[#288737] text-white py-8 md:py-14 px-6 md:px-20 rounded-lg text-center w-full md:w-xl shadow-md">
                             <h3 className="text-2xl md:text-[28px] font-bold mb-2 font-roboto">Bengaluru</h3>
-                            <p className="font-montserrat text-base md:text-[20px]">What Next Overseas Education Consultancy Service, Unit No - 111, Barton Centre, M.G.Road, Bangalore - 560001</p>
+                            <p className="font-montserrat text-base md:text-[20px]">WhatNext Overseas Education Consultancy Service, Unit No - 111, Barton Centre, M.G.Road, Bangalore - 560001</p>
                             <p className="mt-4 md:mt-6 font-semibold text-base md:text-[20px] font-montserrat">info@whatnextoverseas.com</p>
                             <p className="font-semibold text-base md:text-[20px] mt-1 font-montserrat">+91 99 00 54 24 29</p>
                         </div>
